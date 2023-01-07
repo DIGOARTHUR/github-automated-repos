@@ -45,13 +45,15 @@ export function useGithubAutomatedRepos() {
         typescript:'https://user-images.githubusercontent.com/59892368/210762527-ae3afe1f-fe36-46a9-98ad-35dbae4d1adf.svg',
     };
     
-    const iconsProjects = {
-        dashboard:'https://user-images.githubusercontent.com/59892368/209398825-020920ee-fc40-4723-a599-fbf8a8d47b6d.png',
-        education:'https://user-images.githubusercontent.com/59892368/209398823-1ef81c8b-7125-4caa-8c2e-de13190e9304.png',
-        personalwebsite:'https://user-images.githubusercontent.com/59892368/209398820-cba5a978-fed2-4145-a2fa-0478b824f812.png',
-        productivity: 'https://user-images.githubusercontent.com/59892368/209398896-681b8c67-41c5-4498-8f3f-8bbf9a341a4a.svg',
-        
-    };
+   //50px
+   const iconsProjects = {
+    dashboard:'https://user-images.githubusercontent.com/59892368/211143089-c1b42a46-4c74-4bf6-89cc-f2a8421b80c8.svg',
+    education:'https://user-images.githubusercontent.com/59892368/211143164-ac09da51-030b-4ea1-9943-72ca71b112a6.svg',
+    personalwebsite:'https://user-images.githubusercontent.com/59892368/211143450-c7b28279-c4c1-49dd-ba72-6928798d559b.svg',
+    productivity: 'https://user-images.githubusercontent.com/59892368/211143617-c69b2aab-c4da-41b2-bae7-71c038eb0c30.svg',
+    game:'https://user-images.githubusercontent.com/59892368/211144565-9eadcedd-9280-4a7b-b156-cdacd14246f1.svg',
+    landingpage:'https://user-images.githubusercontent.com/59892368/211144850-b67818b5-9d8c-4247-9091-95a4d154305d.svg'
+};
    
 
 
