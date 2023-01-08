@@ -1,0 +1,23 @@
+.App{
+  
+}
+
+
+.banner_Content{
+    background: url('https://user-images.githubusercontent.com/59892368/211219963-f5905b57-44b5-4d6e-83ce-8d1476527eab.svg');
+    height: 410px;
+    background-color: #3A3E45;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    color: white;
+    justify-content:center;
+}
+
+.banner_Content >h1{
+ font-size:40px;
+}
+
+.banner_Content >p{
+    font-size:25px;
+   }
