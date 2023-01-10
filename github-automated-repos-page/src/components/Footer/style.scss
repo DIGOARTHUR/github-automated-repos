@@ -1,0 +1,25 @@
+.footer_Container {
+    height: 80px;
+    background-color: #3A3E45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    a {
+        color: white;
+        &:hover {
+            color: #847e7e;
+         }
+    }
+    .footer_Content {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footer_Credits {
+         
+
+
+        }
+    }
+}

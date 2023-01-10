@@ -20,3 +20,8 @@ code {
   padding: 0;  /*Margem interna do elemento*/
   box-sizing: border-box; /*Config. para considerar o valor do padding do elemento, por exemplo*/
 }
+
+a{
+  text-decoration: none;
+  color:black;
+}
