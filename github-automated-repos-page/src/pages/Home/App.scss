@@ -1,0 +1,134 @@
+.App {
+
+    .main_Container {
+        .banner_Content {
+            background: url('https://user-images.githubusercontent.com/59892368/211219963-f5905b57-44b5-4d6e-83ce-8d1476527eab.svg');
+            height: 410px;
+            background-color: #3A3E45;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            justify-content: center;
+
+            h1 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 25px;
+            }
+
+
+        }
+
+
+        .button_Content {
+
+            display: flex;
+            justify-content: center;
+
+            .effect {
+                text-align: center;
+                display: inline-block;
+                position: relative;
+                text-decoration: none;
+                color: black;
+                text-transform: capitalize;
+                border: 2px #D9D9D9 solid;
+                margin-top: 50px;
+
+                /* background-color: - add your own background-color */
+                font: {
+                    family: 'Roboto', sans-serif;
+                    /* put your font-family */
+                    size: 18px;
+                }
+
+                padding: 20px 0px;
+                width: 250px;
+                border-radius: 6px;
+                overflow: hidden;
+            }
+
+            .effect.effect-1 {
+                transition: all 0.2s linear 0s;
+
+                &:before {
+                    content: "\f178";
+                    font-family: FontAwesome;
+                    font-size: 15px;
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    right: 0;
+                    top: 0;
+                    opacity: 0;
+                    height: 100%;
+                    width: 130px;
+                    transition: all 0.2s linear 0s;
+                }
+
+                &:hover {
+                    text-indent: -20px;
+
+                    &:before {
+                        opacity: 1;
+                        text-indent: 0px;
+                    }
+                }
+            }
+        }
+
+        .cards_Container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+
+            .cards_Content {
+                display: flex;
+                flex-wrap: wrap;
+                width: 57%;
+                justify-content: space-around;
+
+                .card {
+
+                    background-color: #D9D9D9;
+                    border-radius: 8px;
+                    padding: 15px;
+                    height: 300px;
+                    width: 256px;
+
+                    p {
+                        font-size: 20px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+        }
+
+        .demonstration_Container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            
+            .demonstration_Content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: #D9D9D9;
+                border-radius: 15px;
+                padding: 50px;
+            }
+        }
+
+
+
+    }
+}

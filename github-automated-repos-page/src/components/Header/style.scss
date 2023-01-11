@@ -1,0 +1,54 @@
+.header_Container {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background-color: #D9D9D9;
+    font-size: 18px;
+
+    .header_Content {
+        justify-content: center;
+
+        display: flex;
+    }
+
+    a {
+        
+        padding: 10px;
+       
+        &:hover {
+           color: #847e7e;
+        }
+    }
+
+    .logoHeader {
+        padding: 0 36px;
+
+        img {
+            height: 50px;
+        }
+    }
+
+    .navBar {
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 10fr 1fr;
+        align-items: center;
+
+        .nav_Options {
+
+            display: flex;
+
+        }
+
+
+        .nav_Github {
+
+            font-size: 14px;
+
+        
+                
+            
+        }
+    }
+}
