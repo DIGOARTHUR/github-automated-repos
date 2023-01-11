@@ -1,8 +1,9 @@
 import React from 'react';
 import './style.scss';
 import { FiExternalLink } from 'react-icons/fi';
+import { Link } from 'react-router-dom'
 export function Header() {
-    return (
+    return ( 
         <div className="header_Container">
             <div className="header_Content">
                 <div className="logoHeader">
@@ -10,8 +11,8 @@ export function Header() {
                 </div>
                 <div className="navBar">
                     <div className='nav_Options'>
-                        <a href='#'>Home</a>
-                        <a href='#'>Documentation</a>
+                        <Link to="/">Home</Link>
+                        <Link to="/documentation">Documentation</Link>
                     </div>
                     <div className="nav_Github">
                         <a href='#'>
