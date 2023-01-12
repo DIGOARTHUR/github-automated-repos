@@ -1,5 +1,5 @@
 import { Header } from "../../components/Header";
-import { Sidebar } from "../../components/Sidebar";
+import { Sidebar } from "./components/Sidebar";
 import { GettingStarted } from "./components/GettingStarted";
 import { ProjectIcons } from "./components/ProjectIcons";
 import './style.scss';
