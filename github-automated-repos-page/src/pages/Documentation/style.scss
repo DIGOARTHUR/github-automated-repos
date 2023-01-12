@@ -1,10 +1,11 @@
 .documentation_Container{
     display:grid;
-    grid-template-columns: 1.2fr 5fr;
+    grid-template-columns: 1.2fr 6fr;
 
-    .main_Container{
+    .documentation_Content{
         margin-top: 80px;
         padding: 20px;
+        margin-left: 100px;
         h1{
             font-size: 35.2px;
         }

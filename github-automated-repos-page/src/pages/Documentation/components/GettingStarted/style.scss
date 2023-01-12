@@ -1,0 +1,77 @@
+
+.gettingStarted_Container {
+
+
+    .gettingStarted_Content {
+        h1{
+            font-size:60px
+        }
+        .step01_Container {
+            margin-bottom: 50px;
+        }
+
+        .step02_Container {
+            margin-bottom: 50px;
+
+            ul {
+                margin-left: 100px;
+
+                li {
+                    margin-top: 10px;
+
+                    font-weight: bold;
+
+                    &:nth-child(1) {
+                        color: #5ed49d;
+                    }
+
+                    &:nth-child(2) {
+                        color: #5ed49d;
+                    }
+
+                    &:nth-child(3) {
+                        color: #60d2ff;
+                    }
+                }
+            }
+        }
+
+        .step03_Container {
+
+            .jsx_Content {
+                margin: 15px 0px;
+                display: flex;
+
+                img {
+                    height: 90px;
+                }
+
+                h3 {
+
+                    margin-top: 65px;
+                    color: rgb(83, 193, 222)
+                }
+            }
+
+            .tsx_Container {
+                margin: 15px 0px;
+                display: flex;
+
+                img {
+                    height: 90px;
+                }
+
+                h3 {
+
+                    margin-top: 65px;
+                    color: #0288d1
+                }
+            }
+
+
+
+
+        }
+
+    }
+}

@@ -10,13 +10,13 @@ export function Documentation() {
         '/documentation/projectIcons': <ProjectIcons />
     }
 
-    console.log()
+   
     return (
         <>
-            <Header />
+            <Header /> 
             <div className="documentation_Container">
-                <Sidebar />
-                <main className="main_Container">
+                <Sidebar/>
+                <main className="documentation_Content">
                     {
                         path[useLocation().pathname]
                     }

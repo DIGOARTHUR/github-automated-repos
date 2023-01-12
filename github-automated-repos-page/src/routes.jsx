@@ -12,7 +12,7 @@ export function RoutesWeb() {
         <Router>
             <Routes>
                 <Route path='/' element={<Home/>}  />
-                <Route path='/documentation' element={<Documentation/>} />
+                <Route path='/documentation/gettingStarted' element={<Documentation/>} />
                 <Route path='/documentation/gettingStarted' element={<Documentation/>} />
                 <Route path='/documentation/projectIcons' element={<Documentation/>} />
             </Routes>
