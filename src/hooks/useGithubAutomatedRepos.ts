@@ -2,7 +2,8 @@
 
 export function useGithubAutomatedRepos() {
 
-    interface IGithubRepos {
+    
+       interface IGithubRepos {
         name: string;
         topics: [];
         html_url: string;
