@@ -1,13 +1,16 @@
 .sidebar_Container {
     display: flex;
-    margin-top: 100px;
+    margin-top: 50px;
     background-color: #f4f5f7;
-   
+    position: fixed;
     justify-content: center;
-
-
+    width: 300px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
     .sidebar_Content {
-
+        margin-top: 100px;
         list-style-type: none;
         width: 100%;
 
@@ -36,7 +39,8 @@
 
 
             }
-            .click-link{
+
+            .click-link {
                 display: flex;
                 align-items: center;
                 justify-content: center;

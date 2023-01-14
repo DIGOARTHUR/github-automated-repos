@@ -1,13 +1,12 @@
 .documentation_Container{
-    display:grid;
-    grid-template-columns: 1.2fr 6fr;
+   
 
     .documentation_Content{
         margin-top: 80px;
         padding: 20px;
-        margin-left: 100px;
+        margin-left: 300px;
         h1{
             font-size: 35.2px;
         }
     }
-}
+} 
