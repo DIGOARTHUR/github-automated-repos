@@ -1,0 +1,21 @@
+.project_Conteiner {
+  
+    color: white;
+   
+
+    .project_Content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:100px;
+        .project_Card{
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+           .highlighter_Card{
+            background-color:red;
+           }
+        }
+    }
+
+}

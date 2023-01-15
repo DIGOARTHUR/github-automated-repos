@@ -1,17 +1,23 @@
-
 .gettingStarted_Container {
+    p {
+        font-weight: 400;
+        font-size: 60px;
+    }
+    hr{
+        margin-top:20px;
+    }
+    h2 {
+        font-weight:450;
+        margin: 30px 0px 10px 0;
+    }
 
 
     .gettingStarted_Content {
-        h1{
-            font-size:60px
-        }
-        .step01_Container {
-            margin-bottom: 50px;
-        }
+
+        .step01_Container {}
 
         .step02_Container {
-            margin-bottom: 50px;
+
 
             ul {
                 margin-left: 100px;

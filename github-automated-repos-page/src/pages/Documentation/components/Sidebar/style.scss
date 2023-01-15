@@ -1,7 +1,7 @@
 .sidebar_Container {
     display: flex;
-    margin-top: 50px;
-    background-color: #f4f5f7;
+  
+    background-color: #D9D9D9;
     position: fixed;
     justify-content: center;
     width: 300px;
@@ -10,7 +10,7 @@
     left: 0;
     z-index: 1;
     .sidebar_Content {
-        margin-top: 100px;
+        margin-top: 150px;
         list-style-type: none;
         width: 100%;
 
