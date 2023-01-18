@@ -4,7 +4,7 @@ import { useGithubAutomatedRepos } from 'github-automated-repos';
 import { useEffect, useState } from 'react';
 import './style.scss';
 
-const highlighterStyle = { fontSize:'18px',paddingLeft: '10px', height: '60px',width: '250px',backgroundColor: '#9a5898',color:'red' }
+const highlighterStyle = { fontSize:'15px',paddingLeft: '10px', height: '60px',width: '250px',backgroundColor: '#747474'}
 export function ProjectIcons() {
     const { iconsProjects } = useGithubAutomatedRepos()
 

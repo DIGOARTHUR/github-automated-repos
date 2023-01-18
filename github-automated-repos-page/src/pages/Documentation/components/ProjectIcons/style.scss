@@ -9,11 +9,15 @@
         flex-wrap: wrap;
         gap:100px;
         .project_Card{
-            width: 200px;
+            width: 150px;
             display: flex;
             flex-direction: column;
+            img{
+              
+            }
            .highlighter_Card{
             background-color:red;
+            
            }
         }
     }
