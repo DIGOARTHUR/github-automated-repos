@@ -48,16 +48,16 @@ export function useGithubAutomatedRepos() {
 
     //50px 
     const iconsProjects = {
-        art: 'https://user-images.githubusercontent.com/59892368/212304957-5a71cb85-f8c3-4f48-a770-50575ea9dd41.svg',
-        artificialIntelligence: 'https://user-images.githubusercontent.com/59892368/212568355-6f5fb598-5ecf-4829-b9cc-c0a689798388.svg',
-        dashboard: 'https://user-images.githubusercontent.com/59892368/212285962-5b7182df-1604-4ad3-8e07-ecbb1231e338.svg',
-        education: 'https://user-images.githubusercontent.com/59892368/212432767-ac2a2be0-980f-4e18-9c03-e22eeaa5dae2.svg',
-        game: 'https://user-images.githubusercontent.com/59892368/212290788-7064ed03-d71f-4357-9fa0-612fc63063ca.svg',
-        landingpage: 'https://user-images.githubusercontent.com/59892368/212291329-865904f9-f3d7-41b6-ae07-cdadda2e1503.svg',
-        personalwebsite: 'https://user-images.githubusercontent.com/59892368/212290489-e3f86157-0bab-42b0-aa53-9160f6aad7b5.svg',
-        productivity: 'https://user-images.githubusercontent.com/59892368/212288262-3189494c-bf07-4562-af34-53ac98cdee36.svg',
-        security: 'https://user-images.githubusercontent.com/59892368/212432767-ac2a2be0-980f-4e18-9c03-e22eeaa5dae2.svg',
-        store: "https://user-images.githubusercontent.com/59892368/212431125-a8b06579-50e8-4988-b640-a64af898c73a.svg"
+        art: 'https://user-images.githubusercontent.com/59892368/212994060-8d1644c7-96d7-4f3b-8e94-65ff76db0c92.svg',
+        artificialintelligence: 'https://user-images.githubusercontent.com/59892368/212984565-a424b06e-db5e-464a-a5df-ddf7c9bab6ad.svg',
+        dashboard: 'https://user-images.githubusercontent.com/59892368/212991791-588a6c13-795e-47aa-b496-8bdbaa3cac30.svg',
+        education: 'https://user-images.githubusercontent.com/59892368/212284904-0b4f29fa-4141-4212-b516-d4e4fcdb8519.svg',
+        game: 'https://user-images.githubusercontent.com/59892368/212984732-79dd44aa-23a5-4b83-ae28-7a2ddd443032.svg',
+        landingpage: 'https://user-images.githubusercontent.com/59892368/212984364-88a0808b-a8d1-440c-b74e-f82bc3e28748.svg',
+        personalwebsite: 'https://user-images.githubusercontent.com/59892368/213131421-fa77f07c-9120-4b40-859d-2bd799de6681.svg',
+        productivity: 'https://user-images.githubusercontent.com/59892368/212994727-f05595d9-53b7-43a5-b974-b27fa2557653.svg',
+        security: 'https://user-images.githubusercontent.com/59892368/212985266-a658da1c-64ba-46b7-a069-a148ca217be9.svg',
+        store: "https://user-images.githubusercontent.com/59892368/213137554-83aa6798-9487-4d1b-a260-fd2035adaaad.svg"
     };
 
 
