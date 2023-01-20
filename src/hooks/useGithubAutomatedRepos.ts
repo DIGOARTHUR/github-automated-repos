@@ -2,6 +2,7 @@
 
 export function useGithubAutomatedRepos() {
 
+
     interface IGithubRepos {
         name: string;
         topics: [];
@@ -45,9 +46,10 @@ export function useGithubAutomatedRepos() {
         typescript: 'https://user-images.githubusercontent.com/59892368/210762527-ae3afe1f-fe36-46a9-98ad-35dbae4d1adf.svg',
     };
 
-    const iconsProjects = {
 
-        /*art: 'https://user-images.githubusercontent.com/59892368/212994060-8d1644c7-96d7-4f3b-8e94-65ff76db0c92.svg',
+    //50px 
+    const iconsProjects = {
+        art: 'https://user-images.githubusercontent.com/59892368/212994060-8d1644c7-96d7-4f3b-8e94-65ff76db0c92.svg',
         artificialintelligence: 'https://user-images.githubusercontent.com/59892368/212984565-a424b06e-db5e-464a-a5df-ddf7c9bab6ad.svg',
         dashboard: 'https://user-images.githubusercontent.com/59892368/212991791-588a6c13-795e-47aa-b496-8bdbaa3cac30.svg',
         education: 'https://user-images.githubusercontent.com/59892368/212284904-0b4f29fa-4141-4212-b516-d4e4fcdb8519.svg',
@@ -56,13 +58,8 @@ export function useGithubAutomatedRepos() {
         personalwebsite: 'https://user-images.githubusercontent.com/59892368/213131421-fa77f07c-9120-4b40-859d-2bd799de6681.svg',
         productivity: 'https://user-images.githubusercontent.com/59892368/212994727-f05595d9-53b7-43a5-b974-b27fa2557653.svg',
         security: 'https://user-images.githubusercontent.com/59892368/212985266-a658da1c-64ba-46b7-a069-a148ca217be9.svg',
-        store: "https://user-images.githubusercontent.com/59892368/213137554-83aa6798-9487-4d1b-a260-fd2035adaaad.svg"*/
-        dashboard: 'https://user-images.githubusercontent.com/59892368/211143089-c1b42a46-4c74-4bf6-89cc-f2a8421b80c8.svg',
-        education: 'https://user-images.githubusercontent.com/59892368/211143164-ac09da51-030b-4ea1-9943-72ca71b112a6.svg',
-        personalwebsite: 'https://user-images.githubusercontent.com/59892368/211143450-c7b28279-c4c1-49dd-ba72-6928798d559b.svg',
-        productivity: 'https://user-images.githubusercontent.com/59892368/211143617-c69b2aab-c4da-41b2-bae7-71c038eb0c30.svg',
-        game: 'https://user-images.githubusercontent.com/59892368/211144565-9eadcedd-9280-4a7b-b156-cdacd14246f1.svg',
-        landingpage: 'https://user-images.githubusercontent.com/59892368/211144850-b67818b5-9d8c-4247-9091-95a4d154305d.svg'
+
+        store: "https://user-images.githubusercontent.com/59892368/213137554-83aa6798-9487-4d1b-a260-fd2035adaaad.svg"
 
     };
 
