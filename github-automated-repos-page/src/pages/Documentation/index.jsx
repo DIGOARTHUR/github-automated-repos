@@ -4,10 +4,12 @@ import { GettingStarted } from "./components/GettingStarted";
 import { ProjectIcons } from "./components/ProjectIcons";
 import './style.scss';
 import { useLocation } from 'react-router-dom';
+import { StackIcons } from "./components/StackIcons";
 export function Documentation() {
     const path = {
         '/documentation/gettingStarted': <GettingStarted />,
-        '/documentation/projectIcons': <ProjectIcons />
+        '/documentation/projectIcons': <ProjectIcons />,
+        '/documentation/stackIcons': <StackIcons />
     }
 
    

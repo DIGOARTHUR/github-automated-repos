@@ -1,36 +1,19 @@
-
-
 export function useGithubAutomatedRepos() {
-
-    interface IGithubRepos {
-        name: string;
-        topics: [];
-        html_url: string;
-        description: string;
-        id: number;
-
-    }
-
-
-    function dataReposGithub(data: [], keyWordDeploy: string) {
-        let dataFilter = []
-        dataFilter = data.filter((item: IGithubRepos) => {
-            return item.topics.includes(keyWordDeploy as never)
-        })
-
-        return dataFilter.map((item: IGithubRepos) => {
+    function dataReposGithub(data, keyWordDeploy) {
+        let dataFilter = [];
+        dataFilter = data.filter((item) => {
+            return item.topics.includes(keyWordDeploy);
+        });
+        return dataFilter.map((item) => {
             return {
                 id: item.id,
                 name: item.name,
                 html_url: item.html_url,
                 description: item.description,
                 topics: item.topics
-            }
-        })
-
-
+            };
+        });
     }
-
     const nameSkills = {
         css3: "https://user-images.githubusercontent.com/59892368/210762519-fc191098-1198-4668-9eb5-d0c1481da8c7.svg",
         expo: 'https://user-images.githubusercontent.com/59892368/210762516-b48ee0ef-9d7b-4d86-951b-b80515c39783.svg',
@@ -44,9 +27,7 @@ export function useGithubAutomatedRepos() {
         styledcomponents: "https://user-images.githubusercontent.com/59892368/210762512-f8123c30-3992-4789-abe0-314fdcf45fe3.svg",
         typescript: 'https://user-images.githubusercontent.com/59892368/210762527-ae3afe1f-fe36-46a9-98ad-35dbae4d1adf.svg',
     };
-
     const iconsProjects = {
-
         art: 'https://user-images.githubusercontent.com/59892368/212994060-8d1644c7-96d7-4f3b-8e94-65ff76db0c92.svg',
         artificialintelligence: 'https://user-images.githubusercontent.com/59892368/212984565-a424b06e-db5e-464a-a5df-ddf7c9bab6ad.svg',
         dashboard: 'https://user-images.githubusercontent.com/59892368/212991791-588a6c13-795e-47aa-b496-8bdbaa3cac30.svg',
@@ -57,21 +38,16 @@ export function useGithubAutomatedRepos() {
         productivity: 'https://user-images.githubusercontent.com/59892368/212994727-f05595d9-53b7-43a5-b974-b27fa2557653.svg',
         security: 'https://user-images.githubusercontent.com/59892368/212985266-a658da1c-64ba-46b7-a069-a148ca217be9.svg',
         store: "https://user-images.githubusercontent.com/59892368/213137554-83aa6798-9487-4d1b-a260-fd2035adaaad.svg"
-    /* dashboard: 'https://user-images.githubusercontent.com/59892368/211143089-c1b42a46-4c74-4bf6-89cc-f2a8421b80c8.svg',
-        education: 'https://user-images.githubusercontent.com/59892368/211143164-ac09da51-030b-4ea1-9943-72ca71b112a6.svg',
-        personalwebsite: 'https://user-images.githubusercontent.com/59892368/211143450-c7b28279-c4c1-49dd-ba72-6928798d559b.svg',
-        productivity: 'https://user-images.githubusercontent.com/59892368/211143617-c69b2aab-c4da-41b2-bae7-71c038eb0c30.svg',
-        game: 'https://user-images.githubusercontent.com/59892368/211144565-9eadcedd-9280-4a7b-b156-cdacd14246f1.svg',
-    landingpage: 'https://user-images.githubusercontent.com/59892368/211144850-b67818b5-9d8c-4247-9091-95a4d154305d.svg'*/
-
+        /* dashboard: 'https://user-images.githubusercontent.com/59892368/211143089-c1b42a46-4c74-4bf6-89cc-f2a8421b80c8.svg',
+            education: 'https://user-images.githubusercontent.com/59892368/211143164-ac09da51-030b-4ea1-9943-72ca71b112a6.svg',
+            personalwebsite: 'https://user-images.githubusercontent.com/59892368/211143450-c7b28279-c4c1-49dd-ba72-6928798d559b.svg',
+            productivity: 'https://user-images.githubusercontent.com/59892368/211143617-c69b2aab-c4da-41b2-bae7-71c038eb0c30.svg',
+            game: 'https://user-images.githubusercontent.com/59892368/211144565-9eadcedd-9280-4a7b-b156-cdacd14246f1.svg',
+        landingpage: 'https://user-images.githubusercontent.com/59892368/211144850-b67818b5-9d8c-4247-9091-95a4d154305d.svg'*/
     };
-
-
-
     return {
         'dataReposGithub': dataReposGithub,
         "iconSkills": nameSkills,
         "iconsProjects": iconsProjects
-
-    }
+    };
 }

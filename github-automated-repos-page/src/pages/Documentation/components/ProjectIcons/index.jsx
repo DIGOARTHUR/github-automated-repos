@@ -3,8 +3,9 @@ import { Highlighter } from "rc-highlight";
 import { useGithubAutomatedRepos } from 'github-automated-repos';
 import { useEffect, useState } from 'react';
 import './style.scss';
+import { Card } from "../../../../components/Card";
 
-const highlighterStyle = { fontSize:'15px',paddingLeft: '10px', height: '60px',width: '250px',backgroundColor: '#747474'}
+
 export function ProjectIcons() {
     const { iconsProjects } = useGithubAutomatedRepos()
 
@@ -22,20 +23,26 @@ export function ProjectIcons() {
 
     return (
         <div className="project_Conteiner">
-            <h1>Project Icons</h1>
+            <p className="title">Project Icons</p>
+            <hr />
+            <br />
             <div className="project_Content">
-                {
-                    projectsIconValues.map((item, index) => {
-                        return (
-                            <div className="project_Card">
-                                <img src={item}></img>
-                                <Highlighter style={highlighterStyle} >{projectsIconKeys[index]}</ Highlighter>
+                <div className="tip">
+                    <img src="https://user-images.githubusercontent.com/59892368/213676096-2ce457e1-9f63-45aa-9744-94e3a6622fc3.png"></img>
+                    <p>One way to change the colors of svgs is to use CSS property <code>filter </code>. Transform RGBs or Hexadecimal colors to format <code>filter</code> in: <a href="https://angel-rs.github.io/css-color-filter-generator/">here</a> </p>
+                </div>
 
-                            </div>
+                <ul className="project_Content">
+                    {
+                        projectsIconValues.map((item, index) => {
+                            return (
+                                <Card key={index} item={item} iconKeys={projectsIconKeys[index]} />
+                            )
+                        })
+                    }
 
-                        )
-                    })
-                }
+
+                </ul>
             </div>
         </div>
 

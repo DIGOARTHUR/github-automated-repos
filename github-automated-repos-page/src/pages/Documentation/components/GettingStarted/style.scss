@@ -1,14 +1,14 @@
 .gettingStarted_Container {
-    p {
+
+    .title {
         font-weight: 400;
         font-size: 60px;
+        margin-bottom: 20px;
     }
-    hr{
-        margin-top:20px;
-    }
+
     h2 {
-        font-weight:450;
-        margin: 30px 0px 10px 0;
+        font-weight: 600;
+        margin: 30px 0px 15px 0;
     }
 
 
@@ -18,6 +18,16 @@
 
         .step02_Container {
 
+            .code {
+                background-color: #eee;
+                border-radius: 3px;
+                font-family: courier, monospace;
+                padding: 0 3px;
+                font-size: 18px;
+                font-weight:bold;
+
+            }
+          
 
             ul {
                 margin-left: 100px;
@@ -49,7 +59,7 @@
                 display: flex;
 
                 img {
-                    height: 90px;
+                    height: 80px;
                 }
 
                 h3 {

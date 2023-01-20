@@ -1,25 +1,32 @@
 .project_Conteiner {
-  
-    color: white;
-   
+    .title{
+        font-weight: 400;
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
 
-    .project_Content{
+    .project_Content {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap:100px;
-        .project_Card{
-            width: 150px;
-            display: flex;
-            flex-direction: column;
-            img{
-              
-            }
-           .highlighter_Card{
-            background-color:red;
-            
-           }
-        }
-    }
+        width: 1147;
+        gap: 5px;
 
+        .tip {
+            background-color: rgba(240, 248, 255, 0.445);
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            img {
+                height: 40px;
+    
+            }
+            a{
+                font-weight: 600;
+                color:blue;
+            }
+        }
+
+
+    }
 }

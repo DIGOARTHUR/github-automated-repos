@@ -1,0 +1,15 @@
+.stack_Conteiner {
+    p {
+        font-weight: 400;
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+    .stack_Content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        
+  
+    }
+}

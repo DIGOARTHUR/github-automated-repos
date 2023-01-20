@@ -4,7 +4,7 @@ import './style.scss';
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom';
 export function Sidebar() {
-    console.log(useLocation().pathname)
+    
     return(
         <div className="sidebar_Container">
            <ul className="sidebar_Content">
@@ -15,7 +15,7 @@ export function Sidebar() {
                 <Link to='/documentation/projectIcons' className={useLocation().pathname=='/documentation/projectIcons'?'click-link':'link'}>Project Icons</Link>
             </li>
             <li>
-                <a href='#' className="link">Stacks Icons</a>
+                <Link to='/documentation/stackIcons' className="link">Stacks Icons</Link>
             </li>
            </ul>
         </div>

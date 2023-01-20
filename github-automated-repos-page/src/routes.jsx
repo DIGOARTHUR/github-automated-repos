@@ -15,6 +15,7 @@ export function RoutesWeb() {
                 <Route path='/documentation/gettingStarted' element={<Documentation/>} />
                 <Route path='/documentation/gettingStarted' element={<Documentation/>} />
                 <Route path='/documentation/projectIcons' element={<Documentation/>} />
+                <Route path='/documentation/stackIcons' element={<Documentation/>} />
             </Routes>
         </Router>
 
