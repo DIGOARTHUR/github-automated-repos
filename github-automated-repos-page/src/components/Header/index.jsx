@@ -12,7 +12,7 @@ export function Header() {
                 <div className="navBar">
                     <div className='nav_Options'>
                         <Link to="/">Home</Link>
-                        <Link to="/documentation">Documentation</Link>
+                        <Link to="/documentation/gettingStarted">Documentation</Link>
                     </div>
                     <div className="nav_Github">
                         <a href='#'>

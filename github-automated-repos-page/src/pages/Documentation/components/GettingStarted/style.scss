@@ -1,0 +1,93 @@
+.gettingStarted_Container {
+
+    .title {
+        font-weight: 400;
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-weight: 600;
+        margin: 30px 0px 15px 0;
+    }
+
+
+    .gettingStarted_Content {
+
+        .step01_Container {}
+
+        .step02_Container {
+
+            .code {
+                background-color: #eee;
+                border-radius: 3px;
+                font-family: courier, monospace;
+                padding: 0 3px;
+                font-size: 18px;
+                font-weight:bold;
+
+            }
+          
+
+            ul {
+                margin-left: 100px;
+
+                li {
+                    margin-top: 10px;
+
+                    font-weight: bold;
+
+                    &:nth-child(1) {
+                        color: #5ed49d;
+                    }
+
+                    &:nth-child(2) {
+                        color: #5ed49d;
+                    }
+
+                    &:nth-child(3) {
+                        color: #60d2ff;
+                    }
+                }
+            }
+        }
+
+        .step03_Container {
+
+            .jsx_Content {
+                margin: 15px 0px;
+                display: flex;
+
+                img {
+                    height: 80px;
+                }
+
+                h3 {
+
+                    margin-top: 65px;
+                    color: rgb(83, 193, 222)
+                }
+            }
+
+            .tsx_Container {
+                margin: 15px 0px;
+                display: flex;
+
+                img {
+                    height: 90px;
+                }
+
+                h3 {
+
+                    margin-top: 65px;
+                    color: #0288d1
+                }
+            }
+
+
+
+
+        }
+
+    }
+}

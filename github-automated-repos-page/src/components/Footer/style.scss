@@ -1,25 +1,31 @@
 .footer_Container {
-    height: 80px;
+    height: 120px;
     background-color: #3A3E45;
     display: flex;
     justify-content: center;
-    align-items: center;
     color: white;
+
     a {
         color: white;
+
         &:hover {
             color: #847e7e;
-         }
+        }
     }
+
     .footer_Content {
-        width: 70%;
+        width: 60%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        gap: 15px;
+        .footer_Thanks {
+          
+        }
+
         .footer_Credits {
-         
-
-
+           
         }
     }
 }

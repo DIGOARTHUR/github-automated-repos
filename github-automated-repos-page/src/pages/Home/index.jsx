@@ -3,17 +3,17 @@ import { useEffect } from 'react';
 import './App.scss';
 import { Header } from '../../components/Header';
 import Aos from 'aos';
-
+import { Link } from 'react-router-dom'
 import "aos/dist/aos.css";
 import { Footer } from '../../components/Footer';
 
-export function Home (){
+export function Home() {
 
-    useEffect(() => {
-        Aos.init({ duration: 2000 });
-      }, [])
-    return(
-        <div className="App">
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, [])
+  return (
+    <div className="App">
       <Header />
       <main className="main_Container">
         <div className="banner_Content">
@@ -22,7 +22,7 @@ export function Home (){
         </div>
         <div className="button_Content">
 
-          <a className="effect effect-1" href="#" title="Getting Start">Getting Start</a>
+          <Link className="effect effect-1" to="/documentation/gettingStarted" title="Getting Start">Getting Start</Link>
 
         </div>
 
@@ -80,5 +80,5 @@ export function Home (){
 
       <Footer />
     </div>
-    )
+  )
 }

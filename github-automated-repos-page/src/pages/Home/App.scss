@@ -1,9 +1,14 @@
 .App {
 
     .main_Container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         .banner_Content {
             background: url('https://user-images.githubusercontent.com/59892368/211219963-f5905b57-44b5-4d6e-83ce-8d1476527eab.svg');
             height: 410px;
+            width: 100%;
             background-color: #3A3E45;
             display: flex;
             flex-direction: column;
@@ -82,7 +87,7 @@
         }
 
         .cards_Container {
-            width: 100%;
+            width: 67%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -91,7 +96,7 @@
             .cards_Content {
                 display: flex;
                 flex-wrap: wrap;
-                width: 57%;
+                width: 100%;
                 justify-content: space-around;
 
                 .card {
@@ -117,7 +122,7 @@
             justify-content: center;
             align-items: center;
             margin-top: 50px;
-            
+
             .demonstration_Content {
                 display: flex;
                 flex-direction: column;
@@ -130,5 +135,18 @@
 
 
 
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .App {
+        .main_Container {
+            .demonstration_Container {
+                background-color: red;
+                display:none;
+
+            }
+
+        }
     }
 }
