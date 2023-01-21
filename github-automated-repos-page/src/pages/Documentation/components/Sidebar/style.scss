@@ -1,6 +1,5 @@
 .sidebar_Container {
     display: flex;
-  
     background-color: #D9D9D9;
     position: fixed;
     justify-content: center;
@@ -53,6 +52,23 @@
                 border-radius: 6px;
                 background-color: #c6c5c5fa;
             }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+    .sidebar_Container {
+        display: flex;
+        background-color: #D9D9D9;
+        justify-content: center;
+        width: 100%; 
+        position: static;
+        margin-top: 20px;
+        .sidebar_Content {
+            width: 80%;
+            margin-top: 50px;
+            display: flex;
         }
     }
 }

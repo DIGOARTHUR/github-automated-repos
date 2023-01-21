@@ -34,6 +34,9 @@
     }
 
     .navBar {
+        .close_Button{
+            display: none;
+        }
         justify-content: space-between;
         display: grid;
         grid-template-columns: 10fr 1fr;
@@ -57,6 +60,8 @@
     }
 }
 
+
+
 @media (max-width: 600px) {
     .header_Container {
 
@@ -73,7 +78,6 @@
                 align-items: flex-start;
                 justify-content: flex-start;
                 position: fixed;
-                top: 50px;
                 right: -300px;
                 width: 300px;
                 height: 100vh;
@@ -84,6 +88,9 @@
 
                 &.active{
                     right: 0;
+                }
+                .close_Button{
+                    display: block;
                 }
                 .nav_Options {
                     font-size: 30px;
