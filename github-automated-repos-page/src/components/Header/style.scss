@@ -9,6 +9,7 @@
     z-index: 2;
     top: 0;
     width: 100%;
+
     .header_Content {
         justify-content: center;
 
@@ -16,11 +17,11 @@
     }
 
     a {
-        
+
         padding: 10px;
-       
+
         &:hover {
-           color: #847e7e;
+            color: #847e7e;
         }
     }
 
@@ -33,6 +34,9 @@
     }
 
     .navBar {
+        .close_Button{
+            display: none;
+        }
         justify-content: space-between;
         display: grid;
         grid-template-columns: 10fr 1fr;
@@ -48,10 +52,67 @@
         .nav_Github {
 
             font-size: 14px;
-
-        
-                
-            
         }
     }
+
+    .navBar_Icon_Mobile {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .header_Container {
+
+
+        .header_Content {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+
+
+            .navBar {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                position: fixed;
+                right: -300px;
+                width: 300px;
+                height: 100vh;
+                background-color: #D9D9D9;
+                box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+                padding: 40px 0 0 10px;
+                transition: 0.3s ease-in-out;
+
+                &.active{
+                    right: 0;
+                }
+                .close_Button{
+                    display: block;
+                }
+                .nav_Options {
+                    font-size: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 10px;
+                }
+
+                .nav_Github {
+
+                    font-size: 20px;
+                }
+            }
+
+          
+
+            .navBar_Icon_Mobile {
+                display: block;
+            }
+
+
+        }
+    }
+
 }

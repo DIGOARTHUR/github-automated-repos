@@ -4,12 +4,26 @@
         font-size: 60px;
         margin-bottom: 20px;
     }
+
     .stack_Content {
+
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 5px;
-        
-  
+
+
+    }
+}
+
+@media (max-width: 600px) {
+    .stack_Conteiner {
+
+        .stack_Content {
+
+            justify-content: center;
+
+
+        }
     }
 }

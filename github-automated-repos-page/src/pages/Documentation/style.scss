@@ -10,3 +10,17 @@
         }
     }
 } 
+
+@media (max-width: 600px) {
+    .documentation_Container{
+
+        .documentation_Content{
+            margin-top: 0px;
+            padding: 20px;
+            margin-left: 0px;
+            h1{
+                font-size: 35.2px;
+            }
+        }
+    } 
+}

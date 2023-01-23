@@ -13,9 +13,9 @@ export function Home() {
     Aos.init({ duration: 2000 });
   }, [])
   return (
-    <div className="App">
+    <div className="home_Container">
       <Header />
-      <main className="main_Container">
+      <main className="home_Content">
         <div className="banner_Content">
           <h1>Github  Automated Repos</h1>
           <p>Easy and practical way to expose your Github projects.</p>

@@ -1,10 +1,11 @@
-.App {
+.home_Container {
 
-    .main_Container {
+    .home_Content {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         .banner_Content {
             background: url('https://user-images.githubusercontent.com/59892368/211219963-f5905b57-44b5-4d6e-83ce-8d1476527eab.svg');
             height: 410px;
@@ -98,6 +99,7 @@
                 flex-wrap: wrap;
                 width: 100%;
                 justify-content: space-around;
+                gap: 10px;
 
                 .card {
 
@@ -139,11 +141,64 @@
 }
 
 @media screen and (max-width: 992px) {
-    .App {
-        .main_Container {
+    .home_Container {
+        .home_Content {
+            .banner_Content {
+                background: url('https://user-images.githubusercontent.com/59892368/211219963-f5905b57-44b5-4d6e-83ce-8d1476527eab.svg');
+                height: 350px;
+                width: 100%;
+                background-color: #3A3E45;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: white;
+                justify-content: center;
+                
+                h1 {
+                    font-size: 30px;
+                }
+
+                p {
+                    width: 70%;
+                    font-size: 22px;
+                }
+
+
+            }
+
             .demonstration_Container {
-                background-color: red;
-                display:none;
+                display: none;
+
+            }
+
+            .cards_Container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 50px;
+
+                .cards_Content {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    justify-content: space-around;
+                    gap: 10px;
+
+                    .card {
+
+                        background-color: #D9D9D9;
+                        border-radius: 8px;
+                        padding: 15px;
+                        height: 300px;
+                        width: 90%;
+
+                        p {
+                            font-size: 20px;
+                            margin-top: 20px;
+                        }
+                    }
+                }
 
             }
 
