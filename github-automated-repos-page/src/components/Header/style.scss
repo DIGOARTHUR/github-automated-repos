@@ -34,9 +34,10 @@
     }
 
     .navBar {
-        .close_Button{
+        .close_Button {
             display: none;
         }
+
         justify-content: space-between;
         display: grid;
         grid-template-columns: 10fr 1fr;
@@ -47,7 +48,9 @@
             display: flex;
 
         }
-
+        .nav_Option_Active {
+            border-bottom: 3px black solid;
+        }
 
         .nav_Github {
 
@@ -86,12 +89,14 @@
                 padding: 40px 0 0 10px;
                 transition: 0.3s ease-in-out;
 
-                &.active{
+                &.active {
                     right: 0;
                 }
-                .close_Button{
+
+                .close_Button {
                     display: block;
                 }
+
                 .nav_Options {
                     font-size: 30px;
                     display: flex;
@@ -99,13 +104,17 @@
                     margin-bottom: 10px;
                 }
 
+            
+                .nav_Option_Active {
+                    border-bottom: 0px black solid;
+                }
                 .nav_Github {
 
                     font-size: 20px;
                 }
             }
 
-          
+
 
             .navBar_Icon_Mobile {
                 display: block;

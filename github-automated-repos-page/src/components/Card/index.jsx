@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { MdOutlineContentCopy } from 'react-icons/md';
 import './style.scss';
 export function Card({item, iconKeys}) {
-    console.log(item)
+   
     const showToastMessage = (keyIcon) => {
         toast.success(`Copied ${keyIcon} to clipboard`, {
             position: "bottom-center",

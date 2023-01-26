@@ -15,71 +15,67 @@ const importPackage = `
 
 export function GettingStarted() {
 
-    return (
-        <>
+  return (
+    <>
 
-            <div className="gettingStarted_Container">
-                <div className="gettingStarted_Content">
-                    <p className="title">Getting Started</p>
-                    <hr />
-                    <br />
-                    <div className="step01_Container">
-                        <h2> Install Package</h2>
-                       
-                        <Highlighter style={highlighterStyle}>{packageInstall}</ Highlighter>
-                    </div>
+      <div className="gettingStarted_Container">
+        <div className="gettingStarted_Content">
+          <h1  className="document_Title">Getting Started</h1>
+          <hr />
+          <br />
+          <div className="step01_Container">
+            <h2> Install Package</h2>
 
-
-
-                    <div className="step02_Container">
-                        <h2>Import Package</h2>
-                        <Highlighter style={highlighterStyle}>{importPackage}</ Highlighter>
-                        <br />
-                        <p> The package imports three elements:: </p>
-                            <br /><code style={{ color: '#60d2ff' }} className="code">useGithubAutomatedRepos</code> hook responsible for automating the repositories. It receives two parameters: data (data that comes from the API, and returns 5 hook properties, see code) and the keyword (the latter responsible for the appearance of the project on the page from the moment it is declared in the Topics field in your repository).
-                            <br /><br /><Highlighter style={highlighterStyleFragments}>{codeFragments_Hook}</ Highlighter>
-
-
-                            <br /><code style={{ color: '#5ed49d' }} className="code">IconProjects</code> component that renders the project icon, the one that represents the area to which it belongs. Check out the Project Icons tab!
-                            <br /><br /><Highlighter style={highlighterStyleFragments}>{codeFragments_ProjectIcon}</ Highlighter>
-
-
-                            <br /><code style={{ color: '#5ed49d' }} className="code">IconSkill</code> component that renders the icons of the stacks used in your project. Check out the Stack Icons tab!
-                            <br /><br /><Highlighter style={highlighterStyleFragments}>{codeFragments_StackIcons}</ Highlighter>
+            <Highlighter style={highlighterStyle}>{packageInstall}</ Highlighter>
+          </div>
 
 
 
-            
-                    </div>
-
-                    <div className="step03_Container">
-
-                        <h2>Code Example</h2>
-                        <div className="jsx_Content">
-                            <img className="jsxIcon" src="https://user-images.githubusercontent.com/59892368/210763677-ee1a0283-eea7-45de-9589-86d7c50a8cb0.svg" />
-                            <h3>.JSX</h3>
-                        </div>
-                        <Highlighter >{codeExampleJSX}</ Highlighter>
-                        <br />
+          <div className="step02_Container">
+            <h2>Import Package</h2>
+            <Highlighter style={highlighterStyle}>{importPackage}</ Highlighter>
+            <br />
+            <h4> The package imports three elements: </h4>
+            <br /><p><code style={{ color: '#60d2ff' }} className="code">useGithubAutomatedRepos</code> hook responsável por automatizar os repositórios. Ele retorna um função chamada <code>dataGithubRepos</code>, que recebe dois parâmetros: data (dado que vem da API, e retorna 5 propriedades do hook, veja o código) e a palavra-chave (esta última responsável pela aparição do projeto na página a partir do momento em que é declarada no campo Tópicos em seu repositório).</p>
+            <br /><br /><Highlighter style={highlighterStyleFragments}>{codeFragments_Hook}</ Highlighter>
 
 
-                        <div className="tsx_Container">
-                            <img className="tsxIcon" src="https://user-images.githubusercontent.com/59892368/211927874-fb9b60ed-64dd-4091-9880-62af2a2206a1.svg" />
-                            <h3>.TSX</h3>
-                        </div>
-                        <Highlighter >{codeExampleTSX}</ Highlighter>
+            <br /><p><code style={{ color: '#5ed49d' }} className="code">IconProjects</code> component that renders the project icon, the one that represents the area to which it belongs. Check out the Project Icons tab!</p>
+            <br /><br /><Highlighter style={highlighterStyleFragments}>{codeFragments_ProjectIcon}</ Highlighter>
 
-                    </div>
-                </div>
+
+            <br /><p><code style={{ color: '#5ed49d' }} className="code">IconSkill</code> component that renders the icons of the stacks used in your project. Check out the Stack Icons tab!</p>
+            <br /><br /><Highlighter style={highlighterStyleFragments}>{codeFragments_StackIcons}</ Highlighter>
+          </div>
+
+          <div className="step03_Container">
+
+            <h2>Code Example</h2>
+            <div className="jsx_Content">
+              <img className="jsxIcon" src="https://user-images.githubusercontent.com/59892368/210763677-ee1a0283-eea7-45de-9589-86d7c50a8cb0.svg" />
+              <h3>.JSX</h3>
             </div>
+            <Highlighter >{codeExampleJSX}</ Highlighter>
+            <br />
 
-        </>
 
-    )
+            <div className="tsx_Container">
+              <img className="tsxIcon" src="https://user-images.githubusercontent.com/59892368/211927874-fb9b60ed-64dd-4091-9880-62af2a2206a1.svg" />
+              <h3>.TSX</h3>
+            </div>
+            <Highlighter >{codeExampleTSX}</ Highlighter>
+
+          </div>
+        </div>
+      </div>
+
+    </>
+
+  )
 }
 
 const codeFragments_Hook =
-    `const { dataReposGithub } = useGithubAutomatedRepos()
+  `const { dataReposGithub } = useGithubAutomatedRepos()
 const [repository, setRepository] = useState([])
 useEffect(() => {
                             {/*Put here your github Name*/}

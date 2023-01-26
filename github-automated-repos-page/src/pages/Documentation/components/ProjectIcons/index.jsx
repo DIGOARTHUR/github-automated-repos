@@ -23,7 +23,7 @@ export function ProjectIcons() {
 
     return (
         <div className="project_Conteiner">
-            <p className="title">Project Icons</p>
+            <h1 className="document_Title">Project Icons</h1>
             <hr />
             <br />
             <div className="project_Content">
