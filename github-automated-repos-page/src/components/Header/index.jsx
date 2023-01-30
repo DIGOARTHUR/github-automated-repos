@@ -14,7 +14,7 @@ const path = useLocation().pathname
     return (
         <div className="header_Container">
             <div className="header_Content">
-                <div className="logoHeader">
+                <div className="header_Logo">
                     <img src="https://user-images.githubusercontent.com/59892368/211217236-86d5d9d0-8991-4a65-a29c-60bd65621ced.svg" />
                 </div>
                 <div className={isOpenNavbar ? "navBar active" : "navBar"} >
@@ -43,6 +43,8 @@ const path = useLocation().pathname
                         }
 
                     </a>
+
+                    
 
                 </div>
             </div>

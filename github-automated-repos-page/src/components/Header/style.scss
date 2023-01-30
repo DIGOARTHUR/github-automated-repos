@@ -2,18 +2,17 @@
     height: 50px;
     display: flex;
     justify-content: center;
-    gap: 100px;
     background-color: #D9D9D9;
     font-size: 18px;
     position: absolute;
     z-index: 2;
     top: 0;
     width: 100%;
-
+    
     .header_Content {
-        justify-content: center;
-
         display: flex;
+        width: 100%;
+        justify-content: center;
     }
 
     a {
@@ -25,7 +24,7 @@
         }
     }
 
-    .logoHeader {
+    .header_Logo {
         padding: 0 36px;
 
         img {
@@ -34,14 +33,16 @@
     }
 
     .navBar {
+       
+        width: 50%;
         .close_Button {
             display: none;
         }
 
         justify-content: space-between;
-        display: grid;
-        grid-template-columns: 10fr 1fr;
+        display: flex;
         align-items: center;
+        
 
         .nav_Options {
 
@@ -65,7 +66,7 @@
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .header_Container {
 
 

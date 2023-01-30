@@ -5,7 +5,7 @@
         margin-top: 80px;
         padding: 20px;
         margin-left: 300px;
-        width: 60%;
+        max-width: 75%;
         .document_Title {
             font-weight: 400;
             font-size: 60px;
@@ -14,17 +14,15 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .documentation_Container {
 
         .documentation_Content {
             margin-top: 0px;
             padding: 20px;
             margin-left: 0px;
-            width: 100%;
-            .document_Title {
-                font-size: 35.2px;
-            }
+           max-width: 100%;
+       
         }
     }
 }
