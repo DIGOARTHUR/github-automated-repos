@@ -1,5 +1,23 @@
 .project_Conteiner {
-  
+    .project_Header {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .project_searchField {
+            display: flex;
+            gap: 5px;
+        }
+
+        input {
+            line-height: 1.8rem;
+            font-size: 1.2rem;
+            border-radius: 6px;
+            height: 35px;
+            padding: 6px;
+        }
+    }
     .project_Content {
         display: flex;
         flex-direction: row;
@@ -26,14 +44,23 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .project_Conteiner {
-    .title{
-        font-weight: 400;
-        font-size: 60px;
-        margin-bottom: 20px;
-    }
+  
+      .project_Header {
+          justify-content: center;
+          
+            .project_searchField {
 
+            }
+
+            input {
+                border-radius: 6px;
+                height: 50px;
+                padding: 8px 16px;
+              
+            }
+        }
     .project_Content {
      
        justify-content: center;
