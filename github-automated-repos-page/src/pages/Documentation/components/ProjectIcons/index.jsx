@@ -1,13 +1,12 @@
 import React from "react";
-import { Highlighter } from "rc-highlight";
-import { useGithubAutomatedRepos } from 'github-automated-repos';
+import { IconsData  } from 'github-automated-repos';
 import { useEffect, useState } from 'react';
 import './style.scss';
 import { Card } from "../../../../components/Card";
-
+import { ToastContainer, toast } from 'react-toastify';
 
 export function ProjectIcons() {
-    const { iconsProjects } = useGithubAutomatedRepos()
+    const { iconsProjects} = IconsData ()
 
 
 
@@ -36,12 +35,13 @@ export function ProjectIcons() {
                     {
                         projectsIconValues.map((item, index) => {
                             return (
-                                <Card key={index} item={item} iconKeys={projectsIconKeys[index]} />
+                                <Card key={index} item={item} iconKey={projectsIconKeys[index]} />
+                                
                             )
                         })
                     }
 
-
+<ToastContainer/>
                 </ul>
             </div>
         </div>
