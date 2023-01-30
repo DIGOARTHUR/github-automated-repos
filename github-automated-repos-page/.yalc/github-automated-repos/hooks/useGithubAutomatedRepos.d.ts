@@ -1,23 +1,71 @@
-export declare function useGithubAutomatedRepos(): {
-    dataReposGithub: (data: [], keyWordDeploy: string) => {
-        id: number;
-        name: string;
-        html_url: string;
-        description: string;
-        topics: [];
-    }[];
-    iconSkills: {
+export interface IGithubRepos {
+    name: string;
+    topics: [];
+    html_url: string;
+    description: string;
+    id: number;
+}
+export declare function useGithubAutomatedRepos(data: [], keyWordDeploy: string): {
+    id: number;
+    name: string;
+    html_url: string;
+    description: string;
+    topics: [];
+}[];
+export declare function IconsData(): {
+    iconStacks: {
+        android: string;
+        angular: string;
+        aws: string;
+        c: string;
+        cpp: string;
+        csharp: string;
         css3: string;
+        dart: string;
+        django: string;
+        docker: string;
+        eslint: string;
         expo: string;
+        express: string;
+        figma: string;
+        firebase: string;
+        flask: string;
+        gatsby: string;
+        go: string;
         html5: string;
+        java: string;
         javascript: string;
+        kotlin: string;
+        laravel: string;
+        linux: string;
+        mongodb: string;
+        mysql: string;
+        netcore: string;
         nextjs: string;
         nodejs: string;
+        npm: string;
+        objectc: string;
+        php: string;
+        postgresql: string;
+        prettier: string;
+        prisma: string;
+        python: string;
+        rails: string;
         react: string;
         reacticons: string;
+        ruby: string;
+        rust: string;
         sass: string;
+        scala: string;
+        spring: string;
+        sqlite: string;
+        storybook: string;
         styledcomponents: string;
+        swagger: string;
+        switch: string;
+        tailwind: string;
         typescript: string;
+        vue: string;
     };
     iconsProjects: {
         art: string;
