@@ -1,26 +1,30 @@
-.documentation_Container{
-   
+.documentation_Container {
 
-    .documentation_Content{
+
+    .documentation_Content {
         margin-top: 80px;
         padding: 20px;
         margin-left: 300px;
-        h1{
-            font-size: 35.2px;
+        width: 60%;
+        .document_Title {
+            font-weight: 400;
+            font-size: 60px;
+            margin-bottom: 20px;
         }
     }
-} 
+}
 
 @media (max-width: 600px) {
-    .documentation_Container{
+    .documentation_Container {
 
-        .documentation_Content{
+        .documentation_Content {
             margin-top: 0px;
             padding: 20px;
             margin-left: 0px;
-            h1{
+            width: 100%;
+            .document_Title {
                 font-size: 35.2px;
             }
         }
-    } 
+    }
 }

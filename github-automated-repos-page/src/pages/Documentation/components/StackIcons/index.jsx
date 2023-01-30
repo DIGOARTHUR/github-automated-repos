@@ -5,18 +5,20 @@ import { IconsData } from 'github-automated-repos';
 import { Card } from '../../../../components/Card';
 export function StackIcons() {
 
+
     const { iconStacks } = IconsData()
+
 
     const [stackIconKeys, setStackIconKeys] = useState([])
     const [stackIconValues, setStackIconValues] = useState([])
-    useEffect(() => {
+    useEffect(() => { 
         {/*Put here your github Name*/ }
         setStackIconKeys(Object.keys(iconStacks))
         setStackIconValues(Object.values(iconStacks))
     }, [])
     return (
         <div className="stack_Conteiner">
-            <p>Stack Icons</p>
+            <h1 className='document_Title'>Stack Icons</h1>
             <hr />
             <br />
             <ul className="stack_Content">
