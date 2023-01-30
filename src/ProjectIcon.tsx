@@ -1,13 +1,13 @@
 
-import { useGithubAutomatedRepos } from "./hooks/useGithubAutomatedRepos"
+import { IconsData} from "./hooks/useGithubAutomatedRepos"
 import React from 'react'
 type Props = {
     iconItem: string,
     className?: string
 }
 
-export function IconProjects({ iconItem, className }: Props) {
-    const { iconsProjects } = useGithubAutomatedRepos()
+export function ProjectIcon({ iconItem, className }: Props) {
+    const { iconsProjects } = IconsData()
     return (
         <div>
             {
