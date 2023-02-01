@@ -37,6 +37,8 @@ EXEMPLO
   
 
  <!------------------------------------STACKS-->
+ 
+ <!--
 #### Stacks:
 <p align="left">
 
@@ -45,7 +47,7 @@ EXEMPLO
    <a href="https://pt-br.reactjs.org/"><img  alt="ReactJS"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/216075982-e85e3b93-9b4a-4e0b-9a2c-8eeeb9a2b562.svg"><a/>
    <a href="https://www.typescriptlang.org/"><img  alt="TypeScript"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/216076163-b20e5fbc-0222-4910-b60c-e6ba36b2672a.svg"><a/>
 </p>
-  
+ -->
 
    <!------------------------------------SHIELDS STACKS-->
    
@@ -55,13 +57,16 @@ EXEMPLO
 <a href="https://devdigoarthur.notion.site/Estado-e7c7508cb6bd4d81984ba5e8e50eab67">  ![Alt ou título da imagem](https://img.shields.io/badge/-State-/?logo=CreateReactApp&logoColor=white&color=9cf)<a/>
    <a href="https://devdigoarthur.notion.site/Componentes-bc3ca1ebd97d4ccc8d11e6ab668eeb73"> ![Alt ou título da imagem](https://img.shields.io/badge/-Components-/?logo=CreateReactApp&logoColor=white&color=9cf)<a/>
  -->
+ 
+ 
  <!------------------------------------TOOLS-->
+  <!--
  #### Tools:
  <a href="https://code.visualstudio.com/"><img  alt="Vscode"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/149663512-3f83da57-bdfe-4cef-bcc2-feb304a738ff.png"><a/>
  <a href="https://git-scm.com/"><img  alt="Git"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/149677999-f5947f0b-e535-4ba2-911c-1c5926045c35.png"><a/>        
      
 <hr>
-  
+   -->
   <!------------------------------------PROJECT ICON-->
   
 <h1 align="center">
@@ -85,7 +90,7 @@ EXEMPLO
   
    <!------------------------------------DESCRIPTION-->
 
-# <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  Sobre a aplicação <!---write here : talk a little about project: what's does, example.  -->
+# <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  Sobre a biblioteca <!---write here : talk a little about project: what's does, example.  -->
 > Esta biblioteca automatiza a aparição dos seus repositórios Github no seu website. Escolha qual projeto aparecerá no seu website, sem precisar de 
   acrescentar mais linhas de código, personalize-o com ícone representativo e mostre quais stacks foram utilizadas. Tudo isso em um só lugar!
 
@@ -137,98 +142,33 @@ EXEMPLO
 
 ```
 
-## Demonstration   
-   
  
+   
+  ---
   
 
-  
+ <!------------------------------------LIST: STACKS , LIBS & TOOLS-->
 
-
-
-  
-  
-  
-  <!------------------------------------LIST: STACKS , LIBS & TOOLS-->
-
-## <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/197614534-e12fb94a-b5cf-44ff-8d57-debad7299b0b.png"> Stacks <!---write here: learned concepts; -->
+## <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/197614534-e12fb94a-b5cf-44ff-8d57-debad7299b0b.png"> Stacks for construction <!---write here: learned concepts; -->
 
   
 ### Linguagem
   <a href="https://devdigoarthur.notion.site/Map-a87c73417a064372b122bf448f4c6ed4"> ![Alt ou título da imagem](https://img.shields.io/badge/-JavaScript-/?logo=JavaScript&logoColor=white&color=yellow)<a/>
-   * [`Map`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Map) (Iteração com transformação de valores, conteúdo)
-   * [`Async/await`](https://www.w3schools.com/js/js_async.asp)  (Modo de processo assíncrono)
-### Estilização 
- <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"> ![Alt ou título da imagem](https://img.shields.io/badge/-CSS3-/?logo=CSS3&logoColor=white&color=blue)<a/> 
-  * [`Global Style`]()
-     * [`Variáves`](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Using_CSS_custom_properties) (Variáveis aplicados no CSS, como de cores por exemplo)
-     * [`Reset CSS`](https://www.alura.com.br/artigos/o-que-e-reset-css) (Resete de config. de medidas da página)
-  * [`Flexbox`](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) (Posicionamento de elementos)
-  
-### Framework / Lib
- <a href="https://nextjs.org"> ![Alt ou título da imagem](https://img.shields.io/badge/-NextJS-/?logo=Next.js&logoColor=white&color=lightgrey)<a/>  
-  * `Estrutura` (Estruturação de pastas e arquivos)
-  * `Evitar conflito CSS`(.modules) 
-  * `next/link` (Aplicação de rotas)    
    
+<a href="https://devdigoarthur.notion.site/Map-a87c73417a064372b122bf448f4c6ed4"> ![Alt ou título da imagem](https://img.shields.io/badge/-Typescript-/?logo=Typescript&logoColor=white&color=informational)<a/>
+     
+### Framework / Lib
+
  <a href="https://reactjs.org"> ![Alt ou título da imagem](https://img.shields.io/badge/-ReactJS-/?logo=React&logoColor=white&color=blue)<a/> 
-  * [`Componente`](https://reactjs.org/docs/components-and-props.html) (Uso de componentes)
-  * [`Estado`](https://reactjs.org/docs/state-and-lifecycle.html) (Uso de hooks para controle de estado e ciclo de vida da aplicação)
-  * [`Props`](https://reactjs.org/docs/state-and-lifecycle.html) (Recurso utilizado para passar atributos de um componente pai para outro componente filho)
 
-
-
- ### Gerenciador / Pacotes
+ ### Gerenciador Pacote / Lib
  <a href="https://yarnpkg.com"> ![Alt ou título da imagem](https://img.shields.io/badge/-Yarn-/?logo=Yarn&logoColor=white&color=blue)<a/> 
- *  [`ChakraUI`](https://chakra-ui.com) (Biblioteca de componentes do React que facilita a construção da IU de uma aplicação)
- *  [`MirageJS`](https://miragejs.com) (Biblioteca de simulação de API que permite criar, testar e compartilhar um aplicativo JavaScript completo e funcional sem precisar depender de nenhum serviço de back-end.)
- *  [`React Query`](https://tanstack.com/query/v4/?from=reactQueryV3&original=https://react-query-v3.tanstack.com/) (Biblioteca utilizada para otimizar a busca, armazenamento em cache e atualização dos dados remotos) 
   
  ### Versionameto
  <a href="https://git-scm.com"> ![Alt ou título da imagem](https://img.shields.io/badge/-Git-/?logo=Git&logoColor=white&color=red)<a/> 
  ### IDE
  <a href="https://code.visualstudio.com"> ![Alt ou título da imagem](https://img.shields.io/badge/-VisualStudioCode-/?logo=VisualStudioCode&logoColor=white&color=informational)<a/> 
 
- 
-  <!------------------------------------RUN APP-->
- 
- # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/142216697-dd93272c-c614-4664-9d63-c4e4dfc3e0f3.gif"> Rodando a Aplicação
- 
-
-1. Clonar repositório:
-
-```
-git clone https://github.com/DIGOARTHUR/Dashgo.git
-```
-
-2. Instalar dependências
-
-```
-yarn install
-```
-
-3. Rodar aplicativo
-
-```
-yarn dev
-```
-
-4. Acesse `http://localhost:3000/` e navegue pelo site
-
-:warning: 5. Trocar URL do repositorio remoto (caso necessário)
-
-  5.1 Ver qual o repositorio atual
-```
-git remote -v
-```
-  5.2 Mudar a URL do repositorio remoto
-```
-git remote set-url origin <LinkDoNovoRepositorio>
-```
-  5.3 Verifique se a mudança foi realizada
-```
-git remote -v
-```
 
 
   <!------------------------------------WHY/THANKS--->
