@@ -1,9 +1,12 @@
 {
   "name": "github-automated-repos",
   "version": "1.0.10",
-
   "description": "",
   "main": "index.ts",
+  "husky": {
+    "pre-commit": "echo 'teste'"
+  },
+
   "scripts": {
     "clean": "rm -rf dist",
     "build": "npm run clean && tsc && cp package.json README.md ./dist",
@@ -14,6 +17,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/react": "^18.0.26",
+    "husky": "^8.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^4.9.4"
