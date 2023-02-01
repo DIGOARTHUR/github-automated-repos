@@ -7,11 +7,11 @@ type Props = {
 }
 
 export function StackIcon({ iconItem, className }: Props) {
-    const { iconStacks, iconsProjects } = IconsData()
+    const {stackIconsData, projectIconsData } = IconsData()
     return (
-        iconItem == "deploy" || iconsProjects[iconItem as never] ? (<></>) : (
+        iconItem == "deploy" || projectIconsData[iconItem as never] ? (<></>) : (
 
-            <img className={className} src={iconStacks[iconItem as never]}></img>
+            <img className={className} src={stackIconsData[iconItem as never]}></img>
 
         )
     )

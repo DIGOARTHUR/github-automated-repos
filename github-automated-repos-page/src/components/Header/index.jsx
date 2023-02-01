@@ -3,9 +3,9 @@ import './style.scss';
 import { FiExternalLink } from 'react-icons/fi';
 import { GoThreeBars } from 'react-icons/go';
 import { GrClose } from 'react-icons/gr';
-import { Link,useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 export function Header() {
-const path = useLocation().pathname
+    const path = useLocation().pathname
     const [isOpenNavbar, setIsOpenNavbar] = useState(false)
     console.log(isOpenNavbar)
     function _handleNavbar() {
@@ -25,8 +25,8 @@ const path = useLocation().pathname
 
                     </a>
                     <div className='nav_Options '>
-                        <Link className={path =='/'?'nav_Option_Active':''} to="/">Home</Link>
-                        <Link className={path !='/'?'nav_Option_Active':''} to="/documentation/gettingStarted">Documentation</Link>
+                        <Link className={path == '/' ? 'nav_Option_Active' : ''} to="/">Home</Link>
+                        <Link className={path != '/' ? 'nav_Option_Active' : ''} to="/documentation/gettingStarted">Documentation</Link>
                     </div>
                     <div className="nav_Github">
                         <a href='#'>
@@ -44,7 +44,7 @@ const path = useLocation().pathname
 
                     </a>
 
-                    
+
 
                 </div>
             </div>

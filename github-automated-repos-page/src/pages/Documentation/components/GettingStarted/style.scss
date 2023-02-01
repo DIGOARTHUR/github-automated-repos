@@ -1,6 +1,13 @@
 .gettingStarted_Container {
+   
+    ul {
+        margin-left: 60px;
+        margin-bottom: 20px;
 
-  
+        li {
+            margin-top: 10px;
+        }
+    }
 
     h2 {
         font-weight: 600;
@@ -9,10 +16,46 @@
 
 
     .gettingStarted_Content {
-    
+
+        .gettingStarted_Summary {
+
+
+            list-style-type: none;
+           
+            li {
+                
+               
+               
+                a {
+                    display:flex;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    height: 25px;
+                    padding: 15px;
+                    
+                    &:hover{
+                        background-color: #c7c7c7;
+                    }
+                }
+            }
+
+
+
+
+        }
+
         .step01_Container {}
 
         .step02_Container {
+
+            h4 {
+                margin-bottom: 20px;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
 
             .code {
                 background-color: #eee;
@@ -20,32 +63,12 @@
                 font-family: courier, monospace;
                 padding: 0 3px;
                 font-size: 18px;
-                font-weight:bold;
+                font-weight: bold;
 
             }
-          
 
-            ul {
-                margin-left: 100px;
 
-                li {
-                    margin-top: 10px;
 
-                    font-weight: bold;
-
-                    &:nth-child(1) {
-                        color: #5ed49d;
-                    }
-
-                    &:nth-child(2) {
-                        color: #5ed49d;
-                    }
-
-                    &:nth-child(3) {
-                        color: #60d2ff;
-                    }
-                }
-            }
         }
 
         .step03_Container {

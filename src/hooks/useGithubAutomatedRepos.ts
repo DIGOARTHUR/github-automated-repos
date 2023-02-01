@@ -27,28 +27,36 @@ export interface IGithubRepos {
 }
 
 
-export function useGithubAutomatedRepos(data: [], keyWordDeploy: string) {
-    let dataFilter = []
-    dataFilter = data.filter((item: IGithubRepos) => {
-        return item.topics.includes(keyWordDeploy as never)
-    })
+export function useGithubAutomatedRepos() {
+    
+    function dataReposGithub(data: [], keyWordDeploy: string) {
+        let dataFilter = []
+        dataFilter = data.filter((item: IGithubRepos) => {
+            return item.topics.includes(keyWordDeploy as never)
+        })
 
-    return dataFilter.map((item: IGithubRepos) => {
-        return {
-            id: item.id,
-            name: item.name,
-            html_url: item.html_url,
-            description: item.description,
-            topics: item.topics
-        }
-    })
+        return dataFilter.map((item: IGithubRepos) => {
+            return {
+                id: item.id,
+                name: item.name,
+                html_url: item.html_url,
+                description: item.description,
+                topics: item.topics
+            }
+        })
 
 
+    }
+
+    return {
+        "dataReposGithub": dataReposGithub,
+
+    }
 }
 
 export function IconsData() {
     //25px
-    const iconStacks = {
+    const stackIconsData = {
         android: 'https://user-images.githubusercontent.com/59892368/215260539-ffaa9b19-07a8-420d-82c7-1b1e0e79139b.svg',
         angular: 'https://user-images.githubusercontent.com/59892368/215260538-a2bc2db2-23dd-4600-9a53-be6b3c7fc103.svg',
         aws: 'https://user-images.githubusercontent.com/59892368/215260536-748d14f8-5242-4d5a-9faf-6d62ed38a87a.svg',
@@ -105,7 +113,7 @@ export function IconsData() {
 
 
     //64px 
-    const iconsProjects = {
+    const projectIconsData = {
         art: 'https://user-images.githubusercontent.com/59892368/212994060-8d1644c7-96d7-4f3b-8e94-65ff76db0c92.svg',
         artificialintelligence: 'https://user-images.githubusercontent.com/59892368/212984565-a424b06e-db5e-464a-a5df-ddf7c9bab6ad.svg',
         dashboard: 'https://user-images.githubusercontent.com/59892368/212991791-588a6c13-795e-47aa-b496-8bdbaa3cac30.svg',
@@ -120,8 +128,8 @@ export function IconsData() {
 
 
     return {
-        "iconStacks": iconStacks,
-        "iconsProjects": iconsProjects,
+        "stackIconsData": stackIconsData,
+        "projectIconsData": projectIconsData,
 
     }
 }

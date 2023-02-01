@@ -8,11 +8,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+         
         .banner_Content {
-            background: url('https://user-images.githubusercontent.com/59892368/211219963-f5905b57-44b5-4d6e-83ce-8d1476527eab.svg');
+            background: url('https://user-images.githubusercontent.com/59892368/215871957-2bf57719-24b2-4c3d-9790-21cd86e072fb.svg');
             height: 410px;
-            width: 100%;
+            width:100%;
             background-color: #3A3E45;
             display: flex;
             flex-direction: column;
@@ -95,14 +95,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 180px;
+            margin-top: 50px;
 
             .cards_Content {
                 display: flex;
                 flex-wrap: wrap;
                 width: 100%;
                 justify-content: space-around;
-                gap: 10px;
+                gap: 50px;
 
                 .card_example {
                     background-color: #ffffff;
@@ -145,9 +145,9 @@
     .home_Container {
         .home_Content {
             .banner_Content {
-                background: url('https://user-images.githubusercontent.com/59892368/211219963-f5905b57-44b5-4d6e-83ce-8d1476527eab.svg');
+                background: url('https://user-images.githubusercontent.com/59892368/215883314-258557ab-78a3-416f-b817-1d1916dfd50d.svg');
                 height: 350px;
-                width: 100%;
+               
                 background-color: #3A3E45;
                 display: flex;
                 flex-direction: column;

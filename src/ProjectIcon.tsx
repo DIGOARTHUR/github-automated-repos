@@ -7,11 +7,11 @@ type Props = {
 }
 
 export function ProjectIcon({ iconItem, className }: Props) {
-    const { iconsProjects } = IconsData()
+    const { projectIconsData } = IconsData()
     return (
         <div>
             {
-                iconsProjects[iconItem as never] ? (<img className={className} src={iconsProjects[iconItem as never]}></img>) : (<></>)
+                projectIconsData[iconItem as never] ? (<img className={className} src={projectIconsData[iconItem as never]}></img>) : (<></>)
             }
         </div>
 

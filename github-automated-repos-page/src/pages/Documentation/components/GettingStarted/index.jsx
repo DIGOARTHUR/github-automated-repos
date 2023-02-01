@@ -10,7 +10,7 @@ const packageInstall = `
 `;
 
 const importPackage = `
-    import { IconProjects,IconSkill, useGithubAutomatedRepos} from 'github-automated-repos';
+    import { useGithubAutomatedRepos, ProjectIcon, StackIcon, IGithubRepos} from 'github-automated-repos';
 `;
 
 export function GettingStarted() {
@@ -20,10 +20,23 @@ export function GettingStarted() {
 
       <div className="gettingStarted_Container">
         <div className="gettingStarted_Content">
-          <h1  className="document_Title">Getting Started</h1>
+          <h1 className="document_Title">Getting Started</h1>
           <hr />
+          <ul className="gettingStarted_Summary">
+            <li >
+              <a href="#InstallPackage">Install Package</a>
+            </li>
+            <li>
+              <a href="#ImportPackage"> Import Package</a>
+
+            </li>
+            <li>
+              <a href="#ExampleCode"> Example Code</a>
+
+            </li>
+          </ul>
           <br />
-          <div className="step01_Container">
+          <div id="InstallPackage" className="step01_Container">
             <h2> Install Package</h2>
 
             <Highlighter style={highlighterStyle}>{packageInstall}</ Highlighter>
@@ -31,24 +44,34 @@ export function GettingStarted() {
 
 
 
-          <div className="step02_Container">
+          <div id="ImportPackage" className="step02_Container">
             <h2>Import Package</h2>
             <Highlighter style={highlighterStyle}>{importPackage}</ Highlighter>
             <br />
             <h4> The package imports three elements: </h4>
-            <br /><p><code style={{ color: '#60d2ff' }} className="code">useGithubAutomatedRepos</code> hook responsável por automatizar os repositórios. Ele retorna um função chamada <code>dataGithubRepos</code>, que recebe dois parâmetros: data (dado que vem da API, e retorna 5 propriedades do hook, veja o código) e a palavra-chave (esta última responsável pela aparição do projeto na página a partir do momento em que é declarada no campo Tópicos em seu repositório).</p>
-            <br /><br /><Highlighter style={highlighterStyleFragments}>{codeFragments_Hook}</ Highlighter>
+            <p><code style={{ color: '#60d2ff' }} className="code">useGithubAutomatedRepos</code> hook responsável por automatizar os repositórios. Ele retorna um função chamada <code>dataGithubRepos</code>, que recebe dois parâmetros: data (dado que vem da API) e a palavra-chave (esta última responsável pela aparição do projeto na página a partir do momento em que é declarada no campo Tópicos em seu repositório). O <code>dataGithubRepos</code> retorna, de forma otimizada, uma array de objetos contendo 5 propriedades: id, html_url, topics, name, descriptrion</p>
+
+            <ul>
+              <li><b>id:</b> número identificação do repositório. Usado como parâmetro na tag key. </li>
+              <li><b>html_url:</b> link referente ao repositório. Usado como o link de acesso. </li>
+              <li><b>topics:</b> array que traz informações referente aos ícones de Projeto e Stack. Usado nos dois componentes ProjectIcon e StackIcon.</li>
+              <li><b>name:</b> refere-se ao nome dado ao repositório. Usado como título de um card por exemplo. </li>
+              <li><b>description:</b> esta é a descrição dada ao seu repositório. Usado como introdução do seu projeto.</li>
+            </ul>
+            {/*<br /><br /><Highlighter style={highlighterStyleFragments}>{codeFragments_Hook}</ Highlighter>*/}
 
 
-            <br /><p><code style={{ color: '#5ed49d' }} className="code">IconProjects</code> component that renders the project icon, the one that represents the area to which it belongs. Check out the Project Icons tab!</p>
-            <br /><br /><Highlighter style={highlighterStyleFragments}>{codeFragments_ProjectIcon}</ Highlighter>
+            <p><code style={{ color: '#5ed49d' }} className="code">ProjectIcon</code> component that renders the project icon, the one that represents the area to which it belongs. Check out the Project Icons tab!</p>
+            {/* <br /><br /><Highlighter style={highlighterStyleFragments}>{codeFragments_ProjectIcon}</ Highlighter>*/}
 
 
-            <br /><p><code style={{ color: '#5ed49d' }} className="code">IconSkill</code> component that renders the icons of the stacks used in your project. Check out the Stack Icons tab!</p>
-            <br /><br /><Highlighter style={highlighterStyleFragments}>{codeFragments_StackIcons}</ Highlighter>
+            <p><code style={{ color: '#5ed49d' }} className="code">StackIcon</code> component that renders the icons of the stacks used in your project. Check out the Stack Icons tab!</p>
+            {/*<br /><br /><Highlighter style={highlighterStyleFragments}>{codeFragments_StackIcons}</ Highlighter>*/}
+
+            <p><code style={{ color: '#5ed49d' }} className="code">IGithubRepos</code> interface para o projeto em Typescript. Usado para tipar o useState que receberá a array.</p>
           </div>
 
-          <div className="step03_Container">
+          <div id="ExampleCode" className="step03_Container">
 
             <h2>Code Example</h2>
             <div className="jsx_Content">
@@ -98,9 +121,9 @@ const codeFragments_ProjectIcon = `
     return (
       ...
         {/*Project Icon*/}
-        {item.topics.map((projectIcon) => {
+        {item.topics.map((icon) => {
             return (
-            <IconProjects key={projectIcon} className="icon-skill" iconItem={projectIcon} />
+            <IconProjects key={icon} className="project_Icon" iconItem={icon} />
             {/*
             Required:
             key
@@ -151,54 +174,60 @@ import { useGithubAutomatedRepos, IconProjects , IconSkill} from 'github-automat
 `
 
 const codeExampleJSX = `   
-    import { useEffect, useState } from 'react';
-    import { IconProjects, IconSkill, useGithubAutomatedRepos } from 'github-automated-repos';
+  import './App.css';
+  import { useEffect, useState } from 'react';
+  import React from 'react'
+  import { useGithubAutomatedRepos, ProjectIcon, StackIcon} from 'github-automated-repos';
+  function App() {
+                              {/*useGithubAutomatedRepos hook*/ }
+    const { dataReposGithub } = useGithubAutomatedRepos()
+    const [repository, setRepository] = useState([])
 
-    function App() {
-        const { dataReposGithub } = useGithubAutomatedRepos()
-        const [repository, setRepository] = useState([])
-        useEffect(() => {
-            {/*Put here your github Name*/ }
-            fetch('https://api.github.com/users/digoarthur/repos')
-            .then(response => response.json())
-            .then(data => setRepository(dataReposGithub(data, 'deploy')))
-        }, [])
-  return (
-    <div className="App">
-      {
-        repository.map((item) => {
-          return (
-            <>
-              {/*Repository Link*/}
-            <a href={item.html_url} key={item.id}>
-              
+    useEffect(() => {
+                                  {/*Put here your github Name*/ }
+      fetch('https://api.github.com/users/githubName/repos')
+      .then(response => response.json())
+      .then(data => setRepository(dataReposGithub(data, 'deploy'))) {/*<-- keyWord*/}
+  }, [])
+
+    return (
+      <div className="App">
+        {
+          repository.map((item) => {
+            return (
+              <a href={item.html_url} key={item.id}>
+
                 {/*Project Icon*/}
                 {item.topics.map((icon) => {
                   return (
-                    <IconProjects key={icon} className="icon-skill" iconItem={icon} />
+                    <ProjectIcon key={icon} className="project_Icon" iconItem={icon} />
                   )
                 })}
-              
-              {/*Name Project*/}
-              <h1>{item.name}</h1>
-              {/*Description*/}
-              <p>{item.description}</p>
-              {/*Stacks Icon*/}
-              {item.topics.map((icon) => {
-                return (
-                  <IconSkill key={icon} className="icon-skill" iconItem={icon} />
-                )
-              })}
-            </a>
-        </>
-          )
-        })
-      }
-    </div>
-  );
-}
 
-export default App;
+                {/*Name Project*/}
+                <h1>{item.name}</h1>
+
+                {/*Description*/}
+                <p>{item.description}</p>
+
+                {/*Stacks Icon*/}
+                {item.topics.map((icon) => {
+                  return (
+                    <StackIcon key={icon} className="stack_Icon" iconItem={icon} />
+                  )
+                })}
+
+              </a>
+
+            )
+          })
+        }
+      </div>
+    );
+
+  }
+  export default App;
+
 
 `;
 
@@ -206,7 +235,7 @@ export default App;
 
 const codeExampleTSX = `
     import { useEffect, useState } from 'react';
-    import { useGithubAutomatedRepos, IconProjects, IconSkill } from 'github-automated-repos';
+    import { useGithubAutomatedRepos, ProjectIcon, StackIcon, IGithubRepos} from 'github-automated-repos';
     import './App.css';
 
 
@@ -214,15 +243,7 @@ const codeExampleTSX = `
 
     const { dataReposGithub } = useGithubAutomatedRepos()
 
-    interface Provider {
-        id: number;
-        html_url: string;
-        topics: [];
-        name: string;
-        description: string;
-    }
-
-    const [repository, setRepository] = useState<Provider[]>([])
+    const [repository, setRepository] = useState<IGithubRepos[]>([])
 
     useEffect(() => {
                               {/*Put here your github Name*/ }
@@ -238,9 +259,9 @@ const codeExampleTSX = `
             //Repository Link
             <a key={item.id} href={item.html_url} >
                 { //Project Icon
-                item.topics.map((projectIcon) => {
+                item.topics.map((icon) => {
                     return (
-                    <IconProjects key={projectIcon} className=" " iconItem={projectIcon} />
+                      <ProjectIcon key={icon} className="project_Icon" iconItem={icon} />
                     )
                 })
                 }
@@ -250,10 +271,10 @@ const codeExampleTSX = `
                 <p>{item.description}</p>
 
                 {  //Stacks Icon
-                item.topics.map((stackIconsItem) => {
+                item.topics.map((icon) => {
                     return (
 
-                    <IconSkill key={stackIconsItem} className=" " iconItem={stackIconsItem} />
+                      <StackIcon key={icon} className="stack_Icon" iconItem={icon} />
 
                     )
                 })
