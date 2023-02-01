@@ -5,7 +5,7 @@
   "main": "index.ts",
   "husky": {
     "hooks": {
-      "pre-commit": "echo 'teste'"
+      "pre-commit": "echo 'teste' "
     }
   },
   "scripts": {
