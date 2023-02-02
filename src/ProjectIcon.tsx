@@ -17,7 +17,7 @@ export function ProjectIcon({ iconItem, className }: Props) {
           src={iconsProjects[iconItem as never]}
         />
       ) : (
-        <></>
+        <> </>
       )}
     </div>
   );
