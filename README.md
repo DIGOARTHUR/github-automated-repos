@@ -28,26 +28,30 @@ EXEMPLO
 
  <!------------------------------------SHIELDS PROJECT-->
  
+
  ![GitHub last commit](https://img.shields.io/github/last-commit/digoarthur/github-automated-repos)
  [![npm][npm-image]][npm-url]
+  [![CodeFactor](https://www.codefactor.io/repository/github/digoarthur/github-automated-repos/badge)](https://www.codefactor.io/repository/github/digoarthur/github-automated-repos)
  ![GitHub](https://img.shields.io/github/license/digoarthur/github-automated-repos)
-  
+ 
 [npm-image]: https://img.shields.io/npm/v/github-automated-repos.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/github-automated-repos 
+
+
   
 
- <!------------------------------------STACKS-->
+ <!------------------------------------Style Guides-->
  
- <!--
-#### Stacks:
-<p align="left">
 
- <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"><img  alt="HTML5"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/149663188-8298a9bf-f3ce-4881-944f-e94edf37beed.png"><a/>
-   <a href="https://github.com/braziljs/eloquente-javascript"><img  alt="Javascript"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/149663192-19043371-127c-47f0-8553-0f407c51e2c5.png"><a/>
-   <a href="https://pt-br.reactjs.org/"><img  alt="ReactJS"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/216075982-e85e3b93-9b4a-4e0b-9a2c-8eeeb9a2b562.svg"><a/>
-   <a href="https://www.typescriptlang.org/"><img  alt="TypeScript"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/216076163-b20e5fbc-0222-4910-b60c-e6ba36b2672a.svg"><a/>
+### Style Guides:
+<p align="center">
+
+  <a href="https://eslint.org"><img  alt="Eslint"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/216450924-d9e2e612-4371-40ac-9120-1365d0113b07.svg"><a/>
+   <a  href="https://prettier.io"><img  alt="Prettier"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/216450921-ace9b367-5b82-4ad7-8cf5-d9241951582d.svg"><a/>
+   <a href="https://typicode.github.io/husky/#/"><img  alt="Husky"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/216450914-9ce5d6ee-a7d3-4e74-9d3b-3646a07352c2.svg"><a/>
+  
 </p>
- -->
+ 
 
    <!------------------------------------SHIELDS STACKS-->
    
