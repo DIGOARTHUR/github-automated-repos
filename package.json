@@ -14,7 +14,8 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "yarn lint"
+      "lint:fix",
+      "git add"
     ]
   },
   "keywords": [],
