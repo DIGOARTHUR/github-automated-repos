@@ -1,4 +1,4 @@
-export { ProjectIcon } from "./ProjectIcon";
+export { ProjectIcon } from './ProjectIcon';
 export { StackIcon } from './StackIcon';
 export {
   IGithubRepos,
