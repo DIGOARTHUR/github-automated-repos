@@ -36,5 +36,5 @@
     ],
     "react/require-default-props": "off"
   },
-  "ignorePatterns": "dist"
+  "ignorePatterns": ["dist","commitlint.config.js"]
 }

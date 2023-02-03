@@ -14,7 +14,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "lint:fix",
+      "yarn lint:fix",
       "git add"
     ]
   },
@@ -22,6 +22,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
     "@types/react": "^18.0.26",
     "@typescript-eslint/eslint-plugin": "^5.50.0",
     "@typescript-eslint/parser": "^5.50.0",
