@@ -69,9 +69,12 @@
 
 
 ul li{
+    a{
+        color:blue;
+    }
     img{
         margin-top: 20px;
-        height: 500px;
+        width: 80%;
         border-radius: 10px;
     }
 }

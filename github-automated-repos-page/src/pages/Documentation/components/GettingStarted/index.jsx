@@ -55,46 +55,63 @@ export function GettingStarted() {
               <code style={{ color: "#60d2ff" }} className="code">
                 useGithubAutomatedRepos
               </code>{" "}
-              hook responsável por automatizar os repositórios. Ele retorna um
-              função chamada <code>dataGithubRepos</code>, que recebe dois
-              parâmetros: data (dado que vem da API do Github) e a palavra-chave
-              (esta última responsável pela aparição do projeto na página a
-              partir do momento em que é declarada no campo Tópicos em seu
-              repositório). O <code>dataGithubRepos</code> retorna, de forma
-              otimizada, uma array de objetos contendo 5 propriedades: id,
-              html_url, topics, name, descriptrion
+              hook responsible for automating the repositories. It returns a
+              function called <code>dataGithubRepos</code>, which takes two
+              parameters: data (data that comes from the GitHub API) and the
+              keyword (the latter responsible for the appearance of the project
+              on the page from the moment it is declared in the Topics field in
+              your repository). The <code>dataGithubRepos</code> returns, so
+              optimized, an array of objects containing 5 properties: id,
+              html_url, topics, name and description.
             </p>
 
             <ul>
               <li>
-                <b>id:</b> número identificação do repositório. Usado como
-                parâmetro na tag key. Este campo não precisa ser preenchido.{" "}
+                <b>id:</b> repository identification number. used as parameter
+                in the key tag. This field does not need to be filled in.{" "}
               </li>
               <li>
-                <b>html_url:</b> link do repositório. Usado como o link de
-                acesso. Este campo não precisa ser preenchido.
+                <b>html_url:</b> repository link. Used as the link of access.
+                This field does not need to be filled in.
               </li>
 
               <li>
-                <b>topics:</b> array que traz informações referente aos ícones
-                de Projeto e Stack. Usado nos dois componentes ProjectIcon e
-                StackIcon. E é neste campo que é repassada a chave configurada
-                no hook. Refere-se ao campo <code> About / Topics</code> do seu
-                Github.
+                <b>topics:</b> array that brings information about the icons in{" "}
+                <a
+                  target="_blank"
+                  href="https://github-automated-repos.vercel.app/documentation/projectIcons"
+                >
+                  Project
+                </a>{" "}
+                and{" "}
+                <a
+                  target="_blank"
+                  href="https://github-automated-repos.vercel.app/documentation/stackIcons"
+                >
+                  Stack
+                </a>
+                . Used in both ProjectIcon and StackIcon components. It is in
+                this field that is passed the key configured in the hook. Refers
+                to the field
+                <code> About / Topics</code> of your GitHub.
                 <img src="https://user-images.githubusercontent.com/59892368/216723905-7c0ad730-052e-4eec-b2e3-94cd55a20e86.png" />
               </li>
 
               <li>
-                <b>name:</b> este é o nome do repositório. Refere-se ao campo{" "}
-                <code> Settings / General / Repository name</code> do seu
-                Github.
-                <img src="https://user-images.githubusercontent.com/59892368/216724741-dd5982d9-8b52-4576-beff-6ab1370fac34.png" />
+                <b>name:</b> This is the name of the repository. Refers to the
+                field <code> Settings / General / Repository name</code> of your
+                GitHub.
+                <div>
+                  <img src="https://user-images.githubusercontent.com/59892368/216724741-dd5982d9-8b52-4576-beff-6ab1370fac34.png" />
+                </div>
               </li>
               <li>
-                <b>description:</b> esta é a descrição dada ao seu repositório.
-                Refere-se ao campo <code>About / Description</code> do seu
-                Github.
-                <img src="https://user-images.githubusercontent.com/59892368/216720448-6ead1097-df1e-4ebf-a98e-b04c00b974ab.png" />
+                <b>description:</b> This is the description given to your
+                repository. Refers to the <code>About /Description field</code>{" "}
+                of your GitHub.
+                <div>
+                  <img src="https://user-images.githubusercontent.com/59892368/216720448-6ead1097-df1e-4ebf-a98e-b04c00b974ab.png" />
+                </div>
               </li>
             </ul>
             {/*<br /><br /><Highlighter style={highlighterStyleFragments}>{codeFragments_Hook}</ Highlighter>*/}
@@ -103,8 +120,8 @@ export function GettingStarted() {
               <code style={{ color: "#5ed49d" }} className="code">
                 ProjectIcon
               </code>{" "}
-              component that renders the project icon, the one that represents
-              the area to which it belongs. Check out the Project Icons tab!
+              component that renders the project icon, the icon that represents
+              which area the project belongs to.
             </p>
             {/* <br /><br /><Highlighter style={highlighterStyleFragments}>{codeFragments_ProjectIcon}</ Highlighter>*/}
 
