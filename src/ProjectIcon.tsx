@@ -11,11 +11,7 @@ export function ProjectIcon({ iconItem, className }: Props) {
   return (
     <div>
       {iconsProjects[iconItem as never] ? (
-        <img
-          className={className}
-          alt={iconsProjects[iconItem as never]}
-          src={iconsProjects[iconItem as never]}
-        />
+        <img className={className} alt={iconsProjects[iconItem as never]} src={iconsProjects[iconItem as never]} />
       ) : (
         <> </>
       )}
