@@ -1,6 +1,6 @@
 {
   "name": "github-automated-repos",
-  "version": "1.0.10",
+  "version": "1.0.17",
   "description": "",
   "main": "index.ts",
   "scripts": {
@@ -17,7 +17,8 @@
     "*.{ts,tsx}": [
       "yarn lint:fix",
       "git add ."
-    ]
+    ],
+    "ignore": ["dist"]  
   },
   "keywords": [],
   "author": "",

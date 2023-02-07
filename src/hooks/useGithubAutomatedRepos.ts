@@ -17,21 +17,28 @@ export interface IGithubRepos {
   html_url: string;
   description: string;
   id: number;
+  homepage: string;
 }
 
-export function useGithubAutomatedRepos(data: [], keyWordDeploy: string) {
-  let dataFilter = [];
-  dataFilter = data.filter((item: IGithubRepos) =>
-    item.topics.includes(keyWordDeploy as never),
-  );
+export function useGithubAutomatedRepos() {
+  function dataReposGithub(data: [], keyWordDeploy: string) {
+    let dataFilter = [];
+    dataFilter = data.filter((item: IGithubRepos) =>
+      item.topics.includes(keyWordDeploy as never),
+    );
 
-  return dataFilter.map((item: IGithubRepos) => ({
-    id: item.id,
-    name: item.name,
-    html_url: item.html_url,
-    description: item.description,
-    topics: item.topics,
-  }));
+    return dataFilter.map((item: IGithubRepos) => ({
+      id: item.id,
+      name: item.name,
+      html_url: item.html_url,
+      description: item.description,
+      topics: item.topics,
+      homepage: item.homepage,
+    }));
+  }
+  return {
+    dataReposGithub,
+  };
 }
 
 export function IconsData() {
@@ -154,5 +161,6 @@ export function IconsData() {
   return {
     iconStacks,
     iconsProjects,
+    IconsData,
   };
 }
