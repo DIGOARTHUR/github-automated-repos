@@ -17,8 +17,7 @@
     "*.{ts,tsx}": [
       "yarn lint:fix",
       "git add ."
-    ],
-    "ignore": ["dist"]  
+    ]
   },
   "keywords": [],
   "author": "",
