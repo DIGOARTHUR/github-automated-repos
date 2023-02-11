@@ -17,6 +17,7 @@
     "react-toastify": "^9.1.1",
     "sass": "^1.57.1",
     "styled-components": "^5.3.6",
+    "typewriter-effect": "^2.19.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
