@@ -4,26 +4,34 @@ export interface IGithubRepos {
     html_url: string;
     description: string;
     id: number;
+    homepage: string;
 }
-export declare function useGithubAutomatedRepos(data: [], keyWordDeploy: string): {
-    id: number;
-    name: string;
-    html_url: string;
-    description: string;
-    topics: [];
-}[];
+export declare function useGithubAutomatedRepos(): {
+    dataReposGithub: (data: [], keyWordDeploy: string) => {
+        id: number;
+        name: string;
+        html_url: string;
+        description: string;
+        topics: [];
+        homepage: string;
+    }[];
+};
 export declare function IconsData(): {
     iconStacks: {
-        android: string;
+        androidstudio: string;
         angular: string;
+        arduino: string;
         aws: string;
+        bootstrap: string;
         c: string;
+        clion: string;
         cpp: string;
         csharp: string;
         css3: string;
         dart: string;
         django: string;
         docker: string;
+        eclipse: string;
         eslint: string;
         expo: string;
         express: string;
@@ -31,13 +39,17 @@ export declare function IconsData(): {
         firebase: string;
         flask: string;
         gatsby: string;
+        git: string;
         go: string;
         html5: string;
+        husky: string;
         java: string;
         javascript: string;
+        jest: string;
         kotlin: string;
         laravel: string;
         linux: string;
+        lua: string;
         mongodb: string;
         mysql: string;
         netcore: string;
@@ -45,6 +57,7 @@ export declare function IconsData(): {
         nodejs: string;
         npm: string;
         objectc: string;
+        pearl: string;
         php: string;
         postgresql: string;
         prettier: string;
@@ -65,18 +78,24 @@ export declare function IconsData(): {
         switch: string;
         tailwind: string;
         typescript: string;
+        visualstudio: string;
+        visualstudiocode: string;
+        vitejs: string;
         vue: string;
     };
     iconsProjects: {
+        api: string;
         art: string;
         artificialintelligence: string;
         dashboard: string;
         education: string;
+        eletronic: string;
         game: string;
         landingpage: string;
         personalwebsite: string;
         productivity: string;
         security: string;
         store: string;
+        weather: string;
     };
 };

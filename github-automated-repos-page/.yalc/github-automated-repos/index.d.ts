@@ -1,3 +1,3 @@
-export { IconProjects } from "./IconProjects";
-export { IconStacks } from "./IconStacks";
-export { IGithubRepos, useGithubAutomatedRepos, IconsData } from "./hooks/useGithubAutomatedRepos";
+export { ProjectIcon } from './ProjectIcon';
+export { StackIcon } from './StackIcon';
+export { IGithubRepos, useGithubAutomatedRepos, IconsData } from './hooks/useGithubAutomatedRepos';
