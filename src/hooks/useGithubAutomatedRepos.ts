@@ -20,7 +20,6 @@ export interface IGithubRepos {
   homepage: string;
 }
 
-
 export function useGithubAutomatedRepos() {
   function dataReposGithub(data: [], keyWordDeploy: string) {
     let dataFilter = [];
@@ -164,5 +163,4 @@ export function IconsData() {
     iconsProjects,
     IconsData,
   };
-
 }
