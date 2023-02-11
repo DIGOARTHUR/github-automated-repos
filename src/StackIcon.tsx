@@ -1,20 +1,22 @@
-import { IconsData } from "./hooks/useGithubAutomatedRepos"
-import React from 'react'
+import React from 'react';
+import { IconsData } from './hooks/useGithubAutomatedRepos';
 
 type Props = {
-    iconItem: string
-    className?: string
-}
+  iconItem: string;
+  className?: string;
+};
 
 export function StackIcon({ iconItem, className }: Props) {
-    const {stackIconsData, projectIconsData } = IconsData()
-    return (
-        iconItem == "deploy" || projectIconsData[iconItem as never] ? (<></>) : (
 
-            <img className={className} src={stackIconsData[iconItem as never]}></img>
+  const { iconStacks, iconsProjects } = IconsData();
+  return iconItem === 'deploy' || iconsProjects[iconItem as never] ? (
+    <> </>
+  ) : (
+    <img
+      className={className}
+      alt={iconStacks[iconItem as never]}
+      src={iconStacks[iconItem as never]}
+    />
+  );
 
-        )
-    )
 }
-
-
