@@ -7,6 +7,7 @@ type Props = {
 };
 
 export function StackIcon({ iconItem, className }: Props) {
+
   const { iconStacks, iconsProjects } = IconsData();
   return iconItem === 'deploy' || iconsProjects[iconItem as never] ? (
     <> </>
@@ -17,4 +18,5 @@ export function StackIcon({ iconItem, className }: Props) {
       src={iconStacks[iconItem as never]}
     />
   );
+
 }

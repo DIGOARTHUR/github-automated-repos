@@ -7,6 +7,8 @@ type Props = {
 };
 
 export function ProjectIcon({ iconItem, className }: Props) {
+
+
   const { iconsProjects } = IconsData();
   return (
     <div>
@@ -22,3 +24,4 @@ export function ProjectIcon({ iconItem, className }: Props) {
     </div>
   );
 }
+

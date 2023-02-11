@@ -1,6 +1,9 @@
 {
   "name": "github-automated-repos",
-  "version": "1.0.17",
+
+  "version": "1.0.11",
+
+
   "description": "",
   "main": "index.ts",
   "scripts": {

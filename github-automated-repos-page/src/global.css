@@ -4,7 +4,9 @@
   --md:900px;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -38,4 +40,5 @@ code {
 a{
   text-decoration: none;
   color:black;
+  
 }

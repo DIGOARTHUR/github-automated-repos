@@ -1,18 +1,68 @@
 .gettingStarted_Container {
 
-  
+    ul {
+        margin-left: 60px;
+        margin-bottom: 20px;
+        list-style-type: none;
+
+        li {
+            margin-top: 10px;
+        }
+    }
 
     h2 {
         font-weight: 600;
         margin: 30px 0px 15px 0;
+        margin-bottom: 30px;
     }
 
+    p {
+        margin-bottom: 20px;
+    }
 
     .gettingStarted_Content {
-    
+
+        .divison_Container {
+            font-size: 80px;
+
+            display: flex;
+            justify-content: center;
+            line-height: 10px;
+            margin-bottom: 80px;
+        }
+
+        .gettingStarted_Summary {
+
+            li {
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    height: 25px;
+                    padding: 15px;
+
+                    &:hover {
+                        background-color: #c7c7c7;
+                    }
+                }
+            }
+
+
+
+
+        }
+
         .step01_Container {}
 
         .step02_Container {
+
+            h4 {
+                margin-bottom: 20px;
+            }
+
+
 
             .code {
                 background-color: #eee;
@@ -20,35 +70,53 @@
                 font-family: courier, monospace;
                 padding: 0 3px;
                 font-size: 18px;
-                font-weight:bold;
+                font-weight: bold;
 
             }
-          
 
-            ul {
-                margin-left: 100px;
 
-                li {
-                    margin-top: 10px;
+            ul li {
+                a {
+                    color: blue;
+                }
 
-                    font-weight: bold;
-
-                    &:nth-child(1) {
-                        color: #5ed49d;
-                    }
-
-                    &:nth-child(2) {
-                        color: #5ed49d;
-                    }
-
-                    &:nth-child(3) {
-                        color: #60d2ff;
-                    }
+                img {
+                    margin-top: 20px;
+                    width: 80%;
+                    border-radius: 10px;
                 }
             }
         }
 
-        .step03_Container {
+        .step04_Container {
+            .button_Container_ExampleCode {
+                display: flex;
+                gap: 25px;
+                margin-bottom: 20px;
+
+                .button {
+                    display: flex;
+                    align-items: center;
+                    font-size: 18px;
+                    width: 150px;
+                    padding: 12px;
+                    justify-content: space-between;
+                    border-radius: 10px;
+                    background-color: #fff;
+                    border: 0.2px #c7c7c7 solid;
+                    cursor: pointer;
+                }
+
+                .javascript_Button {
+                    background-color: #f1dc50a9;
+                    border: 2px #f1dc50a9 solid;
+                }
+
+                .typescript_Button {
+                    background-color: #3179c64b;
+                    border: 2px #3179c67a solid;
+                }
+            }
 
             .jsx_Content {
                 margin: 15px 0px;
