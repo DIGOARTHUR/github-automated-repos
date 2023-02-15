@@ -84,10 +84,11 @@ EXEMPLO
    <!------------------------------------SUMMARY-->
 
 - ## <a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">About Library</a>
-- ## <a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">Library</a>
-   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">Install</a>
-   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">Import</a>
-   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">Code Example</a>
+- ## <a href="https://github.com/DIGOARTHUR/github-automated-repos#--library-">Library</a>
+   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#install-1">Install</a>
+   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#import-1">Import</a>
+   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#fill-in-the-fields-in-the-github-repository">Fill in the fields in the github repository</a>
+   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#code-example-1">Code Example</a>
    
    
 
@@ -95,9 +96,8 @@ EXEMPLO
   
    <!------------------------------------DESCRIPTION-->
 
-# <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  Sobre a biblioteca <!---write here : talk a little about project: what's does, example.  -->
-> Esta biblioteca automatiza a aparição dos seus repositórios Github no seu website. Escolha qual projeto aparecerá no seu website, sem precisar de 
-  acrescentar mais linhas de código, personalize-o com ícone representativo e mostre quais stacks foram utilizadas. Tudo isso em um só lugar!
+# <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  About Library <!---write here : talk a little about project: what's does, example.  -->
+> This library automates the display of your Github repositories on your website. Choose which project will be displayed on your website, without having to add more lines of code, customize it with a representative icon and show which stacks were used. All this in one place!
 
    |                             Control your projects                     |
 | :-------------------------------------------------------------------: |
