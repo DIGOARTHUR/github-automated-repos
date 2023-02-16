@@ -328,10 +328,12 @@ EXEMPLO
 
 ## <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/197614534-e12fb94a-b5cf-44ff-8d57-debad7299b0b.png"> Stacks for construction <!---write here: learned concepts; -->
 
+### API
+       
+  <a href="https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-a-repository"> ![Alt ou título da imagem](https://img.shields.io/badge/-APIGithub-/?logo=GitHub&logoColor=white&color=gray)<a/>
   
 ### Language
-  <a href="https://devdigoarthur.notion.site/Map-a87c73417a064372b122bf448f4c6ed4"> ![Alt ou título da imagem](https://img.shields.io/badge/-JavaScript-/?logo=JavaScript&logoColor=white&color=yellow)<a/>
-   
+  
 <a href="https://devdigoarthur.notion.site/Map-a87c73417a064372b122bf448f4c6ed4"> ![Alt ou título da imagem](https://img.shields.io/badge/-Typescript-/?logo=Typescript&logoColor=white&color=informational)<a/>
      
 ### Framework / Lib
