@@ -20,6 +20,8 @@ EXEMPLO
 # logoColor=white - Define a cor do icone
 -->
 
+
+<!------------------------------------ PROJECT BANNER-->
 <h1 align="center">Github-automated-repos</h1>
 
 <p align="center">
@@ -34,7 +36,8 @@ EXEMPLO
 
  <!------------------------------------SHIELDS PROJECT-->
  
-
+<div align="center">
+    
  ![GitHub last commit](https://img.shields.io/github/last-commit/digoarthur/github-automated-repos)
  [![npm][npm-image]][npm-url]
   [![CodeFactor](https://www.codefactor.io/repository/github/digoarthur/github-automated-repos/badge)](https://www.codefactor.io/repository/github/digoarthur/github-automated-repos)
@@ -43,7 +46,7 @@ EXEMPLO
 [npm-image]: https://img.shields.io/npm/v/github-automated-repos.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/github-automated-repos 
 
-
+</div>
   
 
  <!------------------------------------Style Guides-->
@@ -102,7 +105,7 @@ EXEMPLO
    <!------------------------------------DESCRIPTION-->
 
 # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  About Library <!---write here : talk a little about project: what's does, example.  -->
-> This library automates the view of your Github repositories on your website. Choose which project will be viewed on your website, without having to add more lines of code, customize it with a representative icon and show which stacks were used. All this in one place!
+> This library automate the view of your Github repositories on your website. Choose which project will be viewed on your website, without having to add more lines of code, customize it with a representative icon and show which stacks were used. All this in one place!
 
    |                             Control your projects                     |
 | :-------------------------------------------------------------------: |
