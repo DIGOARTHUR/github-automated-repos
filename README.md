@@ -43,15 +43,16 @@ EXEMPLO
  <!------------------------------------Style Guides-->
  
 
-### Style Guides:
-<p align="center">
 
+<p align="center">
+ <a href="https://typicode.github.io/husky/#/"><img  alt="Husky"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/219088739-6d1af6db-3444-4351-ae71-5037f47b6938.svg"><a/>
   <a href="https://eslint.org"><img  alt="Eslint"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/216450924-d9e2e612-4371-40ac-9120-1365d0113b07.svg"><a/>
    <a  href="https://prettier.io"><img  alt="Prettier"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/216450921-ace9b367-5b82-4ad7-8cf5-d9241951582d.svg"><a/>
    <a href="https://typicode.github.io/husky/#/"><img  alt="Husky"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/216450914-9ce5d6ee-a7d3-4e74-9d3b-3646a07352c2.svg"><a/>
   
 </p>
  
+ ---
 
    <!------------------------------------SHIELDS STACKS-->
    
@@ -83,10 +84,11 @@ EXEMPLO
    <!------------------------------------SUMMARY-->
 
 - ## <a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">About Library</a>
-- ## <a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">Library</a>
-   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">Install</a>
-   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">Import</a>
-   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">Code Example</a>
+- ## <a href="https://github.com/DIGOARTHUR/github-automated-repos#--library-">Library</a>
+   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#install-1">Install</a>
+   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#import-1">Import</a>
+   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#fill-in-the-fields-in-the-github-repository-1">Fill in the fields in the github repository</a>
+   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#code-example-1">Code Example</a>
    
    
 
@@ -94,23 +96,25 @@ EXEMPLO
   
    <!------------------------------------DESCRIPTION-->
 
-# <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  Sobre a biblioteca <!---write here : talk a little about project: what's does, example.  -->
-> Esta biblioteca automatiza a aparição dos seus repositórios Github no seu website. Escolha qual projeto aparecerá no seu website, sem precisar de 
-  acrescentar mais linhas de código, personalize-o com ícone representativo e mostre quais stacks foram utilizadas. Tudo isso em um só lugar!
+# <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  About Library <!---write here : talk a little about project: what's does, example.  -->
+> This library automates the display of your Github repositories on your website. Choose which project will be displayed on your website, without having to add more lines of code, customize it with a representative icon and show which stacks were used. All this in one place!
 
    |                             Control your projects                     |
 | :-------------------------------------------------------------------: |
 |   ![image](https://user-images.githubusercontent.com/59892368/214140611-910cd26b-280d-48f1-8652-65034f04a4f8.gif) |
 
+
+|                             Customize and represent through icons.                |
+| :--------------------------------------------------------------: |
+|   ![image](https://user-images.githubusercontent.com/59892368/214817180-519e403f-0fa4-4bfd-a6cc-5eb63d3360e8.gif)|  
+
   
-  |                               In one place                               |
+|                               In one place                               |
 | :-------------------------------------------------------------------: |
 |   ![image](https://user-images.githubusercontent.com/59892368/214930109-119c4b38-9862-4a3d-a130-2dfad5c4bcb6.gif)|
 
   
-|                             Customize and represent through icons.                |
-| :--------------------------------------------------------------: |
-|   ![image](https://user-images.githubusercontent.com/59892368/214817180-519e403f-0fa4-4bfd-a6cc-5eb63d3360e8.gif)|   
+
   
 <!------------------------------------LIBRARY -->
 
@@ -118,6 +122,11 @@ EXEMPLO
 # <img  alt="skills"  width="80" height="30" src="https://user-images.githubusercontent.com/59892368/216092858-a64d3a99-1b90-4946-b917-76eadefffb54.svg">  Library <!---write here : demonstration of the application layout.  -->
   
 ## Install
+
+```shell
+    npm install github-automated-repos
+
+```
    
 ```shell
     yarn add github-automated-repos
@@ -127,23 +136,178 @@ EXEMPLO
 ## Import
 ```javascript
     import { useGithubAutomatedRepos, ProjectIcon, StackIcon, IGithubRepos} from 'github-automated-repos';
-
-
 ```
-   
+### The package imports four elements:
+
+- `ProjectIcon` component that renders the icons of the projects that come from data returned from the dataGithubRepos function as the Topics property. Check the [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) tab!
+
+- `StackIcon` component that renders the icons of the stacks that come from data returned from the dataGithubRepos function as the Topics property. Check the  [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
+
+- `IGithubRepos` interface for the application in Typescript. Used to type the useState that will receive the array.
+
+- `useGithubAutomatedRepos` hook responsible for automating the repositories. It returns a function called dataGithubRepos, which takes two parameters: data (data that comes from the GitHub API) and the keyword (the latter responsible for showing the project on your website from the moment it is declared in the Topics field of the your Github repository). The dataGithubRepos returns, so optimized, an array of objects containing 5 properties: id, html_url, topics, name and description.
+
+```javascript
+ const { dataReposGithub } = useGithubAutomatedRepos()
+```
+
+## Fill in the fields in the github repository
+
+- `id`: repository identification number. used as parameter in the key tag. This field does not need to be filled in.
+- `html_url`: repository link. Used as the link of access. This field does not need to be filled in.
+- `homepage`: it's the access link to the built page, page deploy.  About / Website of your GitHub.
+
+![image](https://user-images.githubusercontent.com/59892368/219116735-a026d9b9-f5b9-4389-b8f1-619db2488368.png)
+
+- `topics`: array that brings information about the icons in [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) and [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons). Used in both ProjectIcon and StackIcon components. It is in this field that is passed the key configured in the hook. Refers to the field About / Topics of your GitHub.
+
+![image](https://user-images.githubusercontent.com/59892368/219117029-d693ee8f-4289-4ac0-85ed-674091508510.png)
+
+`name`: This is the name of the repository. Refers to the field  Settings / General / Repository name of your GitHub.
+
+![image](https://user-images.githubusercontent.com/59892368/219117097-43db2497-7f62-428e-85c6-ef3656da4cd2.png)
+
+`description`: This is the description given to your repository. Refers to the About /Description field of your GitHub.
+
+![image](https://user-images.githubusercontent.com/59892368/219117260-5bdb1fbb-c58b-4ad9-938a-068b58c72f27.png)
+
+
 ## Code Example
-   
-#### JSX   
-```jsx
-    import { useGithubAutomatedRepos, ProjectIcon, StackIcon, IGithubRepos} from 'github-automated-repos';
 
+:exclamation::exclamation: Don't forget to fill in the keyword fields (determined by you) and enter your github username.
 
+```javascript
+ fetch('https://api.github.com/users/githubUsername/repos')
+```
+
+```javascript
+ then(data => setRepository(dataReposGithub(data, 'keyword')))
+```
+
+#### <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/219095611-551d532a-30fc-4873-b00e-0a8bbf8bb5ec.svg"><a/>
+```javascript   
+  import './App.css';
+  import { useEffect, useState } from 'react';
+  import { useGithubAutomatedRepos, ProjectIcon, StackIcon} from 'github-automated-repos';
+  function App() {
+                              {/*useGithubAutomatedRepos hook*/ }
+    const { dataReposGithub } = useGithubAutomatedRepos()
+    const [repository, setRepository] = useState([])
+
+    useEffect(() => {
+                                  {/*Put here your github Name*/ }
+      fetch('https://api.github.com/users/githubName/repos')
+      .then(response => response.json())
+      .then(data => setRepository(dataReposGithub(data, 'deploy'))); {/*<-- keyWord*/}
+  }, [])
+
+    return (
+      <div className="App">
+        {
+          repository.map((item) => {
+            return (
+              <div key={item.id}>
+
+                {/*Project Icon*/}
+                {item.topics.map((icon) => {
+                  return (
+                    <ProjectIcon key={icon} className="project_Icon" iconItem={icon} />
+                  )
+                })}
+                {/*html Url*/}
+                <a href={item.html_url}>
+                    {/*Name Project*/}
+                    <h1>{item.name}</h1>
+                </a>
+                {/*Description*/}
+                <p>{item.description}</p>
+
+                {/*Homepage*/}
+                <a href={item.homepage}>
+                    <h3>Homepage</h3>
+                </a>
+                {/*Stacks Icon*/}
+                {item.topics.map((icon) => {
+                  return (
+                    <StackIcon key={icon} className="stack_Icon" iconItem={icon} />
+                  )
+                })}
+
+              </div>
+
+            )
+          })
+        }
+      </div>
+    );
+
+  }
+  export default App;
 ```
    
-#### TSX   
-```tsx
-    import { useGithubAutomatedRepos, ProjectIcon, StackIcon, IGithubRepos} from 'github-automated-repos';
+#### <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/219095850-0a4e6f54-d524-4deb-be2c-fda358aba84d.svg"><a/>  
 
+```typescript     
+  import './App.css';
+  import { useEffect, useState } from 'react';
+  import { useGithubAutomatedRepos, ProjectIcon, StackIcon, IGithubRepos} from 'github-automated-repos';
+  function App() {
+                              {/*useGithubAutomatedRepos hook*/ }
+    const { dataReposGithub } = useGithubAutomatedRepos()
+    const [repository, setRepository] = useState<IGithubRepos[]>([])
+
+    useEffect(() => {
+                                  {/*Put here your github Name*/ }
+      fetch('https://api.github.com/users/githubName/repos')
+      .then(response => response.json())
+      .then(data => setRepository(dataReposGithub(data, 'deploy'))); {/*<-- keyWord*/}
+  }, [])
+
+    return (
+      <div className="App">
+        {
+          repository.map((item) => {
+            return (
+              <div key={item.id}>
+
+                {/*Project Icon*/}
+                {item.topics.map((icon) => {
+                  return (
+                    <ProjectIcon key={icon} className="project_Icon" iconItem={icon} />
+                  )
+                })}
+
+                {/*html Url*/}
+                <a href={item.html_url}>
+                    {/*Name Project*/}
+                    <h1>{item.name}</h1>
+                </a>
+
+                {/*Description*/}
+                <p>{item.description}</p>
+    
+                {/*Homepage*/}
+                <a href={item.homepage}>
+                    <h3>Homepage</h3>
+                </a>
+
+                {/*Stacks Icon*/}
+                {item.topics.map((icon) => {
+                  return (
+                    <StackIcon key={icon} className="stack_Icon" iconItem={icon} />
+                  )
+                })}
+
+              </div>
+
+            )
+          })
+        }
+      </div>
+    );
+
+  }
+  export default App;
 ```
 
  
@@ -151,12 +315,12 @@ EXEMPLO
   ---
   
 
- <!------------------------------------LIST: STACKS , LIBS & TOOLS-->
+ <!------------------------------------LIST: STACKS , LIBS & TOOLS ... -->
 
 ## <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/197614534-e12fb94a-b5cf-44ff-8d57-debad7299b0b.png"> Stacks for construction <!---write here: learned concepts; -->
 
   
-### Linguagem
+### Language
   <a href="https://devdigoarthur.notion.site/Map-a87c73417a064372b122bf448f4c6ed4"> ![Alt ou título da imagem](https://img.shields.io/badge/-JavaScript-/?logo=JavaScript&logoColor=white&color=yellow)<a/>
    
 <a href="https://devdigoarthur.notion.site/Map-a87c73417a064372b122bf448f4c6ed4"> ![Alt ou título da imagem](https://img.shields.io/badge/-Typescript-/?logo=Typescript&logoColor=white&color=informational)<a/>
@@ -165,13 +329,19 @@ EXEMPLO
 
  <a href="https://reactjs.org"> ![Alt ou título da imagem](https://img.shields.io/badge/-ReactJS-/?logo=React&logoColor=white&color=blue)<a/> 
 
- ### Gerenciador Pacote / Lib
+ ### Package Manager/ Libs
  <a href="https://yarnpkg.com"> ![Alt ou título da imagem](https://img.shields.io/badge/-Yarn-/?logo=Yarn&logoColor=white&color=blue)<a/> 
+*  [`Eslint`](https://www.npmjs.com/package/eslint) 
+*  [`Prettier`](https://www.npmjs.com/package/prettier) 
+*  [`Husky`](https://www.npmjs.com/package/husky)  
+*  [`Lint-staged`](https://www.npmjs.com/package/lint-staged) 
+*  [`Commitizen`](https://www.npmjs.com/package/commitizen)  
 
- ### Style Guide
+ 
+ 
 
 
- ### Versionameto
+ ### Versioning
  <a href="https://git-scm.com"> ![Alt ou título da imagem](https://img.shields.io/badge/-Git-/?logo=Git&logoColor=white&color=red)<a/> 
  ### IDE
  <a href="https://code.visualstudio.com"> ![Alt ou título da imagem](https://img.shields.io/badge/-VisualStudioCode-/?logo=VisualStudioCode&logoColor=white&color=informational)<a/> 
@@ -181,12 +351,6 @@ EXEMPLO
   <!------------------------------------WHY/THANKS--->
 
 
-
- # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622627-c1eaa513-ca90-49e2-b5b8-c11d369becef.png"> Por que?  <!---write here : motivation that led to created ; why did you do this program?   -->
- Seguindo o curso IGNITE já em reta final, esse foi um dos projetos mais legais dentro  trilha ReactJS. A [@Rocketseat](https://github.com/Rocketseat) sempre trazendo novidades a cada aplicação, ferramentas que abrem fronteiras para aplicação e criatividade em projetos pessoais e profissionais.
-
- ---
-Só tenho agradecer ♥
   
   
   
