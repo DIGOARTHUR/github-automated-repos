@@ -20,10 +20,16 @@ EXEMPLO
 # logoColor=white - Define a cor do icone
 -->
 
- <!------------------------------------BANNER PROJECT-->
+<h1 align="center">Github-automated-repos</h1>
 
-![Banner_Github_Readme](https://user-images.githubusercontent.com/59892368/216051436-6b1558a9-2bef-4a3d-b369-f1155a7495e3.svg)
-# [Github Automated Repos](https://github-automated-repos.vercel.app)
+<p align="center">
+ <!------------------------------------PROJECT ICON-->
+  <img src="https://user-images.githubusercontent.com/59892368/219462571-0438c32b-24eb-40fb-bfa0-c9869444a305.svg" alt="angular-logo" width="150px" height="150px"/>
+  <br>
+  <i>Github-automated-repos is the lib that gives you the power to manage the view of your repositories 
+    <br> on your website in one place!</i>
+  <br>
+</p>
 
 
  <!------------------------------------SHIELDS PROJECT-->
@@ -72,14 +78,13 @@ EXEMPLO
      
 <hr>
    -->
-  <!------------------------------------PROJECT ICON-->
+ 
   
-<h1 align="center">
-  <img width="200" height="200" alt="github-automated-repos" title="github-automated-repos" src="https://user-images.githubusercontent.com/59892368/216086204-117ee6f9-c187-4cd7-a4fd-feb447be5cf2.png" />
-</h1>
-   
 
-   
+
+
+
+
    
    <!------------------------------------SUMMARY-->
 
@@ -97,7 +102,7 @@ EXEMPLO
    <!------------------------------------DESCRIPTION-->
 
 # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  About Library <!---write here : talk a little about project: what's does, example.  -->
-> This library automates the display of your Github repositories on your website. Choose which project will be displayed on your website, without having to add more lines of code, customize it with a representative icon and show which stacks were used. All this in one place!
+> This library automates the view of your Github repositories on your website. Choose which project will be viewed on your website, without having to add more lines of code, customize it with a representative icon and show which stacks were used. All this in one place!
 
    |                             Control your projects                     |
 | :-------------------------------------------------------------------: |
