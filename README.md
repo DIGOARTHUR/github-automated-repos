@@ -21,12 +21,13 @@ EXEMPLO
 -->
 
 
+
 <!------------------------------------ PROJECT BANNER-->
 <h1 align="center">Github-automated-repos</h1>
 
 <p align="center">
  <!------------------------------------PROJECT ICON-->
-  <img src="https://user-images.githubusercontent.com/59892368/219462571-0438c32b-24eb-40fb-bfa0-c9869444a305.svg" alt="angular-logo" width="150px" height="150px"/>
+  <img src="https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-bb6d-a466b450db84.svg" alt="angular-logo" width="150px" height="150px"/>
   <br>
   <i>Github-automated-repos is the lib that gives you the power to manage the view of your repositories 
     <br> on your website in one place!</i>
