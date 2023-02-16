@@ -10,7 +10,11 @@
 // https://www.svgrepo.com/svg/429278/cart-essential-shopping?edit=true
 // https://www.svgrepo.com/svg/144539/artist-color-palette?edit=true
 // https://www.svgrepo.com/svg/424981/online?edit=true
-
+// https://www.svgrepo.com/svg/384295/weather-forecast-sunny-snow-cloud-day?edit=true
+// https://www.svgrepo.com/svg/456864/diagram
+// https://www.svgrepo.com/svg/455166/map-navigation?edit=true
+// https://www.svgrepo.com/svg/343466/news-feed?edit=true
+// https://www.svgrepo.com/svg/458454/database-1?edit=true
 export interface IGithubRepos {
   name: string;
   topics: [];
@@ -23,6 +27,7 @@ export interface IGithubRepos {
 export function useGithubAutomatedRepos() {
   function dataReposGithub(data: [], keyWordDeploy: string) {
     let dataFilter = [];
+
     dataFilter = data.filter((item: IGithubRepos) =>
       item.topics.includes(keyWordDeploy as never),
     );
@@ -112,6 +117,7 @@ export function IconsData() {
         security: 'https://user-images.githubusercontent.com/59892368/212985266-a658da1c-64ba-46b7-a069-a148ca217be9.svg',
         store: 'https://user-images.githubusercontent.com/59892368/213137554-83aa6798-9487-4d1b-a260-fd2035adaaad.svg',
     };
+
 
 
   return {
