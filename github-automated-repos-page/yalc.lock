@@ -1,9 +1,0 @@
-{
-  "version": "v1",
-  "packages": {
-    "github-automated-repos": {
-      "signature": "a8515258c2c77f35eb3772f3def7a6ee",
-      "file": true
-    }
-  }
-}

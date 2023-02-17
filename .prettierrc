@@ -1,4 +1,5 @@
 {
+
   "arrowParens": "always",
   "bracketSpacing": true,
   "jsxBracketSameLine": false,
@@ -13,3 +14,4 @@
   "trailingComma": "es5",
   "endOfLine": "auto"
 }
+
