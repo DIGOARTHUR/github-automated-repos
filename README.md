@@ -106,7 +106,7 @@ EXEMPLO
    <!------------------------------------DESCRIPTION-->
 
 # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  About Library <!---write here : talk a little about project: what's does, example.  -->
-> This library automate the view of your Github repositories on your website. Choose which project will be viewed on your website, without having to add more lines of code, customize it with a representative icon and show which stacks were used. All this in one place!
+> This library automates the view your GitHub projects on your website in one place. But how? Make the code configuration only once in your application with github-automated-repos, and manage the view of your projects on GitHub in the Topics field. Choose which project will be seen on your website, and you can even customize your project card, for example, with a representative icon and show which stacks were used. All in one place!
 
    |                             Control your projects                     |
 | :-------------------------------------------------------------------: |
