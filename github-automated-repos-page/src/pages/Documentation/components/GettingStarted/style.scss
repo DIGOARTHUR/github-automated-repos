@@ -75,6 +75,11 @@
             }
 
 
+
+        }
+
+        .step03_Container {
+
             ul li {
                 a {
                     color: blue;
@@ -82,7 +87,7 @@
 
                 img {
                     margin-top: 20px;
-                    width: 80%;
+                    max-width: 70%;
                     border-radius: 10px;
                 }
             }
@@ -153,5 +158,25 @@
 
         }
 
+    }
+}
+
+@media (max-width: 800px) {
+    .gettingStarted_Container {
+
+        .gettingStarted_Content {
+            .step03_Container {
+
+                ul {
+
+
+                    li {
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

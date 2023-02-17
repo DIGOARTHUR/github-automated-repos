@@ -17,8 +17,8 @@ export function Home() {
             <Header />
             <main className='home_Content'>
                 <div className='banner_Content'>
-                    <h1>Github Automated Repos</h1>
-                    <p>Easy and practical way to expose your Github projects.</p>
+                    <h1>GitHub Automated Repos</h1>
+                    <p>The library that gives you the power to manage the view of your projects on your website in one place!</p>
 
                     <div className='subBanner_Content_Effect '>
                         <TypeWriter
