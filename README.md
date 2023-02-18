@@ -39,13 +39,10 @@ EXEMPLO
  
 <div align="center">
     
- ![GitHub last commit](https://img.shields.io/github/last-commit/digoarthur/github-automated-repos)
- [![npm][npm-image]][npm-url]
-  [![CodeFactor](https://www.codefactor.io/repository/github/digoarthur/github-automated-repos/badge)](https://www.codefactor.io/repository/github/digoarthur/github-automated-repos)
+ ![NPM Paackage](https://img.shields.io/npm/v/github-automated-repos?color=brightgreen&label=NPM%20package&logo=NPM&logoColor=white)
+  ![CodeFactor](https://img.shields.io/codefactor/grade/github/digoarthur/github-automated-repos?color=brightgreen&label=Code%20Quality&logo=codefactor)
  ![GitHub](https://img.shields.io/github/license/digoarthur/github-automated-repos)
- 
-[npm-image]: https://img.shields.io/npm/v/github-automated-repos.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/github-automated-repos 
+
 
 </div>
   
