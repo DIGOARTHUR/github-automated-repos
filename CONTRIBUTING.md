@@ -143,6 +143,11 @@ After your pull request is merged, you can safely delete your branch and pull th
     git pull --ff upstream main
     ```
     
+## <a name="rules"></a> Coding Rules
+To ensure consistency throughout the source code, keep these rules in mind as you are working:
+    
+* We follow [Airbnb JavaScript Style Guide](https://airbnb.io/javascript/react/), but wrap all code at **180 characters**.
+    
 ## <a name="commit"></a> Commit Message Format
     
 #### <a name="commit-header"></a>Commit Message Header
