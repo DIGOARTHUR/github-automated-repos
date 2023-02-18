@@ -325,9 +325,9 @@ EXEMPLO
   
 
  <!------------------------------------LIST: STACKS , LIBS & TOOLS ... -->
-
+<!---
 ## <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/197614534-e12fb94a-b5cf-44ff-8d57-debad7299b0b.png"> Stacks for construction <!---write here: learned concepts; -->
-
+<!---
 ### API
        
   <a href="https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-a-repository"> ![Alt ou título da imagem](https://img.shields.io/badge/-APIGithub-/?logo=GitHub&logoColor=white&color=gray)<a/>
@@ -357,9 +357,9 @@ EXEMPLO
  ### IDE
  <a href="https://code.visualstudio.com"> ![Alt ou título da imagem](https://img.shields.io/badge/-VisualStudioCode-/?logo=VisualStudioCode&logoColor=white&color=informational)<a/> 
 
+-->
 
-
-  <!------------------------------------WHY/THANKS--->
+<!------------------------------------WHY/THANKS--->
 
 
   
