@@ -26,7 +26,7 @@ EXEMPLO
 <h1 align="center">Github-automated-repos</h1>
 
 <p align="center">
- <!------------------------------------PROJECT ICON-->
+ <!---------------------PROJECT ICON-->
   <img src="https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-bb6d-a466b450db84.svg" alt="angular-logo" width="150px" height="150px"/>
   <br>
   <i>Github-automated-repos is the lib that gives you the power to manage the view of your projects 
@@ -35,6 +35,18 @@ EXEMPLO
 </p>
 
 
+ <!------------------------------------LINKS-->
+
+<p align="center">
+  <a href="https://www.angular.io"><strong>https://github-automated-repos.vercel.app</strong></a>
+  <br>
+</p>
+
+<p align="center">
+  <a href="CONTRIBUTING.md">Contributing Guidelines</a>
+  <br>
+  <br>
+</p>
  <!------------------------------------SHIELDS PROJECT-->
  
 <div align="center">
