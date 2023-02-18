@@ -10,7 +10,8 @@ Contribute to the library getting better and better! As a contributor, here are 
 
 ## Found a Bug?
 
-If you find a bug in the source code, you can help us by  [submitting an issue]() to our  [GitHub Repository](). Even better, you can  [submit a Pull Request]() with a fix.
+If you find a bug in the source code, you can help us by [submitting an issue](#submit-issue) to our [GitHub Repository](https://github.com/DIGOARTHUR/github-automated-repos)
+Even better, you can [submit a Pull Request](#submit-pr) with a fix.
 
 ## <a name="feature"></a> Missing a Feature?
 You can *request* a new feature by [submitting an issue](#submit-issue) to our GitHub Repository.
@@ -35,23 +36,23 @@ You can file new issues by selecting from our [new issue templates](https://gith
 
 Before you submit your Pull Request (PR) consider the following guidelines:
 
-1. Search [GitHub](https://github.com/angular/angular/pulls) for an open or closed PR that relates to your submission.
+1. Search [GitHub](https://github.com/DIGOARTHUR/github-automated-repos/pulls) for an open or closed PR that relates to your submission.
    You don't want to duplicate existing efforts.
 
 2. Be sure that an issue describes the problem you're fixing, or documents the design for the feature you'd like to add.
    Discussing the design upfront helps to ensure that we're ready to accept your work.
 
-4. [Fork](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) the angular/angular repo.
+3. [Fork](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) the github-atuomated-repos.
 
-5. In your forked repository, make your changes in a new git branch:
+4. In your forked repository, make your changes in a new git branch:
 
      ```shell
      git checkout -b my-fix-branch main
      ```
 
-7. Follow our [Coding Rules](#rules).
+5. Follow our [Coding Rules](#rules).
 
-9. Commit your changes using a descriptive commit message that follows our [commit message conventions](#commit).
+6. Commit your changes using a descriptive commit message that follows our [commit message conventions](#commit).
    Adherence to these conventions is necessary because release notes are automatically generated from these messages.
 
      ```shell
@@ -59,13 +60,13 @@ Before you submit your Pull Request (PR) consider the following guidelines:
      ```
     Note: the optional commit `-a` command line option will automatically "add" and "rm" edited files.
 
-10. Push your branch to GitHub:
+7. Push your branch to GitHub:
 
     ```shell
     git push origin my-fix-branch
     ```
 
-11. In GitHub, send a pull request to `angular:main`.
+8. In GitHub, send a pull request to `github-automated-repos:main`.
     
     
 ### Reviewing a Pull Request
@@ -84,7 +85,7 @@ If we ask for changes via code reviews then:
     git push
     ```
 
-    For more info on working with fixup commits see [here](docs/FIXUP_COMMITS.md).
+    For more info on working with fixup commits see [here](https://github.com/angular/angular/blob/main/docs/FIXUP_COMMITS.md).
 
 That's it! Thank you for your contribution!
     
