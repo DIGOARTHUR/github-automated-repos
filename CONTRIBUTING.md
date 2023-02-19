@@ -192,29 +192,19 @@ Must be one of the following:
 * **test**: Adding missing tests or correcting existing tests
 
 ##### Scope
-The scope should be the name of the npm package affected (as perceived by the person reading the changelog generated from commit messages).
+The scope must be the area-related name of the affected package (as perceived by the person reading the changelog generated from commit messages):
 
 The following is the list of supported scopes:
 
-* `animations`
-* `bazel`
-* `benchpress`
-* `common`
-* `compiler`
-* `compiler-cli`
-* `core`
-* `elements`
-* `forms`
-* `http`
-* `language-service`
-* `localize`
-* `platform-browser`
-* `platform-browser-dynamic`
-* `platform-server`
-* `router`
-* `service-worker`
-* `upgrade`
-* `zone.js`
+* `icons`
+* `props`
+* `hook`
+ 
+ <!--
+BUILDING CHANGELOG
+There are currently a few exceptions to the "package affected area name" rule:
+ -->
+
     
  ##### Summary
 
