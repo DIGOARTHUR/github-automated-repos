@@ -167,30 +167,33 @@ When the body is present it must be at least 20 characters long and must conform
   │       │             │
   │       │             └─⫸ Summary in present tense. Not capitalized. No period at the end.
   │       │
-  │       └─⫸ Commit Scope: animations|bazel|benchpress|common|compiler|compiler-cli|core|
-  │                          elements|forms|http|language-service|localize|platform-browser|
-  │                          platform-browser-dynamic|platform-server|router|service-worker|
-  │                          upgrade|zone.js|packaging|changelog|docs-infra|migrations|
-  │                          devtools
+  │       └─⫸ Commit Scope: icons|props|hook
   │
   └─⫸ Commit Type: build|ci|docs|feat|fix|perf|refactor|test
 ```
 
 The `<type>` and `<summary>` fields are mandatory, the `(<scope>)` field is optional.    
 
-##### Type
+##### Commit types
 
 Must be one of the following:
-
-* **build**: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
-* **ci**: Changes to our CI configuration files and scripts (examples: CircleCi, SauceLabs)
-* **docs**: Documentation only changes
-* **feat**: A new feature
-* **fix**: A bug fix
-* **perf**: A code change that improves performance
-* **refactor**: A code change that neither fixes a bug nor adds a feature
-* **test**: Adding missing tests or correcting existing tests
-
+    
+    
+| Commit Type |      Description                                                                                            |  
+| ----------- | --------------------------------------------
+| `feat`      | A new feature                                                                                               |
+| `fix`       | A bug Fix                                                                                                   | 
+| `docs`      | Updates to documentation such as a the README or other markdown files                                       <!--docs: update CONTRIBUTING.md-->
+| `style`     | Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)      | 
+| `refactor`  |  A code change that neither fixes a bug nor adds a feature                                                  | 
+| `perf`      | A code change that improves performance                                                                     | 
+| `test`      |  Adding missing tests or correcting existing tests                                                           | 
+| `build`     |  Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)         |
+| `ci`        | The commit makes changes to continuous integration or continuous delivery scripts or configuration files.|
+| `chore`     |  Changes that do not relate to a fix or feature and don't modify src or test files (for example updating dependencies) |
+| `revert`    |  Reverts a previous commit      |                                                                                 
+    
+        
 ##### Scope
 The scope must be the area-related name of the affected package (as perceived by the person reading the changelog generated from commit messages):
 
