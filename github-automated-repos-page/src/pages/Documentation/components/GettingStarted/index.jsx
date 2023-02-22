@@ -186,7 +186,6 @@ export function GettingStarted() {
                         <Highlighter>{githubUsername}</Highlighter>
                         <br />
                         <Highlighter>{keywordCode}</Highlighter>
-
                         <br />
                         <div className='button_Container_ExampleCode'>
                             <button
@@ -204,13 +203,15 @@ export function GettingStarted() {
                                 <img src='https://user-images.githubusercontent.com/59892368/217778951-9a80fa48-5346-476b-91af-7346a71b45ab.svg'></img>
                             </button>
                         </div>
-
+                        <div>
+                            <h3>App.{changeCodeExample === 'javascript' ? 'js' : 'tsx'}</h3>
+                        </div>
+                        <br />
                         {changeCodeExample === 'javascript' ? (
                             <Highlighter>{codeExampleJSX}</Highlighter>
                         ) : (
                             <Highlighter>{codeExampleTSX}</Highlighter>
                         )}
-
                         <br />
                     </div>
                 </div>

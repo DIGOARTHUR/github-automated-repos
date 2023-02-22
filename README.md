@@ -1,4 +1,6 @@
-
+<!--Commit changes
+ docs: update Readme
+-->
 
 <!-- VISUALIZAR NO VSCODE  CTRL + K  V -->
 
@@ -26,7 +28,7 @@ EXEMPLO
 <h1 align="center">Github-automated-repos</h1>
 
 <p align="center">
- <!------------------------------------PROJECT ICON-->
+ <!---------------------PROJECT ICON-->
   <img src="https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-bb6d-a466b450db84.svg" alt="angular-logo" width="150px" height="150px"/>
   <br>
   <i>Github-automated-repos is the lib that gives you the power to manage the view of your projects 
@@ -35,17 +37,26 @@ EXEMPLO
 </p>
 
 
+ <!------------------------------------LINKS-->
+
+<p align="center">
+  <a href="https://github-automated-repos.vercel.app"><strong>https://github-automated-repos.vercel.app</strong></a>
+  <br>
+</p>
+
+<p align="center">
+  <a href="CONTRIBUTING.md">Contributing Guidelines</a>
+  <br>
+  <br>
+</p>
  <!------------------------------------SHIELDS PROJECT-->
  
 <div align="center">
     
- ![GitHub last commit](https://img.shields.io/github/last-commit/digoarthur/github-automated-repos)
- [![npm][npm-image]][npm-url]
-  [![CodeFactor](https://www.codefactor.io/repository/github/digoarthur/github-automated-repos/badge)](https://www.codefactor.io/repository/github/digoarthur/github-automated-repos)
+ ![NPM Paackage](https://img.shields.io/npm/v/github-automated-repos?color=brightgreen&label=NPM%20package&logo=NPM&logoColor=white)
+  ![CodeFactor](https://img.shields.io/codefactor/grade/github/digoarthur/github-automated-repos?color=brightgreen&label=Code%20Quality&logo=codefactor)
  ![GitHub](https://img.shields.io/github/license/digoarthur/github-automated-repos)
- 
-[npm-image]: https://img.shields.io/npm/v/github-automated-repos.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/github-automated-repos 
+
 
 </div>
   
@@ -106,7 +117,7 @@ EXEMPLO
    <!------------------------------------DESCRIPTION-->
 
 # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  About Library <!---write here : talk a little about project: what's does, example.  -->
-> This library automate the view of your Github repositories on your website. Choose which project will be viewed on your website, without having to add more lines of code, customize it with a representative icon and show which stacks were used. All this in one place!
+> This library automates the view your GitHub projects on your website in one place. But how? Make the code configuration only once in your application with github-automated-repos, and manage the view of your projects on GitHub in the Topics field. Choose which project will be seen on your website, and you can even customize your project card, for example, with a representative icon and show which stacks were used. All in one place!
 
    |                             Control your projects                     |
 | :-------------------------------------------------------------------: |
@@ -325,9 +336,9 @@ EXEMPLO
   
 
  <!------------------------------------LIST: STACKS , LIBS & TOOLS ... -->
-
+<!---
 ## <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/197614534-e12fb94a-b5cf-44ff-8d57-debad7299b0b.png"> Stacks for construction <!---write here: learned concepts; -->
-
+<!---
 ### API
        
   <a href="https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-a-repository"> ![Alt ou título da imagem](https://img.shields.io/badge/-APIGithub-/?logo=GitHub&logoColor=white&color=gray)<a/>
@@ -357,9 +368,9 @@ EXEMPLO
  ### IDE
  <a href="https://code.visualstudio.com"> ![Alt ou título da imagem](https://img.shields.io/badge/-VisualStudioCode-/?logo=VisualStudioCode&logoColor=white&color=informational)<a/> 
 
+-->
 
-
-  <!------------------------------------WHY/THANKS--->
+<!------------------------------------WHY/THANKS--->
 
 
   
