@@ -18,6 +18,8 @@
     }
 
     a {
+        color: rgb(67, 67, 67);
+
         &:hover {
             color: #847e7e;
         }
@@ -52,6 +54,7 @@
         }
 
         .nav_Option_Active {
+
             border-bottom: 3px black solid;
         }
 

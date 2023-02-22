@@ -4,7 +4,7 @@ import './styles.scss';
 import { IconsData } from 'github-automated-repos';
 import { Card } from '../../../../components/Card';
 import { FcSearch } from 'react-icons/fc';
-
+import { FiExternalLink } from 'react-icons/fi';
 export function StackIcons() {
     const { iconStacks } = IconsData();
 
@@ -14,6 +14,7 @@ export function StackIcons() {
     const [inicialStackIconKeys, setInicialStackIconKeys] = useState([]);
     const [inicialStackIconValues, setInicialStackIconValues] = useState([]);
     useEffect(() => {
+        window.scrollTo(0, 0);
         setStackIconKeys(Object.keys(iconStacks));
         setStackIconValues(Object.values(iconStacks));
 
@@ -52,10 +53,22 @@ export function StackIcons() {
 
             <hr />
             <br />
-            <ul className='stack_Content'>
-                {stackIconValues.map((item, index) => {
-                    return <Card key={index} item={item} iconKey={stackIconKeys[index]} />;
-                })}
+            <ul className='stack_Card'>
+                {stackIconValues.length > 0 ? (
+                    stackIconValues.map((item, index) => {
+                        return <Card key={index} item={item} iconKey={stackIconKeys[index]} />;
+                    })
+                ) : (
+                    <div className='info_Missing_Search'>
+                        <p>
+                            Didn't find your icon? <br /> Tell us about here:{' '}
+                            <a href=''>
+                                Feature Request <FiExternalLink />
+                            </a>
+                        </p>
+                        <img src='https://user-images.githubusercontent.com/59892368/220364871-f553109d-855f-426a-bbe5-5e1c11278003.svg'></img>
+                    </div>
+                )}
 
                 <ToastContainer />
             </ul>

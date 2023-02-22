@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Highlighter } from 'rc-highlight';
 import './style.scss';
 
@@ -26,6 +26,9 @@ const importPackage = `
 `;
 
 export function GettingStarted() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const [changeCodeExample, setChangeCodeExample] = useState('javascript');
     return (
         <>
