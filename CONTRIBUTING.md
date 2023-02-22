@@ -175,13 +175,14 @@ When the body is present it must be at least 20 characters long and must conform
   │       │             │
   │       │             └─⫸ Summary in present tense. Not capitalized. No period at the end.
   │       │
-  │       └─⫸ Commit Scope: icons|props|hook
+  │       └─⫸ Commit Scope: useGithubAutomatedRepos|dataReposGithub|projectIcon|stackIcon|iGithubRepos
   │
   └─⫸ Commit Type: build|ci|docs|feat|fix|perf|refactor|test
 ```
 
 The `<type>` and `<summary>` fields are mandatory, the `(<scope>)` field is optional.    
 
+    
 ##### Commit types
 
 Must be one of the following:
