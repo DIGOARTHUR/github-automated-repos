@@ -51,7 +51,6 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
-            margin-top: calc(100vh - 53%);
             align-items: center;
 
             .button_effect {
@@ -65,11 +64,8 @@
                 border: 2px #D9D9D9 solid;
                 margin-top: 50px;
 
-
-                /* background-color: - add your own background-color */
                 font: {
                     family: 'Roboto', sans-serif;
-                    /* put your font-family */
                     size: 18px;
                 }
 
