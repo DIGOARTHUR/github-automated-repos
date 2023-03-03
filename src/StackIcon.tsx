@@ -7,12 +7,10 @@ type Props = {
     className?: string;
 };
 export function StackIcon({ iconItem, className }: Props) {
-
     const { iconStacks, iconsProjects } = IconsData();
     return iconItem === 'deploy' || iconsProjects[iconItem as never] ? (
         <> </>
     ) : (
         <img className={className} alt={iconStacks[iconItem as never]} src={iconStacks[iconItem as never]} />
     );
-
 }

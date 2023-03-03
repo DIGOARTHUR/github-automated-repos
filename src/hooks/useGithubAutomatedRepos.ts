@@ -16,35 +16,32 @@
 // https://www.svgrepo.com/svg/343466/news-feed?edit=true
 // https://www.svgrepo.com/svg/458454/database-1?edit=true
 export interface IGithubRepos {
-  name: string;
-  topics: [];
-  html_url: string;
-  description: string;
-  id: number;
-  homepage: string;
+    name: string;
+    topics: [];
+    html_url: string;
+    description: string;
+    id: number;
+    homepage: string;
 }
 
 export function useGithubAutomatedRepos() {
-  function dataReposGithub(data: [], keyWordDeploy: string) {
-    let dataFilter = [];
+    function dataReposGithub(data: [], keyWordDeploy: string) {
+        let dataFilter = [];
 
-    dataFilter = data.filter((item: IGithubRepos) =>
-      item.topics.includes(keyWordDeploy as never),
-    );
+        dataFilter = data.filter((item: IGithubRepos) => item.topics.includes(keyWordDeploy as never));
 
-    return dataFilter.map((item: IGithubRepos) => ({
-      id: item.id,
-      name: item.name,
-      html_url: item.html_url,
-      description: item.description,
-      topics: item.topics,
-      homepage: item.homepage,
-    }));
-  }
-  return {
-    dataReposGithub,
-  };
-
+        return dataFilter.map((item: IGithubRepos) => ({
+            id: item.id,
+            name: item.name,
+            html_url: item.html_url,
+            description: item.description,
+            topics: item.topics,
+            homepage: item.homepage,
+        }));
+    }
+    return {
+        dataReposGithub,
+    };
 }
 
 export function IconsData() {
@@ -118,12 +115,9 @@ export function IconsData() {
         store: 'https://user-images.githubusercontent.com/59892368/213137554-83aa6798-9487-4d1b-a260-fd2035adaaad.svg',
     };
 
-
-
-  return {
-    iconStacks,
-    iconsProjects,
-    IconsData,
-  };
-
+    return {
+        iconStacks,
+        iconsProjects,
+        IconsData,
+    };
 }
