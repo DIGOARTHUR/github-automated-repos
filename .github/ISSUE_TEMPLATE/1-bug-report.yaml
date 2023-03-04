@@ -1,0 +1,42 @@
+name: Bug Report
+description: Report a bug in the github-automated-repos
+
+body:
+  - type: dropdown
+    id: affected-elements
+    attributes:
+      label: Which element(s) are the source of the bug?
+      options:
+        - useGithubAutomatedRepos
+        - dataReposGithub
+        - projectIcon
+        - stackIcon
+        - iGithubRepos
+        - docs
+        - Don't known / other
+
+      multiple: true
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+    validations:
+      required: true
+
+  - type: textarea
+    id: exception-or-error
+    attributes:
+      label: Please provide the exception or error you saw
+      render: true
+
+  - type: textarea
+    id: other
+    attributes:
+      label: Anything else?
+
+  - type: markdown
+    attributes:
+      value: "Thank you so much for contributing to an ever-better lib!"
