@@ -30,7 +30,7 @@ export function ProjectIcons() {
         }
 
         const filterProjectIconKeys = inicialProjectIconKeys.filter((values, index) => {
-            return values.includes(e.target.value);
+            return values.includes(e.target.value.toLowerCase());
         });
         setProjectIconKeys(filterProjectIconKeys);
 
