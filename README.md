@@ -330,9 +330,18 @@ EXEMPLO
   export default App;
 ```
 
+
+---
+
+
+**Love github-automated-repos? Give our repo a star ⭐ ⬆️.**
+
+
+`based in:` [Api Github](https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-a-repository)
+
+`by`: [@digoarthur](https://digoarthur.vercel.app/)
  
    
-  ---
   
 
  <!------------------------------------LIST: STACKS , LIBS & TOOLS ... -->
@@ -370,7 +379,7 @@ EXEMPLO
 
 -->
 
-<!------------------------------------WHY/THANKS--->
+
 
 
   
