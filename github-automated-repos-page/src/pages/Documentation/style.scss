@@ -1,12 +1,17 @@
 .documentation_Container {
 
 
+
     .documentation_Content {
+        display: flex;
+        flex: 2;
         margin-top: 80px;
         padding: 60px;
         margin-left: 300px;
         max-width: 75%;
+        height: 100%;
         font-size: 20px;
+
 
 
 

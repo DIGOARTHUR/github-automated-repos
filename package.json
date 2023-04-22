@@ -1,7 +1,7 @@
 {
     "name": "github-automated-repos",
-    "version": "1.0.24",
-    "description": "",
+    "version": "1.0.25",
+    "description": "Github-automated-repos is the lib that gives you the power to manage the view of your projects on your website in one place!",
     "main": "index.ts",
     "scripts": {
         "commit": "git-cz",
@@ -19,7 +19,13 @@
             "git add ."
         ]
     },
-    "keywords": [],
+    "keywords": [
+        "github",
+        "automated",
+        "repository",
+        "projects",
+        "stacks"
+    ],
     "author": "",
     "license": "ISC",
     "devDependencies": {

@@ -4689,10 +4689,10 @@ get-symbol-description@^1.0.0:
     call-bind "^1.0.2"
     get-intrinsic "^1.1.1"
 
-github-automated-repos@^1.0.21:
-  version "1.0.21"
-  resolved "https://registry.yarnpkg.com/github-automated-repos/-/github-automated-repos-1.0.21.tgz#c35cf00125a4932f19ad853dc758ec18ae3c5cf5"
-  integrity sha512-XPI4WDoBnDAW3o6K3f/0Ge++kftTCjWbXtFk17uGqorZe+oGsky9L5l+W37E/y7+zzLXQ/RG4EgvYisvmTOSTQ==
+github-automated-repos@^1.0.25:
+  version "1.0.25"
+  resolved "https://registry.yarnpkg.com/github-automated-repos/-/github-automated-repos-1.0.25.tgz#71eca320085d943829b0ccaab342ae382622b186"
+  integrity sha512-AmXLXouYoE5KW3tL1GB6UCKzWyE+6tJ3jX6YtsEXpzTzBkhrrABYsPgeiWECreEAyWhmOKkXkguEiSx4t1Me9A==
 
 glob-parent@^5.1.2, glob-parent@~5.1.2:
   version "5.1.2"

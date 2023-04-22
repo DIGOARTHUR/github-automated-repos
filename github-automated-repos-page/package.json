@@ -7,7 +7,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
-    "github-automated-repos": "^1.0.21",
+    "github-automated-repos": "^1.0.25",
     "rc-highlight": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

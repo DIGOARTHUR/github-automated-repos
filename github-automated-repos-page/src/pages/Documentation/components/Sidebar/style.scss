@@ -7,7 +7,8 @@
     height: 100%;
     top: 0;
     left: 0;
-    z-index: 1;
+
+
     .sidebar_Content {
         margin-top: 150px;
         list-style-type: none;
@@ -62,9 +63,10 @@
         display: flex;
         background-color: #D9D9D9;
         justify-content: center;
-        width: 100%; 
+        width: 100%;
         position: static;
         margin-top: 20px;
+
         .sidebar_Content {
             width: 80%;
             margin-top: 50px;

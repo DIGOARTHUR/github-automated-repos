@@ -54,7 +54,41 @@
 
         }
 
-        .step01_Container {}
+        .step01_Container {
+
+            .button_Container_ExampleCode {
+                display: flex;
+                gap: 25px;
+                margin-bottom: 20px;
+
+
+
+                .button {
+
+                    display: flex;
+                    align-items: center;
+                    font-size: 18px;
+                    width: 150px;
+                    padding: 12px;
+                    justify-content: space-between;
+                    border-radius: 10px;
+                    background-color: #fff;
+                    border: 0.2px #c7c7c7 solid;
+                    cursor: pointer;
+
+                }
+
+                .npm_Button {
+                    background-color: #e9191958;
+                    border: 2px #e9191958 solid;
+                }
+
+                .yarn_Button {
+                    background-color: #3179c64b;
+                    border: 2px #3179c67a solid;
+                }
+            }
+        }
 
         .step02_Container {
 

@@ -62,7 +62,7 @@ export function StackIcons() {
                     <div className='info_Missing_Search'>
                         <p>
                             Didn't find your icon? <br /> Tell us about here:{' '}
-                            <a href=''>
+                            <a href='https://github.com/DIGOARTHUR/github-automated-repos/issues/new?assignees=&labels=&template=2-feature-request.yaml'>
                                 Feature Request <FiExternalLink />
                             </a>
                         </p>

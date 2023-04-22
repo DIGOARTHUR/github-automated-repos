@@ -30,6 +30,7 @@ export function GettingStarted() {
         window.scrollTo(0, 0);
     }, []);
     const [changeCodeExample, setChangeCodeExample] = useState('javascript');
+    const [changeInstallPackage, setChangeInstallPackage] = useState('npm');
     return (
         <>
             <div className='gettingStarted_Container'>
@@ -62,10 +63,29 @@ export function GettingStarted() {
                     <br />
                     <div id='InstallPackage' className='step01_Container'>
                         <h2> Install Package</h2>
+                        <div className='button_Container_ExampleCode'>
+                            <button
+                                onClick={() => setChangeInstallPackage('npm')}
+                                className={changeInstallPackage === 'npm' ? 'npm_Button button' : 'button'}
+                            >
+                                NPM{' '}
+                                <img src='https://user-images.githubusercontent.com/59892368/215260509-7ae59bdb-00c5-4ca2-968d-2dc46ebc22ba.svg'></img>
+                            </button>
+                            <button
+                                onClick={() => setChangeInstallPackage('yarn')}
+                                className={changeInstallPackage === 'yarn' ? 'yarn_Button button' : 'button'}
+                            >
+                                Yarn{' '}
+                                <img src='https://user-images.githubusercontent.com/59892368/232318472-fca31255-3553-4d5b-b897-ee29db29e619.svg'></img>
+                            </button>
+                        </div>
+                        {changeInstallPackage === 'npm' ? (
+                            <Highlighter style={highlighterStyle}>{packageInstall_NPM}</Highlighter>
+                        ) : (
+                            <Highlighter style={highlighterStyle}>{packageInstall_Yarn}</Highlighter>
+                        )}
 
-                        <Highlighter style={highlighterStyle}>{packageInstall_Yarn}</Highlighter>
                         <br />
-                        <Highlighter style={highlighterStyle}>{packageInstall_NPM}</Highlighter>
                     </div>
                     <span className='divison_Container'>. . .</span>
                     <div id='ImportPackage' className='step02_Container'>
@@ -256,7 +276,7 @@ const dataReposGithubCode = `
 const codeExampleJSX = `   
   import './App.css';
   import { useEffect, useState } from 'react';
-  import { useGithubAutomatedRepos, ProjectIcon, StackIcon} from 'github-automated-repos';
+  import { useGithubAutomatedRepos, ProjectIcon, StackIcon } from 'github-automated-repos/index';
   function App() {
                               {/*useGithubAutomatedRepos hook*/ }
     const { dataReposGithub } = useGithubAutomatedRepos()
@@ -318,7 +338,7 @@ const codeExampleJSX = `
 const codeExampleTSX = `   
   import './App.css';
   import { useEffect, useState } from 'react';
-  import { useGithubAutomatedRepos, ProjectIcon, StackIcon, IGithubRepos} from 'github-automated-repos';
+  import { useGithubAutomatedRepos, ProjectIcon, StackIcon, IGithubRepos } from 'github-automated-repos/index';
   function App() {
                               {/*useGithubAutomatedRepos hook*/ }
     const { dataReposGithub } = useGithubAutomatedRepos()
