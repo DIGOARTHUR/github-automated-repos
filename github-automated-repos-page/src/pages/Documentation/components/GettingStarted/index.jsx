@@ -240,23 +240,6 @@ export function GettingStarted() {
     );
 }
 
-const codeFragments_Hook = `const { dataReposGithub } = useGithubAutomatedRepos()
-const [repository, setRepository] = useState([])
-useEffect(() => {
-                            {/*Put here your github Name*/}
-    fetch('https://api.github.com/users/githubName/repos')
-    .then(response => response.json())
-    .then(data => setRepository(dataReposGithub(data, 'deploy'))){/*<-- keyword*/}
-                                {/*dataReposGithub : 
-                                    name: string;
-                                    topics: [];
-                                    html_url: string;
-                                    description: string;
-                                    id: number;    
-                                */}  
-}, [])
-`;
-
 const keywordCode = `  ...
                     {/*fill in the field below in the code example.*/}  
   then(data => setRepository(dataReposGithub(data, 'insertKeyWordHere')))
@@ -307,9 +290,11 @@ const codeExampleJSX = `
                     {/*Name Project*/}
                     <h1>{item.name}</h1>
                 </a>
+
                 {/*Description*/}
                 <p>{item.description}</p>
 
+                
                 {/*Homepage*/}
                 <a href={item.homepage}>
                     <h3>Homepage</h3>
