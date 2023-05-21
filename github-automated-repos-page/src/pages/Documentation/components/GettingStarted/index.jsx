@@ -137,7 +137,7 @@ export function GettingStarted() {
                             <code style={{ backgroundColor: '#e0e2e2' }}>dataGithubRepos</code>, which takes two parameters: data (data that comes
                             from the GitHub API) and the keyword (the latter responsible for showing the project on your website from the moment it is
                             declared in the Topics field of the your Github repository). The <code>dataGithubRepos</code> returns, so optimized, an
-                            array of objects containing 5 properties: id, html_url, topics, name and description.
+                            array of objects containing 6 properties: id, html_url, homepage, topics, name and description.
                         </p>
                         <Highlighter style={highlighterStyleImport}>{dataReposGithubCode}</Highlighter>
 
