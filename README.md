@@ -113,7 +113,7 @@ EXEMPLO
    - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#import-1">Import</a>
    - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#fill-in-the-fields-in-the-github-repository-1">Fill in the fields in the github repository</a>
    - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#code-example-1">Code Example</a>
-   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#code-example-1">Framework Settings</a>
+   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#framework-settings-1">Framework Settings</a>
    
    
 
