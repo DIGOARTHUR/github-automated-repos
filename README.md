@@ -56,24 +56,28 @@ EXEMPLO
  ![NPM Paackage](https://img.shields.io/npm/v/github-automated-repos?color=brightgreen&label=NPM%20package&logo=NPM&logoColor=white)
   ![CodeFactor](https://img.shields.io/codefactor/grade/github/digoarthur/github-automated-repos?color=brightgreen&label=Code%20Quality&logo=codefactor)
  ![GitHub](https://img.shields.io/github/license/digoarthur/github-automated-repos)
-
+<a href="https://typicode.github.io/husky/#/"><img  alt="Husky"  width="20" height="20" src="https://user-images.githubusercontent.com/59892368/219088739-6d1af6db-3444-4351-ae71-5037f47b6938.svg"><a/>
+  <a href="https://eslint.org"><img  alt="Eslint"  width="20" height="20" src="https://user-images.githubusercontent.com/59892368/216450924-d9e2e612-4371-40ac-9120-1365d0113b07.svg"><a/>
+   <a  href="https://prettier.io"><img  alt="Prettier"  width="20" height="20" src="https://user-images.githubusercontent.com/59892368/216450921-ace9b367-5b82-4ad7-8cf5-d9241951582d.svg"><a/>
+   <a href="https://typicode.github.io/husky/#/"><img  alt="Husky"  width="20" height="20" src="https://user-images.githubusercontent.com/59892368/216450914-9ce5d6ee-a7d3-4e74-9d3b-3646a07352c2.svg"><a/>
 
 </div>
   
 
- <!------------------------------------Style Guides-->
- 
+ <div align="center">
+     
+<img  alt="ReactJS"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/11fe7e24-b5d7-47bf-814a-c8d5855e7ca8"> ![Check](https://img.shields.io/badge/-Check-green)
+<img  alt="ViteJS"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/f85aeacd-cea4-4280-9096-194da03e758e"> ![Check](https://img.shields.io/badge/-Check-green) 
+<img  alt="NextJS"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6b213e2e-213a-489d-bbda-1dec9dcda585"> ![Check](https://img.shields.io/badge/-Framework%20settings-yellow)
+     
+  </div>     
+       
 
 
-<p align="center">
- <a href="https://typicode.github.io/husky/#/"><img  alt="Husky"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/219088739-6d1af6db-3444-4351-ae71-5037f47b6938.svg"><a/>
-  <a href="https://eslint.org"><img  alt="Eslint"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/216450924-d9e2e612-4371-40ac-9120-1365d0113b07.svg"><a/>
-   <a  href="https://prettier.io"><img  alt="Prettier"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/216450921-ace9b367-5b82-4ad7-8cf5-d9241951582d.svg"><a/>
-   <a href="https://typicode.github.io/husky/#/"><img  alt="Husky"  width="50" height="50" src="https://user-images.githubusercontent.com/59892368/216450914-9ce5d6ee-a7d3-4e74-9d3b-3646a07352c2.svg"><a/>
-  
-</p>
+
  
  ---
+       
 
    <!------------------------------------SHIELDS STACKS-->
    
@@ -109,6 +113,7 @@ EXEMPLO
    - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#import-1">Import</a>
    - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#fill-in-the-fields-in-the-github-repository-1">Fill in the fields in the github repository</a>
    - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#code-example-1">Code Example</a>
+   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#code-example-1">Framework Settings</a>
    
    
 
@@ -329,8 +334,36 @@ EXEMPLO
   }
   export default App;
 ```
+       
+ <!------------------------------------Framework Settings-->       
+       
+## Framework Settings.
+       
+      
+ 
 
 
+<img  alt="NextJS"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6b213e2e-213a-489d-bbda-1dec9dcda585">
+       
+  
+       
+```
+└── My-app
+    ├── ...
+    ├── next.config.js
+    ├── ...
+```
+
+``` javascript
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  transpilePackages: ['github-automated-repos'],
+}
+
+module.exports = nextConfig
+```
+       
 ---
 
 
