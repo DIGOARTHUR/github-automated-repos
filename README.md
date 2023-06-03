@@ -165,7 +165,7 @@ EXEMPLO
 
 - `IGithubRepos` interface for the application in Typescript. Used to type the useState that will receive the array.
 
-- `useGithubAutomatedRepos` hook responsible for automating the repositories. It returns a function called dataGithubRepos, which takes two parameters: data (data that comes from the GitHub API) and the keyword (the latter responsible for showing the project on your website from the moment it is declared in the Topics field of the your Github repository). The dataGithubRepos returns, so optimized, an array of objects containing 5 properties: id, html_url, topics, name and description.
+- `useGithubAutomatedRepos` hook responsible for automating the repositories. It returns a function called dataGithubRepos, which takes two parameters: data (data that comes from the GitHub API) and the keyword (the latter responsible for showing the project on your website from the moment it is declared in the Topics field of the your Github repository). The dataGithubRepos returns, so optimized, an array of objects containing 6 properties: id, html_url, homepage, topics, name and description.
 
 ```javascript
  const { dataReposGithub } = useGithubAutomatedRepos()
