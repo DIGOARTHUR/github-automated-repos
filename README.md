@@ -221,7 +221,7 @@ EXEMPLO
 
     useEffect(() => {
                                   {/*Put here your github Name*/ }
-      fetch('https://api.github.com/users/githubName/repos')
+      fetch('https://api.github.com/users/usernameGitHub/repos?sort=created&per_page=999')
       .then(response => response.json())
       .then(data => setRepository(dataReposGithub(data, 'deploy'))); {/*<-- keyWord*/}
   }, [])
@@ -283,7 +283,7 @@ EXEMPLO
 
     useEffect(() => {
                                   {/*Put here your github Name*/ }
-      fetch('https://api.github.com/users/githubName/repos')
+      fetch('https://api.github.com/users/usernameGitHub/repos?sort=created&per_page=999')
       .then(response => response.json())
       .then(data => setRepository(dataReposGithub(data, 'deploy'))); {/*<-- keyWord*/}
   }, [])
