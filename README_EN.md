@@ -24,6 +24,16 @@ EXEMPLO
 
 
 
+<!------------------------------------ LANGUAGE BUTTONS-->
+<div align="right">
+    <a  href="https://prettier.io"><img  alt="Portugues"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/36973e32-acf4-4323-bca6-682209ee2d3c"><a/>
+        <a  href=""><img  alt="English"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/4cdde3f7-54aa-4b95-ad31-4e49de59b01a"><a/>
+
+
+</div>
+
+
+
 <!------------------------------------ PROJECT BANNER-->
 <h1 align="center">Github-automated-repos</h1>
 
@@ -202,7 +212,7 @@ EXEMPLO
 :exclamation::exclamation: Don't forget to fill in the keyword fields (determined by you) and enter your github username.
 
 ```javascript
- fetch('https://api.github.com/users/githubUsername/repos')
+ fetch('https://api.github.com/users/usernameGitHub/repos?sort=created&per_page=999')
 ```
 
 ```javascript
