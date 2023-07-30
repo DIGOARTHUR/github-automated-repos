@@ -23,26 +23,19 @@ EXEMPLO
 # logoColor=white - Define a cor do icone
 -->
 
-![Uploading brazil-flag.png…]()
 
-[![Foo](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/ed6d0db8-8303-45c5-9ff5-3506ecebb8e5)](http://google.com.au/)
-
-[![A mushroom-head robot]('https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/ed6d0db8-8303-45c5-9ff5-3506ecebb8e5')](https://codecademy.com)
 
 <!------------------------------------ LANGUAGE BUTTONS-->
 <div align="right">
-<a  href="https://typicode.github.io/husky/#/"><img  alt="Portugues"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/36973e32-acf4-4323-bca6-682209ee2d3c"><a/>      
-<a  href="https://typicode.github.io/husky/#/">
-    
-![usa](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/ed6d0db8-8303-45c5-9ff5-3506ecebb8e5)
-    
+<a href="https://github.com/DIGOARTHUR/github-automated-repos#readme">
+    <img width="50" height="50" src="https://i.ibb.co/0ccXnSZ/usa.png" alt="language_USA" border="0">
 <a/>
 
-<a href="https://typicode.github.io/husky/#/"><img  alt="Husky"  width="20" height="20" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/36973e32-acf4-4323-bca6-682209ee2d3c"><a/>
+<a href="https://github.com/DIGOARTHUR/github-automated-repos#readmePT">
+<img  alt="language_Brazil"  width="50" height="50" src="https://i.ibb.co/ydhjL7Q/brazil-flag.png">
+<a/>
+
 </div>
-
-
-
 <!------------------------------------ PROJECT BANNER-->
 <h1 align="center">Github-automated-repos</h1>
 
