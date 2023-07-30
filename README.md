@@ -18,18 +18,27 @@ EXEMPLO
 
 # JavaScript - Nome que aparece na Bag
 # logo=JavaScript - Muda a logo vide <https://simpleicons.org/?q=react>
-# color=yellow - Define a cor da bag vide <https://shields.io>
+# color![brazil-flag](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/617d5c28-7bb7-4972-bdba-7432e75cc6e5)
+=yellow - Define a cor da bag vide <https://shields.io>
 # logoColor=white - Define a cor do icone
 -->
 
+![Uploading brazil-flag.png…]()
 
+[![Foo](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/ed6d0db8-8303-45c5-9ff5-3506ecebb8e5)](http://google.com.au/)
+
+[![A mushroom-head robot]('https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/ed6d0db8-8303-45c5-9ff5-3506ecebb8e5')](https://codecademy.com)
 
 <!------------------------------------ LANGUAGE BUTTONS-->
 <div align="right">
-    <a  href="https://prettier.io"><img  alt="Portugues"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/36973e32-acf4-4323-bca6-682209ee2d3c"><a/>
-        <a  href=""><img  alt="English"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/4cdde3f7-54aa-4b95-ad31-4e49de59b01a"><a/>
+<a  href="https://typicode.github.io/husky/#/"><img  alt="Portugues"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/36973e32-acf4-4323-bca6-682209ee2d3c"><a/>      
+<a  href="https://typicode.github.io/husky/#/">
+    
+![usa](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/ed6d0db8-8303-45c5-9ff5-3506ecebb8e5)
+    
+<a/>
 
-
+<a href="https://typicode.github.io/husky/#/"><img  alt="Husky"  width="20" height="20" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/36973e32-acf4-4323-bca6-682209ee2d3c"><a/>
 </div>
 
 
