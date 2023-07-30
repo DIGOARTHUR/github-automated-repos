@@ -181,13 +181,13 @@ EXEMPLO
 ```
 ### O pacote importa quatro recursos:
 
-- `ProjectIcon` component that renders the icons of the projects that come from data returned from the dataGithubRepos function as the Topics property. Check the [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) tab!
+- `ProjectIcon` componente que renderiza os ícones dos projetos que vêm dos dados retornados da função dataGithubRepos como a propriedade Topics. Verifica a aba [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) !
 
-- `StackIcon` component that renders the icons of the stacks that come from data returned from the dataGithubRepos function as the Topics property. Check the  [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
+- `StackIcon` componente que renderiza os ícones das pilhas que vêm dos dados retornados da função dataGithubRepos como a propriedade Topics. Verifica a aba  [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) !
 
-- `IGithubRepos` interface for the application in Typescript. Used to type the useState that will receive the array.
+- `IGithubRepos` interface para o aplicativo em Typescript. Usado para digitar o useState que receberá o array.
 
-- `useGithubAutomatedRepos` hook responsible for automating the repositories. It returns a function called dataGithubRepos, which takes two parameters: data (data that comes from the GitHub API) and the keyword (the latter responsible for showing the project on your website from the moment it is declared in the Topics field of the your Github repository). The dataGithubRepos returns, so optimized, an array of objects containing 6 properties: id, html_url, homepage, topics, name and description.
+- `useGithubAutomatedRepos` hook responsável por automatizar os repositórios. Ele retorna uma função chamada dataGithubRepos, que recebe dois parâmetros: data (dados que vêm da API do GitHub) e a palavra-chave (esta última responsável por mostrar o projeto em seu site a partir do momento em que é declarado no campo Topics do seu GitHub repositório). O dataGithubRepos retorna, de forma otimizada, um array de objetos contendo 6 propriedades: id, html_url, homepage, topics, name e description.
 
 ```javascript
  const { dataReposGithub } = useGithubAutomatedRepos()
@@ -195,21 +195,22 @@ EXEMPLO
 
 ## Preencha os campos no repositório github
 
-- `id`: repository identification number. used as parameter in the key tag. This field does not need to be filled in.
-- `html_url`: repository link. Used as the link of access. This field does not need to be filled in.
-- `homepage`: it's the access link to the built page, page deploy.  About / Website of your GitHub.
+- `id`: número de identificação do repositório. usado como parâmetro no key tag. *Este campo não precisa ser preenchido.*
+- `html_url`: link do repositório. Usado como o link de acesso. *Este campo não precisa ser preenchido.*
+- `homepage`: é o link de acesso à página construída, página implantada.  About / Website of your GitHub.
 
 ![image](https://user-images.githubusercontent.com/59892368/219116735-a026d9b9-f5b9-4389-b8f1-619db2488368.png)
 
-- `topics`: array that brings information about the icons in [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) and [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons). Used in both ProjectIcon and StackIcon components. It is in this field that is passed the key configured in the hook. Refers to the field About / Topics of your GitHub.
+- `topics`: array que traz informações sobre os ícones em [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) e [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons). 
+Usado nos componentes ProjectIcon e StackIcon. É neste campo que é passada a chave configurada no hook. Refere-se ao campo About / Topics of your GitHub.
 
 ![image](https://user-images.githubusercontent.com/59892368/219117029-d693ee8f-4289-4ac0-85ed-674091508510.png)
 
-`name`: This is the name of the repository. Refers to the field  Settings / General / Repository name of your GitHub.
+`name`: Este é o nome do repositório. Refere-se ao campo  Settings / General / Repository name of your GitHub.
 
 ![image](https://user-images.githubusercontent.com/59892368/219117097-43db2497-7f62-428e-85c6-ef3656da4cd2.png)
 
-`description`: This is the description given to your repository. Refers to the About /Description field of your GitHub.
+`description`: Esta é a descrição dada ao seu repositório. Refere-se ao campo About /Description field of your GitHub.
 
 ![image](https://user-images.githubusercontent.com/59892368/219117260-5bdb1fbb-c58b-4ad9-938a-068b58c72f27.png)
 
