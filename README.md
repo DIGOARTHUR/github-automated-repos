@@ -31,7 +31,7 @@ EXEMPLO
     <img width="50" height="50" src="https://i.ibb.co/0ccXnSZ/usa.png" alt="language_USA" border="0">
 <a/>
 
-<a href="https://github.com/DIGOARTHUR/github-automated-repos#readmePT">
+<a href="https://github.com/DIGOARTHUR/github-automated-repos/blob/main/README_PT.md">
 <img  alt="language_Brazil"  width="50" height="50" src="https://i.ibb.co/ydhjL7Q/brazil-flag.png">
 <a/>
 
