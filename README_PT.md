@@ -25,10 +25,11 @@ EXEMPLO
 
 
 
+
 <!------------------------------------ LANGUAGE BUTTONS-->
 <div align="right">
 <a href="https://github.com/DIGOARTHUR/github-automated-repos#readme">
-    <img  height="35" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/257623321-95c81f57-b751-4956-b0ab-7a804ae44506.svg" alt="language_USA" border="0">
+    <img  height="35" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/258253150-be367e08-584e-452d-9bdc-b0c6d49e6976.svg" alt="language_USA" border="0">
 <a/>
 <br/>
 <a href="https://github.com/DIGOARTHUR/github-automated-repos/blob/main/README_PT.md">
