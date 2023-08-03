@@ -29,6 +29,8 @@ EXEMPLO
 
 
 
+
+
 <!------------------------------------ LANGUAGE BUTTONS-->
 <div align="right">
 <a href="https://github.com/DIGOARTHUR/github-automated-repos#readme">
@@ -36,7 +38,7 @@ EXEMPLO
 <a/>
 <br/>
 <a href="https://github.com/DIGOARTHUR/github-automated-repos/blob/main/README_PT.md">
-<img  alt="language_Brazil"  height="35" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/257622860-c1740d34-36ad-4995-9ef1-d97da61383ef.svg">
+<img  alt="language_Brazil"  height="35" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/258252924-3c572826-3b6d-46da-b5d0-dde3879748c5.svg">
 <a/>
 
 </div>
