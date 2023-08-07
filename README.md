@@ -178,7 +178,7 @@ EXEMPLO
 
 ## Import
 ```javascript
-    import { useGithubAutomatedRepos, ProjectIcon, StackIcon, IGithubRepos} from 'github-automated-repos';
+    import { useGithubAutomatedRepos, ProjectIcon, StackIcon } from 'github-automated-repos/index';
 ```
 ### The package imports four elements:
 
@@ -231,7 +231,7 @@ EXEMPLO
 ```javascript   
   import './App.css';
   import { useEffect, useState } from 'react';
-  import { useGithubAutomatedRepos, ProjectIcon, StackIcon} from 'github-automated-repos';
+  import { useGithubAutomatedRepos, ProjectIcon, StackIcon } from 'github-automated-repos/index';
   function App() {
                               {/*useGithubAutomatedRepos hook*/ }
     const { dataReposGithub } = useGithubAutomatedRepos()
@@ -293,7 +293,7 @@ EXEMPLO
 ```typescript     
   import './App.css';
   import { useEffect, useState } from 'react';
-  import { useGithubAutomatedRepos, ProjectIcon, StackIcon, IGithubRepos} from 'github-automated-repos';
+  import { useGithubAutomatedRepos, ProjectIcon, StackIcon } from 'github-automated-repos/index';
   function App() {
                               {/*useGithubAutomatedRepos hook*/ }
     const { dataReposGithub } = useGithubAutomatedRepos()
