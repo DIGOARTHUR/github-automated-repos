@@ -10,10 +10,11 @@ import Header from "./components/Header";
 import 'aos/dist/aos.css';
 import Aos from 'aos';
 import { useEffect } from "react";
+import Link from "next/link";
 export default function Home() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
-}, []);
+  }, []);
   return (
 
     <main className="flex  min-h-screen flex-col items-center m-auto ">
@@ -35,14 +36,14 @@ export default function Home() {
               view of your projects on your website in one place!</span>
           </div>
           <div className="flex justify-around items-start ">
-            <button className="h-[70px] w-[30%] border-2 rounded-full bg-[#737384]">Getting Start</button>
+            <Link href="/gettingstart" className="h-[70px] w-[30%] border-2 rounded-full bg-[#737384] flex items-center justify-center" >Getting Start</Link>
             <button className="h-[70px] w-[30%] border-2 rounded-full">Icon Stacks</button>
             <button className="h-[70px] w-[30%] border-2 rounded-full">Icon Projects</button>
           </div>
         </div>
       </div>
-      <div  className="bg-gradient-to-r from-[#31313E] to-[#3e3e4b] min-h-[850px]  flex justify-center items-center w-full px-6">
-        <div  className="  max-w-[1200px]  ">
+      <div className="bg-gradient-to-r from-[#31313E] to-[#3e3e4b] min-h-[850px]  flex justify-center items-center w-full px-6">
+        <div className="  max-w-[1200px]  ">
           <h1 className="text-5xl text-center mb-6 ">Control your projects</h1>
           <div className="flex justify-center mb-8">
             <span className="  text-xl self-auto">Decide which project will be viewed on your personal page from a keyword determined by you.</span>
@@ -50,8 +51,8 @@ export default function Home() {
           <img src='https://user-images.githubusercontent.com/59892368/214140611-910cd26b-280d-48f1-8652-65034f04a4f8.gif'></img>
         </div>
       </div>
-      <div  className="bg-[#3D3D4D] min-h-[850px]  flex justify-center items-center">
-        <div  className="  max-w-[1200px]  ">
+      <div className="bg-[#3D3D4D] min-h-[850px]  flex justify-center items-center">
+        <div className="  max-w-[1200px]  ">
 
           <h1 className="text-5xl text-center mb-6 ">Customize and represent through icons.</h1>
           <div className="flex justify-center mb-8">
@@ -60,8 +61,8 @@ export default function Home() {
           <img src='https://user-images.githubusercontent.com/59892368/214817180-519e403f-0fa4-4bfd-a6cc-5eb63d3360e8.gif'></img>
         </div>
       </div>
-      <div  className="bg-gradient-to-r from-[#31313E] to-[#3e3e4b] min-h-[850px]  flex justify-center items-center w-full">
-        <div  className="  max-w-[1200px]  ">
+      <div className="bg-gradient-to-r from-[#31313E] to-[#3e3e4b] min-h-[850px]  flex justify-center items-center w-full">
+        <div className="  max-w-[1200px]  ">
           <h1 className="text-5xl text-center mb-6 ">In one place</h1>
           <div className="flex justify-center mb-8">
             <span className="  text-xl self-auto">Manage everything in the same place where you keep your project code. In just one field</span>
