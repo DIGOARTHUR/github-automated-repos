@@ -4,7 +4,7 @@ import npm_icon from "../../../../public/imgs/npm_icon.svg";
 import github_icon from "../../../../public/imgs/github_icon.svg";
 export default function Footer() {
     return (
-        <footer className="w-full bg-gradient-to-r from-[#31313E] to-[#3e3e4b] font-sans pb-10">
+        <footer className="w-full bg-[#3D3D4D] font-sans pb-10">
             <div className="grid grid-cols-2  xl:grid-cols-4 gap-x-12 gap-y-8 max-w-7xl mx-auto p-10">
 
 

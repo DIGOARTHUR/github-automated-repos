@@ -21,3 +21,8 @@ body {
   color: var(--colorLetter);
 
 }
+
+.html{
+  height: 100%;
+  width: 100%;
+}
