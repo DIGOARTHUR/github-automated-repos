@@ -24,7 +24,7 @@ export default function GettingStart() {
             <main id="quickStart" className="">
                 <Sidebar />
 
-                <article className=" h-screen  pt-8  mt-16 ml-[340px] px-6 pr-56 max-lg:pr-0 max-lg:ml-0 max-lg:">
+                <article className=" h-full  pt-8  mt-16 ml-[340px] px-6 pr-56  max-lg:ml-0 max-lg:pr-6">
 
 
                     <span >GettingStart &#62;</span>
@@ -47,7 +47,7 @@ export default function GettingStart() {
                         </p>
                     </div>
                     <div  >
-                    <div   id="installPackage" className="h-16"/>
+                        <div id="installPackage" className="h-16" />
 
                         <h2 className="text-3xl">Install Package</h2>
                         <div className="bg-[#4e5668fd] p-10 my-8 rounded-3xl">
@@ -57,9 +57,9 @@ export default function GettingStart() {
                         </div>
                     </div>
                     <div  >
-                    <div  id="importPackage" className="h-16"/>
-                        
-                        <h2  className="text-3xl">Import Package</h2>
+                        <div id="importPackage" className="h-16" />
+
+                        <h2 className="text-3xl">Import Package</h2>
                         <div className="bg-[#4e5668fd] p-10 my-8 rounded-3xl">
                             <p>
                                 import  &#123; useGithubAutomatedRepos, ProjectIcon, StackIcon, IGithubRepos  &#125;
@@ -67,7 +67,7 @@ export default function GettingStart() {
                             </p>
                         </div>
                         <div  >
-                            
+
                             <h2 className="text-2xl mb-8">The package imports four elements:</h2>
                             <div className="ml-8">
                                 <span className="text-[#00979C] text-xl">&lt;ProjectIcon/&gt;</span>  component that renders the icons of the projects that come from data returned from the dataGithubRepos function as the Topics property. Check the Project Icons tab!
@@ -91,7 +91,7 @@ export default function GettingStart() {
 
                     </div>
                     <div >
-                         <div  id="fillInTheFields" className="h-16"/>
+                        <div id="fillInTheFields" className="h-16" />
                         <h2 className="text-3xl  mb-8">Fill in the fields</h2>
                         <div className="ml-8">
 
@@ -122,21 +122,18 @@ export default function GettingStart() {
                             <span className="text-[#00979C] text-xl"> description:</span>  This is the description given to your repository. Refers to the About /Description field of your GitHub.
                             <br />
                             <br />
-                            <Image  className="" src={fill_Description_Img} alt='logoLib' />
+                            <Image className="" src={fill_Description_Img} alt='logoLib' />
                         </div>
 
 
                     </div>
-                    
+
                     <div  >
-                    <div  id="codeExample" className="h-12"/>
+                        <div id="codeExample" className="h-12" />
                         <h2 className="text-3xl mt-8">Code Example</h2>
                         <div className="bg-[#4e5668fd] p-10 my-8 rounded-3xl">
                             <p>
-                                ...
-                                {/*fill in the field below in the code example.*/}
-                                fetch('https://api.github.com/users/insertUsernameGithubHere/repos')
-                                ...
+
                             </p>
                         </div>
                         <div className="flex gap-4">

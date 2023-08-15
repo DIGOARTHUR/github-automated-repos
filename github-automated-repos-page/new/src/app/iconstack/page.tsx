@@ -50,7 +50,7 @@ export default function StackIcon() {
             <main className="">
                 <Sidebar />
 
-                <article className=" h-screen pt-8  mt-16 ml-[340px] px-6 pr-56 max-md:flex flex-cli ">
+                <article className=" h-screen pt-8  mt-16 ml-[340px] px-6 pr-56 max-lg:ml-0 max-lg:pr-6  ">
 
                     <span>ProjectIcons &#62;</span>
 
@@ -59,7 +59,7 @@ export default function StackIcon() {
                     <div className='mt-8'>
                         <input className=' bg-[#70708e33] w-full rounded-lg px-4 py-2 ' placeholder='🔍 Search Icons' type='text' onChange={_handleSearch} />
                     </div>
-                    <ul className='mt-8 flex flex-wrap gap-4 '>
+                    <ul className='mt-8 flex flex-wrap gap-4 justify-center'>
                         {stackIconValues.length > 0 ? (
                             stackIconValues.map((item, index) => {
                                 return <Card key={index} item={item} iconKey={stackIconKeys[index]} />;

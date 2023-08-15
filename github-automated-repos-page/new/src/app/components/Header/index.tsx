@@ -13,24 +13,29 @@ export default function Header() {
 
             <div className="flex w-full items-center justify-between mx-10 ">
                 <div className=" ">
-                    <Link href="/gettingstart">
-                    <Image className="h-14 w-14" src={logoLib} alt='logoLib' />
-                </Link>
-            </div>
+                    <Link href="/">
+                        <Image className="h-14 w-14" src={logoLib} alt='logoLib' />
+                    </Link>
+                </div>
 
-            <div className=" hidden w-full  h-10 px-4">
-                <button className=" bg-[#4F4F60] w-full h-full flex items-center rounded-full p-4">
-                    <Image className="h-4 w-4 mr-3" src={logoLib} alt='logoLib' />
-                    Search
+                <div className=" hidden w-full  h-10 px-4">
+                    <button className=" bg-[#4F4F60] w-full h-full flex items-center rounded-full p-4">
 
-                </button>
-            </div>
+                        <Image className="h-4 w-4 mr-3" src={logoLib} alt='logoLib' />
+                        Search
 
-            <div className="flex gap-3">
-                <Image className="h-5 w-5" src={npm_icon} alt='npm_icon' />
-                <Image className="h-5 w-5" src={github_icon} alt='npm_icon' />
+                    </button>
+                </div>
+
+                <div className="flex gap-3">
+                    <Link href="https://www.npmjs.com/package/github-automated-repos">
+                        <Image className="h-5 w-5" src={npm_icon} alt='npm_icon' />
+                    </Link>
+                    <Link href="https://github.com/DIGOARTHUR/github-automated-repos/">
+                        <Image className="h-5 w-5" src={github_icon} alt='github_icon' />
+                    </Link>
+                </div>
             </div>
-        </div>
 
         </nav >
     )

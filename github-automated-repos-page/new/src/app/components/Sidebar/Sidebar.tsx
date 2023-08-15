@@ -24,7 +24,7 @@ export default function Sidebar() {
     };
     window.addEventListener("scroll", onScroll);
     return (
-        <aside className="  fixed min-w-[340px] h-full max-lg:hidden ">
+        <aside className="  fixed min-w-[340px] h-full max-lg:hidden w-0">
 
             <nav className="pt-4 pr-5 p-10 h-full">
                 <div style={{ transition: 'width 0.5s linear 0s', width: `${scroll}` }} className='bg-red-700 h-4   ' />
