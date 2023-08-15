@@ -60,5 +60,8 @@
         "commitizen": {
             "path": "./node_modules/cz-conventional-changelog"
         }
+    },
+    "dependencies": {
+        "react-scripts": "^5.0.1"
     }
 }
