@@ -10,8 +10,9 @@ import { Card } from "../components/Card";
 import Link from 'next/link';
 export default function StackIcon() {
     const { iconStacks } = IconsData();
+   
     const [stackIconKeys, setStackIconKeys] = useState<string[]>([]);
-    const [stackIconValues, setStackIconValues] = useState<string[]>([]);
+    const [stackIconValues, setStackIconValues] = useState<string[] >([]);
 
     const [inicialStackIconKeys, setInicialStackIconKeys] = useState<string[]>([]);
     const [inicialStackIconValues, setInicialStackIconValues] = useState<string[]>([]);
@@ -38,8 +39,8 @@ export default function StackIcon() {
         setStackIconKeys(filterStackIconKeys);
         console.log(filterStackIconKeys);
 
-        const filterStackIconValues = filterStackIconKeys.map((iconKey) => {
-            return iconStacks[iconKey];
+        const filterStackIconValues = filterStackIconKeys.map((iconKey ) => {
+            return iconStacks[iconKey as keyof typeof iconStacks];
         });
 
         setStackIconValues(filterStackIconValues);
