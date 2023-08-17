@@ -17,7 +17,7 @@ export default function StackIcon() {
     const [inicialStackIconKeys, setInicialStackIconKeys] = useState<string[]>([]);
     const [inicialStackIconValues, setInicialStackIconValues] = useState<string[]>([]);
     useEffect(() => {
-        window.scrollTo(0, 0);
+       
 
         setStackIconKeys(Object.keys(iconStacks));
         setStackIconValues(Object.values(iconStacks));
