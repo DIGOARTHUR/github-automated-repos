@@ -1,6 +1,6 @@
 'use client'
 import { ToastContainer, toast } from 'react-toastify';
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FiExternalLink } from 'react-icons/fi';
 import Footer from "../components/Footer";
 import Header from "../components/Header";
