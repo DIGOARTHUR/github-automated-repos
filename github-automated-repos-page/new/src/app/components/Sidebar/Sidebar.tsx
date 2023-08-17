@@ -5,6 +5,9 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import useCollapse from 'react-collapsed';
 import { MdOutlineNavigateNext} from 'react-icons/md';
+
+const isBrowser = () => typeof window !== 'undefined'; 
+
 export default function Sidebar() {
     let url = window.location.pathname;
     let parts = url.split('/');
@@ -23,11 +26,11 @@ export default function Sidebar() {
         console.log(ScrollPercent)
     };
 
-    useEffect(() => {
+    if (isBrowser()) { //Only add the event listener client-side
         window.addEventListener("scroll", onScroll)
-    }, []);
+    }
 
-   
+
     return (
         <aside className="  fixed min-w-[340px] h-full max-lg:hidden w-0">
 
