@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import logoLib from "../../../../public/logoLib.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import useCollapse from 'react-collapsed';
 import { MdOutlineNavigateNext} from 'react-icons/md';
@@ -22,7 +22,12 @@ export default function Sidebar() {
         setScroll(ScrollPercent)
         console.log(ScrollPercent)
     };
-    window.addEventListener("scroll", onScroll);
+
+    useEffect(() => {
+        window.addEventListener("scroll", onScroll)
+    }, []);
+
+   
     return (
         <aside className="  fixed min-w-[340px] h-full max-lg:hidden w-0">
 
