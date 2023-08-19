@@ -1,0 +1,44 @@
+/*https://tailwindcss.com/docs/responsive-design*/
+:root {
+  --main-bg-color: brown;
+  --md:900px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p{
+  line-height:1.5;
+ 
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/***********************************/
+/*DEFINIÇÃO PARA TODOS OS ELEMENTOS*/
+/***********************************/
+*{
+  margin: 0;   /*Margem externa do elemento*/
+  padding: 0;  /*Margem interna do elemento*/
+  box-sizing: border-box; /*Config. para considerar o valor do padding do elemento, por exemplo*/
+}
+
+a{
+  text-decoration: none;
+  color:black;
+  
+}

@@ -1,0 +1,105 @@
+.project_Conteiner {
+    height: 100vh;
+
+    a {
+        font-weight: 600;
+        color: blue;
+    }
+
+    .project_Header {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .project_searchField {
+            display: flex;
+            gap: 5px;
+
+            input {
+                line-height: 1.8rem;
+                font-size: 1.2rem;
+                border-radius: 6px;
+                height: 52px;
+                padding: 6px;
+            }
+        }
+
+
+
+
+    }
+
+    .project_Content {
+
+
+
+        .tip {
+            background-color: rgba(240, 248, 255, 0.445);
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+
+
+            img {
+                height: 40px;
+
+            }
+
+
+        }
+
+        .project_Card {
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            gap: 5px;
+
+            .info_Missing_Search {
+                font-size: 35px;
+                flex-direction: column;
+                margin: auto;
+                display: flex;
+                align-content: center;
+                align-items: center;
+                gap: 10px;
+
+
+
+                img {}
+
+            }
+
+        }
+
+    }
+}
+
+@media (max-width: 800px) {
+    .project_Conteiner {
+        height: auto;
+
+        .project_Header {
+            justify-content: center;
+
+            .project_searchField {}
+
+            input {
+                border-radius: 6px;
+                height: 50px;
+                padding: 8px 16px;
+
+            }
+        }
+
+        .project_Card {
+
+            justify-content: center;
+
+
+
+        }
+    }
+}

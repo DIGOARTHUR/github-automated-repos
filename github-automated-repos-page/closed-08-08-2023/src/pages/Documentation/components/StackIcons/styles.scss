@@ -1,0 +1,80 @@
+.stack_Conteiner {
+    a {
+        font-weight: 600;
+        color: blue;
+    }
+
+    .stack_Header {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .stack_searchField {
+            display: flex;
+            gap: 5px;
+
+            input {
+                line-height: 1.8rem;
+                font-size: 1.2rem;
+                border-radius: 6px;
+                height: 52px;
+                padding: 6px;
+            }
+        }
+
+
+    }
+
+    .stack_Card {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-height: 450px;
+        gap: 5px;
+
+        .info_Missing_Search {
+            font-size: 35px;
+            flex-direction: column;
+            margin: auto;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            gap: 10px;
+
+            a {
+                color: blue;
+            }
+
+            img {}
+
+        }
+
+    }
+}
+
+@media (max-width: 800px) {
+    .stack_Conteiner {
+
+        .stack_Header {
+            justify-content: center;
+
+            .stack_searchField {}
+
+            input {
+                border-radius: 6px;
+                height: 50px;
+                padding: 8px 16px;
+
+            }
+        }
+
+        .stack_Card {
+
+            justify-content: center;
+
+
+        }
+    }
+}
