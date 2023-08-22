@@ -1,32 +1,40 @@
-'use client'
-import { ToastContainer, toast } from 'react-toastify';
+
+
+import { ToastContainer } from 'react-toastify';
 import React, { useEffect, useState } from "react";
 import { FiExternalLink } from 'react-icons/fi';
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Sidebar from "../components/Sidebar/";
+import Sidebar from "../components/Sidebar";
+import {Card} from "../components/Card";
 import { IconsData } from 'github-automated-repos/index';
-import { Card } from "../components/Card";
 
-export default function IconsProject() {
-    const { iconsProjects } = IconsData();
+
+export default function IconStacks(){
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    
+    
+      }, []);
+    const { iconStacks } = IconsData();
    
-    const [stackIconKeys, setStackIconKeys] = useState<string[]>([]);
-    const [stackIconValues, setStackIconValues] = useState<string[] >([]);
+    const [stackIconKeys, setStackIconKeys] = useState([]);
+    const [stackIconValues, setStackIconValues] = useState([]);
 
-    const [inicialStackIconKeys, setInicialStackIconKeys] = useState<string[]>([]);
-    const [inicialStackIconValues, setInicialStackIconValues] = useState<string[]>([]);
+    const [inicialStackIconKeys, setInicialStackIconKeys] = useState([]);
+    const [inicialStackIconValues, setInicialStackIconValues] = useState([]);
     useEffect(() => {
        
 
-        setStackIconKeys(Object.keys(iconsProjects));
-        setStackIconValues(Object.values(iconsProjects));
+        setStackIconKeys(Object.keys(iconStacks));
+        setStackIconValues(Object.values(iconStacks));
 
-        setInicialStackIconKeys(Object.keys(iconsProjects));
-        setInicialStackIconValues(Object.values(iconsProjects));
+        setInicialStackIconKeys(Object.keys(iconStacks));
+        setInicialStackIconValues(Object.values(iconStacks));
     }, []);
 
-    function _handleSearch(e: React.ChangeEvent<HTMLInputElement>) {
+    function _handleSearch(e) {
         if (!e.target.value) {
             setStackIconKeys(inicialStackIconKeys);
             setStackIconValues(inicialStackIconValues);
@@ -40,7 +48,7 @@ export default function IconsProject() {
         console.log(filterStackIconKeys);
 
         const filterStackIconValues = filterStackIconKeys.map((iconKey ) => {
-            return iconsProjects[iconKey as keyof typeof iconsProjects];
+            return iconStacks[iconKey];
         });
 
         setStackIconValues(filterStackIconValues);

@@ -1,31 +1,37 @@
-
-
-import { ToastContainer } from 'react-toastify';
+'use client'
+import { ToastContainer, toast } from 'react-toastify';
 import React, { useEffect, useState } from "react";
 import { FiExternalLink } from 'react-icons/fi';
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
-import {Card} from "../components/Card";
 import { IconsData } from 'github-automated-repos/index';
+import { Card } from "../components/Card";
+
+export default function IconsProject() {
 
 
-export default function IconStacks(){
-    const { iconStacks } = IconsData();
-   
+    useEffect(() => {
+        window.scrollTo(0, 0);
+
+
+    }, []);
+
+    const { iconsProjects } = IconsData();
+
     const [stackIconKeys, setStackIconKeys] = useState([]);
     const [stackIconValues, setStackIconValues] = useState([]);
 
     const [inicialStackIconKeys, setInicialStackIconKeys] = useState([]);
     const [inicialStackIconValues, setInicialStackIconValues] = useState([]);
     useEffect(() => {
-       
 
-        setStackIconKeys(Object.keys(iconStacks));
-        setStackIconValues(Object.values(iconStacks));
 
-        setInicialStackIconKeys(Object.keys(iconStacks));
-        setInicialStackIconValues(Object.values(iconStacks));
+        setStackIconKeys(Object.keys(iconsProjects));
+        setStackIconValues(Object.values(iconsProjects));
+
+        setInicialStackIconKeys(Object.keys(iconsProjects));
+        setInicialStackIconValues(Object.values(iconsProjects));
     }, []);
 
     function _handleSearch(e) {
@@ -41,8 +47,8 @@ export default function IconStacks(){
         setStackIconKeys(filterStackIconKeys);
         console.log(filterStackIconKeys);
 
-        const filterStackIconValues = filterStackIconKeys.map((iconKey ) => {
-            return iconStacks[iconKey];
+        const filterStackIconValues = filterStackIconKeys.map((iconKey) => {
+            return iconsProjects[iconKey];
         });
 
         setStackIconValues(filterStackIconValues);
@@ -55,18 +61,20 @@ export default function IconStacks(){
 
                 <article className=" h-screen pt-8  mt-16 ml-[340px] px-6 pr-56 max-lg:ml-0 max-lg:pr-6  ">
 
-                    <span>ProjectIcons &#62;</span>
+                    <span>Icons Projects &#62;</span>
 
-                    <h1 className="text-4xl mt-8  mb-2 max-md:text-4xl">Project Icons</h1>
+                    <h1 className="text-4xl mt-8  mb-2 max-md:text-4xl">Icons Project</h1>
                     <hr />
                     <div className='mt-8'>
                         <input className=' bg-[#70708e33] w-full rounded-lg px-4 py-2 ' placeholder='🔍 Search Icons' type='text' onChange={_handleSearch} />
                     </div>
                     <ul className='mt-8 flex flex-wrap gap-4 justify-center'>
                         {stackIconValues.length > 0 ? (
-                            stackIconValues.map((item, index) => {
-                                return <Card key={index} item={item} iconKey={stackIconKeys[index]} />;
-                            })
+                         
+                                stackIconValues.map( (item, index) => {
+                                    return <Card key={index} item={item} iconKey={stackIconKeys[index]} />;
+                                })
+                        
                         ) : (
                             <div className='flex flex-col m-auto gap-4'>
                                 <p className='text-xl text-center'>

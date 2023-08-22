@@ -12,7 +12,9 @@ interface dataCard {
 
 export function Card({ item, iconKey }: dataCard) {
 
-
+    let url = window.location.pathname;
+    let parts = url.split('/');
+    let lastPartUrl = parts.pop() || parts.pop();
     const showToastMessage = (iconKey: string) => {
         toast.success(`Copied ${iconKey} to clipboard`, {
 
@@ -31,10 +33,10 @@ export function Card({ item, iconKey }: dataCard) {
     };
     return (
         <>
-            <li className="group grid grid-rows-[2fr,1fr] border-solid border-2 border-[#68686869] rounded-md w-[200px] h-[120px] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] group-hover:bg-slate-100">
+            <li className="group grid grid-rows-[2fr,1fr] border-solid border-2 border-[#68686869] rounded-md w-[200px] h-[120px] shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] group-hover:bg-slate-100 max-md:w-[102px] ">
 
 
-                <img style={iconKey=='dashboard'?{filter: 'brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7486%) hue-rotate(234deg) brightness(107%) contrast(101%)'}:{}}  className='m-auto h-10' src={item} />
+                <img style={lastPartUrl=='projecticons'?{filter: 'brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7486%) hue-rotate(234deg) brightness(107%) contrast(101%)'}:{}}  className='m-auto h-10' src={item} />
 
 
                 <h2 className='group-hover:bg-gradient-to-r from-[#ffffff77] to-[#38383869] flex relative justify-center items-center text-xs cursor-pointer' onClick={() => showToastMessage(iconKey)}>
