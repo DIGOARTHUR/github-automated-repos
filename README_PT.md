@@ -46,7 +46,7 @@ EXEMPLO
  <!---------------------PROJECT ICON-->
   <img src="https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-bb6d-a466b450db84.svg" alt="angular-logo" width="150px" height="150px"/>
   <br>
-  <i>Github-automated-repos é a bilbioteca que te dá o poder de gerenciar a visualização dos seus projetos 
+  <i>Github-automated-repos é a biblioteca que te dá o poder de gerenciar a visualização dos seus projetos 
     <br> no seu website em um só lugar!</i>
   <br>
 </p>
