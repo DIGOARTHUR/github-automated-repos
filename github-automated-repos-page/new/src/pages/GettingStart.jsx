@@ -8,7 +8,8 @@ import fill_description from "../assets/imgs/fill_description.png"
 import fill_repositoryName from "../assets/imgs/fill_repositoryName.png"
 import fill_topics from "../assets/imgs/fill_topics.png"
 import fill_homepage from "../assets/imgs/fill_homepage.png"
-
+import typescript_logo from "../assets/imgs/typescript_logo.svg"
+import javascript_logo from "../assets/imgs/javascript_logo.svg"
 const highlighterStyle = {
   paddingLeft: '5px',
 
@@ -59,7 +60,7 @@ export default function GettingStart() {
           <hr />
           <p className="text-xl mt-8">This library automates the view your GitHub projects on your website in one place. But how? Make the code configuration only once in your application with github-automated-repos, and manage the view of your projects on GitHub in the Topics field. </p>
           <div className="bg-[#4e5668fd] p-10 my-8 rounded-3xl">
-            <h3 className="text-2xl">Why use?</h3>
+            <h3 className="text-2xl mb-2">Why use?</h3>
             <p>
               <ul className="list-disc">
                 <li>Control the visualization of your projects in one place.</li>
@@ -164,18 +165,18 @@ export default function GettingStart() {
 
           <div  >
             <div id="codeExample" className="h-12" />
-            <h2 className="text-3xl mt-8">Code Example</h2>
-            <p style={{ color: 'red', backgroundColor: '#c90e0e2f' }}>
+            <h2 className="text-3xl mt-8 mb-8">Code Example</h2>
+            <p className="mb-2" style={{ color: 'red', backgroundColor: '#c90e0e2f' }}>
               Don't forget to fill the keyword fields (determined by you) and the your github username.
             </p>
             <Highlighter>{githubUsername}</Highlighter>
             <br />
             <Highlighter>{keywordCode}</Highlighter>
             <br />
-            <div className="flex gap-4 items-center mb-2">
-              <button onClick={() => setChangeCodeExample('javascript')} className="bg-[#f3da35a8] w-36 h-12 border-solid border-2 border-white rounded-lg flex justify-center items-center gap-2">Javascript  <img className="" src='../../../src/assets/imgs/github_icon.svg' alt='logoLib' /></button>
-              <button onClick={() => setChangeCodeExample('typescript')} className="bg-[#3179c64b] w-36 h-12 border-solid border-2 border-white rounded-lg flex justify-center items-center gap-2">Typescript <img className="" src='../../../src/assets/imgs/github_icon.svg' alt='logoLib' /></button>
-              <h3>App.{changeCodeExample === 'javascript' ? 'js' : 'tsx'}</h3>
+            <div className="flex gap-4 items-center mb-8">
+              <button onClick={() => setChangeCodeExample('javascript')} className="bg-[#f3da35a8] w-36 h-12 border-solid border-2 border-white rounded-lg flex justify-center items-center gap-2">Javascript  <img className="" src={javascript_logo} alt='logoLib' /></button>
+              <button onClick={() => setChangeCodeExample('typescript')} className="bg-[#3179c64b] w-36 h-12 border-solid border-2 border-white rounded-lg flex justify-center items-center gap-2">Typescript <img className="" src={typescript_logo} alt='logoLib' /></button>
+              <h3 className="text-2xl">App.{changeCodeExample === 'javascript' ? 'js' : 'tsx'}</h3>
             </div>
 
             {changeCodeExample === 'javascript' ? (
@@ -207,7 +208,7 @@ const keywordCode = `  ...
 
 const githubUsername = `  ...
                    {/*fill in the field below in the code example.*/}
-  fetch('https://api.github.com/users/insertUsernameGithubHere/repos')
+  fetch('https://api.github.com/users/usernameGitHub/repos?sort=created&per_page=999')
   ...
 `;
 
@@ -226,7 +227,7 @@ const codeExampleJSX = `
 
     useEffect(() => {
                                   {/*Put here your github Name*/ }
-      fetch('https://api.github.com/users/insertUsernameGithubHere/repos')
+      fetch('https://api.github.com/users/usernameGitHub/repos?sort=created&per_page=999')
       .then(response => response.json())
       .then(data => setRepository(dataReposGithub(data, 'insertKeyWordHere'))); {/*<-- keyWord*/}
   }, [])
@@ -290,7 +291,7 @@ const codeExampleTSX = `
 
     useEffect(() => {
                                   {/*Put here your github Name*/ }
-      fetch('https://api.github.com/users/insertUsernameGithubHere/repos')
+      fetch('https://api.github.com/users/usernameGitHub/repos?sort=created&per_page=999')
       .then(response => response.json())
       .then(data => setRepository(dataReposGithub(data, 'insertKeyWordHere'))); {/*<-- keyWord*/}
   }, [])
