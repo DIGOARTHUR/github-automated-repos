@@ -176,7 +176,7 @@ export default function GettingStart() {
             <div className="flex gap-4 items-center mb-8">
               <button onClick={() => setChangeCodeExample('javascript')} className="bg-[#f3da35a8] w-36 h-12 border-solid border-2 border-white rounded-lg flex justify-center items-center gap-2">Javascript  <img className="" src={javascript_logo} alt='logoLib' /></button>
               <button onClick={() => setChangeCodeExample('typescript')} className="bg-[#3179c64b] w-36 h-12 border-solid border-2 border-white rounded-lg flex justify-center items-center gap-2">Typescript <img className="" src={typescript_logo} alt='logoLib' /></button>
-              <h3 className="text-2xl">App.{changeCodeExample === 'javascript' ? 'js' : 'tsx'}</h3>
+              <h3 className="text-2xl">App.{changeCodeExample === 'javascript' ? 'jsx' : 'tsx'}</h3>
             </div>
 
             {changeCodeExample === 'javascript' ? (
