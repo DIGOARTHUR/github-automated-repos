@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import Sidebar from "../components/Sidebar";
 import { IconsData } from 'github-automated-repos/index';
 import { Card } from "../components/Card";
+import Loader from '../components/Loader';
 
 export default function IconsProject() {
 
@@ -15,7 +16,7 @@ export default function IconsProject() {
         window.scrollTo(0, 0);
         const id = setTimeout(() => {
             setFinishedTimeout(true);
-        }, 1000);
+        }, 350);
 
         return () => clearTimeout(id);
 
@@ -26,16 +27,16 @@ export default function IconsProject() {
 
     const [finishedTimeout, setFinishedTimeout] = useState(false);
 
-    const [stackIconKeys, setStackIconKeys] = useState([]);
-    const [stackIconValues, setStackIconValues] = useState([]);
+    const [projectsIconKeys, setProjectsIconKeys] = useState([]);
+    const [projectsIconValues, setProjectsIconValues] = useState([]);
 
     const [inicialStackIconKeys, setInicialStackIconKeys] = useState([]);
     const [inicialStackIconValues, setInicialStackIconValues] = useState([]);
     useEffect(() => {
 
 
-        setStackIconKeys(Object.keys(iconsProjects));
-        setStackIconValues(Object.values(iconsProjects));
+        setProjectsIconKeys(Object.keys(iconsProjects));
+        setProjectsIconValues(Object.values(iconsProjects));
 
         setInicialStackIconKeys(Object.keys(iconsProjects));
         setInicialStackIconValues(Object.values(iconsProjects));
@@ -43,22 +44,22 @@ export default function IconsProject() {
 
     function _handleSearch(e) {
         if (!e.target.value) {
-            setStackIconKeys(inicialStackIconKeys);
-            setStackIconValues(inicialStackIconValues);
+            setProjectsIconKeys(inicialStackIconKeys);
+            setProjectsIconValues(inicialStackIconValues);
             return;
         }
 
         const filterStackIconKeys = inicialStackIconKeys.filter((values) => {
             return values.includes(e.target.value.toLowerCase());
         });
-        setStackIconKeys(filterStackIconKeys);
+        setProjectsIconKeys(filterStackIconKeys);
         console.log(filterStackIconKeys);
 
         const filterStackIconValues = filterStackIconKeys.map((iconKey) => {
             return iconsProjects[iconKey];
         });
 
-        setStackIconValues(filterStackIconValues);
+        setProjectsIconValues(filterStackIconValues);
     }
     return (
         <div>
@@ -77,11 +78,11 @@ export default function IconsProject() {
                     </div>
                     <ul className='mt-8 flex flex-wrap gap-4 justify-center'>
                         {
-                            finishedTimeout == false ? (<div>carregando</div>) : (
-                                stackIconValues.length > 0 ? (
+                            finishedTimeout == false ? (<Loader/>) : (
+                                projectsIconValues.length > 0 ? (
 
-                                    stackIconValues.map((item, index) => {
-                                        return <Card key={index} item={item} iconKey={stackIconKeys[index]} />;
+                                    projectsIconValues.map((item, index) => {
+                                        return <Card key={index} item={item} iconKey={projectsIconKeys[index]} />;
                                     })
 
 
