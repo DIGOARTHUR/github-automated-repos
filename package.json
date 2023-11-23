@@ -1,13 +1,13 @@
 {
     "name": "github-automated-repos",
-    "version": "1.0.28",
+    "version": "1.0.25",
     "description": "Github-automated-repos is the lib that gives you the power to manage the view of your projects on your website in one place!",
-    "main": "index.ts",
+    "main": "src/index.ts",
     "scripts": {
         "commit": "git-cz",
         "clean": "rm -rf dist",
         "build": "npm run clean && tsc && cp package.json README.md ./dist",
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "yalc:update": "npx yalc push --scripts --update --replace",
         "lint": "eslint .",
         "lint:fix": "eslint --fix .",
         "prepare": "husky install",
