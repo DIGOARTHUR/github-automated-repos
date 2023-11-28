@@ -14,6 +14,9 @@
 // https://www.svgrepo.com/svg/456864/diagram
 // https://www.svgrepo.com/svg/455166/map-navigation?edit=true
 // https://www.svgrepo.com/svg/343466/news-feed?edit=true
+
+import { useEffect, useState } from 'react';
+
 // https://www.svgrepo.com/svg/458454/database-1?edit=true
 export interface IGithubRepos {
     name: string;
@@ -24,29 +27,31 @@ export interface IGithubRepos {
     homepage: string;
 }
 
-export function useGithubAutomatedRepos() {
-    function dataReposGithub(data: [], keyWordDeploy: string) {
-        let dataFilter = [];
+export function useGithubAutomatedRepos(usernameGitHub: string, keyWordDeploy: string) {
+    const [repository, setRepository] = useState<IGithubRepos[]>([]);
+    useEffect(() => {
+        fetch(`https://api.github.com/users/${usernameGitHub}/repos?sort=created&per_page=999`)
+            .then((response) => response.json())
+            .then((data) => setRepository(data));
+    }, []);
 
-        dataFilter = data.filter((item: IGithubRepos) => item.topics.includes(keyWordDeploy as never));
+    let dataFilter = [];
 
-        return dataFilter.map((item: IGithubRepos) => ({
-            id: item.id,
-            name: item.name,
-            html_url: item.html_url,
-            description: item.description,
-            topics: item.topics,
-            homepage: item.homepage,
-        }));
-    }
-    return {
-        dataReposGithub,
-    };
+    dataFilter = repository.filter((item: IGithubRepos) => item.topics.includes(keyWordDeploy as never));
+
+    return dataFilter.map((item: IGithubRepos) => ({
+        id: item.id,
+        name: item.name,
+        html_url: item.html_url,
+        description: item.description,
+        topics: item.topics,
+        homepage: item.homepage,
+    }));
 }
 
 export function IconsData() {
     // 25px
-    const iconStacks = {
+    const stackIcons = {
         androidstudio: 'https://user-images.githubusercontent.com/59892368/216783644-f664d47c-f686-496d-8073-2e83b2b469ab.svg',
         angular: 'https://user-images.githubusercontent.com/59892368/215260538-a2bc2db2-23dd-4600-9a53-be6b3c7fc103.svg',
         arduino: 'https://user-images.githubusercontent.com/59892368/216785825-af6a605c-6ca3-4bb5-9889-31ad818fb20b.svg',
@@ -146,7 +151,7 @@ export function IconsData() {
     };
 
     // 64px
-    const iconsProjects = {
+    const projectIcons = {
         art: 'https://user-images.githubusercontent.com/59892368/212994060-8d1644c7-96d7-4f3b-8e94-65ff76db0c92.svg',
         artificialintelligence: 'https://user-images.githubusercontent.com/59892368/212984565-a424b06e-db5e-464a-a5df-ddf7c9bab6ad.svg',
         dashboard: 'https://user-images.githubusercontent.com/59892368/212991791-588a6c13-795e-47aa-b496-8bdbaa3cac30.svg',
@@ -160,8 +165,8 @@ export function IconsData() {
     };
 
     return {
-        iconStacks,
-        iconsProjects,
+        stackIcons,
+        projectIcons,
         IconsData,
     };
 }
