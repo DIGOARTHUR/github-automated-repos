@@ -27,6 +27,10 @@ export interface IGithubRepos {
     homepage: string;
 }
 
+/**
+ * @param {string} usernameGitHub - Insert your username GitHub Ex.: https://github.com/USERNAME
+ * @param {string} keyWordDeploy - Insert a keyword chosen by you. - This key is responsible for managing your projects on GitHub.
+ */
 export function useGithubAutomatedRepos(usernameGitHub: string, keyWordDeploy: string) {
     const [repository, setRepository] = useState<IGithubRepos[]>([]);
     useEffect(() => {

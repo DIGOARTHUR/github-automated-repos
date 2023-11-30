@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { IconsData } from './hooks/useGithubAutomatedRepos';
+import { IconsData } from '../hooks/useGithubAutomatedRepos';
 
 type Props = {
     iconItem: string;
