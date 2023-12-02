@@ -8,6 +8,12 @@ type Props = {
     className?: string;
 };
 export function StackText({ itemText, className = 'styleStackText' }: Props) {
-    const { projectIcons } = IconsData();
-    return itemText === 'deploy' || projectIcons[itemText as never] ? <> </> : <p className={className}>{itemText}</p>;
+    const { projectIcons, stackIcons } = IconsData();
+
+    if (projectIcons[itemText as never]) {
+        return <> </>;
+    }
+    if (stackIcons[itemText as never]) {
+        return <p className={className}>{itemText}</p>;
+    }
 }
