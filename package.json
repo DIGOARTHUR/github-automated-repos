@@ -2,7 +2,7 @@
     "name": "github-automated-repos",
     "version": "1.0.25",
     "description": "Github-automated-repos is the lib that gives you the power to manage the view of your projects on your website in one place!",
-    "main": "src/index.ts",
+    "main": "index.js",
     "scripts": {
         "commit": "git-cz",
         "clean": "rm -rf dist",

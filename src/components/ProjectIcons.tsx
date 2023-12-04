@@ -7,6 +7,12 @@ type Props = {
     className?: string;
 };
 
+/**
+ * @param {string} iconItem - Mandatory: ex.: item.topics.map(topics)...  iconItem={topics}
+ * @param {string} className - Optional: style className.
+ * @returns {<img/>} - Return tag img, project svg icon.
+ */
+
 export function ProjectIcons({ iconItem, className }: Props) {
     const { projectIcons } = IconsData();
     return (

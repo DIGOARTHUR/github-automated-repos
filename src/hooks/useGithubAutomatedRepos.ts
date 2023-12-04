@@ -29,7 +29,8 @@ export interface IGithubRepos {
 
 /**
  * @param {string} usernameGitHub - Insert your username GitHub Ex.: https://github.com/USERNAME
- * @param {string} keyWordDeploy - Insert a keyword chosen by you. - This key is responsible for managing your projects on GitHub.
+ * @param {string} keyWordDeploy - Insert a keyword chosen by you. - This key is responsible for managing your projects on GitHub in topics field Ex.: https://github.com/DIGOARTHUR/github-automated-repos#--about-library-.
+ * @returns {(IGithubRepos[])} - Returns an array with the properties: name, topics, html_url, description, id, homepage.
  */
 export function useGithubAutomatedRepos(usernameGitHub: string, keyWordDeploy: string) {
     const [repository, setRepository] = useState<IGithubRepos[]>([]);
@@ -66,7 +67,7 @@ export function IconsData() {
         blender: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/285182560-49ae39de-ad6b-4b96-be9f-cddb58b2406c.svg',
         bootstrap: 'https://user-images.githubusercontent.com/59892368/218274368-89a94705-c5b1-42a6-813d-4aaa2a1334e3.svg',
         c: 'https://user-images.githubusercontent.com/59892368/215260535-be3713a8-d075-4c85-88ca-4b3703f9e7b3.svg',
-        canva: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/285175681-645bdd86-62ef-4254-a0e7-7806d4566192.svg',
+        canva: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/287774022-8ae44b49-fbef-4868-b441-24a37490be36.svg',
         clion: 'https://user-images.githubusercontent.com/59892368/216813068-bc05f852-f006-4ff6-85e2-d8988f6afbf9.svg',
         cpp: 'https://user-images.githubusercontent.com/59892368/215260533-1ede6b38-7c51-4c89-ac2c-a1195c2b912b.svg',
         csharp: 'https://user-images.githubusercontent.com/59892368/215260532-33106206-6ca4-4d11-bdc3-9171491979a5.svg',
@@ -75,7 +76,7 @@ export function IconsData() {
         denojs: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/287532091-b11ecf66-5fb2-4158-b48a-99afc85c6a2b.svg',
         django: 'https://user-images.githubusercontent.com/59892368/215260529-5fb18a51-b2bc-4092-8a87-f051f89dd30e.svg',
         docker: 'https://user-images.githubusercontent.com/59892368/215260528-b50b803d-a037-4572-812b-95801f48c2bd.svg',
-        dotnetcore: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/285176407-82aa67aa-5724-464a-bb1a-afd76c5d702a.svg',
+        dotnetcore: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/287774015-b4e62d28-bb35-4eb0-b10a-580db7ea0fed.svg',
         eclipse: 'https://user-images.githubusercontent.com/59892368/216813192-3088dc66-c68e-4e06-b7d0-c7443e3230ed.svg',
         elixir: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/285177064-e7a06c1c-26a2-4d1c-8bde-59ec2c954d5f.svg',
         eslint: 'https://user-images.githubusercontent.com/59892368/215260527-373e10c7-04d3-45c5-98b4-74bf586de7f6.svg',
@@ -92,7 +93,7 @@ export function IconsData() {
         googlecloud: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/285177670-cebc6b57-79e3-48df-b896-6d20f19073f0.svg',
         graphql: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/279800785-18c9f9d5-f09d-49ab-ab4d-5ca358a967d4.svg',
         grunt: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/285177779-acc162d2-85f3-412f-9399-f9573eb83942.svg',
-        gulpjs: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/285179192-5cacd575-c16c-4cf9-9c1a-bc2b00f70210.svg',
+        gulpjs: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/287774029-c2eb189c-a8a1-4d02-8824-b185e176242a.svg',
         haskell: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/285179295-4b4ca6ff-f290-4bfb-bb93-a6b8f35baee9.svg',
         heroku: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/285179420-bd38fb43-1f35-408b-94d1-25de832db6e4.svg',
         html5: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/287469126-74b9f4a1-6862-40a4-bd56-311ce688db46.svg',
@@ -106,7 +107,7 @@ export function IconsData() {
         jquery: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/285180200-2545ece8-ef19-4b0f-a2e5-b548eb20abd7.svg',
         jupyter: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/285180478-c04f5231-ffcc-498b-9f21-8f95ce165263.svg',
         kotlin: 'https://user-images.githubusercontent.com/59892368/215260517-8904a569-d2ec-48c4-8adc-660e929db93e.svg',
-        kubernetes: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/285179579-4ef47737-a0d3-48cc-bcd3-db088eaf2654.svg',
+        kubernetes: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/287774027-6a7ef271-a387-464b-a622-c92ae83985e3.svg',
         laravel: 'https://user-images.githubusercontent.com/59892368/215260515-4f3075d5-ce25-4824-87ff-736ccaf42311.svg',
         linux: 'https://user-images.githubusercontent.com/59892368/215260512-04a0d227-c913-4946-9ff4-b3fb691df5ff.svg',
         lua: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/285180569-c8f60987-7e27-4c96-aef5-51059342747b.svg',
@@ -151,7 +152,7 @@ export function IconsData() {
         visualstudiocode: 'https://user-images.githubusercontent.com/59892368/216786258-69130dda-076f-4811-8ce9-e9d9bb37e603.svg',
         vitejs: 'https://user-images.githubusercontent.com/59892368/218274365-3eae86f7-7953-4209-b5e7-466c8335caa2.svg',
         vuejs: 'https://user-images.githubusercontent.com/59892368/215260542-defd6142-e8a8-44f5-8c8a-c6dfaf3d114a.svg',
-        yarn: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/285182397-b0f9ef29-ee7e-4943-aed7-c7c0e5845cae.svg',
+        yarn: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/287774024-f3af28e4-40c9-4b02-b5e4-c33702c2fca0.svg',
     };
 
     // 64px
