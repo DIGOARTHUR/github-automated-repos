@@ -49,10 +49,20 @@ EXEMPLO
  <!---------------------PROJECT ICON-->
   <img src="https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-bb6d-a466b450db84.svg" alt="angular-logo" width="150px" height="150px"/>
   <br>
-  <i>Github-automated-repos is the lib that gives you the power to manage the view of your projects 
+  <i>Github-automated-repos is the lib that gives you the power to manage the view of your GitHub projects 
     <br> on your website in one place!</i>
   <br>
+
 </p>
+
+
+<!---
+    • Install lib `github-automated-repos` ➥
+    <br>
+    • Configure the useGitHubAutomatedRepos hook with your GitHubUsername and KeyWord
+    <br>
+    • Ready! Now all projects can be managed on their own `GitHub`, in the `Topics field`.
+-->
 
 
  <!------------------------------------LINKS-->
@@ -91,6 +101,22 @@ EXEMPLO
   </div>     
        
 
+## Installation
+
+```shell
+    npm install github-automated-repos
+    # or
+    yarn add github-automated-repos
+```
+
+hook config.
+
+```typescript     
+import {useGithubAutomatedRepos} from "github-automated-repos";
+
+const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
+
+```
 
 
  
@@ -164,17 +190,8 @@ EXEMPLO
   
 # <img  alt="skills"  width="80" height="30" src="https://user-images.githubusercontent.com/59892368/216092858-a64d3a99-1b90-4946-b917-76eadefffb54.svg">  Library <!---write here : demonstration of the application layout.  -->
   
-## Install
 
-```shell
-    npm install github-automated-repos
-
-```
    
-```shell
-    yarn add github-automated-repos
-
-```
 
 ## Import
 ```javascript
