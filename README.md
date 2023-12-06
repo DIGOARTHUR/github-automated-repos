@@ -193,6 +193,8 @@ hook config.
 ```javascript
     import { useGithubAutomatedRepos, ProjectIcon, StackIcon } from 'github-automated-repos/index';
 ```
+  <br>
+
 ### The package imports four elements:
 
 - `useGithubAutomatedRepos` hook responsible for automating the repositories. It returns a function called dataGithubRepos, which takes two parameters: data (data that comes from the GitHub API) and the keyword (the latter responsible for showing the project on your website from the moment it is declared in the Topics field of the your Github repository). The dataGithubRepos returns, so optimized, an array of objects containing 6 properties: id, html_url, homepage, topics, name and description.
@@ -200,26 +202,31 @@ hook config.
   ```tsx
   const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
   ```
-
+ <br>
+ 
 - `StackIcons` component returns, based on the iteration of the topics array, icons of the stacks used in your project. Insert the stacks used in the topics field of your repository. Check the [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
 
   ```tsx
      <StackIcons key={ } itemTopics={ } className={ } />
   ```
- 
+  <br>
+  
 - `StackLabels` component returns, based on the iteration of the topics array, labels of the stacks used in your project. Insert the stacks used in the topics field of your repository. Check the [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
 
   ```tsx
      <StackLabes key={ } itemTopics={ } className={ } />
   ```     
-
+ <br>
+ 
 - `ProjectIcons` component returns, based on the iteration of the topics array, icons to represent your project. The project tag must be inserted in the topics field of your repository. Check the [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) tab!
 
   ```tsx
      <ProjectIcons key={ } itemTopics={ } className={ } />
   ```
 
-
+ <br>
+<br>
+  
 ## Fill in the fields in the github repository
 
 - `id`: repository identification number. used as parameter in the key tag. This field does not need to be filled in.
@@ -228,93 +235,37 @@ hook config.
 
 ![image](https://user-images.githubusercontent.com/59892368/219116735-a026d9b9-f5b9-4389-b8f1-619db2488368.png)
 
+<br>
+
 - `topics`: array that brings information about the icons in [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) and [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons). Used in both ProjectIcon and StackIcon components. It is in this field that is passed the key configured in the hook. Refers to the field About / Topics of your GitHub.
 
 ![image](https://user-images.githubusercontent.com/59892368/219117029-d693ee8f-4289-4ac0-85ed-674091508510.png)
+
+<br>
 
 `name`: This is the name of the repository. Refers to the field  Settings / General / Repository name of your GitHub.
 
 ![image](https://user-images.githubusercontent.com/59892368/219117097-43db2497-7f62-428e-85c6-ef3656da4cd2.png)
 
+<br>
+
 `description`: This is the description given to your repository. Refers to the About /Description field of your GitHub.
 
 ![image](https://user-images.githubusercontent.com/59892368/219117260-5bdb1fbb-c58b-4ad9-938a-068b58c72f27.png)
 
+<br>
+<br>
 
 ## Code Example
 
-:exclamation::exclamation: Don't forget to fill in the keyword fields (determined by you) and enter your github username.
+:exclamation::exclamation: Don't forget to fill in the keyword fields (determined by you) and enter your gitHubusername.
 
 ```javascript
- fetch('https://api.github.com/users/usernameGitHub/repos?sort=created&per_page=999')
+ const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
 ```
 
-```javascript
- then(data => setRepository(dataReposGithub(data, 'keyword')))
-```
 
-#### <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/219095611-551d532a-30fc-4873-b00e-0a8bbf8bb5ec.svg"><a/>
-```javascript   
-  import './App.css';
-  import { useEffect, useState } from 'react';
-  import { useGithubAutomatedRepos, ProjectIcon, StackIcon } from 'github-automated-repos/index';
-  function App() {
-                              {/*useGithubAutomatedRepos hook*/ }
-    const { dataReposGithub } = useGithubAutomatedRepos()
-    const [repository, setRepository] = useState([])
-
-    useEffect(() => {
-                                  {/*Put here your github Name*/ }
-      fetch('https://api.github.com/users/usernameGitHub/repos?sort=created&per_page=999')
-      .then(response => response.json())
-      .then(data => setRepository(dataReposGithub(data, 'deploy'))); {/*<-- keyWord*/}
-  }, [])
-
-    return (
-      <div className="App">
-        {
-          repository.map((item) => {
-            return (
-              <div key={item.id}>
-
-                {/*Project Icon*/}
-                {item.topics.map((icon) => {
-                  return (
-                    <ProjectIcon key={icon} className="project_Icon" iconItem={icon} />
-                  )
-                })}
-                {/*html Url*/}
-                <a href={item.html_url}>
-                    {/*Name Project*/}
-                    <h1>{item.name}</h1>
-                </a>
-                {/*Description*/}
-                <p>{item.description}</p>
-
-                {/*Homepage*/}
-                <a href={item.homepage}>
-                    <h3>Homepage</h3>
-                </a>
-                {/*Stacks Icon*/}
-                {item.topics.map((icon) => {
-                  return (
-                    <StackIcon key={icon} className="stack_Icon" iconItem={icon} />
-                  )
-                })}
-
-              </div>
-
-            )
-          })
-        }
-      </div>
-    );
-
-  }
-  export default App;
-```
-   
-#### <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/219095850-0a4e6f54-d524-4deb-be2c-fda358aba84d.svg"><a/>  
+#### <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/210762527-ae3afe1f-fe36-46a9-98ad-35dbae4d1adf.svg"><a/>  <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/219095611-551d532a-30fc-4873-b00e-0a8bbf8bb5ec.svg"><a/>
 
 ```typescript     
   import './App.css';
@@ -354,7 +305,7 @@ hook config.
                 {/*Stacks Icon and Stacks Label*/}
                 {item.topics.map((icon) => {
                   return (
-                     <div style={{display:'flex', justifyContent:'center'}}>
+                     <div key={icon} style={{display:'flex', justifyContent:'center'}}>
                       <StackIcons key={icon} className="stack_Icon" itemTopics={icon} />
                       <StackLabels key={icon} itemTopics={icon} />
                       </div>
@@ -372,15 +323,11 @@ hook config.
   }
   export default App;
 ```
-       
- <!------------------------------------Framework Settings-->       
-       
-## Framework Settings.
+
+<br>  
+<!------------------------------------Framework Settings--> ## Framework Settings.
        
       
- 
-
-
 <img  alt="NextJS"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6b213e2e-213a-489d-bbda-1dec9dcda585">
        
   
