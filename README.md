@@ -110,9 +110,9 @@ EXEMPLO
 hook config.
 
 ```typescript     
-    import {useGithubAutomatedRepos} from "github-automated-repos";
+    import {useGitHubAutomatedRepos} from "github-automated-repos";
 
-    const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
+    const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 
 ```
 
@@ -192,16 +192,16 @@ hook config.
 
 ## Import
 ```javascript
-    import { useGithubAutomatedRepos, ProjectIcon, StackIcon } from 'github-automated-repos/index';
+    import { useGitHubAutomatedRepos, ProjectIcon, StackIcon } from 'github-automated-repos/index';
 ```
   <br>
 
 ### The package imports four elements:
 
-- `useGithubAutomatedRepos` hook responsible for automating the repositories. It returns a function called dataGithubRepos, which takes two parameters: data (data that comes from the GitHub API) and the keyword (the latter responsible for showing the project on your website from the moment it is declared in the Topics field of the your Github repository). The dataGithubRepos returns, so optimized, an array of objects containing 6 properties: id, html_url, homepage, topics, name and description.
+- `useGitHubAutomatedRepos` hook responsible for automating the repositories. It returns a function called dataGithubRepos, which takes two parameters: data (data that comes from the GitHub API) and the keyword (the latter responsible for showing the project on your website from the moment it is declared in the Topics field of the your Github repository). The dataGithubRepos returns, so optimized, an array of objects containing 6 properties: id, html_url, homepage, topics, name and description.
   
   ```tsx
-  const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
+  const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
   ```
  <br>
  
@@ -262,7 +262,7 @@ hook config.
 :exclamation::exclamation: Don't forget to fill in the fields: your GitHubUsername and keyWord (determined by you).
 
 ```javascript
- const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
+ const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 ```
 
 
@@ -272,7 +272,7 @@ hook config.
   import './App.css';
   import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels, } from 'github-automated-repos';
   function App() {
-                              {/*useGithubAutomatedRepos hook*/ }
+                              {/*useGitHubAutomatedRepos hook*/ }
   const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 
     return (
