@@ -318,15 +318,15 @@ hook config.
 
 ```typescript     
   import './App.css';
-  import { useGithubAutomatedRepos, ProjectIcons, StackIcons, StackLabels, } from 'github-automated-repos';
+  import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels, } from 'github-automated-repos';
   function App() {
                               {/*useGithubAutomatedRepos hook*/ }
-  const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
+  const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 
     return (
       <div className="App">
         {
-          repository.map((item) => {
+          data.map((item) => {
             return (
               <div key={item.id}>
 
@@ -351,11 +351,13 @@ hook config.
                     <h3>Homepage</h3>
                 </a>
 
-                {/*Stacks Icon*/}
+                {/*Stacks Icon and Stacks Label*/}
                 {item.topics.map((icon) => {
                   return (
-                    <StackIcons key={icon} className="stack_Icon" itemTopics={icon} />
-                    <StackText key={topics} itemTopics={topics} />
+                     <div style={{display:'flex', justifyContent:'center'}}>
+                      <StackIcons key={icon} className="stack_Icon" itemTopics={icon} />
+                      <StackLabels key={icon} itemTopics={icon} />
+                      </div>
                   )
                 })}
 
