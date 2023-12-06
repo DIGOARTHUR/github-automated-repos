@@ -1,5 +1,5 @@
 <!--Commit changes
- docs: update Readme
+ docs: update ReadmePT
 -->
 
 <!-- VISUALIZAR NO VSCODE  CTRL + K  V -->
@@ -46,8 +46,8 @@ EXEMPLO
  <!---------------------PROJECT ICON-->
   <img src="https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-bb6d-a466b450db84.svg" alt="angular-logo" width="150px" height="150px"/>
   <br>
-  <i>Github-automated-repos é a biblioteca que te dá o poder de gerenciar a visualização dos seus projetos 
-    <br> no seu website em um só lugar!</i>
+<i>Github-automated-repos é a biblioteca que te dá o poder de gerenciar a visualização de seus projetos no site,
+    <br>em seu próprio GitHub em um só lugar!</i>
   <br>
 </p>
 
@@ -88,7 +88,22 @@ EXEMPLO
   </div>     
        
 
+## Installation
 
+```shell
+    npm install github-automated-repos
+    # or
+    yarn add github-automated-repos
+```
+
+hook config.
+
+```typescript     
+    import {useGithubAutomatedRepos} from "github-automated-repos";
+
+    const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
+
+```
 
  
  ---
@@ -163,18 +178,7 @@ EXEMPLO
 
   
 # <img  alt="skills"  width="80" height="30" src="https://user-images.githubusercontent.com/59892368/216092858-a64d3a99-1b90-4946-b917-76eadefffb54.svg">  Biblioteca <!---write here : demonstration of the application layout.  -->
-  
-## Instalação
 
-```shell
-    npm install github-automated-repos
-
-```
-   
-```shell
-    yarn add github-automated-repos
-
-```
 
 ## Importação
 ```javascript
@@ -182,17 +186,36 @@ EXEMPLO
 ```
 ### O pacote importa quatro recursos:
 
-- `ProjectIcon` componente que renderiza os ícones dos projetos que vêm dos dados retornados da função dataGithubRepos como a propriedade Topics. Verifica a aba [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) !
 
-- `StackIcon` componente que renderiza os ícones das pilhas que vêm dos dados retornados da função dataGithubRepos como a propriedade Topics. Verifica a aba  [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) !
+- `useGithubAutomatedRepos` hook responsável por automatizar os repositórios. Ele retorna uma função chamada dataGithubRepos, que leva dois parâmetros: data (dados que vêm da API do GitHub) e a palavra-chave (esta última responsável por mostrar o projeto no seu site a partir do momento em que ele é declarado no campo Tópicos do seu Github repositório). O dataGithubRepos retorna, assim otimizado, um array de objetos contendo 6 propriedades: id, html_url, página inicial, tópicos, nome e descrição.
 
-- `IGithubRepos` interface para o aplicativo em Typescript. Usado para digitar o useState que receberá o array.
+   ```tsx
+  const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
+   ```
+ <br>
 
-- `useGithubAutomatedRepos` hook responsável por automatizar os repositórios. Ele retorna uma função chamada dataGithubRepos, que recebe dois parâmetros: data (dados que vêm da API do GitHub) e a palavra-chave (esta última responsável por mostrar o projeto em seu site a partir do momento em que é declarado no campo Topics do seu GitHub repositório). O dataGithubRepos retorna, de forma otimizada, um array de objetos contendo 6 propriedades: id, html_url, homepage, topics, name e description.
+ - `StackIcons` O componente retorna, com base na iteração do array topics, ícones das stacks utilizadas em seu projeto. Insira as stacks utilizadas no campo Topics do seu repositório. Verifique a aba  [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) !
 
-```javascript
- const { dataReposGithub } = useGithubAutomatedRepos()
-```
+    ```tsx
+       <StackIcons key={ } itemTopics={ } className={ } />
+      ```
+  <br>
+
+ - `StackLabels` O componente retorna, com base na iteração do array topics, labels das stacks utilizadas em seu projeto. Insira as stacks utilizadas no campo Topics do seu repositório. Verifique a aba  [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) !
+
+      ```tsx
+     <StackLabes key={ } itemTopics={ } className={ } />
+      ```     
+ <br>
+  
+- `ProjectIcons`  O componente retorna, com base na iteração do array topics, ícones para representar seu projeto. A tag Project deve ser inserida no campo Topics do seu repositório. Verifique a aba [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) !
+
+     ```tsx
+          <ProjectIcons key={ } itemTopics={ } className={ } />
+     ```
+
+ <br>
+<br>
 
 ## Preencha os campos no repositório github
 
@@ -202,78 +225,82 @@ EXEMPLO
 
 ![image](https://user-images.githubusercontent.com/59892368/219116735-a026d9b9-f5b9-4389-b8f1-619db2488368.png)
 
+<br>
+
 - `topics`: array que traz informações sobre os ícones em [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) e [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons). 
 Usado nos componentes ProjectIcon e StackIcon. É neste campo que é passada a chave configurada no hook. Refere-se ao campo About / Topics of your GitHub.
 
 ![image](https://user-images.githubusercontent.com/59892368/219117029-d693ee8f-4289-4ac0-85ed-674091508510.png)
 
-`name`: Este é o nome do repositório. Refere-se ao campo  Settings / General / Repository name of your GitHub.
+<br>
+
+- `name`: Este é o nome do repositório. Refere-se ao campo  Settings / General / Repository name of your GitHub.
 
 ![image](https://user-images.githubusercontent.com/59892368/219117097-43db2497-7f62-428e-85c6-ef3656da4cd2.png)
 
-`description`: Esta é a descrição dada ao seu repositório. Refere-se ao campo About /Description field of your GitHub.
+<br>
+
+- `description`: Esta é a descrição dada ao seu repositório. Refere-se ao campo About /Description field of your GitHub.
 
 ![image](https://user-images.githubusercontent.com/59892368/219117260-5bdb1fbb-c58b-4ad9-938a-068b58c72f27.png)
+
+<br>
+<br>
 
 
 ## Exemplo de Código
 
-:exclamation::exclamation: Não se esqueça de preencher os campos de palavras-chave (determinados por você) e inserir seu nome de usuário do github.
+:exclamation::exclamation: Não se esqueça de preencher os campos: 
+seu nome de usuário do github e a palavra-chave (determinados por você).
 
 ```javascript
- fetch('https://api.github.com/users/usernameGitHub/repos?sort=created&per_page=999')
+ const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
 ```
 
-```javascript
- then(data => setRepository(dataReposGithub(data, 'keyword')))
-```
+#### <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/210762527-ae3afe1f-fe36-46a9-98ad-35dbae4d1adf.svg"><a/>  <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/219095611-551d532a-30fc-4873-b00e-0a8bbf8bb5ec.svg"><a/>
 
-#### <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/219095611-551d532a-30fc-4873-b00e-0a8bbf8bb5ec.svg"><a/>
-```javascript   
+```typescript     
   import './App.css';
-  import { useEffect, useState } from 'react';
-  import { useGithubAutomatedRepos, ProjectIcon, StackIcon} from 'github-automated-repos';
+  import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels, } from 'github-automated-repos';
   function App() {
                               {/*useGithubAutomatedRepos hook*/ }
-    const { dataReposGithub } = useGithubAutomatedRepos()
-    const [repository, setRepository] = useState([])
-
-    useEffect(() => {
-                                  {/*Put here your github Name*/ }
-      fetch('https://api.github.com/users/usernameGitHub/repos?sort=created&per_page=999')
-      .then(response => response.json())
-      .then(data => setRepository(dataReposGithub(data, 'deploy'))); {/*<-- keyWord*/}
-  }, [])
+  const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 
     return (
       <div className="App">
         {
-          repository.map((item) => {
+          data.map((item) => {
             return (
               <div key={item.id}>
 
-                {/*Project Icon*/}
+                {/*Project Icons*/}
                 {item.topics.map((icon) => {
                   return (
-                    <ProjectIcon key={icon} className="project_Icon" iconItem={icon} />
+                    <ProjectIcons key={icon} className="project_Icon" iconItem={icon} />
                   )
                 })}
+
                 {/*html Url*/}
                 <a href={item.html_url}>
                     {/*Name Project*/}
                     <h1>{item.name}</h1>
                 </a>
+
                 {/*Description*/}
                 <p>{item.description}</p>
-
+    
                 {/*Homepage*/}
                 <a href={item.homepage}>
                     <h3>Homepage</h3>
                 </a>
-                {/*Stacks Icon*/}
+
+                {/*Stacks Icon and Stacks Label*/}
                 {item.topics.map((icon) => {
                   return (
-                    <StackIcon key={icon} className="stack_Icon" iconItem={icon} />
+                     <div key={icon} style={{display:'flex', justifyContent:'center'}}>
+                      <StackIcons key={icon} className="stack_Icon" itemTopics={icon} />
+                      <StackLabels key={icon} itemTopics={icon} />
+                      </div>
                   )
                 })}
 
@@ -288,6 +315,7 @@ Usado nos componentes ProjectIcon e StackIcon. É neste campo que é passada a c
   }
   export default App;
 ```
+
    
 #### <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/219095850-0a4e6f54-d524-4deb-be2c-fda358aba84d.svg"><a/>  
 
