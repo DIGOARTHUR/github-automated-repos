@@ -8,7 +8,7 @@ type Props = {
 };
 
 /**
- * @param {string} itemTopics - Mandatory: ex.: item.topics.map(itemTopics) ... iconStack={itemTopics}
+ * @param {string} itemTopics - Mandatory: ex.: item.topics.map(itemTopics) ...
  * @param {string} className - Optional: style className.
  * @returns {<img/>} - Return tag img, stack svg icon.
  */

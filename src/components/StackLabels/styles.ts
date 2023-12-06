@@ -1,5 +1,5 @@
 export const css = `
-.styleStackText {
+.styleStackLabels {
     font-weight: 500;
     color: white;
     width: 85px;

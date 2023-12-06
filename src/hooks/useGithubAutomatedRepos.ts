@@ -20,7 +20,7 @@ import { useEffect, useState } from 'react';
 
 export interface IGithubRepos {
     name: string;
-    topics: [];
+    topics: string[];
     html_url: string;
     description: string;
     id: number;
@@ -32,7 +32,7 @@ export interface IGithubRepos {
  * @param {string} keyWordDeploy - Insert a keyword chosen by you. - This key is responsible for managing your projects on GitHub in topics field Ex.: https://github.com/DIGOARTHUR/github-automated-repos#--about-library-.
  * @returns {(IGithubRepos[])} - Returns an array with the properties: name, topics, html_url, description, id, homepage.
  */
-export function useGithubAutomatedRepos(usernameGitHub: string, keyWordDeploy: string) {
+export function useGitHubAutomatedRepos(usernameGitHub: string, keyWordDeploy: string) {
     const [repository, setRepository] = useState<IGithubRepos[]>([]);
     useEffect(() => {
         fetch(`https://api.github.com/users/${usernameGitHub}/repos?sort=created&per_page=999`)

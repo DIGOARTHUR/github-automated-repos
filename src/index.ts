@@ -1,4 +1,4 @@
 export { ProjectIcons } from './components/ProjectIcons';
 export { StackIcons } from './components/StackIcons';
-export { StackText } from './components/StackText/StackText';
-export { IGithubRepos, useGithubAutomatedRepos, IconsData } from './hooks/useGithubAutomatedRepos';
+export { StackLabels } from './components/StackLabels/StackLabels';
+export { IGithubRepos, useGitHubAutomatedRepos, IconsData } from './hooks/useGithubAutomatedRepos';

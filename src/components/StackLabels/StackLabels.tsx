@@ -9,11 +9,11 @@ type Props = {
 };
 
 /**
- * @param {string} itemTopics - Mandatory: ex.: item.topics.map(itemTopics)... iconText={itemTopics}
+ * @param {string} itemTopics - Mandatory: ex.: item.topics.map(itemTopics)... itemTopics={itemTopics}
  * @param {string} className - Optional: style className.
  * @returns {<p/>} - Return tag p, stack text.
  */
-export function StackText({ itemTopics, className = 'styleStackText' }: Props) {
+export function StackLabels({ itemTopics, className = 'styleStackLabels' }: Props) {
     const { projectIcons, stackIcons } = IconsData();
 
     if (projectIcons[itemTopics as never]) {

@@ -3,22 +3,22 @@ import React from 'react';
 import { IconsData } from '../hooks/useGithubAutomatedRepos';
 
 type Props = {
-    iconItem: string;
+    itemTopics: string;
     className?: string;
 };
 
 /**
- * @param {string} iconItem - Mandatory: ex.: item.topics.map(topics)...  iconItem={topics}
+ * @param {string} itemTopics - Mandatory: ex.: item.topics.map(topics)...
  * @param {string} className - Optional: style className.
  * @returns {<img/>} - Return tag img, project svg icon.
  */
 
-export function ProjectIcons({ iconItem, className }: Props) {
+export function ProjectIcons({ itemTopics, className }: Props) {
     const { projectIcons } = IconsData();
     return (
         <div>
-            {projectIcons[iconItem as never] ? (
-                <img className={className} alt={projectIcons[iconItem as never]} src={projectIcons[iconItem as never]} />
+            {projectIcons[itemTopics as never] ? (
+                <img className={className} alt={projectIcons[itemTopics as never]} src={projectIcons[itemTopics as never]} />
             ) : (
                 <> </>
             )}
