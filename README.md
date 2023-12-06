@@ -259,7 +259,7 @@ hook config.
 
 ## Code Example
 
-:exclamation::exclamation: Don't forget to fill in the keyword fields (determined by you) and enter your gitHubusername.
+:exclamation::exclamation: Don't forget to fill in the fields: your GitHubUsername and keyWord (determined by you).
 
 ```javascript
  const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
