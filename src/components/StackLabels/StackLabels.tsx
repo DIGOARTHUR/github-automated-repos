@@ -9,7 +9,7 @@ type Props = {
 };
 
 /**
- * @param {string} itemTopics - Mandatory: ex.: item.topics.map(itemTopics)... itemTopics={itemTopics}
+ * @param {string} itemTopics - Mandatory: ex.: item.topics.map(itemTopics)...
  * @param {string} className - Optional: style className.
  * @returns {<p/>} - Return tag p, stack text.
  */
