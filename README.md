@@ -46,11 +46,12 @@ EXEMPLO
  <!---------------------PROJECT ICON-->
   <img src="https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-bb6d-a466b450db84.svg" alt="angular-logo" width="150px" height="150px"/>
   <br>
-  <i>Github-automated-repos is the lib that gives you the power to manage the view of your GitHub projects 
-    <br> on your website in one place!</i>
+  <i>Github-automated-repos is the lib that gives you the power to manage the visualization of your projects on the website,
+    <br>in your own GitHub in one place!</i>
   <br>
 
 </p>
+
 
 
 <!---
@@ -243,13 +244,13 @@ hook config.
 
 <br>
 
-`name`: This is the name of the repository. Refers to the field  Settings / General / Repository name of your GitHub.
+- `name`: This is the name of the repository. Refers to the field  Settings / General / Repository name of your GitHub.
 
 ![image](https://user-images.githubusercontent.com/59892368/219117097-43db2497-7f62-428e-85c6-ef3656da4cd2.png)
 
 <br>
 
-`description`: This is the description given to your repository. Refers to the About /Description field of your GitHub.
+- `description`: This is the description given to your repository. Refers to the About /Description field of your GitHub.
 
 ![image](https://user-images.githubusercontent.com/59892368/219117260-5bdb1fbb-c58b-4ad9-938a-068b58c72f27.png)
 
