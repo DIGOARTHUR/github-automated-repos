@@ -28,9 +28,6 @@ EXEMPLO
 
 
 
-
-
-
 <!------------------------------------ LANGUAGE BUTTONS-->
 <div align="right">
 <a href="https://github.com/DIGOARTHUR/github-automated-repos#readme">
@@ -112,9 +109,9 @@ EXEMPLO
 hook config.
 
 ```typescript     
-import {useGithubAutomatedRepos} from "github-automated-repos";
+    import {useGithubAutomatedRepos} from "github-automated-repos";
 
-const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
+    const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
 
 ```
 
@@ -153,7 +150,6 @@ const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
 
 - ## <a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">About Library</a>
 - ## <a href="https://github.com/DIGOARTHUR/github-automated-repos#--library-">Library</a>
-   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#install-1">Install</a>
    - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#import-1">Import</a>
    - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#fill-in-the-fields-in-the-github-repository-1">Fill in the fields in the github repository</a>
    - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#code-example-1">Code Example</a>
@@ -199,17 +195,30 @@ const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
 ```
 ### The package imports four elements:
 
-- `ProjectIcon` component that renders the icons of the projects that come from data returned from the dataGithubRepos function as the Topics property. Check the [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) tab!
-
-- `StackIcon` component that renders the icons of the stacks that come from data returned from the dataGithubRepos function as the Topics property. Check the  [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
-
-- `IGithubRepos` interface for the application in Typescript. Used to type the useState that will receive the array.
-
 - `useGithubAutomatedRepos` hook responsible for automating the repositories. It returns a function called dataGithubRepos, which takes two parameters: data (data that comes from the GitHub API) and the keyword (the latter responsible for showing the project on your website from the moment it is declared in the Topics field of the your Github repository). The dataGithubRepos returns, so optimized, an array of objects containing 6 properties: id, html_url, homepage, topics, name and description.
+  
+  ```tsx
+  const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
+  ```
 
-```javascript
- const { dataReposGithub } = useGithubAutomatedRepos()
-```
+- `StackIcons` component returns, based on the iteration of the topics array, icons of the stacks used in your project. Insert the stacks used in the topics field of your repository. Check the [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
+
+  ```tsx
+     <StackIcons key={ } itemTopics={ } className={ } />
+  ```
+ 
+- `StackLabels` component returns, based on the iteration of the topics array, labels of the stacks used in your project. Insert the stacks used in the topics field of your repository. Check the [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
+
+  ```tsx
+     <StackLabes key={ } itemTopics={ } className={ } />
+  ```     
+
+- `ProjectIcons` component returns, based on the iteration of the topics array, icons to represent your project. The project tag must be inserted in the topics field of your repository. Check the [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) tab!
+
+  ```tsx
+     <ProjectIcons key={ } itemTopics={ } className={ } />
+  ```
+
 
 ## Fill in the fields in the github repository
 
@@ -309,19 +318,10 @@ const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
 
 ```typescript     
   import './App.css';
-  import { useEffect, useState } from 'react';
-  import { useGithubAutomatedRepos, ProjectIcon, StackIcon } from 'github-automated-repos/index';
+  import { useGithubAutomatedRepos, ProjectIcons, StackIcons, StackLabels, } from 'github-automated-repos';
   function App() {
                               {/*useGithubAutomatedRepos hook*/ }
-    const { dataReposGithub } = useGithubAutomatedRepos()
-    const [repository, setRepository] = useState<IGithubRepos[]>([])
-
-    useEffect(() => {
-                                  {/*Put here your github Name*/ }
-      fetch('https://api.github.com/users/usernameGitHub/repos?sort=created&per_page=999')
-      .then(response => response.json())
-      .then(data => setRepository(dataReposGithub(data, 'deploy'))); {/*<-- keyWord*/}
-  }, [])
+  const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
 
     return (
       <div className="App">
@@ -330,10 +330,10 @@ const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
             return (
               <div key={item.id}>
 
-                {/*Project Icon*/}
+                {/*Project Icons*/}
                 {item.topics.map((icon) => {
                   return (
-                    <ProjectIcon key={icon} className="project_Icon" iconItem={icon} />
+                    <ProjectIcons key={icon} className="project_Icon" iconItem={icon} />
                   )
                 })}
 
@@ -354,7 +354,8 @@ const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
                 {/*Stacks Icon*/}
                 {item.topics.map((icon) => {
                   return (
-                    <StackIcon key={icon} className="stack_Icon" iconItem={icon} />
+                    <StackIcons key={icon} className="stack_Icon" itemTopics={icon} />
+                    <StackText key={topics} itemTopics={topics} />
                   )
                 })}
 
