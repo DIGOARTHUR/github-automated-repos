@@ -99,9 +99,9 @@ EXEMPLO
 configuração do hook
 
 ```typescript     
-    import {useGithubAutomatedRepos} from "github-automated-repos";
+    import {useGitHubAutomatedRepos} from "github-automated-repos";
 
-    const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
+    const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 
 ```
 
@@ -181,15 +181,15 @@ configuração do hook
 
 ## Importação
 ```javascript
-    import { useGithubAutomatedRepos, ProjectIcon, StackIcon, IGithubRepos} from 'github-automated-repos';
+    import { useGitHubAutomatedRepos, ProjectIcon, StackIcon, IGithubRepos} from 'github-automated-repos';
 ```
 ### O pacote importa quatro recursos:
 
 
-- `useGithubAutomatedRepos` hook responsável por automatizar os repositórios. Ele retorna uma função chamada dataGithubRepos, que leva dois parâmetros: data (dados que vêm da API do GitHub) e a palavra-chave (esta última responsável por mostrar o projeto no seu site a partir do momento em que ele é declarado no campo Tópicos do seu Github repositório). O dataGithubRepos retorna, assim otimizado, um array de objetos contendo 6 propriedades: id, html_url, página inicial, tópicos, nome e descrição.
+- `useGitHubAutomatedRepos` hook responsável por automatizar os repositórios. Ele retorna uma função chamada dataGithubRepos, que leva dois parâmetros: data (dados que vêm da API do GitHub) e a palavra-chave (esta última responsável por mostrar o projeto no seu site a partir do momento em que ele é declarado no campo Tópicos do seu Github repositório). O dataGithubRepos retorna, assim otimizado, um array de objetos contendo 6 propriedades: id, html_url, página inicial, tópicos, nome e descrição.
 
    ```tsx
-  const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
+  const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
    ```
  <br>
 
@@ -253,7 +253,7 @@ Usado nos componentes ProjectIcon e StackIcon. É neste campo que é passada a c
 seu nome de usuário do github e a palavra-chave (determinados por você).
 
 ```javascript
- const data = useGithubAutomatedRepos("GitHubUsername", "KeyWord");
+ const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 ```
 
 #### <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/210762527-ae3afe1f-fe36-46a9-98ad-35dbae4d1adf.svg"><a/>  <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/219095611-551d532a-30fc-4873-b00e-0a8bbf8bb5ec.svg"><a/>
@@ -262,7 +262,7 @@ seu nome de usuário do github e a palavra-chave (determinados por você).
   import './App.css';
   import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels, } from 'github-automated-repos';
   function App() {
-                              {/*useGithubAutomatedRepos hook*/ }
+                              {/*useGitHubAutomatedRepos hook*/ }
   const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 
     return (
