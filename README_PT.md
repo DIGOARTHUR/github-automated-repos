@@ -88,7 +88,7 @@ EXEMPLO
   </div>     
        
 
-## Installation
+## Instalação
 
 ```shell
     npm install github-automated-repos
@@ -96,7 +96,7 @@ EXEMPLO
     yarn add github-automated-repos
 ```
 
-hook config.
+configuração do hook
 
 ```typescript     
     import {useGithubAutomatedRepos} from "github-automated-repos";
@@ -139,7 +139,6 @@ hook config.
 
 - ## <a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">Sobre a bilbioteca</a>
 - ## <a href="https://github.com/DIGOARTHUR/github-automated-repos#--library-">Biblioteca</a>
-   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#install-1">Instalação</a>
    - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#import-1">Importar</a>
    - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#fill-in-the-fields-in-the-github-repository-1">Preencha os campos no repositório GitHub</a>
    - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#code-example-1">Exemplo de Código</a>
