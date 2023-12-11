@@ -35,7 +35,7 @@ EXEMPLO
 <a/>
 <br/>
 <a href="https://github.com/DIGOARTHUR/github-automated-repos/blob/main/README_PT.md">
-<img  alt="language_Brazil"  height="35" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/258252924-3c572826-3b6d-46da-b5d0-dde3879748c5.svg">
+<img  alt="language_Brazil"  height="35" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/288551794-f50cff19-7ef7-41c4-81b5-b091ebd0f498.svg">
 <a/>
 
 </div>
