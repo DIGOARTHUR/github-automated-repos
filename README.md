@@ -168,6 +168,7 @@ Array(0)
 <details>
 <summary>IN PAGE WEB</summary>
 
+### 💡Use your creativity and build the card however you want.
 
 ![localhost_5173_](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/98510c73-5d74-4f99-bb12-45b71c4122da)
 
