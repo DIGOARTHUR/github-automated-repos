@@ -1,3 +1,4 @@
+
 <!--Commit changes
  docs: update Readme
 -->
@@ -259,7 +260,10 @@ hook config.
 
 ## Code Example
 
-:exclamation::exclamation: Don't forget to fill in the fields: your GitHubUsername and keyWord (determined by you).
+> [!CAUTION]
+> :exclamation::exclamation: Don't forget to fill in the fields: your GitHubUsername and keyWord (determined by you).
+
+
 
 ```javascript
  const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
