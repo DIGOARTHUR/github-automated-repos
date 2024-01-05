@@ -100,7 +100,7 @@ EXEMPLO
   </div>     
        
 
-## Installation
+## 1. Installation
 
 ```shell
     npm install github-automated-repos
@@ -108,7 +108,9 @@ EXEMPLO
     yarn add github-automated-repos
 ```
 
-hook config.
+## 2. hook config.
+> [!TIP]
+> Use the code example in this documentation. [Code Example](https://github.com/DIGOARTHUR/github-automated-repos/tree/main?tab=readme-ov-file#code-example-1) 
 
 ```typescript     
     import {useGitHubAutomatedRepos} from "github-automated-repos";
@@ -116,6 +118,62 @@ hook config.
     const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 
 ```
+## 3. Choose the repositories and fill in the Topics field with the keyword you determined.
+> [!IMPORTANT]
+> To insert stack names in the topics field, see web documentation > [Stack Icons](https://github-automated-repos.vercel.app)
+
+![image](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/9a0a0aaf-02e8-4a7f-8390-6e7fb4a3ea53)
+
+## 4. ✅Ready! JSON - Data from repositories chosen by you!
+
+<details>
+<summary>JSON - DATA</summary>
+
+### Data Example ~ console.log(data) ~
+
+```javascript
+Array(8)
+0
+: 
+{id: 585693873, name: 'github-automated-repos', html_url: 'https://github.com/DIGOARTHUR/github-automated-repos', description: 'The library that automates, in one place, the admi…stration of your github projects on your website.', topics: Array(7), …}
+1
+: 
+{id: 517152367, name: 'Dashgo', html_url: 'https://github.com/DIGOARTHUR/Dashgo', description: 'IGNITE - Trilha ReactJS/ - Neste projeto é aplicad…ate, Components, Props. Recursos do JS como: Map.', topics: Array(7), …}
+2
+: 
+{id: 482667387, name: 'DashBoard-Financeiro', html_url: 'https://github.com/DIGOARTHUR/DashBoard-Financeiro', description: 'IGNITE - Trilha ReactJS/ Chapter II - Esta aplicaç…mpanhamento de valores de entrada, saída e total.', topics: Array(6), …}
+3
+: 
+{id: 449443635, name: 'SAPIU5-CRUD', html_url: 'https://github.com/DIGOARTHUR/SAPIU5-CRUD', description: 'Construção de uma aplicação CRUD utilizando o Framework SAP UI5, e uma API em NodeJS.', topics: Array(5), …}
+4
+: 
+{id: 412849316, name: 'Task.TODO', html_url: 'https://github.com/DIGOARTHUR/Task.TODO', description: 'IGNITE - Trilha ReactJS/ - Este projeto aborda con…Filter e Math, Spread. E para estilização o SASS.', topics: Array(7), …}
+5
+: 
+{id: 355616217, name: 'Move.it', html_url: 'https://github.com/DIGOARTHUR/Move.it', description: 'NLW#04 - Rocketseat - Utilizando a técnica Pomodor… o objetivo é executar a tarefa do seu interesse.', topics: Array(8), …}
+6
+: 
+{id: 334188509, name: 'CrudGoogleSheet-ft.-Gspread', html_url: 'https://github.com/DIGOARTHUR/CrudGoogleSheet-ft.-Gspread', description: "Using the Google spreadsheet and the 'gspread' API…nguage for reading, analyzing and inserting data.", topics: Array(4), …}
+7
+: 
+{id: 297106167, name: 'Console-GuessingGame', html_url: 'https://github.com/DIGOARTHUR/Console-GuessingGame', description: 'This was my first program create in University.', topics: Array(2), …}
+length
+: 
+8
+[[Prototype]]
+: 
+Array(0)
+```
+</details>
+<details>
+<summary>IN PAGE WEB</summary>
+
+
+![localhost_5173_](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/98510c73-5d74-4f99-bb12-45b71c4122da)
+
+
+</details>
+
 
 
  
