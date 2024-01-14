@@ -98,7 +98,12 @@ EXEMPLO
 <img  alt="NextJS"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6b213e2e-213a-489d-bbda-1dec9dcda585"> ![Check](https://img.shields.io/badge/-Framework%20settings-yellow)
      
   </div>     
-       
+
+ <br>
+  <br>
+  
+  > [!TIP]
+> Use the code example in this documentation. [Code Example](https://github.com/DIGOARTHUR/github-automated-repos/tree/main?tab=readme-ov-file#code-example-1)      
 
 ## 1. Installation
 
@@ -109,8 +114,7 @@ EXEMPLO
 ```
 
 ## 2. hook config.
-> [!TIP]
-> Use the code example in this documentation. [Code Example](https://github.com/DIGOARTHUR/github-automated-repos/tree/main?tab=readme-ov-file#code-example-1) 
+
 
 ```typescript     
     import {useGitHubAutomatedRepos} from "github-automated-repos";
@@ -265,24 +269,47 @@ Array(0)
   ```
  <br>
  
-- `StackIcons` component returns, based on the iteration of the topics array, icons of the stacks used in your project. Insert the stacks used in the topics field of your repository. Check the [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
+- `StackIcons` The component returns, based on the iteration of the topic array that is contained in data, icons of the stacks used in your project. Enter the stacks used in your repository's topic field.. Check the [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
 
   ```tsx
-     <StackIcons key={ } itemTopics={ } className={ } />
+   data.map((item) => {
+       return (
+      ...
+      {item.topics.map((icon, index) => {
+           return (
+             <StackIcons key={index} itemTopics={ icon} className={ } />
+      }
+      ...
   ```
   <br>
   
-- `StackLabels` component returns, based on the iteration of the topics array, labels of the stacks used in your project. Insert the stacks used in the topics field of your repository. Check the [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
+- `StackLabels` component returns, based on the iteration of the topics array that is contained in data, labels of the stacks used in your project. Insert the stacks used in the topics field of your repository. Check the [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
 
   ```tsx
-     <StackLabes key={ } itemTopics={ } className={ } />
+     data.map((item) => {
+       return (
+      ...
+      {item.topics.map((icon, index) => {
+           return (
+             <StackLabes key={ index } itemTopics={ icon} className={ } />
+      }
+      ...
+     
   ```     
  <br>
  
-- `ProjectIcons` component returns, based on the iteration of the topics array, icons to represent your project. The project tag must be inserted in the topics field of your repository. Check the [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) tab!
+- `ProjectIcons` component returns, based on the iteration of the topics array that is contained in data, icons to represent your project. The project tag must be inserted in the topics field of your repository. Check the [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) tab!
 
   ```tsx
-     <ProjectIcons key={ } itemTopics={ } className={ } />
+     data.map((item) => {
+       return (
+      ...
+      {item.topics.map((icon, index) => {
+           return (
+             <ProjectIcons key={ index } itemTopics={ icon } className={ } />
+      }
+      ...
+     
   ```
 
  <br>
@@ -367,11 +394,11 @@ Array(0)
                 </a>
 
                 {/*Stacks Icon and Stacks Label*/}
-                {item.topics.map((icon) => {
+                {item.topics.map((icon, index) => {
                   return (
                      <div key={icon} style={{display:'flex', justifyContent:'center'}}>
                       <StackIcons key={icon} className="stack_Icon" itemTopics={icon} />
-                      <StackLabels key={icon} itemTopics={icon} />
+                      <StackLabels key={index} itemTopics={icon} />
                       </div>
                   )
                 })}
