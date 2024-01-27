@@ -317,29 +317,60 @@ Array(0)
   
 ## Fill in the fields in the github repository
 
+- `banner`: This property returns a .PNG image. For this to be possible, the correct name must be entered in the file called `banner.png` and also the path. Ex.:
+```
+└── src
+       └── assets
+            └── images
+                    └── `banner.png`
+    ├── ...
+```
+<div align="center">
+<img  alt="dashgo_layout"  height="150" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/68f59bce-0d8f-4cea-81c9-01596d97f47e"> 
+<img  alt="dashfincaneiro_layout"  height="150" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/86dac1db-d04a-462b-a2ea-f00db264dbad"> 
+<img  alt="proffy_layout"  height="150" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/bfcd0785-ce8a-4327-8b8b-5de495528c3f"> 
+</div>
+
+
+
 - `id`: repository identification number. used as parameter in the key tag. This field does not need to be filled in.
 - `html_url`: repository link. Used as the link of access. This field does not need to be filled in.
 - `homepage`: it's the access link to the built page, page deploy.  About / Website of your GitHub.
 
-![image](https://user-images.githubusercontent.com/59892368/219116735-a026d9b9-f5b9-4389-b8f1-619db2488368.png)
+<div align="center">
+<img  alt="homepage_Props"  height="600" src="https://user-images.githubusercontent.com/59892368/219116735-a026d9b9-f5b9-4389-b8f1-619db2488368.png"> 
+</div>
+
 
 <br>
 
 - `topics`: array that brings information about the icons in [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) and [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons). Used in both ProjectIcon and StackIcon components. It is in this field that is passed the key configured in the hook. Refers to the field About / Topics of your GitHub.
 
-![image](https://user-images.githubusercontent.com/59892368/219117029-d693ee8f-4289-4ac0-85ed-674091508510.png)
+<div align="center">
+<img  alt="topics_Props"  height="600" src="https://user-images.githubusercontent.com/59892368/219117029-d693ee8f-4289-4ac0-85ed-674091508510.png"> 
+</div>
+
+
 
 <br>
 
 - `name`: This is the name of the repository. Refers to the field  Settings / General / Repository name of your GitHub.
 
-![image](https://user-images.githubusercontent.com/59892368/219117097-43db2497-7f62-428e-85c6-ef3656da4cd2.png)
+<div align="center">
+<img  alt="name_Props"  height="600" src="https://user-images.githubusercontent.com/59892368/219117097-43db2497-7f62-428e-85c6-ef3656da4cd2.png"> 
+</div>
+
+
 
 <br>
 
 - `description`: This is the description given to your repository. Refers to the About /Description field of your GitHub.
 
-![image](https://user-images.githubusercontent.com/59892368/219117260-5bdb1fbb-c58b-4ad9-938a-068b58c72f27.png)
+<div align="center">
+<img  alt="description_Props"  height="600" src="https://user-images.githubusercontent.com/59892368/219117260-5bdb1fbb-c58b-4ad9-938a-068b58c72f27.png"> 
+</div>
+
+
 
 <br>
 <br>
