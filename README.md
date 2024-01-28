@@ -241,7 +241,7 @@ Array(0)
    
 
 ## Import
-```javascript
+```jsx
 import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from 'github-automated-repos';
 ```
   <br>
@@ -272,7 +272,7 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
  
 - `StackIcons` The component returns, based on the iteration of the topic array that is contained in data, icons of the stacks used in your project. Enter the stacks used in your repository's topic field.. Check the [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
 
-  ```tsx
+  ```jsx
    data.map((item) => {
        return (
       ...
@@ -315,7 +315,7 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
   
 - `StackLabels` component returns, based on the iteration of the topics array that is contained in data, labels of the stacks used in your project. Insert the stacks used in the topics field of your repository. Check the [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
 
-  ```tsx
+  ```jsx
      data.map((item) => {
        return (
       ...
@@ -345,7 +345,7 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
  
 - `ProjectIcons` component returns, based on the iteration of the topics array that is contained in data, icons to represent your project. The project tag must be inserted in the topics field of your repository. Check the [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) tab!
 
-  ```tsx
+  ```jsx
      data.map((item) => {
        return (
       ...
