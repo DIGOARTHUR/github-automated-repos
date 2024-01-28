@@ -242,7 +242,7 @@ Array(0)
 
 ## Import
 ```javascript
-    import { useGitHubAutomatedRepos, ProjectIcon, StackIcon } from 'github-automated-repos/index';
+    import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from 'github-automated-repos';
 ```
   <br>
 
@@ -278,7 +278,7 @@ Array(0)
       ...
       {item.topics.map((icon, index) => {
            return (
-             <StackIcons key={index} itemTopics={ icon} className={ } />
+             <StackIcons key={index} itemTopics={ icon } className={ } />
       }
       ...
   ```
@@ -321,7 +321,7 @@ Array(0)
       ...
       {item.topics.map((icon, index) => {
            return (
-             <StackLabes key={ index } itemTopics={ icon} className={ } />
+             <StackLabes key={ index } itemTopics={ icon } className={ } />
       }
       ...
      
@@ -452,7 +452,7 @@ Array(0)
 
 ```jsx    
   import './App.css';
-  import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels, } from 'github-automated-repos';
+  import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from 'github-automated-repos';
   function App() {
                               {/*useGitHubAutomatedRepos hook*/ }
   const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
