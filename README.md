@@ -242,7 +242,7 @@ Array(0)
 
 ## Import
 ```javascript
-    import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from 'github-automated-repos';
+import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from 'github-automated-repos';
 ```
   <br>
 
