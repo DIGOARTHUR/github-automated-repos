@@ -51,7 +51,7 @@ export function useGitHubAutomatedRepos(usernameGitHub: string, keyWordDeploy: s
         description: item.description,
         topics: item.topics,
         homepage: item.homepage,
-        banner: `https://raw.githubusercontent.com/DIGOARTHUR/${item.name}/main/src/assets/img/banner.png`,
+        banner: `https://raw.githubusercontent.com/DIGOARTHUR/${item.name}/main/src/assets/imgs/banner.png`,
     }));
 }
 
