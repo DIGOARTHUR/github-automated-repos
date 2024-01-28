@@ -383,9 +383,9 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
 - `banner`: This property returns a .PNG image. For this to be possible, the correct name must be entered in the file called `banner.png` and also the path. Ex.:
 ```
 └── src
-       └── assets
-            └── img
-                    └── `banner.png`
+    └── assets
+            └── imgs
+                └── `banner.png`
     ├── ...
 ```
 <div align="center">
