@@ -1,4 +1,5 @@
 
+
 <!--Commit changes
  docs: update Readme
 -->
@@ -206,10 +207,6 @@ Array(0)
  
   
 
-
-
-
-
    
    <!------------------------------------SUMMARY-->
 
@@ -281,6 +278,39 @@ Array(0)
       }
       ...
   ```
+
+    - #### Render component StackIcons example:
+
+<div align="center">
+    
+![react-icons](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/876a12c4-93fa-4eb3-908c-b7c36ded395c)![NET_Core_Logo](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6cad1fdc-d3bb-4adb-9b14-bec1977aaee1)
+![mysql-logo-svgrepo-com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/8690e53e-5787-48b1-8adc-29c90e56fd42)
+![mongo-svgrepo-com (1)](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/7cd5a1ec-ea87-4d7e-8429-1e3fcff03f49)
+![linux-svgrepo-com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/79ac45a3-5958-4efe-a3e6-90c135d2b466)
+![vue](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/07dcaa25-215a-45a8-b783-2c97626c1639)
+![Vitejs-logo](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/05cf8a94-895c-4249-8636-f1d2a0ea165b)
+![typescript](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/ebd5f88a-7915-4cb5-9109-6f3fc5db9fec)
+![tailwind-svgrepo-com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6af503c9-efdc-4e83-9ba7-c910476a8642)
+![swift](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/355549ea-87e2-4afd-83a9-2f9cb56c7c49)
+![swagger-svgrepo-com (1)](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/fce6e2aa-ecc8-4995-bc3f-68b225f0f0d7)
+![storybook](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/453d2e70-dc15-4fb3-b75e-4ea35cbe472b)
+![sqlite-svgrepo-com (1)](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/ffb1f056-97ee-4bd1-b5be-4b8f87b6ac9d)
+![spring-svgrepo-com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/3c36d340-e16c-458e-b39c-eef7051aaf74)
+![scala-svgrepo-com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/a65edf82-e0ea-4a8e-90b2-e284593684ec)
+![sass-svgrepo-com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/7fd8a1af-290f-499f-8691-360c6511cc7b)
+![ruby-svgrepo-com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/3d2bd96d-e9cd-4566-b58e-a6bb9d907aa0)
+![Ruby_On_Rails_Logo](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/c755be70-ba40-48ae-84f1-65ab791835ec)
+![react-query-seeklogo com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/eb3732e9-d3a9-4f9f-b706-8969557681aa)
+![react-icons](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/facb4121-1d16-4686-b957-6f75e68002fc)
+![python-svgrepo-com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/1cd247af-dabd-41dc-97c5-311944661278)
+![prisma](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/b7355d54-3cd1-4750-8192-e4bdb4b774c8)
+![prettier](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/809a2edc-c11a-4645-bc44-c97e546fdadf)
+![postgresql-svgrepo-com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/9cba6de0-d057-4e06-8fd6-18efe3a53826)
+![php](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6b9cb550-10e1-48f0-b786-b02b077a93ac)
+![npm](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/777ff053-f535-4e7c-99cb-185ef06db1e9)
+![nodejs](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/b567e742-8e35-43ab-be73-11112c8732f8)
+    
+</div>
   <br>
   
 - `StackLabels` component returns, based on the iteration of the topics array that is contained in data, labels of the stacks used in your project. Insert the stacks used in the topics field of your repository. Check the [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
@@ -295,7 +325,25 @@ Array(0)
       }
       ...
      
-  ```     
+  ```
+    - #### Render component StackLabels example:
+
+<div align="center">
+    
+![](https://img.shields.io/badge/angular-%23646cff?style=plastic)
+![](https://img.shields.io/badge/javascript-%23646cff?style=plastic)
+![](https://img.shields.io/badge/aws-%23646cff?style=plastic)
+![](https://img.shields.io/badge/elixir-%23646cff?style=plastic) ![](https://img.shields.io/badge/jest-%23646cff?style=plastic) ![](https://img.shields.io/badge/mongodb-%23646cff?style=plastic)  ![](https://img.shields.io/badge/react-%23646cff?style=plastic) ![](https://img.shields.io/badge/salesforce-%23646cff?style=plastic) ![](https://img.shields.io/badge/vuejs-%23646cff?style=plastic)
+ ![](https://img.shields.io/badge/yarn-%23646cff?style=plastic)
+ ![](https://img.shields.io/badge/visualstudio-%23646cff?style=plastic)
+ ![](https://img.shields.io/badge/storybook-%23646cff?style=plastic) 
+ ![](https://img.shields.io/badge/sass-%23646cff?style=plastic)
+ ![](https://img.shields.io/badge/mysql-%23646cff?style=plastic) 
+ ![](https://img.shields.io/badge/kubernetes-%23646cff?style=plastic) 
+ ![](https://img.shields.io/badge/googlecloud-%23646cff?style=plastic) 
+ ![](https://img.shields.io/badge/firebase-%23646cff?style=plastic) 
+</div>
+    
  <br>
  
 - `ProjectIcons` component returns, based on the iteration of the topics array that is contained in data, icons to represent your project. The project tag must be inserted in the topics field of your repository. Check the [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) tab!
