@@ -1,3 +1,216 @@
+![213137554-83aa6798-9487-4d1b-a260-fd2035adaaad](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/32856f40-e024-43a8-a418-d761488a5f67)
+![212284904-0b4f29fa-4141-4212-b516-d4e4fcdb8519](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/9a05cfb2-0da2-4c13-bb0d-8bc0ba5beb80)
+![212284904-0b4f29fa-4141-4212-b516-d4e4fcdb8519](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/a676f6d4-7f21-45df-9042-d8794ac28620)
+![212284904-0b4f29fa-4141-4212-b516-d4e4fcdb8519](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/5a13da37-5ccc-42eb-a6b3-f6cc39ec9288)
+![Uploading 21313<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg
+   fill="#000000"
+   width="48.262558"
+   height="35"
+   viewBox="-5.12 -5.12 55.984567 40.6"
+   version="1.1"
+   xml:space="preserve"
+   stroke="#000000"
+   stroke-width="0.00064"
+   id="svg1"
+   sodipodi:docname="213137554-83aa6798-9487-4d1b-a260-fd2035adaaad.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs1" /><sodipodi:namedview
+   id="namedview1"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="4.8613591"
+   inkscape:cx="62.533952"
+   inkscape:cy="19.130453"
+   inkscape:window-width="1920"
+   inkscape:window-height="1051"
+   inkscape:window-x="-9"
+   inkscape:window-y="-9"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg1" />&#10;&#10;<g
+   id="SVGRepo_bgCarrier"
+   stroke-width="0"
+   style="fill:#b3b3b3"
+   transform="matrix(0.96665194,0,0,0.96665194,-8.0196465,-15.752862)" />&#10;&#10;<g
+   id="SVGRepo_tracerCarrier"
+   stroke-linecap="round"
+   stroke-linejoin="round"
+   style="fill:#b3b3b3"
+   transform="matrix(0.96665194,0,0,0.96665194,-8.0196465,-15.752862)" />&#10;&#10;<g
+   id="SVGRepo_iconCarrier"
+   style="fill:#b3b3b3"
+   transform="matrix(0.96665194,0,0,0.96665194,-8.0196465,-15.752862)"> <g
+   id="smart_lamp"
+   style="fill:#b3b3b3" /> <g
+   id="e-wallet"
+   style="fill:#b3b3b3" /> <g
+   id="virtual_reality"
+   style="fill:#b3b3b3" /> <g
+   id="payment"
+   style="fill:#b3b3b3" /> <g
+   id="cloud_storage"
+   style="fill:#b3b3b3" /> <g
+   id="security_camera"
+   style="fill:#b3b3b3" /> <g
+   id="smart_home"
+   style="fill:#b3b3b3" /> <g
+   id="connection"
+   style="fill:#b3b3b3" /> <g
+   id="game"
+   style="fill:#b3b3b3" /> <g
+   id="drone"
+   style="fill:#b3b3b3" /> <g
+   id="smart_car"
+   style="fill:#b3b3b3" /> <g
+   id="camera"
+   style="fill:#b3b3b3" /> <g
+   id="online_business"
+   style="fill:#b3b3b3" /> <g
+   id="smartwatch"
+   style="fill:#b3b3b3" /> <g
+   id="online_shopping"
+   style="fill:#b3b3b3"> <path
+   d="M 60,16 H 19.4 L 19.3,15.5 C 19,14 17.8,13 16.3,13 H 14.8 C 14.4,11.8 13.3,11 12,11 H 4 c -0.6,0 -1,0.4 -1,1 v 4 c 0,0.6 0.4,1 1,1 h 8 c 1.3,0 2.4,-0.8 2.8,-2 h 1.5 c 0.5,0 0.9,0.4 1,0.8 l 4.5,25.3 -2.7,0.5 c -1.8,0.3 -3.1,1.8 -3.1,3.7 0,1 0.4,1.9 1.1,2.6 0.7,0.7 1.6,1.1 2.6,1.1 h 3.4 c 0.5,2.3 2.5,4 4.9,4 2.4,0 4.4,-1.7 4.9,-4 h 11.2 c 0.5,2.3 2.5,4 4.9,4 2.4,0 4.4,-1.7 4.9,-4 H 56 c 0.6,0 1,-0.4 1,-1 0,-0.6 -0.4,-1 -1,-1 h -2.1 c -0.5,-2.3 -2.5,-4 -4.9,-4 -2.4,0 -4.4,1.7 -4.9,4 H 32.9 c -0.5,-2.3 -2.5,-4 -4.9,-4 -2.4,0 -4.4,1.7 -4.9,4 H 19.7 C 19.2,47 18.8,46.8 18.5,46.5 18.2,46.2 18,45.7 18,45.3 c 0,-0.8 0.6,-1.5 1.4,-1.7 L 23.1,43 c 0,0 0,0 0,0 l 37,-6 c 0.5,-0.1 0.8,-0.5 0.8,-1 V 17 C 61,16.4 60.6,16 60,16 Z M 12,15 H 5 v -2 h 7 c 0.6,0 1,0.4 1,1 0,0.6 -0.4,1 -1,1 z m 37,30 c 1.7,0 3,1.3 3,3 0,1.7 -1.3,3 -3,3 -1.7,0 -3,-1.3 -3,-3 0,-1.7 1.3,-3 3,-3 z m -21,0 c 1.7,0 3,1.3 3,3 0,1.7 -1.3,3 -3,3 -1.7,0 -3,-1.3 -3,-3 0,-1.7 1.3,-3 3,-3 z m -5.3,-10.1 8.2,-1.1 1,5.7 -8.1,1.3 z m 16.4,-11.8 -8,0.4 -1,-5.5 h 8 z M 40.2,18 h 8 l 0.9,4.6 -7.9,0.4 z m -0.7,7.1 1,5.5 -8,1.1 -1.1,-6.1 z m -8.9,6.8 -8.2,1.1 -1.2,-7 8.3,-0.4 z m 2.3,1.7 8,-1.1 1,5.4 -8.1,1.3 z m 10,-1.4 7.9,-1 1,5.1 -7.9,1.3 z m -0.4,-1.9 -1,-5.3 8,-0.4 0.9,4.7 z m 9,-5.9 L 59,24 v 4.1 L 52.4,29 Z M 59,22.1 51.1,22.5 50.2,18 H 59 Z M 28.2,18 l 1,5.6 -8.3,0.4 c -0.1,0 -0.1,0 -0.1,0 l -1.1,-6 z m 25.6,18 -1,-5 6.2,-0.8 v 5 z"
+   id="path1"
+   style="fill:#b3b3b3" /> </g> <g
+   id="smart_Television"
+   style="fill:#b3b3b3" /> <g
+   id="security"
+   style="fill:#b3b3b3" /> <g
+   id="communication"
+   style="fill:#b3b3b3" /> <g
+   id="remote_control"
+   style="fill:#b3b3b3" /> <g
+   id="satelite_dish"
+   style="fill:#b3b3b3" /> </g>&#10;&#10;</svg>
+7554-83aa6798-9487-4d1b-a260-fd2035adaaad.svg…]()
+
+
+
+
+![Uploading 2<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg
+   version="1.1"
+   id="Uploaded to svgrepo.com"
+   width="34.994572"
+   height="25"
+   viewBox="0 0 17.497286 12.5"
+   xml:space="preserve"
+   fill="#000000"
+   sodipodi:docname="212284904-0b4f29fa-4141-4212-b516-d4e4fcdb8519.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs1" /><sodipodi:namedview
+   id="namedview1"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="6.875"
+   inkscape:cx="31.709091"
+   inkscape:cy="29.527273"
+   inkscape:window-width="1920"
+   inkscape:window-height="1051"
+   inkscape:window-x="-9"
+   inkscape:window-y="-9"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Uploaded to svgrepo.com" />&#10;&#10;<g
+   id="SVGRepo_bgCarrier"
+   stroke-width="0"
+   style="fill:#646cff;fill-opacity:1"
+   transform="translate(-1.49475,-5.275)" />&#10;&#10;<g
+   id="SVGRepo_tracerCarrier"
+   stroke-linecap="round"
+   stroke-linejoin="round"
+   style="fill:#646cff;fill-opacity:1"
+   transform="translate(-1.49475,-5.275)" />&#10;&#10;<g
+   id="SVGRepo_iconCarrier"
+   style="fill:#b3b3b3;fill-opacity:1"
+   transform="matrix(0.6031363,0,0,0.6031363,-0.90153798,-3.181544)"> <style
+   type="text/css"
+   id="style1"> .feather_een{fill:#0B1719;} </style> <path
+   class="feather_een"
+   d="m 29.906,12.916 c 0.799,-0.349 0.799,-1.483 0,-1.832 L 17.202,5.526 C 16.819,5.358 16.41,5.275 16,5.275 c -0.41,0 -0.819,0.084 -1.202,0.252 L 2.094,11.084 c -0.799,0.35 -0.799,1.483 0,1.832 L 8,15.5 v 3.32 c 0,1.136 0.642,2.175 1.658,2.683 v 0 C 11.655,22.501 13.827,23 16,23 c 2.173,0 4.345,-0.499 6.341,-1.497 v 0 C 23.358,20.995 24,19.956 24,18.82 V 15.5 l 4,-1.75 V 21 c -0.552,0 -1,0.448 -1,1 v 3 c 0,0.552 0.448,1 1,1 h 1 c 0.552,0 1,-0.448 1,-1 v -3 c 0,-0.552 -0.448,-1 -1,-1 V 13.312 Z M 23,18.82 c 0,0.762 -0.424,1.448 -1.106,1.789 C 20.074,21.519 18.035,22 16,22 13.965,22 11.926,21.519 10.106,20.609 9.424,20.268 9,19.582 9,18.82 v -2.882 l 5.798,2.536 c 0.383,0.168 0.793,0.252 1.202,0.252 0.41,0 0.819,-0.084 1.202,-0.252 L 23,15.937 Z m -6.198,-1.262 c -0.254,0.111 -0.524,0.168 -0.802,0.168 -0.278,0 -0.547,-0.056 -0.802,-0.168 L 2.495,12 15.198,6.442 C 15.453,6.331 15.722,6.275 16,6.275 c 0.278,0 0.547,0.056 0.802,0.168 L 29.505,12 28.387,12.489 16.894,11.57 C 16.732,11.235 16.396,11 16,11 c -0.552,0 -1,0.448 -1,1 0,0.552 0.448,1 1,1 0.337,0 0.621,-0.178 0.802,-0.434 l 9.646,0.772 z"
+   id="path1"
+   style="fill:#b3b3b3;fill-opacity:1" /> </g>&#10;&#10;</svg>
+12284904-0b4f29fa-4141-4212-b516-d4e4fcdb8519.svg…]()
+
+
+![Upload<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg
+   version="1.1"
+   id="Uploaded to svgrepo.com"
+   width="34.994572"
+   height="25"
+   viewBox="0 0 17.497286 12.5"
+   xml:space="preserve"
+   fill="#000000"
+   sodipodi:docname="212284904-0b4f29fa-4141-4212-b516-d4e4fcdb8519.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs1" /><sodipodi:namedview
+   id="namedview1"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="6.875"
+   inkscape:cx="31.709091"
+   inkscape:cy="17.890909"
+   inkscape:window-width="1920"
+   inkscape:window-height="1051"
+   inkscape:window-x="-9"
+   inkscape:window-y="-9"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Uploaded to svgrepo.com" />&#10;&#10;<g
+   id="SVGRepo_bgCarrier"
+   stroke-width="0"
+   style="fill:#646cff;fill-opacity:1"
+   transform="translate(-1.49475,-5.275)" />&#10;&#10;<g
+   id="SVGRepo_tracerCarrier"
+   stroke-linecap="round"
+   stroke-linejoin="round"
+   style="fill:#646cff;fill-opacity:1"
+   transform="translate(-1.49475,-5.275)" />&#10;&#10;<g
+   id="SVGRepo_iconCarrier"
+   style="fill:#646cff;fill-opacity:1"
+   transform="matrix(0.6031363,0,0,0.6031363,-0.90153798,-3.181544)"> <style
+   type="text/css"
+   id="style1"> .feather_een{fill:#0B1719;} </style> <path
+   class="feather_een"
+   d="m 29.906,12.916 c 0.799,-0.349 0.799,-1.483 0,-1.832 L 17.202,5.526 C 16.819,5.358 16.41,5.275 16,5.275 c -0.41,0 -0.819,0.084 -1.202,0.252 L 2.094,11.084 c -0.799,0.35 -0.799,1.483 0,1.832 L 8,15.5 v 3.32 c 0,1.136 0.642,2.175 1.658,2.683 v 0 C 11.655,22.501 13.827,23 16,23 c 2.173,0 4.345,-0.499 6.341,-1.497 v 0 C 23.358,20.995 24,19.956 24,18.82 V 15.5 l 4,-1.75 V 21 c -0.552,0 -1,0.448 -1,1 v 3 c 0,0.552 0.448,1 1,1 h 1 c 0.552,0 1,-0.448 1,-1 v -3 c 0,-0.552 -0.448,-1 -1,-1 V 13.312 Z M 23,18.82 c 0,0.762 -0.424,1.448 -1.106,1.789 C 20.074,21.519 18.035,22 16,22 13.965,22 11.926,21.519 10.106,20.609 9.424,20.268 9,19.582 9,18.82 v -2.882 l 5.798,2.536 c 0.383,0.168 0.793,0.252 1.202,0.252 0.41,0 0.819,-0.084 1.202,-0.252 L 23,15.937 Z m -6.198,-1.262 c -0.254,0.111 -0.524,0.168 -0.802,0.168 -0.278,0 -0.547,-0.056 -0.802,-0.168 L 2.495,12 15.198,6.442 C 15.453,6.331 15.722,6.275 16,6.275 c 0.278,0 0.547,0.056 0.802,0.168 L 29.505,12 28.387,12.489 16.894,11.57 C 16.732,11.235 16.396,11 16,11 c -0.552,0 -1,0.448 -1,1 0,0.552 0.448,1 1,1 0.337,0 0.621,-0.178 0.802,-0.434 l 9.646,0.772 z"
+   id="path1"
+   style="fill:#646cff;fill-opacity:1" /> </g>&#10;&#10;</svg>
+ing 212284904-0b4f29fa-4141-4212-b516-d4e4fcdb8519.svg…]()
+
+
 
 
 <!--Commit changes
@@ -259,11 +472,26 @@ Array(0)
 
 ### The package imports four elements:
 
-- `useGitHubAutomatedRepos` hook responsible for automating the repositories. It returns a function called dataGithubRepos, which takes two parameters: data (data that comes from the GitHub API) and the keyword (the latter responsible for showing the project on your website from the moment it is declared in the Topics field of the your Github repository). The dataGithubRepos returns, so optimized, an array of objects containing 6 properties: id, html_url, homepage, topics, name and description.
-  
+- `useGitHubAutomatedRepos` hook responsible for automating the repositories. It returns a function called dataGithubRepos, which takes two parameters: data (data that comes from the GitHub API) and the keyword (the latter responsible for showing the project on your website from the moment it is declared in the Topics field of the your Github repository). The dataGithubRepos returns, so optimized, an array of objects containing 7 properties: banner, id, html_url, homepage, topics, name and description.
+
   ```tsx
   const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
   ```
+   - #### return data example:
+
+    ``` javascript
+    {
+        banner:"https://raw.githubusercontent.com/DIGOARTHUR/github-automated-repos/main/src/assets/images/banner.png"
+        description: "The library that automates, in one place, the administration of your github projects on your website."
+        homepage: "https://github-automated-repos.vercel.app"
+        html_url: "https://github.com/DIGOARTHUR/github-automated-repos"
+        id: 585693873
+        name: "github-automated-repos"
+        topics: (8) ['automated', 'deploy', 'github', 'library', '
+    }
+    ```
+
+  
  <br>
  
 - `StackIcons` The component returns, based on the iteration of the topic array that is contained in data, icons of the stacks used in your project. Enter the stacks used in your repository's topic field.. Check the [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
@@ -360,6 +588,23 @@ Array(0)
      
   ```
 
+    - #### Render component ProjectIcons example:
+
+<div align="center">
+    
+![212284904-0b4f29fa-4141-4212-b516-d4e4fcdb8519](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/9a05cfb2-0da2-4c13-bb0d-8bc0ba5beb80)
+![212284904-0b4f29fa-4141-4212-b516-d4e4fcdb8519](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/9a05cfb2-0da2-4c13-bb0d-8bc0ba5beb80)
+![212284904-0b4f29fa-4141-4212-b516-d4e4fcdb8519](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/9a05cfb2-0da2-4c13-bb0d-8bc0ba5beb80)
+![212284904-0b4f29fa-4141-4212-b516-d4e4fcdb8519](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/9a05cfb2-0da2-4c13-bb0d-8bc0ba5beb80)
+![212284904-0b4f29fa-4141-4212-b516-d4e4fcdb8519](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/9a05cfb2-0da2-4c13-bb0d-8bc0ba5beb80)
+![212284904-0b4f29fa-4141-4212-b516-d4e4fcdb8519](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/9a05cfb2-0da2-4c13-bb0d-8bc0ba5beb80)
+
+    
+</div>
+
+
+  
+
  <br>
 <br>
   
@@ -397,8 +642,6 @@ Array(0)
 <div align="center">
 <img  alt="topics_Props"  height="600" src="https://user-images.githubusercontent.com/59892368/219117029-d693ee8f-4289-4ac0-85ed-674091508510.png"> 
 </div>
-
-
 
 <br>
 
