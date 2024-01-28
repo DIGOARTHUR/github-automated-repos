@@ -82,6 +82,7 @@ EXEMPLO
  
 <div align="center">
     
+ ![NPM DOWNLOADS](https://img.shields.io/npm/dt/github-automated-repos?style=plastic)
  ![NPM Paackage](https://img.shields.io/npm/v/github-automated-repos?color=brightgreen&label=NPM%20package&logo=NPM&logoColor=white)
   ![CodeFactor](https://img.shields.io/codefactor/grade/github/digoarthur/github-automated-repos?color=brightgreen&label=Code%20Quality&logo=codefactor)
  ![GitHub](https://img.shields.io/github/license/digoarthur/github-automated-repos)
