@@ -139,34 +139,22 @@ EXEMPLO
 ### Data Example ~ console.log(data) ~
 
 ```javascript
-Array(8)
+Array(4)
 0
 : 
-{id: 585693873, name: 'github-automated-repos', html_url: 'https://github.com/DIGOARTHUR/github-automated-repos', description: 'The library that automates, in one place, the admi…stration of your github projects on your website.', topics: Array(7), …}
+{id: 517152367, name: 'Dashgo', html_url: 'https://github.com/DIGOARTHUR/Dashgo', description: 'IGNITE - Trilha ReactJS/ - Neste projeto é aplicad…ate, Components, Props. Recursos do JS como: Map.', topics: Array(7), …}
 1
 : 
-{id: 517152367, name: 'Dashgo', html_url: 'https://github.com/DIGOARTHUR/Dashgo', description: 'IGNITE - Trilha ReactJS/ - Neste projeto é aplicad…ate, Components, Props. Recursos do JS como: Map.', topics: Array(7), …}
+{id: 482667387, name: 'DashBoard-Financeiro', html_url: 'https://github.com/DIGOARTHUR/DashBoard-Financeiro', description: 'IGNITE - Trilha ReactJS/ Chapter II - Esta aplicaç…mpanhamento de valores de entrada, saída e total.', topics: Array(6), …}
 2
 : 
-{id: 482667387, name: 'DashBoard-Financeiro', html_url: 'https://github.com/DIGOARTHUR/DashBoard-Financeiro', description: 'IGNITE - Trilha ReactJS/ Chapter II - Esta aplicaç…mpanhamento de valores de entrada, saída e total.', topics: Array(6), …}
+{id: 412849316, name: 'Task.TODO', html_url: 'https://github.com/DIGOARTHUR/Task.TODO', description: 'IGNITE - Trilha ReactJS/ - Este projeto aborda con…Filter e Math, Spread. E para estilização o SASS.', topics: Array(7), …}
 3
 : 
-{id: 449443635, name: 'SAPIU5-CRUD', html_url: 'https://github.com/DIGOARTHUR/SAPIU5-CRUD', description: 'Construção de uma aplicação CRUD utilizando o Framework SAP UI5, e uma API em NodeJS.', topics: Array(5), …}
-4
-: 
-{id: 412849316, name: 'Task.TODO', html_url: 'https://github.com/DIGOARTHUR/Task.TODO', description: 'IGNITE - Trilha ReactJS/ - Este projeto aborda con…Filter e Math, Spread. E para estilização o SASS.', topics: Array(7), …}
-5
-: 
 {id: 355616217, name: 'Move.it', html_url: 'https://github.com/DIGOARTHUR/Move.it', description: 'NLW#04 - Rocketseat - Utilizando a técnica Pomodor… o objetivo é executar a tarefa do seu interesse.', topics: Array(8), …}
-6
-: 
-{id: 334188509, name: 'CrudGoogleSheet-ft.-Gspread', html_url: 'https://github.com/DIGOARTHUR/CrudGoogleSheet-ft.-Gspread', description: "Using the Google spreadsheet and the 'gspread' API…nguage for reading, analyzing and inserting data.", topics: Array(4), …}
-7
-: 
-{id: 297106167, name: 'Console-GuessingGame', html_url: 'https://github.com/DIGOARTHUR/Console-GuessingGame', description: 'This was my first program create in University.', topics: Array(2), …}
 length
 : 
-8
+4
 [[Prototype]]
 : 
 Array(0)
@@ -177,8 +165,7 @@ Array(0)
 
 ### 💡Use your creativity and build the card however you want.
 
-![localhost_5173_](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/98510c73-5d74-4f99-bb12-45b71c4122da)
-
+![portfolio_page](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/05e5ab60-5851-4aab-911f-19227a75dc72)
 
 </details>
 
@@ -463,7 +450,7 @@ Array(0)
 
 #### <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/210762527-ae3afe1f-fe36-46a9-98ad-35dbae4d1adf.svg"><a/>  <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/219095611-551d532a-30fc-4873-b00e-0a8bbf8bb5ec.svg"><a/>
 
-```typescript     
+```jsx    
   import './App.css';
   import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels, } from 'github-automated-repos';
   function App() {
@@ -476,6 +463,9 @@ Array(0)
           data.map((item) => {
             return (
               <div key={item.id}>
+
+                {/*Banner / Layout / Logo*/}
+                <img src={item.banner}></img>
 
                 {/*Project Icons*/}
                 {item.topics.map((icon) => {
