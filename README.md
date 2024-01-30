@@ -510,10 +510,10 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
 ```
 
 <br>  
-<!------------------------------------Framework Settings--> ## Framework Settings.
+<!------------------------------------Framework Settings-->
        
       
-<img  alt="NextJS"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6b213e2e-213a-489d-bbda-1dec9dcda585">
+## <img  alt="NextJS"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6b213e2e-213a-489d-bbda-1dec9dcda585"> Framework Settings.
        
   
        
