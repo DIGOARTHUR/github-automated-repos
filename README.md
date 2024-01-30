@@ -305,7 +305,6 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
 ![ruby-svgrepo-com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/3d2bd96d-e9cd-4566-b58e-a6bb9d907aa0)
 ![Ruby_On_Rails_Logo](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/c755be70-ba40-48ae-84f1-65ab791835ec)
 ![react-query-seeklogo com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/eb3732e9-d3a9-4f9f-b706-8969557681aa)
-![react-icons](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/facb4121-1d16-4686-b957-6f75e68002fc)
 ![python-svgrepo-com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/1cd247af-dabd-41dc-97c5-311944661278)
 ![prisma](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/b7355d54-3cd1-4750-8192-e4bdb4b774c8)
 ![prettier](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/809a2edc-c11a-4645-bc44-c97e546fdadf)
