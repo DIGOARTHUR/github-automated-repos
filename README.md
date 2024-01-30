@@ -98,7 +98,7 @@ EXEMPLO
      
 <img  alt="ReactJS"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/11fe7e24-b5d7-47bf-814a-c8d5855e7ca8"> ![Check](https://img.shields.io/badge/-Check-green)
 <img  alt="ViteJS"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/f85aeacd-cea4-4280-9096-194da03e758e"> ![Check](https://img.shields.io/badge/-Check-green) 
-<img  alt="NextJS"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6b213e2e-213a-489d-bbda-1dec9dcda585"> ![Check](https://img.shields.io/badge/-Framework%20settings-yellow)
+<img  alt="NextJS"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6b213e2e-213a-489d-bbda-1dec9dcda585"> [![Check](https://img.shields.io/badge/-Framework%20settings-yellow)](https://github.com/DIGOARTHUR/github-automated-repos/?tab=readme-ov-file#-framework-settings)
      
   </div>     
 
