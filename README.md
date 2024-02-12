@@ -43,13 +43,13 @@ EXEMPLO
 
 </div>
 <!------------------------------------ PROJECT BANNER-->
-<h1 align="center">Github-automated-repos</h1>
+<h1 align="center">github-automated-repos</h1>
 
 <p align="center">
  <!---------------------PROJECT ICON-->
   <img src="https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-bb6d-a466b450db84.svg" alt="angular-logo" width="150px" height="150px"/>
   <br>
-  <i>Github-automated-repos is the lib that gives you the power to manage the visualization of your projects on the website,
+  <i> github-automated-repos is the lib that gives you the power to control the visualization of your projects on the website,
     <br>in your own GitHub in one place!</i>
   <br>
 
