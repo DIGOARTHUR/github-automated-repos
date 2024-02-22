@@ -116,7 +116,7 @@ EXEMPLO
     yarn add github-automated-repos
 ```
 
-## 2. hook config.
+## 2. Using hook
 
 
 ```typescript     
@@ -248,7 +248,7 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
 
 ### The package imports four elements:
 
-- `useGitHubAutomatedRepos` hook responsible for automating the repositories. It returns a function called dataGithubRepos, which takes two parameters: data (data that comes from the GitHub API) and the keyword (the latter responsible for showing the project on your website from the moment it is declared in the Topics field of the your Github repository). The dataGithubRepos returns, so optimized, an array of objects containing 7 properties: banner, id, html_url, homepage, topics, name and description.
+- `useGitHubAutomatedRepos` hook responsible for automating the return of data from repositories. This hook takes two parameters: GitHubUsername & keyword. The return is an array of objects containing 7 properties: id, banner, html_url, home page, topics, name and description.
 
   ```tsx
   const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
@@ -256,6 +256,7 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
    - #### return data example:
 
     ``` javascript
+    [
     {
         banner:"https://raw.githubusercontent.com/DIGOARTHUR/github-automated-repos/main/src/assets/images/banner.png"
         description: "The library that automates, in one place, the administration of your github projects on your website."
@@ -265,6 +266,7 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
         name: "github-automated-repos"
         topics: (8) ['automated', 'deploy', 'github', 'library', '
     }
+    ]
     ```
 
   
@@ -310,7 +312,9 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
 ![prettier](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/809a2edc-c11a-4645-bc44-c97e546fdadf)
     
 </div>
-  <br>
+
+ <br>
+<br>
   
 - `StackLabels` component returns, based on the iteration of the topics array that is contained in data, labels of the stacks used in your project. Insert the stacks used in the topics field of your repository. Check the [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
 
@@ -340,7 +344,8 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
  ![](https://img.shields.io/badge/mysql-%23646cff?style=plastic) 
 </div>
     
- <br>
+<br>
+<br>
  
 - `ProjectIcons` component returns, based on the iteration of the topics array that is contained in data, icons to represent your project. The project tag must be inserted in the topics field of your repository. Check the [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) tab!
 
