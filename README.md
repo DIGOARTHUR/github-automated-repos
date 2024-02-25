@@ -105,10 +105,12 @@ EXEMPLO
  <br>
   <br>
   
+
+#
+## 1. Installation
+
   > [!TIP]
 > Use the code example in this documentation. [Code Example](https://github.com/DIGOARTHUR/github-automated-repos/tree/main?tab=readme-ov-file#code-example-1)      
-
-## 1. Installation
 
 ```shell
     npm install github-automated-repos
