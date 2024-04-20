@@ -250,7 +250,7 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
 
 ### The package imports four elements:
 
-- `useGitHubAutomatedRepos` hook responsible for automating the return of data from repositories. This hook takes two parameters: GitHubUsername & keyword. The return is an array of objects containing 7 properties: id, banner, html_url, home page, topics, name and description.
+- `useGitHubAutomatedRepos` hook responsible for automating the return of data from repositories. This hook takes two parameters: GitHubUsername & keyword. The return is an array of objects containing 7 properties: id, banner, html_url, homepage, topics, name and description.
 
   ```tsx
   const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
