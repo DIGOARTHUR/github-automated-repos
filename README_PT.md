@@ -44,7 +44,7 @@ EXEMPLO
 
 <p align="center">
  <!---------------------PROJECT ICON-->
-  <img src="https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-bb6d-a466b450db84.svg" alt="angular-logo" width="150px" height="150px"/>
+    <img src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6b18de26-e35b-4b4e-b813-82eb9f0f764a" alt="angular-logo" width="250px" height="250px"/>
   <br>
 <i>github-automated-repos é a biblioteca que te dá o poder de controlar a visualização de seus projetos no portfólio,
     <br>em seu próprio GitHub em um só lugar!</i>
@@ -235,7 +235,7 @@ Array(0)
 ### O pacote importa quatro recursos:
 
 
-- `useGitHubAutomatedRepos` hook responsável por automatizar o retorno dos dados dos repositórios. Este hook recebe dois parâmetros: GitHubUsername & keyWord. O retorno é um array de objetos contendo 7 propriedades: banner, id, html_url, página inicial, tópicos, nome e descrição.
+- `useGitHubAutomatedRepos` hook responsável por automatizar o retorno dos dados dos repositórios. Este hook recebe dois parâmetros: GitHubUsername & keyWord. O retorno é um array de objetos contendo 7 propriedades: id, banner, html_url, homepage, topics, name and description.
 
    ```tsx
   const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
@@ -380,8 +380,8 @@ Array(0)
 </div>
 
 
-- `id`: número de identificação do repositório. usado como parâmetro no key tag. *Este campo não precisa ser preenchido.*
-- `html_url`: link do repositório. Usado como o link de acesso. *Este campo não precisa ser preenchido.*
+- `id`: número de identificação do repositório. Usado na props key da sua tag. ( *Este campo não precisa ser preenchido.* )
+- `html_url`: link do repositório. Usado como o link de acesso.  ( *Este campo não precisa ser preenchido.* )
 - `homepage`: é o link de acesso à página construída, página implantada.  About / Website of your GitHub.
 
 ![image](https://user-images.githubusercontent.com/59892368/219116735-a026d9b9-f5b9-4389-b8f1-619db2488368.png)
@@ -389,7 +389,7 @@ Array(0)
 <br>
 
 - `topics`: array que traz informações sobre os ícones em [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) e [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons). 
-Usado nos componentes ProjectIcon e StackIcon. É neste campo que é passada a chave configurada no hook. Refere-se ao campo About / Topics of your GitHub.
+Usado nos componentes ProjectIcon, StackLabels e StackIcon. É neste campo que é passada a chave configurada no hook. Refere-se ao campo About / Topics of your GitHub.
 
 <div align="center">
 <img  alt="topics_Props"  height="600" src="https://user-images.githubusercontent.com/59892368/219117029-d693ee8f-4289-4ac0-85ed-674091508510.png"> 
@@ -446,7 +446,7 @@ seu nome de usuário do github e a palavra-chave (determinados por você).
                 {/*Project Icons*/}
                 {item.topics.map((icon) => {
                   return (
-                    <ProjectIcons key={icon} className="project_Icon" iconItem={icon} />
+                    <ProjectIcons key={icon} className="project_Icon" itemTopics={icon} />
                   )
                 })}
 
