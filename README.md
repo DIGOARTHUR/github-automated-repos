@@ -402,8 +402,8 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
 
 
 
-- `id`: repository identification number. used as parameter in the key tag. This field does not need to be filled in.
-- `html_url`: repository link. Used as the link of access. This field does not need to be filled in.
+- `id`: repository identification number. Used as parameter in the key tag. ( *This field does not need to be filled in.* )
+- `html_url`: repository link. Used as the link of access. ( *This field does not need to be filled in.* )
 - `homepage`: it's the access link to the built page, page deploy.  About / Website of your GitHub.
 
 <div align="center">
@@ -413,7 +413,7 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
 
 <br>
 
-- `topics`: array that brings information about the icons in [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) and [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons). Used in both ProjectIcon and StackIcon components. It is in this field that is passed the key configured in the hook. Refers to the field About / Topics of your GitHub.
+- `topics`: array that brings information about the icons in [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) and [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons). Used in both ProjectIcon, StackLabels e StackIcon components. It is in this field that is passed the key configured in the hook. Refers to the field About / Topics of your GitHub.
 
 <div align="center">
 <img  alt="topics_Props"  height="600" src="https://user-images.githubusercontent.com/59892368/219117029-d693ee8f-4289-4ac0-85ed-674091508510.png"> 
