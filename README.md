@@ -1,6 +1,5 @@
 
 
-
 <!--Commit changes
  docs: update Readme
 -->
@@ -24,6 +23,7 @@ EXEMPLO
 # color![brazil-flag](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/617d5c28-7bb7-4972-bdba-7432e75cc6e5)
 =yellow - Define a cor da bag vide <https://shields.io>
 # logoColor=white - Define a cor do icone
+https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-bb6d-a466b450db84.svg
 -->
 
 
@@ -47,7 +47,7 @@ EXEMPLO
 
 <p align="center">
  <!---------------------PROJECT ICON-->
-  <img src="https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-bb6d-a466b450db84.svg" alt="angular-logo" width="150px" height="150px"/>
+  <img src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6b18de26-e35b-4b4e-b813-82eb9f0f764a" alt="angular-logo" width="250px" height="250px"/>
   <br>
   <i> github-automated-repos is the lib that gives you the power to control the visualization of your projects on the website,
     <br>in your own GitHub in one place!</i>
