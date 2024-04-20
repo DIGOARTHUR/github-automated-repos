@@ -476,7 +476,7 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
                 {/*Project Icons*/}
                 {item.topics.map((icon) => {
                   return (
-                    <ProjectIcons key={icon} className="project_Icon" iconItem={icon} />
+                    <ProjectIcons key={icon} className="project_Icon" itemTopics={icon} />
                   )
                 })}
 
