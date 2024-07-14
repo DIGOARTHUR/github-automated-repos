@@ -1,7 +1,7 @@
 
 
 <!--Commit changes
- docs: update Readme
+
 -->
 
 <!-- VISUALIZAR NO VSCODE  CTRL + K  V -->
@@ -326,7 +326,7 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
       ...
       {item.topics.map((icon, index) => {
            return (
-             <StackLabes key={ index } itemTopics={ icon } className={ } />
+             <StackLabels key={ index } itemTopics={ icon } className={ } />
       }
       ...
      
