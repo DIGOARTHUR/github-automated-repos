@@ -25,6 +25,7 @@ export interface IGithubRepos {
     description: string;
     id: number;
     homepage: string;
+    banner: () => string;
 }
 
 /**
@@ -34,6 +35,7 @@ export interface IGithubRepos {
  */
 export function useGitHubAutomatedRepos(usernameGitHub: string, keyWordDeploy: string) {
     const [repository, setRepository] = useState<IGithubRepos[]>([]);
+
     useEffect(() => {
         fetch(`https://api.github.com/users/${usernameGitHub}/repos?sort=created&per_page=999`)
             .then((response) => response.json())
@@ -44,6 +46,22 @@ export function useGitHubAutomatedRepos(usernameGitHub: string, keyWordDeploy: s
 
     dataFilter = repository.filter((item: IGithubRepos) => item.topics.includes(keyWordDeploy as never));
 
+    const typeImg = ['svg', 'png'];
+    function checkImage(usernameGitHub: string, repositoryName: string): string {
+        let checkURL = '';
+        typeImg.map((type)=> {
+            const url = `https://raw.githubusercontent.com/${usernameGitHub}/${repositoryName}/main/src/assets/imgs/banner.${type}`;
+            const http = new XMLHttpRequest();
+            http.open('HEAD', url, false);
+            http.send();
+
+            if (http.status === 200) {
+                checkURL = url;
+            }
+        });
+        return checkURL;
+    }
+
     return dataFilter.map((item: IGithubRepos) => ({
         id: item.id,
         name: item.name,
@@ -51,7 +69,7 @@ export function useGitHubAutomatedRepos(usernameGitHub: string, keyWordDeploy: s
         description: item.description,
         topics: item.topics,
         homepage: item.homepage,
-        banner: `https://raw.githubusercontent.com/${usernameGitHub}/${item.name}/main/src/assets/imgs/banner.png`,
+        banner: checkImage(usernameGitHub, item.name),
     }));
 }
 
