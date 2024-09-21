@@ -49,7 +49,7 @@ export function useGitHubAutomatedRepos(usernameGitHub: string, keyWordDeploy: s
     const typeImg = ['svg', 'png'];
     function checkImage(usernameGitHub: string, repositoryName: string): string {
         let checkURL = '';
-        typeImg.map((type)=> {
+        typeImg.map((type) => {
             const url = `https://raw.githubusercontent.com/${usernameGitHub}/${repositoryName}/main/src/assets/imgs/banner.${type}`;
             const http = new XMLHttpRequest();
             http.open('HEAD', url, false);
