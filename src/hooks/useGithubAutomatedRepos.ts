@@ -25,7 +25,7 @@ export interface IGithubRepos {
     description: string;
     id: number;
     homepage: string;
-    banner: string;
+    banner: () => string;
 }
 
 /**
@@ -34,9 +34,11 @@ export interface IGithubRepos {
  * @returns {(IGithubRepos[])} - Returns an array with the properties: name, topics, html_url, description, id, homepage.
  */
 export function useGitHubAutomatedRepos(usernameGitHub: string, keyWordDeploy: string) {
+
     const [data, setData] = useState<IGithubRepos[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string>('');
+
     useEffect(() => {
         const fetchData = async () => {
             setLoading(true);
@@ -58,15 +60,17 @@ export function useGitHubAutomatedRepos(usernameGitHub: string, keyWordDeploy: s
     }, [usernameGitHub, keyWordDeploy]);
 
     const repository = data.map((item: IGithubRepos) => ({
+
         id: item.id,
         name: item.name,
         html_url: item.html_url,
         description: item.description,
         topics: item.topics,
         homepage: item.homepage,
-        banner: `https://raw.githubusercontent.com/${usernameGitHub}/${item.name}/main/src/assets/imgs/banner.png`,
+        banner: checkImage(usernameGitHub, item.name),
     }));
     return { repository, loading, error };
+
 }
 
 export function IconsData() {
