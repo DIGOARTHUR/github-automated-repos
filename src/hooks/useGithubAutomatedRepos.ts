@@ -58,6 +58,25 @@ export function useGitHubAutomatedRepos(usernameGitHub: string, keyWordDeploy: s
 
         fetchData();
     }, [usernameGitHub, keyWordDeploy]);
+  
+  
+     const typeImg = ['svg', 'png'];
+    function checkImage(usernameGitHub: string, repositoryName: string): string {
+        let checkURL = '';
+        typeImg.map((type) => {
+            const url = `https://raw.githubusercontent.com/${usernameGitHub}/${repositoryName}/main/src/assets/imgs/banner.${type}`;
+            const http = new XMLHttpRequest();
+            http.open('HEAD', url, false);
+            http.send();
+
+            if (http.status === 200) {
+                checkURL = url;
+            }
+        });
+        return checkURL;
+    }
+  
+
 
     const repository = data.map((item: IGithubRepos) => ({
 
