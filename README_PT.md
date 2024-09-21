@@ -311,7 +311,7 @@ Array(0)
       ...
       {item.topics.map((icon, index) => {
            return (
-             <StackLabes key={ index } itemTopics={ icon } className={ } />
+             <StackLabels key={ index } itemTopics={ icon } className={ } />
       }
       ...
       ```

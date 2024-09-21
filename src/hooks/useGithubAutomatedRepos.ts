@@ -26,6 +26,7 @@ export interface IGithubRepos {
     id: number;
     homepage: string;
     banner: () => string;
+
 }
 
 /**
@@ -34,6 +35,7 @@ export interface IGithubRepos {
  * @returns {(IGithubRepos[])} - Returns an array with the properties: name, topics, html_url, description, id, homepage.
  */
 export function useGitHubAutomatedRepos(usernameGitHub: string, keyWordDeploy: string) {
+
     const [repository, setRepository] = useState<IGithubRepos[]>([]);
 
     useEffect(() => {
@@ -44,7 +46,32 @@ export function useGitHubAutomatedRepos(usernameGitHub: string, keyWordDeploy: s
 
     let dataFilter = [];
 
-    dataFilter = repository.filter((item: IGithubRepos) => item.topics.includes(keyWordDeploy as never));
+
+    const [data,setData] = useState <IGithubRepos[]>([])
+    const [loading, setLoading] =useState <boolean>(true)
+    const [error, setError] = useState<string>("")
+    useEffect(() => {
+        const fetchData = async () => {
+     setLoading(true)
+        try {
+              const response = await fetch(`https://api.github.com/users/${usernameGitHub}/repos?sort=created&per_page=999`);
+              if (!response.ok) {
+                throw new Error(`Unsuccessful request: ${response.statusText}`);
+              }
+              const jsonData = await response.json();
+              setData(jsonData.filter((item: IGithubRepos) => item.topics.includes(keyWordDeploy as never))); 
+            } catch (err) {
+             setError((err as Error).message)
+            }finally{
+                setLoading(false)
+            }
+          };
+      
+          fetchData();  
+    }, [usernameGitHub,keyWordDeploy]);
+
+
+     let repository = data.map((item: IGithubRepos) => ({
 
     const typeImg = ['svg', 'png'];
     function checkImage(usernameGitHub: string, repositoryName: string): string {
@@ -63,6 +90,7 @@ export function useGitHubAutomatedRepos(usernameGitHub: string, keyWordDeploy: s
     }
 
     return dataFilter.map((item: IGithubRepos) => ({
+
         id: item.id,
         name: item.name,
         html_url: item.html_url,
@@ -71,6 +99,9 @@ export function useGitHubAutomatedRepos(usernameGitHub: string, keyWordDeploy: s
         homepage: item.homepage,
         banner: checkImage(usernameGitHub, item.name),
     }));
+    return {repository, loading, error};
+
+
 }
 
 export function IconsData() {
