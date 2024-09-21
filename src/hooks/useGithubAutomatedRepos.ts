@@ -25,6 +25,7 @@ export interface IGithubRepos {
     description: string;
     id: number;
     homepage: string;
+    banner:string;
 }
 
 /**
@@ -33,18 +34,31 @@ export interface IGithubRepos {
  * @returns {(IGithubRepos[])} - Returns an array with the properties: name, topics, html_url, description, id, homepage.
  */
 export function useGitHubAutomatedRepos(usernameGitHub: string, keyWordDeploy: string) {
-    const [repository, setRepository] = useState<IGithubRepos[]>([]);
+
+    const [data,setData] = useState <IGithubRepos[]>([])
+    const [loading, setLoading] =useState <boolean>(true)
+    const [error, setError] = useState<string>("")
     useEffect(() => {
-        fetch(`https://api.github.com/users/${usernameGitHub}/repos?sort=created&per_page=999`)
-            .then((response) => response.json())
-            .then((data) => setRepository(data));
-    }, []);
+        const fetchData = async () => {
+     setLoading(true)
+        try {
+              const response = await fetch(`https://api.github.com/users/${usernameGitHub}/repos?sort=created&per_page=999`);
+              if (!response.ok) {
+                throw new Error(`Unsuccessful request: ${response.statusText}`);
+              }
+              const jsonData = await response.json();
+              setData(jsonData.filter((item: IGithubRepos) => item.topics.includes(keyWordDeploy as never))); 
+            } catch (err) {
+             setError((err as Error).message)
+            }finally{
+                setLoading(false)
+            }
+          };
+      
+          fetchData();  
+    }, [usernameGitHub,keyWordDeploy]);
 
-    let dataFilter = [];
-
-    dataFilter = repository.filter((item: IGithubRepos) => item.topics.includes(keyWordDeploy as never));
-
-    return dataFilter.map((item: IGithubRepos) => ({
+     let repository = data.map((item: IGithubRepos) => ({
         id: item.id,
         name: item.name,
         html_url: item.html_url,
@@ -53,6 +67,9 @@ export function useGitHubAutomatedRepos(usernameGitHub: string, keyWordDeploy: s
         homepage: item.homepage,
         banner: `https://raw.githubusercontent.com/${usernameGitHub}/${item.name}/main/src/assets/imgs/banner.png`,
     }));
+    return {repository, loading, error};
+
+
 }
 
 export function IconsData() {
