@@ -1,100 +1,8 @@
-// Project Icon Font:
-// https://www.svgrepo.com/svg/384245/controller-joystick-games-video-console?edit=true
-// https://www.svgrepo.com/svg/383702/landing-page-web-design?edit=true
-// https://www.svgrepo.com/svg/459107/robot?edit=true
-// https://www.svgrepo.com/svg/471159/check-square-broken?edit=true
-// https://www.svgrepo.com/svg/383754/security-protection-lock-padlock-square-locked?edit=true
-// https://www.svgrepo.com/svg/339111/dashboard?edit=true
-// https://www.svgrepo.com/svg/257454/profile?edit=true
-// https://www.svgrepo.com/svg/298828/store?edit=true
-// https://www.svgrepo.com/svg/429278/cart-essential-shopping?edit=true
-// https://www.svgrepo.com/svg/144539/artist-color-palette?edit=true
-// https://www.svgrepo.com/svg/424981/online?edit=true
-// https://www.svgrepo.com/svg/384295/weather-forecast-sunny-snow-cloud-day?edit=true
-// https://www.svgrepo.com/svg/456864/diagram
-// https://www.svgrepo.com/svg/455166/map-navigation?edit=true
-// https://www.svgrepo.com/svg/343466/news-feed?edit=true
-// https://www.svgrepo.com/svg/458454/database-1?edit=true
+interface IStackIcons {
+    readonly [key: string]: string;
+  }
 
-import { useEffect, useState } from 'react';
-
-export interface IGithubRepos {
-    name: string;
-    topics: string[];
-    html_url: string;
-    description: string;
-    id: number;
-    homepage: string;
-    banner: () => string;
-}
-
-/**
- * @param {string} usernameGitHub - Insert your username GitHub Ex.: https://github.com/USERNAME
- * @param {string} keyWordDeploy - Insert a keyword chosen by you. - This key is responsible for managing your projects on GitHub in topics field Ex.: https://github.com/DIGOARTHUR/github-automated-repos#--about-library-.
- * @returns {(IGithubRepos[])} - Returns an array with the properties: name, topics, html_url, description, id, homepage.
- */
-export function useGitHubAutomatedRepos(usernameGitHub: string, keyWordDeploy: string) {
-
-    const [data, setData] = useState<IGithubRepos[]>([]);
-    const [loading, setLoading] = useState<boolean>(true);
-    const [error, setError] = useState<string>('');
-
-    useEffect(() => {
-        const fetchData = async () => {
-            setLoading(true);
-            try {
-                const response = await fetch(`https://api.github.com/users/${usernameGitHub}/repos?sort=created&per_page=999`);
-                if (!response.ok) {
-                    throw new Error(`Unsuccessful request: ${response.statusText}`);
-                }
-                const jsonData = await response.json();
-                setData(jsonData.filter((item: IGithubRepos) => item.topics.includes(keyWordDeploy as never)));
-            } catch (err) {
-                setError((err as Error).message);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchData();
-    }, [usernameGitHub, keyWordDeploy]);
-  
-  
-     const typeImg = ['svg', 'png'];
-    function checkImage(usernameGitHub: string, repositoryName: string): string {
-        let checkURL = '';
-        typeImg.map((type) => {
-            const url = `https://raw.githubusercontent.com/${usernameGitHub}/${repositoryName}/main/src/assets/imgs/banner.${type}`;
-            const http = new XMLHttpRequest();
-            http.open('HEAD', url, false);
-            http.send();
-
-            if (http.status === 200) {
-                checkURL = url;
-            }
-        });
-        return checkURL;
-    }
-  
-
-
-    const repository = data.map((item: IGithubRepos) => ({
-
-        id: item.id,
-        name: item.name,
-        html_url: item.html_url,
-        description: item.description,
-        topics: item.topics,
-        homepage: item.homepage,
-        banner: checkImage(usernameGitHub, item.name),
-    }));
-    return { repository, loading, error };
-
-}
-
-export function IconsData() {
-    // 25px
-    const stackIcons = {
+export const stackIconsURL:IStackIcons = {
         androidstudio: 'https://user-images.githubusercontent.com/59892368/216783644-f664d47c-f686-496d-8073-2e83b2b469ab.svg',
         angular: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/287532135-7c81a717-da75-4aeb-ab22-95fc2a3254be.svg',
         arduino: 'https://user-images.githubusercontent.com/59892368/216785825-af6a605c-6ca3-4bb5-9889-31ad818fb20b.svg',
@@ -191,25 +99,4 @@ export function IconsData() {
         vitejs: 'https://user-images.githubusercontent.com/59892368/218274365-3eae86f7-7953-4209-b5e7-466c8335caa2.svg',
         vuejs: 'https://user-images.githubusercontent.com/59892368/215260542-defd6142-e8a8-44f5-8c8a-c6dfaf3d114a.svg',
         yarn: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/287774024-f3af28e4-40c9-4b02-b5e4-c33702c2fca0.svg',
-    };
-
-    // 64px
-    const projectIcons = {
-        art: 'https://user-images.githubusercontent.com/59892368/212994060-8d1644c7-96d7-4f3b-8e94-65ff76db0c92.svg',
-        artificialintelligence: 'https://user-images.githubusercontent.com/59892368/212984565-a424b06e-db5e-464a-a5df-ddf7c9bab6ad.svg',
-        dashboard: 'https://user-images.githubusercontent.com/59892368/212991791-588a6c13-795e-47aa-b496-8bdbaa3cac30.svg',
-        education: 'https://user-images.githubusercontent.com/59892368/212284904-0b4f29fa-4141-4212-b516-d4e4fcdb8519.svg',
-        game: 'https://user-images.githubusercontent.com/59892368/212984732-79dd44aa-23a5-4b83-ae28-7a2ddd443032.svg',
-        landingpage: 'https://user-images.githubusercontent.com/59892368/212984364-88a0808b-a8d1-440c-b74e-f82bc3e28748.svg',
-        personalwebsite: 'https://user-images.githubusercontent.com/59892368/213131421-fa77f07c-9120-4b40-859d-2bd799de6681.svg',
-        productivity: 'https://user-images.githubusercontent.com/59892368/212994727-f05595d9-53b7-43a5-b974-b27fa2557653.svg',
-        security: 'https://user-images.githubusercontent.com/59892368/212985266-a658da1c-64ba-46b7-a069-a148ca217be9.svg',
-        store: 'https://user-images.githubusercontent.com/59892368/213137554-83aa6798-9487-4d1b-a260-fd2035adaaad.svg',
-    };
-
-    return {
-        stackIcons,
-        projectIcons,
-        IconsData,
-    };
-}
+    }

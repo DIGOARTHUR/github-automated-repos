@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { ReactNode, ReactPortal } from 'react';
 
-import { IconsData } from '../../hooks/useGithubAutomatedRepos';
+import { projectIconsURL } from '../../icons/projectIconsURL';
+import { stackIconsURL } from '../../icons/stackIconsURL';
 import { css } from './styles.js';
 
 type Props = {
@@ -11,20 +12,17 @@ type Props = {
 /**
  * @param {string} itemTopics - Mandatory: ex.: item.topics.map(itemTopics)...
  * @param {string} className - Optional: style className.
- * @returns {<p/>} - Return tag p, stack text.
+ * @returns {ReactNode} - Return tag p, stack text.
  */
-export function StackLabels({ itemTopics, className = 'styleStackLabels' }: Props) {
-    const { projectIcons, stackIcons } = IconsData();
+export function StackLabels({ itemTopics, className = 'styleStackLabels' }: Props){
+ 
 
-    if (projectIcons[itemTopics as never]) {
-        return <> </>;
-    }
-    if (stackIcons[itemTopics as never]) {
-        return (
-            <>
-                <style>{css}</style>
-                <p className={className}>{itemTopics}</p>
-            </>
-        );
-    }
+    return itemTopics === 'deploy' || projectIconsURL[itemTopics] || stackIconsURL[itemTopics] ==undefined ? (
+        <> </>
+    ) : (
+        <>
+        <style>{css}</style>
+        <p className={className}>{itemTopics}</p>
+    </>
+    );
 }
