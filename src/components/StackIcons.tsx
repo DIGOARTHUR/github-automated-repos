@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { IconsData } from '../hooks/useGithubAutomatedRepos';
-
+import { stackIconsURL } from '../icons/stackIconsURL';
+import { projectIconsURL } from '../icons/projectIconsURL';
 type Props = {
     itemTopics: string;
     className?: string;
@@ -10,13 +10,13 @@ type Props = {
 /**
  * @param {string} itemTopics - Mandatory: ex.: item.topics.map(itemTopics) ...
  * @param {string} className - Optional: style className.
- * @returns {<img/>} - Return tag img, stack svg icon.
+ * @returns {ReactNode} - Return tag img, stack svg icon.
  */
 export function StackIcons({ itemTopics, className }: Props) {
-    const { stackIcons, projectIcons } = IconsData();
-    return itemTopics === 'deploy' || projectIcons[itemTopics as never] ? (
+ 
+    return itemTopics === 'deploy' || projectIconsURL[itemTopics] ? (
         <> </>
     ) : (
-        <img className={className} alt={stackIcons[itemTopics as never]} src={stackIcons[itemTopics as never]} />
+        <img className={className} alt={stackIconsURL[itemTopics]} src={stackIconsURL[itemTopics]} />
     );
 }
