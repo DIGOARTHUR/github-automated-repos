@@ -1,4 +1,4 @@
-import React, { ReactNode, ReactPortal } from 'react';
+import React, { ReactNode } from 'react';
 
 import { projectIconsURL } from '../../icons/projectIconsURL';
 import { stackIconsURL } from '../../icons/stackIconsURL';
@@ -14,15 +14,13 @@ type Props = {
  * @param {string} className - Optional: style className.
  * @returns {ReactNode} - Return tag p, stack text.
  */
-export function StackLabels({ itemTopics, className = 'styleStackLabels' }: Props){
- 
-
-    return itemTopics === 'deploy' || projectIconsURL[itemTopics] || stackIconsURL[itemTopics] ==undefined ? (
+export function StackLabels({ itemTopics, className = 'styleStackLabels' }: Props): ReactNode {
+    return itemTopics === 'deploy' || projectIconsURL[itemTopics] || stackIconsURL[itemTopics] === undefined ? (
         <> </>
     ) : (
         <>
-        <style>{css}</style>
-        <p className={className}>{itemTopics}</p>
-    </>
+            <style>{css}</style>
+            <p className={className}>{itemTopics}</p>
+        </>
     );
 }

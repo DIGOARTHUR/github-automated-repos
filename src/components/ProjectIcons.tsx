@@ -14,14 +14,9 @@ type Props = {
  */
 
 export function ProjectIcons({ itemTopics, className }: Props) {
-   
     return (
         <div>
-            {projectIconsURL[itemTopics] ? (
-                <img className={className} alt={projectIconsURL[itemTopics]} src={projectIconsURL[itemTopics]} />
-            ) : (
-                <> </>
-            )}
+            {projectIconsURL[itemTopics] ? <img className={className} alt={projectIconsURL[itemTopics]} src={projectIconsURL[itemTopics]} /> : <> </>}
         </div>
     );
 }
