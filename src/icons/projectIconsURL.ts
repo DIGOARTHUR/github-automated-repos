@@ -1,4 +1,4 @@
-  // Project Icon Font:
+// Project Icon Font:
 // https://www.svgrepo.com/svg/384245/controller-joystick-games-video-console?edit=true
 // https://www.svgrepo.com/svg/383702/landing-page-web-design?edit=true
 // https://www.svgrepo.com/svg/459107/robot?edit=true
@@ -17,11 +17,11 @@
 // https://www.svgrepo.com/svg/458454/database-1?edit=true
 
 interface IProjectIcons {
-  readonly [key: string]: string;
+    readonly [key: string]: string;
 }
 
-  // 64px
-export const projectIconsURL:IProjectIcons = {
+// 64px
+export const projectIconsURL: IProjectIcons = {
     art: 'https://user-images.githubusercontent.com/59892368/212994060-8d1644c7-96d7-4f3b-8e94-65ff76db0c92.svg',
     artificialintelligence: 'https://user-images.githubusercontent.com/59892368/212984565-a424b06e-db5e-464a-a5df-ddf7c9bab6ad.svg',
     dashboard: 'https://user-images.githubusercontent.com/59892368/212991791-588a6c13-795e-47aa-b496-8bdbaa3cac30.svg',
@@ -33,6 +33,3 @@ export const projectIconsURL:IProjectIcons = {
     security: 'https://user-images.githubusercontent.com/59892368/212985266-a658da1c-64ba-46b7-a069-a148ca217be9.svg',
     store: 'https://user-images.githubusercontent.com/59892368/213137554-83aa6798-9487-4d1b-a260-fd2035adaaad.svg',
 };
-
-
-
