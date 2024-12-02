@@ -1,6 +1,12 @@
 
 
 
+
+
+
+
+
+
 <!--Commit changes
 
 -->
@@ -31,8 +37,10 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 
 
 
-
+<!------------------------------------ -------------------->
 <!------------------------------------ LANGUAGE BUTTONS-->
+<!------------------------------------ -------------------->
+
 <p align="right">
 
 <a href="https://github.com/DIGOARTHUR/github-automated-repos#readme">
@@ -44,19 +52,31 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 <a/>
 
 </p>
+
+<!------------------------------------ -------------------->
 <!------------------------------------ PROJECT BANNER-->
+<!------------------------------------ -------------------->
 
 ![Group 70 (1)](https://github.com/user-attachments/assets/bb8f5688-6896-4e42-ac91-81f93fbeece0)
 
+<!------------------------------------ ---------------------------->
+<!------------------------------------ PROJECT SHORT DESCRIPTION-->
+<!------------------------------------ --------------------------->
+
 <p align="center">
-
-
   <br>
    github-automated-repos is the library, <code> ReactJS </code>, that gives you the power to control the visualization of your projects on the website,
     <br>in your own GitHub in one place!</i>
   <br>
 
 </p>
+
+
+
+<p align="center">
+<img  alt="ReactJS"   height="250" src="https://github.com/user-attachments/assets/78ac832b-9e01-4fc2-9bdd-32b533e2ed83">
+</p>
+
 
 
 
@@ -68,8 +88,9 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
     • Ready! Now all projects can be managed on their own `GitHub`, in the `Topics field`.
 -->
 
-
+<!------------------------------------ -------------------->
  <!------------------------------------LINKS-->
+<!------------------------------------ -------------------->
 
 <p align="center">
   <a href="https://github-automated-repos.vercel.app"><strong>https://github-automated-repos.vercel.app</strong></a>
@@ -81,7 +102,10 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
   <br>
   <br>
 </p>
+
+<!------------------------------------ -------------------->
  <!------------------------------------SHIELDS PROJECT-->
+ <!------------------------------------ -------------------->
  
 <div align="center">
     
@@ -107,6 +131,49 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
   <br>
   
 
+   <!------------------------------------ -------------------->
+   <!------------------------------------SUMMARY-->
+   <!------------------------------------ -------------------->
+
+
+
+
+
+
+
+<p align="center">
+
+<a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">
+    <img   src="https://github.com/user-attachments/assets/b1cd5a67-21a8-40be-b7e1-7598e0f49fb0" alt="language_USA" >
+<a/> 
+<a href="https://github.com/DIGOARTHUR/github-automated-repos#import-1">
+    <img   src="https://github.com/user-attachments/assets/bbb51d23-37b3-4b87-8b54-0dfe5c42cebd" alt="language_USA" border="0">
+<a/>&nbsp;
+
+ <a href="https://github.com/DIGOARTHUR/github-automated-repos#fill-in-the-fields-in-the-github-repository-1">
+    <img   src="https://github.com/user-attachments/assets/942a44aa-dadd-41f3-9d69-e977fbf1df08" alt="language_USA" border="0">
+<a/>&nbsp;
+
+<a href="https://github.com/DIGOARTHUR/github-automated-repos#code-example-1">
+    <img   src="" alt="language_USA" border="0">
+<a/> &nbsp;
+ <a href="https://github.com/DIGOARTHUR/github-automated-repos#framework-settings-1">
+    <img   src="https://github.com/user-attachments/assets/c0536d15-1236-4ee7-9032-5d516aebe656" alt="language_USA" border="0">
+<a/>
+
+</p>
+
+   
+
+   
+
+<!------------------------------------ -------------------->
+ <!------------------------------------GETTING START-->
+ <!------------------------------------ -------------------->
+
+----
+
+# Getting Start
 
 ## 1. Installation
 
@@ -199,16 +266,6 @@ Array(0)
  
   
 
-   
-   <!------------------------------------SUMMARY-->
-
-- ## <a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">About Library</a>
-- ## <a href="https://github.com/DIGOARTHUR/github-automated-repos#--library-">Library</a>
-   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#import-1">Import</a>
-   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#fill-in-the-fields-in-the-github-repository-1">Fill in the fields in the github repository</a>
-   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#code-example-1">Code Example</a>
-   - ### <a href="https://github.com/DIGOARTHUR/github-automated-repos#framework-settings-1">Framework Settings</a>
-   
    
 
   
