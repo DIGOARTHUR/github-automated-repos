@@ -1,5 +1,6 @@
 
 
+
 <!--Commit changes
 
 -->
@@ -32,24 +33,26 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 
 
 <!------------------------------------ LANGUAGE BUTTONS-->
-<div align="right">
+<p align="right">
+
 <a href="https://github.com/DIGOARTHUR/github-automated-repos#readme">
-    <img  height="35" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/257623321-95c81f57-b751-4956-b0ab-7a804ae44506.svg" alt="language_USA" border="0">
+    <img  height="22" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/257623321-95c81f57-b751-4956-b0ab-7a804ae44506.svg" alt="language_USA" border="0">
 <a/>
-<br/>
+&nbsp;
 <a href="https://github.com/DIGOARTHUR/github-automated-repos/blob/main/README_PT.md">
-<img  alt="language_Brazil"  height="35" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/288551794-f50cff19-7ef7-41c4-81b5-b091ebd0f498.svg">
+<img  alt="language_Brazil"  height="22" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/288551794-f50cff19-7ef7-41c4-81b5-b091ebd0f498.svg">
 <a/>
 
-</div>
+</p>
 <!------------------------------------ PROJECT BANNER-->
-<h1 align="center">github-automated-repos</h1>
+
+![Group 70 (1)](https://github.com/user-attachments/assets/bb8f5688-6896-4e42-ac91-81f93fbeece0)
 
 <p align="center">
- <!---------------------PROJECT ICON-->
-  <img src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6b18de26-e35b-4b4e-b813-82eb9f0f764a" alt="angular-logo" width="250px" height="250px"/>
+
+
   <br>
-  <i> github-automated-repos is the lib that gives you the power to control the visualization of your projects on the website,
+   github-automated-repos is the library, <code> ReactJS </code>, that gives you the power to control the visualization of your projects on the website,
     <br>in your own GitHub in one place!</i>
   <br>
 
@@ -86,10 +89,8 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
  ![NPM Paackage](https://img.shields.io/npm/v/github-automated-repos?color=brightgreen&label=NPM%20package&logo=NPM&logoColor=white)
   ![CodeFactor](https://img.shields.io/codefactor/grade/github/digoarthur/github-automated-repos?color=brightgreen&label=Code%20Quality&logo=codefactor)
  ![GitHub](https://img.shields.io/github/license/digoarthur/github-automated-repos)
-<a href="https://typicode.github.io/husky/#/"><img  alt="Husky"  width="20" height="20" src="https://user-images.githubusercontent.com/59892368/219088739-6d1af6db-3444-4351-ae71-5037f47b6938.svg"><a/>
-  <a href="https://eslint.org"><img  alt="Eslint"  width="20" height="20" src="https://user-images.githubusercontent.com/59892368/216450924-d9e2e612-4371-40ac-9120-1365d0113b07.svg"><a/>
-   <a  href="https://prettier.io"><img  alt="Prettier"  width="20" height="20" src="https://user-images.githubusercontent.com/59892368/216450921-ace9b367-5b82-4ad7-8cf5-d9241951582d.svg"><a/>
-   <a href="https://typicode.github.io/husky/#/"><img  alt="Husky"  width="20" height="20" src="https://user-images.githubusercontent.com/59892368/216450914-9ce5d6ee-a7d3-4e74-9d3b-3646a07352c2.svg"><a/>
+
+
 
 </div>
   
