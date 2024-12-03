@@ -6,7 +6,6 @@
 
 
 
-
 <!--Commit changes
 
 -->
@@ -140,25 +139,24 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 
 
 
-
 <p align="center">
 
 <a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">
-    <img   src="https://github.com/user-attachments/assets/b1cd5a67-21a8-40be-b7e1-7598e0f49fb0" alt="language_USA" >
-<a/> 
+    <img   src="https://github.com/user-attachments/assets/fa24923b-77a4-4ac5-ab83-215120c74296" alt="language_USA" >
+<a/> &nbsp;&nbsp;
 <a href="https://github.com/DIGOARTHUR/github-automated-repos#import-1">
-    <img   src="https://github.com/user-attachments/assets/bbb51d23-37b3-4b87-8b54-0dfe5c42cebd" alt="language_USA" border="0">
-<a/>&nbsp;
+    <img   src="https://github.com/user-attachments/assets/ac3e4e9c-9db7-4b78-b9ff-cd4863b9342f" alt="language_USA" border="0">
+<a/>&nbsp;&nbsp;
 
  <a href="https://github.com/DIGOARTHUR/github-automated-repos#fill-in-the-fields-in-the-github-repository-1">
-    <img   src="https://github.com/user-attachments/assets/942a44aa-dadd-41f3-9d69-e977fbf1df08" alt="language_USA" border="0">
-<a/>&nbsp;
+    <img   src="https://github.com/user-attachments/assets/66b424a6-f4ac-4e8b-8426-86454a59ee36" alt="language_USA" border="0">
+<a/>&nbsp;&nbsp;
 
 <a href="https://github.com/DIGOARTHUR/github-automated-repos#code-example-1">
-    <img   src="" alt="language_USA" border="0">
-<a/> &nbsp;
+    <img   src="https://github.com/user-attachments/assets/f86d5d29-821b-4f2f-b16b-df6fa5db5f82" alt="language_USA" border="0">
+<a/> &nbsp;&nbsp;
  <a href="https://github.com/DIGOARTHUR/github-automated-repos#framework-settings-1">
-    <img   src="https://github.com/user-attachments/assets/c0536d15-1236-4ee7-9032-5d516aebe656" alt="language_USA" border="0">
+    <img   src="https://github.com/user-attachments/assets/113d28df-530c-4440-b936-cafb60b159da" alt="language_USA" border="0">
 <a/>
 
 </p>
