@@ -6,6 +6,7 @@
 
 
 
+
 <!--Commit changes
 
 -->
@@ -65,7 +66,7 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 <p align="center">
   <br>
    github-automated-repos is the library, <code> ReactJS </code>, that gives you the power to control the visualization of your projects on the website,
-    <br>in your own GitHub in one place!</i>
+    in your own GitHub in one place!</i>
   <br>
 
 </p>
@@ -133,10 +134,6 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
    <!------------------------------------ -------------------->
    <!------------------------------------SUMMARY-->
    <!------------------------------------ -------------------->
-
-
-
-
 
 
 <p align="center">
@@ -289,14 +286,44 @@ Array(0)
 
   
 
-  
+<!------------------------------------------------>
 <!------------------------------------LIBRARY -->
+<!-------------------------------------------- -->
+  
+# <img  alt="skills"  width="80" height="30" src="https://user-images.githubusercontent.com/59892368/216092858-a64d3a99-1b90-4946-b917-76eadefffb54.svg"> Library  &nbsp;&nbsp;  <img  height="25"  src="https://github.com/user-attachments/assets/86de188b-2512-43e8-8ab8-a102e99e15a1" alt="language_USA" border="0"> <img  height="25"  src="https://github.com/user-attachments/assets/cd98a831-dc14-47bb-8735-fc83c60634bf" alt="language_USA" border="0"> <!---write here : demonstration of the application layout.  -->
+
+    
 
   
-# <img  alt="skills"  width="80" height="30" src="https://user-images.githubusercontent.com/59892368/216092858-a64d3a99-1b90-4946-b917-76eadefffb54.svg">  Library <!---write here : demonstration of the application layout.  -->
-  
+<p align="left">
 
-   
+<a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">
+    <img  height="35"  src="https://github.com/user-attachments/assets/fa24923b-77a4-4ac5-ab83-215120c74296" alt="language_USA" >
+<a/> &nbsp;&nbsp;
+<a href="https://github.com/DIGOARTHUR/github-automated-repos#import-1">
+    <img  height="35"  src="https://github.com/user-attachments/assets/ac3e4e9c-9db7-4b78-b9ff-cd4863b9342f" alt="language_USA" border="0">
+<a/>&nbsp;&nbsp;
+
+ <a href="https://github.com/DIGOARTHUR/github-automated-repos#fill-in-the-fields-in-the-github-repository-1">
+    <img  height="35"   src="https://github.com/user-attachments/assets/66b424a6-f4ac-4e8b-8426-86454a59ee36" alt="language_USA" border="0">
+<a/>&nbsp;&nbsp;
+
+<a href="https://github.com/DIGOARTHUR/github-automated-repos#code-example-1">
+    <img  height="35"  src="https://github.com/user-attachments/assets/f86d5d29-821b-4f2f-b16b-df6fa5db5f82" alt="language_USA" border="0">
+<a/> &nbsp;&nbsp;
+ <a href="https://github.com/DIGOARTHUR/github-automated-repos#framework-settings-1">
+    <img  height="35"  src="https://github.com/user-attachments/assets/113d28df-530c-4440-b936-cafb60b159da" alt="language_USA" border="0">
+<a/>&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+</p>
+
+
+
+
+
 
 ## Import
 ```jsx
