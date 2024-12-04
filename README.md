@@ -5,8 +5,6 @@
 
 
 
-
-
 <!--Commit changes
 
 -->
@@ -65,7 +63,7 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 
 <p align="center">
   <br>
-   github-automated-repos is the library, <code> ReactJS </code>, that gives you the power to control the visualization of your projects on the website,
+   github-automated-repos is the library,<code>ReactJS</code>, that gives you the power to control the visualization of your projects on the website,
     in your own GitHub in one place!</i>
   <br>
 
@@ -191,10 +189,148 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 
 ```
 ## 3. Choose the repositories and fill in the Topics field with the keyword you determined.
+![image](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/9a0a0aaf-02e8-4a7f-8390-6e7fb4a3ea53)
+
 > [!IMPORTANT]
 > To insert stack names in the topics field, see web documentation > [Stack Icons](https://github-automated-repos.vercel.app)
+<div align="center">
+    
+![react-icons](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/876a12c4-93fa-4eb3-908c-b7c36ded395c)![NET_Core_Logo](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6cad1fdc-d3bb-4adb-9b14-bec1977aaee1)
+![mysql-logo-svgrepo-com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/8690e53e-5787-48b1-8adc-29c90e56fd42)
+![mongo-svgrepo-com (1)](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/7cd5a1ec-ea87-4d7e-8429-1e3fcff03f49)
+![linux-svgrepo-com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/79ac45a3-5958-4efe-a3e6-90c135d2b466)
+![vue](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/07dcaa25-215a-45a8-b783-2c97626c1639)
+![Vitejs-logo](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/05cf8a94-895c-4249-8636-f1d2a0ea165b)
+![typescript](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/ebd5f88a-7915-4cb5-9109-6f3fc5db9fec)
+![tailwind-svgrepo-com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6af503c9-efdc-4e83-9ba7-c910476a8642)
+![swift](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/355549ea-87e2-4afd-83a9-2f9cb56c7c49)
+![swagger-svgrepo-com (1)](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/fce6e2aa-ecc8-4995-bc3f-68b225f0f0d7)
+![storybook](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/453d2e70-dc15-4fb3-b75e-4ea35cbe472b)
+![sqlite-svgrepo-com (1)](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/ffb1f056-97ee-4bd1-b5be-4b8f87b6ac9d)
+![spring-svgrepo-com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/3c36d340-e16c-458e-b39c-eef7051aaf74)
+![scala-svgrepo-com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/a65edf82-e0ea-4a8e-90b2-e284593684ec)
+![sass-svgrepo-com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/7fd8a1af-290f-499f-8691-360c6511cc7b)
+![ruby-svgrepo-com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/3d2bd96d-e9cd-4566-b58e-a6bb9d907aa0)
+![Ruby_On_Rails_Logo](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/c755be70-ba40-48ae-84f1-65ab791835ec)
+![react-query-seeklogo com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/eb3732e9-d3a9-4f9f-b706-8969557681aa)
+![python-svgrepo-com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/1cd247af-dabd-41dc-97c5-311944661278)
+![prisma](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/b7355d54-3cd1-4750-8192-e4bdb4b774c8)
+![prettier](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/809a2edc-c11a-4645-bc44-c97e546fdadf)
+    
+</div>
 
-![image](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/9a0a0aaf-02e8-4a7f-8390-6e7fb4a3ea53)
+<details>
+
+
+<br/>
+  <br/>
+
+<div align='left'>
+
+|  Logo  | Stack Name   |                                                                                                                                                   
+ | :---:  | ---     |                                                                                                                                                   
+ | <img src="https://user-images.githubusercontent.com/59892368/216783644-f664d47c-f686-496d-8073-2e83b2b469ab.svg" alt="HTML5"/>| `androidstudio ` |    
+ | <img    src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/287532135-7c81a717-da75-4aeb-ab22-95fc2a3254be.svg" alt="HTML5"/>  | `angular`  |  
+ | <img    width="auto" src="https://user-images.githubusercontent.com/59892368/216785825-af6a605c-6ca3-4bb5-9889-31ad818fb20b.svg" alt="HTML5"/>  | arduino |  
+ | <img src="https://user-images.githubusercontent.com/59892368/215260536-748d14f8-5242-4d5a-9faf-6d62ed38a87a.svg" alt="HTML5"/>  | aws |  
+ | <img   src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/285172839-1483ec96-ea00-4fa4-8daa-5b6c48294d4c.svg" alt="HTML5"/>  | babel |  
+ | <img    src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/279798875-371442d4-bd43-4597-8075-ff506529c123.svg" alt="HTML5"/>  | bash |  
+ | <img    src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/285174758-c7b4d643-1b6c-4281-9e1e-a59ff4a8b36a.svg" alt="HTML5"/>  | bitbucket | 
+ | <img    src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/285182560-49ae39de-ad6b-4b96-be9f-cddb58b2406c.svg" alt="HTML5"/>  | blender|
+ | <img    src="https://user-images.githubusercontent.com/59892368/218274368-89a94705-c5b1-42a6-813d-4aaa2a1334e3.svg" alt="HTML5"/>  |bootstrap|  
+| <img    src="https://user-images.githubusercontent.com/59892368/215260535-be3713a8-d075-4c85-88ca-4b3703f9e7b3.svg" alt="HTML5"/>  | c |  
+| <img    src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/287774022-8ae44b49-fbef-4868-b441-24a37490be36.svg" alt="HTML5"/>  |  canva|  
+| <img    src="https://user-images.githubusercontent.com/59892368/216813068-bc05f852-f006-4ff6-85e2-d8988f6afbf9.svg" alt="HTML5"/>  | clion|  
+| <img    src="https://user-images.githubusercontent.com/59892368/215260533-1ede6b38-7c51-4c89-ac2c-a1195c2b912b.svg" alt="HTML5"/>  | cpp |  
+| <img    src="https://user-images.githubusercontent.com/59892368/215260532-33106206-6ca4-4d11-bdc3-9171491979a5.svg" alt="HTML5"/>  | csharp|  
+| <img    src="https://user-images.githubusercontent.com/59892368/210762519-fc191098-1198-4668-9eb5-d0c1481da8c7.svg" alt="HTML5"/>  |  css3|  
+| <img    src="https://user-images.githubusercontent.com/59892368/215260531-179da616-9fc3-41de-99ed-15dddf2d021b.svg" alt="HTML5"/>  |  dart|  
+| <img    src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/287532091-b11ecf66-5fb2-4158-b48a-99afc85c6a2b.svg" alt="HTML5"/>  |  denojs|  
+| <img    src="https://user-images.githubusercontent.com/59892368/215260529-5fb18a51-b2bc-4092-8a87-f051f89dd30e.svg" alt="HTML5"/>  |  django |  
+| <img    src="https://user-images.githubusercontent.com/59892368/215260528-b50b803d-a037-4572-812b-95801f48c2bd.svg" alt="HTML5"/>  |  docker|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender|  
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+| <img    src="https://github.com/DIGOARTHUR/digoarthur/assets/59892368/eaf5ef2e-f5d4-4738-94bd-cdeb2e113eca" alt="HTML5"/>  | blender| 
+
+</div>
+
+
+</details>
+
 
 ## 4. ✅Ready! JSON - Data from repositories chosen by you!
 
