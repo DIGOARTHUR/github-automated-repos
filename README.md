@@ -191,21 +191,7 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 ```
 ## 3. Choose the repositories and fill in the Topics field with the keyword you determined.
 
-<img align="right" width="350px" src="https://user-images.githubusercontent.com/59892368/219117029-d693ee8f-4289-4ac0-85ed-674091508510.png" />
 
-
-<div>
-
-Hi, my name is Diego Arthur.
-I'm a developer with experience in Frontend and specialized in ReactJS, but I'm specializing in Backend using NodeJS. Also, now I’m perfecting my English to get an international opportunity.
-    <br/>
-     <br/>
-Passionate about teaching... At the University I was Researcher, programming Monitor, I taught Mathematics classes in a community project[^1], I am Author of a programming book[^2] , and currently enthusiastic about Pentest and Cybersecurity. 
-
-I like playing Indie games, I love cinema, travel and taste food.
-
-<p align='left'>📍 🇵🇹 Living: Portugal;<br/>  👨‍🎓 🇧🇷 University: <a href="https://www.ufsj.edu.br">UFSJ - University Federal São João del-Rei </a>, <a href="https://pt.wikipedia.org/wiki/Ouro_Branco_(Minas_Gerais)">Ouro Branco- MG.</a> </p>
-</div>
 
 
 
@@ -239,19 +225,14 @@ I like playing Indie games, I love cinema, travel and taste food.
     
 </div>
 
+
+## Icons Table 
 <details>
 
-
-
-
-
-
 <br/>
-  <br/>
+<br/>
 
 <div align='center'>
-
-
 
 
 |  Logo  | Stack Name   |  Logo  | Stack Name   |   Logo  | Stack Name   |  Logo  | Stack Name   |                                                                                                                                                  
@@ -283,7 +264,10 @@ I like playing Indie games, I love cinema, travel and taste food.
 </div>
 
 
+
 </details>
+
+<br/>
 
 
 ## 4. ✅Ready! JSON - Data from repositories chosen by you!
@@ -351,7 +335,8 @@ Array(0)
  
   
 
-   
+
+
 
   
   
@@ -380,7 +365,7 @@ Array(0)
 <!------------------------------------LIBRARY -->
 <!-------------------------------------------- -->
   
-# <img  alt="skills"  width="80" height="30" src="https://user-images.githubusercontent.com/59892368/216092858-a64d3a99-1b90-4946-b917-76eadefffb54.svg"> Library  &nbsp;&nbsp;  <img  height="25"  src="https://github.com/user-attachments/assets/86de188b-2512-43e8-8ab8-a102e99e15a1" alt="language_USA" border="0"> <img  height="25"  src="https://github.com/user-attachments/assets/cd98a831-dc14-47bb-8735-fc83c60634bf" alt="language_USA" border="0"> <!---write here : demonstration of the application layout.  -->
+# <img  alt="skills"  width="80" height="30" src="https://github.com/user-attachments/assets/b7c52fa3-ba47-4f19-8dd3-ccd9d6395b76"> Import  &nbsp;&nbsp;  <img  height="25"  src="https://github.com/user-attachments/assets/86de188b-2512-43e8-8ab8-a102e99e15a1" alt="language_USA" border="0"> <img  height="25"  src="https://github.com/user-attachments/assets/cd98a831-dc14-47bb-8735-fc83c60634bf" alt="language_USA" border="0"> <!---write here : demonstration of the application layout.  -->
 
     
 
@@ -412,10 +397,6 @@ Array(0)
 
 
 
-
-
-
-## Import
 ```jsx
 import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from 'github-automated-repos';
 ```
@@ -577,10 +558,15 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
 
 - `id`: repository identification number. Used as parameter in the key tag. ( *This field does not need to be filled in.* )
 - `html_url`: repository link. Used as the link of access. ( *This field does not need to be filled in.* )
+
+
+
+
+
 - `homepage`: it's the access link to the built page, page deploy.  About / Website of your GitHub.
 
 <div align="center">
-<img  alt="homepage_Props"  height="600" src="https://user-images.githubusercontent.com/59892368/219116735-a026d9b9-f5b9-4389-b8f1-619db2488368.png"> 
+<img  alt="homepage_Props"  src="https://user-images.githubusercontent.com/59892368/219116735-a026d9b9-f5b9-4389-b8f1-619db2488368.png"> 
 </div>
 
 
@@ -589,7 +575,7 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
 - `topics`: array that brings information about the icons in [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) and [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons). Used in both ProjectIcon, StackLabels e StackIcon components. It is in this field that is passed the key configured in the hook. Refers to the field About / Topics of your GitHub.
 
 <div align="center">
-<img  alt="topics_Props"  height="600" src="https://user-images.githubusercontent.com/59892368/219117029-d693ee8f-4289-4ac0-85ed-674091508510.png"> 
+<img  alt="topics_Props"   src="https://user-images.githubusercontent.com/59892368/219117029-d693ee8f-4289-4ac0-85ed-674091508510.png"> 
 </div>
 
 <br>
@@ -597,7 +583,7 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
 - `name`: This is the name of the repository. Refers to the field  Settings / General / Repository name of your GitHub.
 
 <div align="center">
-<img  alt="name_Props"  height="600" src="https://user-images.githubusercontent.com/59892368/219117097-43db2497-7f62-428e-85c6-ef3656da4cd2.png"> 
+<img  alt="name_Props"  src="https://user-images.githubusercontent.com/59892368/219117097-43db2497-7f62-428e-85c6-ef3656da4cd2.png"> 
 </div>
 
 
@@ -607,7 +593,7 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
 - `description`: This is the description given to your repository. Refers to the About /Description field of your GitHub.
 
 <div align="center">
-<img  alt="description_Props"  height="600" src="https://user-images.githubusercontent.com/59892368/219117260-5bdb1fbb-c58b-4ad9-938a-068b58c72f27.png"> 
+<img  alt="description_Props"   src="https://user-images.githubusercontent.com/59892368/219117260-5bdb1fbb-c58b-4ad9-938a-068b58c72f27.png"> 
 </div>
 
 
