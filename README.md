@@ -339,8 +339,9 @@ Array(0)
 
 
   
-  
-   <!------------------------------------DESCRIPTION-->
+<!-------------------------------------------------- -->
+<!------------------------------------------ DESCRIPTION-->
+<!-------------------------------------------------- -->
 
 # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  About Library <!---write here : talk a little about project: what's does, example.  -->
 > This library automates the view your GitHub projects on your website in one place. But how? Make the code configuration only once in your application with github-automated-repos, and manage the view of your projects on GitHub in the Topics field. Choose which project will be seen on your website, and you can even customize your project card, for example, with a representative icon and show which stacks were used. All in one place!
@@ -359,38 +360,20 @@ Array(0)
 | :-------------------------------------------------------------------: |
 |   ![image](https://user-images.githubusercontent.com/59892368/214930109-119c4b38-9862-4a3d-a130-2dfad5c4bcb6.gif)|
 
+
+------
+<br/>
+
   
 
 <!------------------------------------------------>
-<!------------------------------------LIBRARY -->
+<!------------------------------------ IMPORT -->
 <!-------------------------------------------- -->
   
-# <img  alt="skills"  width="80" height="30" src="https://github.com/user-attachments/assets/b7c52fa3-ba47-4f19-8dd3-ccd9d6395b76"> Import  &nbsp;&nbsp;  <img  height="25"  src="https://github.com/user-attachments/assets/86de188b-2512-43e8-8ab8-a102e99e15a1" alt="language_USA" border="0"> <img  height="25"  src="https://github.com/user-attachments/assets/cd98a831-dc14-47bb-8735-fc83c60634bf" alt="language_USA" border="0"> <!---write here : demonstration of the application layout.  -->
+# <img  alt="skills"  height="30" src="https://github.com/user-attachments/assets/b7c52fa3-ba47-4f19-8dd3-ccd9d6395b76"> Import  &nbsp;&nbsp;  <!---write here : demonstration of the application layout.  -->
 
     
-
-  
-<p align="left">
-
-<a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">
-    <img  height="35"  src="https://github.com/user-attachments/assets/fa24923b-77a4-4ac5-ab83-215120c74296" alt="language_USA" >
-<a/> &nbsp;&nbsp;
-<a href="https://github.com/DIGOARTHUR/github-automated-repos#import-1">
-    <img  height="35"  src="https://github.com/user-attachments/assets/ac3e4e9c-9db7-4b78-b9ff-cd4863b9342f" alt="language_USA" border="0">
-<a/>&nbsp;&nbsp;
-
- <a href="https://github.com/DIGOARTHUR/github-automated-repos#fill-in-the-fields-in-the-github-repository-1">
-    <img  height="35"   src="https://github.com/user-attachments/assets/66b424a6-f4ac-4e8b-8426-86454a59ee36" alt="language_USA" border="0">
-<a/>&nbsp;&nbsp;
-
-<a href="https://github.com/DIGOARTHUR/github-automated-repos#code-example-1">
-    <img  height="35"  src="https://github.com/user-attachments/assets/f86d5d29-821b-4f2f-b16b-df6fa5db5f82" alt="language_USA" border="0">
-<a/> &nbsp;&nbsp;
- <a href="https://github.com/DIGOARTHUR/github-automated-repos#framework-settings-1">
-    <img  height="35"  src="https://github.com/user-attachments/assets/113d28df-530c-4440-b936-cafb60b159da" alt="language_USA" border="0">
-<a/>&nbsp;&nbsp;&nbsp;&nbsp;
-
-
+ <details>   
 
 
 </p>
@@ -469,7 +452,7 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
     
 </div>
 
- <br>
+<br>
 <br>
   
 - `StackLabels` component returns, based on the iteration of the topics array that is contained in data, labels of the stacks used in your project. Insert the stacks used in the topics field of your repository. Check the [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
@@ -531,15 +514,25 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
 
     
 </div>
-
+</details>
 
   
 
- <br>
 <br>
-  
-## Fill in the fields in the github repository
 
+
+
+
+<!------------------------------------ -------------------->
+<!------------------------------------ FILL IN THE FIELDS -->
+<!------------------------------------ -------------------->
+
+
+# <img  alt="skills"  width="40" height="40" src="https://github.com/user-attachments/assets/403167b1-57eb-4ee9-818d-a591c6885f91"> Fill in the fields in the github repository
+
+ <details>   
+<br/>
+     
 - `banner`: This property returns a .PNG image. For this to be possible, the correct name must be entered in the file called `banner.png` and also the path. Ex.:
 ```
 └── src
@@ -596,6 +589,7 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
 <img  alt="description_Props"   src="https://user-images.githubusercontent.com/59892368/219117260-5bdb1fbb-c58b-4ad9-938a-068b58c72f27.png"> 
 </div>
 
+</details>
 
 
 <br>
