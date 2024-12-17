@@ -1,5 +1,8 @@
 import { fetchGitHubAPI } from '../api/fetchGitHubAPI';
 import { _handleBanner } from './_handleBanner';
+import { useQuery } from '@tanstack/react-query';
+
+
 
 export interface IGithubRepos {
     name: string;
@@ -11,6 +14,8 @@ export interface IGithubRepos {
     banner: string[];
 }
 
+
+
 /**
  * @param {string} usernameGitHub - Insert your username GitHub Ex.: https://github.com/USERNAME
  * @param {string} keyWordDeploy - Insert a keyword chosen by you. - This key is responsible for managing your projects on GitHub in topics field Ex.: https://github.com/DIGOARTHUR/github-automated-repos#--about-library-.
@@ -19,38 +24,31 @@ export interface IGithubRepos {
  * @param {React.Dispatch<React.SetStateAction<string>} setError - Insert <useState> function to receive request error message
  */
 
-export async function _handleRepository(
-    usernameGitHub: string,
-    keyWordDeploy: string,
-    setRepositoriesData: React.Dispatch<React.SetStateAction<IGithubRepos[]>>,
-    setLoading: React.Dispatch<React.SetStateAction<boolean>>,
-    setError: React.Dispatch<React.SetStateAction<string>>
-) {
-    setLoading(true);
-    try {
-        const jsonData = await fetchGitHubAPI(usernameGitHub);
-
-        const datafilter = jsonData.filter((item: IGithubRepos) => item.topics.includes(keyWordDeploy));
-
-        const repositories = await Promise.all(
-            datafilter.map(async (item: IGithubRepos) => {
-                const banner = await _handleBanner(usernameGitHub, item.name);
-                return {
-                    id: item.id,
-                    name: item.name,
-                    html_url: item.html_url,
-                    description: item.description,
-                    topics: item.topics,
-                    homepage: item.homepage,
-                    banner,
-                };
-            })
-        );
-
-        setRepositoriesData(repositories);
-    } catch (err) {
-        setError((err as Error).message);
-    } finally {
-        setLoading(false);
-    }
-}
+// Função de busca
+export const fetchRepositories = async (usernameGitHub: string, keyWordDeploy: string): Promise<IGithubRepos[]> => {
+    const jsonData = await fetchGitHubAPI(usernameGitHub);
+  
+    const datafilter = jsonData.filter((item: IGithubRepos) => item.topics.includes(keyWordDeploy));
+  
+    const repositories = await Promise.all(
+      datafilter.map(async (item: IGithubRepos) => {
+        const banner = await _handleBanner(usernameGitHub, item.name);
+        return {
+          id: item.id,
+          name: item.name,
+          html_url: item.html_url,
+          description: item.description,
+          topics: item.topics,
+          homepage: item.homepage,
+          banner,
+        };
+      })
+    );
+  
+    return repositories;
+  };
+  
+  // Hook personalizado
+  export function _handleRepository(usernameGitHub: string, keyWordDeploy: string) {
+   
+  }

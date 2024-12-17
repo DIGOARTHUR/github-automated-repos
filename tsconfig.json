@@ -8,7 +8,8 @@
         "target": "es6",
         "module": "es6",
         "lib": ["es6", "dom", "es2017"],
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "skipLibCheck": true
     },
     "include": ["src"]
 }

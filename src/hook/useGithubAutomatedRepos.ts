@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 
-import { _handleRepository } from './utils/_handleRepository';
+import { _handleBanner } from './utils/_handleBanner';
 
+import { useQuery } from '@tanstack/react-query';
+import { fetchRepositories } from './utils/_handleRepository';
 export interface IGithubRepos {
     name: string;
     topics: string[];
@@ -23,14 +25,10 @@ interface IGitHubAutomatedRepos {
  * @param {string} keyWordDeploy - Insert a keyword chosen by you. - This key is responsible for managing your projects on GitHub in topics field Ex.: https://github.com/DIGOARTHUR/github-automated-repos#--about-library-.
  * @returns {(IGitHubAutomatedRepos)} - repositoriesData[] with the properties: name, topics[], html_url, description, id, homepage, banner[]. Loading to await for data. Error for a bad request.
  */
-export function useGitHubAutomatedRepos(usernameGitHub: string, keyWordDeploy: string): IGitHubAutomatedRepos {
-    const [repositoriesData, setRepositoriesData] = useState<IGithubRepos[]>([]);
-    const [loading, setLoading] = useState<boolean>(true);
-    const [error, setError] = useState<string>('');
-
-    useEffect(() => {
-        _handleRepository(usernameGitHub, keyWordDeploy, setRepositoriesData, setLoading, setError);
-    }, []);
-
-    return { repositoriesData, loading, error };
+export function useGitHubAutomatedRepos(usernameGitHub: string, keyWordDeploy: string)  {
+    return useQuery<IGithubRepos[]>({
+        queryKey: ["githubRepos", usernameGitHub, keyWordDeploy],
+        queryFn: () => fetchRepositories(usernameGitHub, keyWordDeploy),
+        
+      });
 }
