@@ -1,6 +1,4 @@
 import React from 'react';
-
-import { projectIconsURL } from '../icons/projectIconsURL';
 import { stackIconsURL } from '../icons/stackIconsURL';
 
 type Props = {
@@ -14,7 +12,7 @@ type Props = {
  * @returns {ReactNode} - Return tag img, stack svg icon.
  */
 export function StackIcons({ itemTopics, className }: Props) {
-    return itemTopics === 'deploy' || projectIconsURL[itemTopics] ? (
+    return itemTopics === 'deploy' ? (
         <> </>
     ) : (
         <img className={className} alt={stackIconsURL[itemTopics]} src={stackIconsURL[itemTopics]} />
