@@ -62,7 +62,6 @@ export const stackIconsURL: IStackIcons = {
     mongodb: 'https://user-images.githubusercontent.com/59892368/215260514-a4f02cca-c530-4de2-88ee-5250b24a1456.svg',
     mysql: 'https://user-images.githubusercontent.com/59892368/218274731-13fe41e3-ebf9-4bbb-a7d7-c8d43bf46c53.svg',
     nestjs: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/285181240-83984ea0-7fc3-4b55-b423-90ce2a1c911a.svg',
-    netcore: 'https://user-images.githubusercontent.com/59892368/215260510-b72be359-f22b-4751-a8ab-41cd4f51c9c9.svg',
     nextjs: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/287532311-d8f52862-314c-4be7-aac4-7966823ac3cd.svg',
     nodejs: 'https://user-images.githubusercontent.com/59892368/210762525-21dfac80-b121-4517-b3dd-3f62fe413d5a.svg',
     npm: 'https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/287469113-6498d9f5-9884-43fd-b203-e9ae7de0984e.svg',
