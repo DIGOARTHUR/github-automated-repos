@@ -1,6 +1,4 @@
 import React, { ReactNode } from 'react';
-
-import { projectIconsURL } from '../../icons/projectIconsURL';
 import { stackIconsURL } from '../../icons/stackIconsURL';
 import { css } from './styles.js';
 
@@ -15,7 +13,7 @@ type Props = {
  * @returns {ReactNode} - Return tag p, stack text.
  */
 export function StackLabels({ itemTopics, className = 'styleStackLabels' }: Props): ReactNode {
-    return itemTopics === 'deploy' || projectIconsURL[itemTopics] || stackIconsURL[itemTopics] === undefined ? (
+    return itemTopics === 'deploy' || stackIconsURL[itemTopics] === undefined ? (
         <> </>
     ) : (
         <>
