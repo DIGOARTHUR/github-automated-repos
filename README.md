@@ -67,7 +67,7 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 
 
 <p align="center">
-<img  alt="ReactJS"   height="250" src="https://github.com/user-attachments/assets/78ac832b-9e01-4fc2-9bdd-32b533e2ed83">
+<img  alt="ReactJS"   src="https://github.com/user-attachments/assets/78ac832b-9e01-4fc2-9bdd-32b533e2ed83">
 </p>
 
 
