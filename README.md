@@ -394,17 +394,16 @@ Array(0)
   
 # <img  alt="skills"  height="30" src="https://github.com/user-attachments/assets/b7c52fa3-ba47-4f19-8dd3-ccd9d6395b76"> Hook Import  &nbsp;&nbsp;  <!---write here : demonstration of the application layout.  -->
 
-    
- <details>   
-
-
-</p>
-
-
+> The github-automated-repos library imports 3 resources: hook, stackIcons component and stackLabels component.
 
 ```jsx
 import { useGitHubAutomatedRepos, StackIcons, StackLabels } from 'github-automated-repos';
 ```
+    
+ <details>   
+
+</p>
+
   <br>
 
 ### The package imports 3 elements:
@@ -530,6 +529,12 @@ import { useGitHubAutomatedRepos, StackIcons, StackLabels } from 'github-automat
 
 
 # <img  alt="skills"  width="40" height="40" src="https://github.com/user-attachments/assets/403167b1-57eb-4ee9-818d-a591c6885f91"> Fill in the fields in the github repository
+
+> [!IMPORTANT]
+> Pay attention to filling in each field of your repository on GitHub.
+
+![Group 12 (2)](https://github.com/user-attachments/assets/5ebf54e9-d40c-40ca-8777-47b834cd56ed)
+
 
  <details>   
 <br/>
