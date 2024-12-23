@@ -1,11 +1,5 @@
 
 
-
-
-
-
-
-
 <!--Commit changes
 
 -->
@@ -64,7 +58,7 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 
 <p align="center">
   <br>
-   github-automated-repos is the library,<code>ReactJS</code>, that gives you the power to control the visualization of your projects on the website,
+   github-automated-repos is the library,<code>ReactJS</code>, that gives you the power to control your GitHub data, your projects on the portfolio / website,
     in your own GitHub in one place!</i>
   <br>
 
@@ -170,30 +164,43 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 # Getting Start
 
 ## 1. Installation
-
-  > [!TIP]
-> Use the code example in this documentation. [Code Example](https://github.com/DIGOARTHUR/github-automated-repos/tree/main?tab=readme-ov-file#code-example-1)      
-
+![npm](https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/287469113-6498d9f5-9884-43fd-b203-e9ae7de0984e.svg)
 ```shell
-    npm install github-automated-repos
-    # or
+    npm install github-automated-repos 
+```
+
+![yarn](https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/287774024-f3af28e4-40c9-4b02-b5e4-c33702c2fca0.svg)
+```shell
     yarn add github-automated-repos
 ```
 
+<div align="center">
+    
+![dots-horizontal-svgrepo-com (2)](https://github.com/user-attachments/assets/8914275f-9f76-4ff5-be40-e1b36c603633)
+
+</div>
+
+
+
 ## 2. Using hook
 
-
+> [!IMPORTANT]
+> Don't forget about `ReactQuery` code structures!!! See the code example. [Code Example](https://github.com/DIGOARTHUR/github-automated-repos/tree/main?tab=readme-ov-file#code-example-1)      
 ```typescript     
     import {useGitHubAutomatedRepos} from "github-automated-repos";
 
     const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 
 ```
+
+<div align="center">
+    
+![dots-horizontal-svgrepo-com (2)](https://github.com/user-attachments/assets/8914275f-9f76-4ff5-be40-e1b36c603633)
+
+</div>
+
+
 ## 3. Choose the repositories and fill in the Topics field with the keyword you determined.
-
-
-
-
 
 ![image](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/9a0a0aaf-02e8-4a7f-8390-6e7fb4a3ea53)
 
@@ -267,10 +274,19 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 
 </details>
 
-<br/>
+
+
+<div align="center">
+    
+![dots-horizontal-svgrepo-com (2)](https://github.com/user-attachments/assets/8914275f-9f76-4ff5-be40-e1b36c603633)
+
+</div>
 
 
 ## 4. ✅Ready! JSON - Data from repositories chosen by you!
+> [!TIP]
+>  Customize your cards your way
+
 
 <details>
 <summary>JSON - DATA</summary>
@@ -310,9 +326,11 @@ Array(0)
 
 
 
+ </br>
  
  ---
-       
+ 
+</br>    
 
    <!------------------------------------SHIELDS STACKS-->
    
@@ -344,7 +362,7 @@ Array(0)
 <!-------------------------------------------------- -->
 
 # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  About Library <!---write here : talk a little about project: what's does, example.  -->
-> This library automates the view your GitHub projects on your website in one place. But how? Make the code configuration only once in your application with github-automated-repos, and manage the view of your projects on GitHub in the Topics field. Choose which project will be seen on your website, and you can even customize your project card, for example, with a representative icon and show which stacks were used. All in one place!
+> This library automates the view your GitHub projects on your porfolio / website in one place. But how? Make the code configuration only once in your application with github-automated-repos, and manage the view of your projects on GitHub in the Topics field. Choose which project will be seen, and you can even customize your project card, for example, with a representative icon and show which stacks were used. All in one place!
 
    |                             Control your projects                     |
 | :-------------------------------------------------------------------: |
@@ -361,8 +379,12 @@ Array(0)
 |   ![image](https://user-images.githubusercontent.com/59892368/214930109-119c4b38-9862-4a3d-a130-2dfad5c4bcb6.gif)|
 
 
-------
-<br/>
+
+ </br>
+ 
+ ---
+ 
+</br>  
 
   
 
@@ -370,7 +392,7 @@ Array(0)
 <!------------------------------------ IMPORT -->
 <!-------------------------------------------- -->
   
-# <img  alt="skills"  height="30" src="https://github.com/user-attachments/assets/b7c52fa3-ba47-4f19-8dd3-ccd9d6395b76"> Import  &nbsp;&nbsp;  <!---write here : demonstration of the application layout.  -->
+# <img  alt="skills"  height="30" src="https://github.com/user-attachments/assets/b7c52fa3-ba47-4f19-8dd3-ccd9d6395b76"> Hook Import  &nbsp;&nbsp;  <!---write here : demonstration of the application layout.  -->
 
     
  <details>   
@@ -381,11 +403,11 @@ Array(0)
 
 
 ```jsx
-import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from 'github-automated-repos';
+import { useGitHubAutomatedRepos, StackIcons, StackLabels } from 'github-automated-repos';
 ```
   <br>
 
-### The package imports four elements:
+### The package imports 3 elements:
 
 - `useGitHubAutomatedRepos` hook responsible for automating the return of data from repositories. This hook takes two parameters: GitHubUsername & keyword. The return is an array of objects containing 7 properties: id, banner, html_url, homepage, topics, name and description.
 
@@ -486,39 +508,18 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
 <br>
 <br>
  
-- `ProjectIcons` component returns, based on the iteration of the topics array that is contained in data, icons to represent your project. The project tag must be inserted in the topics field of your repository. Check the [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) tab!
-
-  ```jsx
-     data.map((item) => {
-       return (
-      ...
-      {item.topics.map((icon, index) => {
-           return (
-             <ProjectIcons key={ index } itemTopics={ icon } className={ } />
-      }
-      ...
-     
-  ```
-
-    - #### Render component ProjectIcons example:
-
-<div align="center">
-    
-![212284904-0b4f29fa-4141-4212-b516-d4e4fcdb8519](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/23330d16-2bd9-4425-ae2c-f0df7f05ea9d)
-![212984732-79dd44aa-23a5-4b83-ae28-7a2ddd443032](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/4d40d997-0b89-4056-8079-18ca8a57e162)
-![212991791-588a6c13-795e-47aa-b496-8bdbaa3cac30](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/81ee9f8b-034d-4557-908d-edd7852b83aa)
-![212994060-8d1644c7-96d7-4f3b-8e94-65ff76db0c92 (2)](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/77c65908-6659-4db9-a69d-3d5c586278d3)
-![212984565-a424b06e-db5e-464a-a5df-ddf7c9bab6ad](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/fb165880-119a-4511-9d6d-8d03d5d72cb7)
-![213131421-fa77f07c-9120-4b40-859d-2bd799de6681](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/5ab694c4-18f0-4312-bd75-5996c123fe76)
-
-
     
 </div>
 </details>
 
   
 
-<br>
+
+ </br>
+ 
+ ---
+ 
+</br>  
 
 
 
@@ -592,8 +593,12 @@ import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from '
 </details>
 
 
-<br>
-<br>
+
+ </br>
+ 
+ ---
+ 
+</br>  
 
 ## Code Example
 
