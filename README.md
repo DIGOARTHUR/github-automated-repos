@@ -605,7 +605,46 @@ import { useGitHubAutomatedRepos, StackIcons, StackLabels } from 'github-automat
  
 </br>  
 
-## Code Example
+# Code Example
+
+
+## <img  alt="NextJS"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/eb3732e9-d3a9-4f9f-b706-8969557681aa"> React Query Config.
+
+##### <img  alt="NextJS"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6b213e2e-213a-489d-bbda-1dec9dcda585"> NextJS  `layout{.tsx/.jsx}`
+
+```tsx
+  import { ReactQueryProvider } from "github-automated-repos";
+
+  {*/.........*/ }
+
+   return (
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <ReactQueryProvider>
+          {children}
+        </ReactQueryProvider>
+      </body>
+    </html>
+  );
+```
+
+
+##### <img  alt="ViteJS"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/05cf8a94-895c-4249-8636-f1d2a0ea165b"> ViteJS `main{.tsx/.jsx}`
+
+```tsx
+ import { ReactQueryProvider } from 'github-automated-repos'
+ createRoot(document.getElementById('root')!).render(
+   <ReactQueryProvider >
+     <StrictMode>
+       <App />
+     </StrictMode>
+   </ReactQueryProvider>
+   ,
+  )
+
+```
 
 > [!CAUTION]
 > :exclamation::exclamation: Don't forget to fill in the fields: your GitHubUsername and keyWord (determined by you).
@@ -619,65 +658,140 @@ import { useGitHubAutomatedRepos, StackIcons, StackLabels } from 'github-automat
 
 #### <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/210762527-ae3afe1f-fe36-46a9-98ad-35dbae4d1adf.svg"><a/>  <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/219095611-551d532a-30fc-4873-b00e-0a8bbf8bb5ec.svg"><a/>
 
-```jsx    
-  import './App.css';
-  import { useGitHubAutomatedRepos, ProjectIcons, StackIcons, StackLabels } from 'github-automated-repos';
-  function App() {
-                              {/*useGitHubAutomatedRepos hook*/ }
-  const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
+```tsx    
+ {/*------------------------------*/ }
+  {/*CSS STYLE <can remove>*/ }
+  {/*------------------------------*/ }
 
-    return (
-      <div className="App">
-        {
-          data.map((item) => {
-            return (
-              <div key={item.id}>
+  const styleCSS: { [key: string]: React.CSSProperties } = {
+    div: {
+      display: 'flex',
+      alignItems: 'center',
+      flexDirection: 'column',
+      width: '100vh'
+    },
+    logo: {
+      width: '60rem',
+    },
+    section: {
+      display: 'flex',
+      alignItems: 'center',
+      flexDirection: 'column',
+      marginBottom: '100px',
 
-                {/*Banner / Layout / Logo*/}
-                <img src={item.banner}></img>
+    },
+    name: {
+      fontSize: '30px',
+      fontFamily: 'cursive'
+    },
+    bannerDiv: {
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'center',
+      gap: "2px",
 
-                {/*Project Icons*/}
-                {item.topics.map((icon) => {
-                  return (
-                    <ProjectIcons key={icon} className="project_Icon" itemTopics={icon} />
-                  )
-                })}
+    },
+    banner: {
+      width: "250px"
+    },
+    componentsDiv: {
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'center',
+      gap: "10px"
+    },
 
-                {/*html Url*/}
-                <a href={item.html_url}>
-                    {/*Name Project*/}
-                    <h1>{item.name}</h1>
-                </a>
+    description: {
+      width: '700px'
+    },
+    LinksDiv: {
+      display: 'flex',
+      gap: '10px',
+      fontWeight: '500',
+      color: '#646cff',
+      textDecoration: 'inherit',
+    }
 
-                {/*Description*/}
-                <p>{item.description}</p>
-    
-                {/*Homepage*/}
-                <a href={item.homepage}>
-                    <h3>Homepage</h3>
-                </a>
+  }
 
-                {/*Stacks Icon and Stacks Label*/}
+
+  {/*------------------------------*/ }
+  {/*HOOK*/ }
+  {/*------------------------------*/ }
+
+  const { data, isLoading } = useGitHubAutomatedRepos("digoarthur", "deploy");
+
+  if (isLoading) {
+    return <div> loading...</div>
+  }
+
+
+  return (
+    <div style={styleCSS.div}>
+      <img style={styleCSS.logo} src='https://github.com/user-attachments/assets/bb8f5688-6896-4e42-ac91-81f93fbeece0'></img>
+      {
+        data?.map((item, index) => {
+
+          return (
+            <section style={styleCSS.section} key={index}>
+
+              {/*Name / Title*/}
+              <h2 style={styleCSS.name}>{item.name}</h2>
+
+              {/*Banner*/}
+              <div style={styleCSS.bannerDiv}>
+                {
+                  item.banner.map((item, index) => {
+                    return (
+                      <img style={styleCSS.banner} key={index} src={item}></img>
+                    )
+                  })
+                }
+              </div>
+
+              {/*Topics - Components StackIcons & StackLabels*/}
+              <div style={styleCSS.componentsDiv}>
                 {item.topics.map((icon, index) => {
                   return (
-                     <div key={icon} style={{display:'flex', justifyContent:'center'}}>
-                      <StackIcons key={icon} className="stack_Icon" itemTopics={icon} />
-                      <StackLabels key={index} itemTopics={icon} />
-                      </div>
+                    <div key={index}>
+                      <StackIcons className="stack_Icon" itemTopics={icon} />
+                      <StackLabels className="stack_Label" itemTopics={icon} />
+                    </div>
                   )
                 })}
+              </div>
+
+              {/*Description*/}
+              <p style={styleCSS.description} >{item.description}</p>
+
+
+              <div style={styleCSS.LinksDiv}>
+                {/*Homepage*/}
+                <a href={item.homepage}>
+                  <h3>🔗Homepage</h3>
+                </a>
+
+                {/*html_url*/}
+                <a href={item.html_url}>
+                  <h3>🔗Repository</h3>
+                </a>
 
               </div>
 
-            )
-          })
-        }
-      </div>
-    );
+            </section>
 
-  }
-  export default App;
+          )
+        })
+      }
+    </div>
+  );
 ```
+
+
+
+
+
+
 
 <br>  
 <!------------------------------------Framework Settings-->
