@@ -610,7 +610,7 @@ import { useGitHubAutomatedRepos, StackIcons, StackLabels } from 'github-automat
 
 ## <img  alt="NextJS"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/eb3732e9-d3a9-4f9f-b706-8969557681aa"> React Query Config.
 
-##### <img  alt="NextJS"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6b213e2e-213a-489d-bbda-1dec9dcda585"> NextJS  `layout{.tsx/.jsx}`
+## <img  alt="NextJS"  width="35" height="35" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6b213e2e-213a-489d-bbda-1dec9dcda585"> NextJS  `layout{.tsx/.jsx}`
 
 ```tsx
   import { ReactQueryProvider } from "github-automated-repos";
@@ -631,7 +631,7 @@ import { useGitHubAutomatedRepos, StackIcons, StackLabels } from 'github-automat
 ```
 
 
-##### <img  alt="ViteJS"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/05cf8a94-895c-4249-8636-f1d2a0ea165b"> ViteJS `main{.tsx/.jsx}`
+## <img  alt="ViteJS"  width="35" height="35" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/05cf8a94-895c-4249-8636-f1d2a0ea165b"> ViteJS `main{.tsx/.jsx}`
 
 ```tsx
  import { ReactQueryProvider } from 'github-automated-repos'
@@ -645,6 +645,15 @@ import { useGitHubAutomatedRepos, StackIcons, StackLabels } from 'github-automat
   )
 
 ```
+
+<div align="center">
+    
+![dots-horizontal-svgrepo-com (2)](https://github.com/user-attachments/assets/8914275f-9f76-4ff5-be40-e1b36c603633)
+
+</div>
+
+
+##   `App{.tsx/.jsx}` or  `Page{.tsx/.jsx}`
 
 > [!CAUTION]
 > :exclamation::exclamation: Don't forget to fill in the fields: your GitHubUsername and keyWord (determined by you).
@@ -660,7 +669,7 @@ import { useGitHubAutomatedRepos, StackIcons, StackLabels } from 'github-automat
 
 ```tsx    
  {/*------------------------------*/ }
-  {/*CSS STYLE <can remove>*/ }
+  {/*CSS STYLE <can be remove after>*/ }
   {/*------------------------------*/ }
 
   const styleCSS: { [key: string]: React.CSSProperties } = {
