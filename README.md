@@ -579,8 +579,10 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 - `topics`: array that brings information about the icons in [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) and [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons). Used in both ProjectIcon, StackLabels e StackIcon components. It is in this field that is passed the key configured in the hook. Refers to the field About / Topics of your GitHub.
 
+
+
 <div align="center">
-<img  alt="topics_Props"   src="https://user-images.githubusercontent.com/59892368/219117029-d693ee8f-4289-4ac0-85ed-674091508510.png"> 
+<img  alt="topics_Props"   src="https://github.com/user-attachments/assets/00b55402-c64b-49c4-982f-8b90a6c12ce8"> 
 </div>
 
 <br>
@@ -618,7 +620,11 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 ## <img  alt="NextJS"  width="35" height="35" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6b213e2e-213a-489d-bbda-1dec9dcda585"> NextJS  `layout{.tsx/.jsx}`
 
+> [!IMPORTANT]
+> If the app does not work, type the `'use client;'` at the top of the `page.tsx` file and `layout.tsx`. . 
+
 ```tsx
+  use client;
   import { ReactQueryProvider } from "github-automated-repos";
 
   {*/.........*/ }
@@ -807,33 +813,12 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 
 
-
 <br>  
-<!------------------------------------Framework Settings-->
-       
-      
-## <img  alt="NextJS"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6b213e2e-213a-489d-bbda-1dec9dcda585"> Framework Settings.
-       
-  
-       
-```
-└── My-app
-    ├── ...
-    ├── next.config.js
-    ├── ...
-```
-
-``` javascript
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  transpilePackages: ['github-automated-repos'],
-}
-
-module.exports = nextConfig
-```
-       
 ---
+<br>  
+
+       
+
 
 
 **Love github-automated-repos? Give our repo a star ⭐ ⬆️.**
