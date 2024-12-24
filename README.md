@@ -1,5 +1,6 @@
 
 
+
 <!--Commit changes
 
 -->
@@ -129,13 +130,16 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
    <!------------------------------------ -------------------->
 
 
+
+
+
 <p align="center">
 
 <a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">
     <img   src="https://github.com/user-attachments/assets/fa24923b-77a4-4ac5-ab83-215120c74296" alt="language_USA" >
 <a/> &nbsp;&nbsp;
 <a href="https://github.com/DIGOARTHUR/github-automated-repos#import-1">
-    <img   src="https://github.com/user-attachments/assets/ac3e4e9c-9db7-4b78-b9ff-cd4863b9342f" alt="language_USA" border="0">
+    <img   src="https://github.com/user-attachments/assets/f1756546-1661-44b9-9cd3-8bce47b60df6" alt="language_USA" border="0">
 <a/>&nbsp;&nbsp;
 
  <a href="https://github.com/DIGOARTHUR/github-automated-repos#fill-in-the-fields-in-the-github-repository-1">
@@ -397,7 +401,7 @@ Array(0)
 > The github-automated-repos library imports 3 resources: hook, stackIcons component and stackLabels component.
 
 ```jsx
-import { useGitHubAutomatedRepos, StackIcons, StackLabels } from 'github-automated-repos';
+import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } from 'github-automated-repos';
 ```
     
  <details>   
@@ -406,7 +410,9 @@ import { useGitHubAutomatedRepos, StackIcons, StackLabels } from 'github-automat
 
   <br>
 
-### The package imports 3 elements:
+### The package imports 4 elements:
+
+- `ReactQueryProvider` tool used to optimize the requirements of the API. Don’t forget to set it up! [Code Example](https://github.com/DIGOARTHUR/github-automated-repos/tree/main?tab=readme-ov-file#code-example-1) 
 
 - `useGitHubAutomatedRepos` hook responsible for automating the return of data from repositories. This hook takes two parameters: GitHubUsername & keyword. The return is an array of objects containing 7 properties: id, banner, html_url, homepage, topics, name and description.
 
@@ -539,12 +545,12 @@ import { useGitHubAutomatedRepos, StackIcons, StackLabels } from 'github-automat
  <details>   
 <br/>
      
-- `banner`: This property returns a .PNG image. For this to be possible, the correct name must be entered in the file called `banner.png` and also the path. Ex.:
+- `banner`: This property returns a .PNG e .SVG image. For this to be possible, the name of the image file must contain `banner`in the name. Insert your images in the following path: Ex.:
 ```
-└── src
-    └── assets
-            └── imgs
-                └── `banner.png`
+└── public
+    └── images
+            └── `bannerXYZ.png` 
+            └── `bannerABC.svg` 
     ├── ...
 ```
 <div align="center">
