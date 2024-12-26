@@ -54,6 +54,23 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 
 ![Group 70 (1)](https://github.com/user-attachments/assets/7b8c071d-d70e-4e3c-8719-47d8be084d38)
 
+
+
+<!------------------------------------ -------------------->
+ <!------------------------------------SHIELDS PROJECT-->
+ <!------------------------------------ -------------------->
+ 
+<div align="center">
+    
+![GitHub](https://img.shields.io/github/license/digoarthur/github-automated-repos)
+![NPM Paackage](https://img.shields.io/npm/v/github-automated-repos?color=limegreen&label=NPM%20package&logo=NPM&logoColor=white)
+![NPM DOWNLOADS](https://img.shields.io/npm/dt/github-automated-repos?style=plastic)
+![CodeFactor](https://img.shields.io/codefactor/grade/github/digoarthur/github-automated-repos?color=brightgreen&label=Code%20Quality&logo=codefactor)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]( )
+
+</div>
+
+
 <!------------------------------------ ---------------------------->
 <!------------------------------------ PROJECT SHORT DESCRIPTION-->
 <!------------------------------------ --------------------------->
@@ -98,20 +115,7 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
   <br>
 </p>
 
-<!------------------------------------ -------------------->
- <!------------------------------------SHIELDS PROJECT-->
- <!------------------------------------ -------------------->
- 
-<div align="center">
-    
- ![NPM DOWNLOADS](https://img.shields.io/npm/dt/github-automated-repos?style=plastic)
- ![NPM Paackage](https://img.shields.io/npm/v/github-automated-repos?color=brightgreen&label=NPM%20package&logo=NPM&logoColor=white)
-  ![CodeFactor](https://img.shields.io/codefactor/grade/github/digoarthur/github-automated-repos?color=brightgreen&label=Code%20Quality&logo=codefactor)
- ![GitHub](https://img.shields.io/github/license/digoarthur/github-automated-repos)
 
-
-
-</div>
   
     
 
