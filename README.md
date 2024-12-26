@@ -62,11 +62,10 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
  
 <div align="center">
     
-![GitHub](https://img.shields.io/github/license/digoarthur/github-automated-repos)
-![NPM Paackage](https://img.shields.io/npm/v/github-automated-repos?color=limegreen&label=NPM%20package&logo=NPM&logoColor=white)
-![NPM DOWNLOADS](https://img.shields.io/npm/dt/github-automated-repos?style=plastic)
+![GitHub](https://img.shields.io/github/license/digoarthur/github-automated-repos?color=9F9FAC)
+![NPM Paackage](https://img.shields.io/npm/v/github-automated-repos?color=blue&label=NPM%20package&logo=NPM&logoColor=white)
 ![CodeFactor](https://img.shields.io/codefactor/grade/github/digoarthur/github-automated-repos?color=brightgreen&label=Code%20Quality&logo=codefactor)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]( )
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgree.svg)]( )
 
 </div>
 
