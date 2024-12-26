@@ -149,9 +149,7 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 <a href="https://github.com/DIGOARTHUR/github-automated-repos#code-example-1">
     <img   src="https://github.com/user-attachments/assets/f86d5d29-821b-4f2f-b16b-df6fa5db5f82" alt="language_USA" border="0">
 <a/> &nbsp;&nbsp;
- <a href="https://github.com/DIGOARTHUR/github-automated-repos#framework-settings-1">
-    <img   src="https://github.com/user-attachments/assets/113d28df-530c-4440-b936-cafb60b159da" alt="language_USA" border="0">
-<a/>
+
 
 </p>
 
@@ -165,18 +163,21 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 
 ----
 
-# Getting Start
+# Getting Start [ 5 steps ]
 
 ## 1. Installation
+
 ![npm](https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/287469113-6498d9f5-9884-43fd-b203-e9ae7de0984e.svg)
 ```shell
     npm install github-automated-repos 
 ```
 
+
 ![yarn](https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/287774024-f3af28e4-40c9-4b02-b5e4-c33702c2fca0.svg)
 ```shell
     yarn add github-automated-repos
 ```
+
 
 <div align="center">
     
@@ -185,11 +186,35 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 </div>
 
 
-
-## 2. Using hook
-
+## 2. Config. ReactQuery (ViteJS)
 > [!IMPORTANT]
-> Don't forget about `ReactQuery` code structures!!! See the code example. [Code Example](https://github.com/DIGOARTHUR/github-automated-repos/tree/main?tab=readme-ov-file#code-example-1)      
+> Don't forget about `ReactQuery` code structures!!! See NextJS code example. [Code Example](https://github.com/DIGOARTHUR/github-automated-repos/tree/main?tab=readme-ov-file#code-example-1)
+
+```tsx    
+ import { ReactQueryProvider } from 'github-automated-repos'
+ createRoot(document.getElementById('root')!).render(
+   <ReactQueryProvider >
+     <StrictMode>
+       <App />
+     </StrictMode>
+   </ReactQueryProvider>
+   ,
+  )
+```
+
+      
+<div align="center">
+    
+![dots-horizontal-svgrepo-com (2)](https://github.com/user-attachments/assets/8914275f-9f76-4ff5-be40-e1b36c603633)
+
+</div>
+
+
+## 3. Using hook
+
+> [!CAUTION]
+> :exclamation::exclamation: Don't forget to fill in the fields: your GitHubUsername and keyWord (chosen by you).
+
 ```typescript     
     import {useGitHubAutomatedRepos} from "github-automated-repos";
 
@@ -204,7 +229,7 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 </div>
 
 
-## 3. Choose the repositories and fill in the Topics field with the keyword you determined.
+## 4. Choose the repositories and fill in the Topics field with the keyword you determined.
 
 ![image](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/9a0a0aaf-02e8-4a7f-8390-6e7fb4a3ea53)
 
@@ -287,7 +312,7 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 </div>
 
 
-## 4. ✅Ready! JSON - Data from repositories chosen by you!
+## 5. ✅Ready! JSON - Data from repositories chosen by you!
 > [!TIP]
 >  Customize your cards your way
 
@@ -398,7 +423,7 @@ Array(0)
   
 # <img  alt="skills"  height="30" src="https://github.com/user-attachments/assets/b7c52fa3-ba47-4f19-8dd3-ccd9d6395b76"> Hook Import  &nbsp;&nbsp;  <!---write here : demonstration of the application layout.  -->
 
-> The github-automated-repos library imports 3 resources: hook, stackIcons component and stackLabels component.
+> The github-automated-repos library imports 4 resources: hook,  ReactQueryProvider , StackIcons component and StackLabels component.
 
 ```jsx
 import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } from 'github-automated-repos';
@@ -813,8 +838,10 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 
 
-<br>  
+<br> 
+
 ---
+
 <br>  
 
        
