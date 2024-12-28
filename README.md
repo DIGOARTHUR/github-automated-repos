@@ -640,18 +640,75 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 ## <img  alt="NextJS"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/eb3732e9-d3a9-4f9f-b706-8969557681aa"> React Query Config.
 
+## <img  alt="ViteJS"  width="35" height="35" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/05cf8a94-895c-4249-8636-f1d2a0ea165b"> ViteJS `main{.tsx/.jsx}`
+
+```tsx
+  {/*------------------------------*/ }
+  {/*TOP OF THE CODE < main.tsx > */ }
+  {/*------------------------------*/ }
+
+  import { ReactQueryProvider } from 'github-automated-repos'
+```
+
+
+```tsx
+
+  {/*------------------------------*/ }
+  {/*FUNCTION < main.tsx > */ }
+  {/*------------------------------*/ }
+
+createRoot(document.getElementById('root')!).render(
+
+  <ReactQueryProvider>
+    <StrictMode>
+      <App />
+    </StrictMode>
+  </ReactQueryProvider>
+
+  ,
+)
+
+```
+
+
+
 ## <img  alt="NextJS"  width="35" height="35" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6b213e2e-213a-489d-bbda-1dec9dcda585"> NextJS  `layout{.tsx/.jsx}`
 
 > [!IMPORTANT]
-> If the app does not work, type the `'use client;'` at the top of the `page.tsx` file and `layout.tsx`. . 
+> If the app does not work, type the `'use client;'` at the top of the `page.tsx` file and `layout.tsx`. 
 
 ```tsx
-  use client;
+  {/*------------------------------*/ }
+  {/* LIBRARY IMPORT < layout.tsx > */ }
+  {/*------------------------------*/ }
+
+  'use client';
   import { ReactQueryProvider } from "github-automated-repos";
+```
 
-  {*/.........*/ }
+```tsx
+  {/*------------------------------*/ }
+  {/*FUNCTION < layout.tsx > */ }
+  {/*------------------------------*/ }
 
-   return (
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+
+
+  return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -662,23 +719,11 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
       </body>
     </html>
   );
+}
 ```
 
 
-## <img  alt="ViteJS"  width="35" height="35" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/05cf8a94-895c-4249-8636-f1d2a0ea165b"> ViteJS `main{.tsx/.jsx}`
 
-```tsx
- import { ReactQueryProvider } from 'github-automated-repos'
- createRoot(document.getElementById('root')!).render(
-   <ReactQueryProvider >
-     <StrictMode>
-       <App />
-     </StrictMode>
-   </ReactQueryProvider>
-   ,
-  )
-
-```
 
 <div align="center">
     
@@ -701,10 +746,26 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 #### <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/210762527-ae3afe1f-fe36-46a9-98ad-35dbae4d1adf.svg"><a/>  <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/219095611-551d532a-30fc-4873-b00e-0a8bbf8bb5ec.svg"><a/>
 
-```tsx    
+> [!IMPORTANT]
+> If the `NextJS` app does not work, type the `'use client;'` at the top of the `page.tsx` file and `layout.tsx`. .
+
+
+```tsx
  {/*------------------------------*/ }
-  {/*CSS STYLE <can be remove after>*/ }
+  {/*TOP OF THE CODE >*/ }
   {/*------------------------------*/ }
+  //'use client';
+  import { StackIcons, StackLabels, useGitHubAutomatedRepos } from "github-automated-repos";
+````
+
+  
+```tsx
+
+ {/*------------------------------*/ }
+  {/*INSIDE IN FUNCTION>*/ }
+  {/*------------------------------*/ }
+
+  {/*CSS STYLE <can be remove after>*/ }
 
   const styleCSS: { [key: string]: React.CSSProperties } = {
     div: {
@@ -758,9 +819,9 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
   }
 
 
-  {/*------------------------------*/ }
-  {/*HOOK*/ }
-  {/*------------------------------*/ }
+
+  {/* ---------- HOOK ------ */ }
+
 
   const { data, isLoading } = useGitHubAutomatedRepos("digoarthur", "deploy");
 
