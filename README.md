@@ -771,8 +771,7 @@ export default function RootLayout({
     div: {
       display: 'flex',
       alignItems: 'center',
-      flexDirection: 'column',
-      width: '100vh'
+      flexDirection: 'column'
     },
     logo: {
       width: '60rem',
