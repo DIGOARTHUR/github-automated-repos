@@ -160,7 +160,7 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 
 ----
 
-# Getting Start [ 5 steps ]
+# Getting Start [ 6 steps ]
 
 ## 1. Installation
 
@@ -226,7 +226,35 @@ yarn add github-automated-repos
 </div>
 
 
-## 4. Choose the repositories and fill in the Topics field with the keyword you determined.
+
+## 4. Banner
+
+> Insert banner, layout images to represent your project. Types are `.PNG` and `.SVG`. For this to be possible, the name of the image file must contain `banner`in the name. Insert your images in the following path: Ex.:
+
+```
+└── public
+    └── images
+            └── `bannerXYZ.png` 
+            └── `bannerABC.svg` 
+    ├── ...
+```
+
+<div align="center">
+<img  alt="dashgo_layout"  height="150" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/68f59bce-0d8f-4cea-81c9-01596d97f47e"> 
+<img  alt="dashfincaneiro_layout"  height="150" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/86dac1db-d04a-462b-a2ea-f00db264dbad"> 
+<img  alt="proffy_layout"  height="150" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/bfcd0785-ce8a-4327-8b8b-5de495528c3f"> 
+</div>
+
+
+
+<div align="center">
+    
+![dots-horizontal-svgrepo-com (2)](https://github.com/user-attachments/assets/8914275f-9f76-4ff5-be40-e1b36c603633)
+
+</div>
+
+
+## 5. Choose the repositories and fill in the Topics field with the keyword you determined.
 
 ![image](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/9a0a0aaf-02e8-4a7f-8390-6e7fb4a3ea53)
 
@@ -309,7 +337,7 @@ yarn add github-automated-repos
 </div>
 
 
-## 5. ✅Ready! JSON - Data from repositories chosen by you!
+## 6. ✅Ready! JSON - Data from repositories chosen by you!
 > [!TIP]
 >  Customize your cards your way
 
