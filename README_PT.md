@@ -190,7 +190,7 @@ yarn add github-automated-repos
 
 ## 2. Config. ReactQuery (ViteJS)
 > [!IMPORTANT]
-> Don't forget about `ReactQuery` code structures!!! See NextJS code example. [Code Example](https://github.com/DIGOARTHUR/github-automated-repos/tree/main?tab=readme-ov-file#code-example-1)
+> Não esqueça de configurar o `ReactQuery`!!!  Veja o exemplo para o NextJS. [Code Example](https://github.com/DIGOARTHUR/github-automated-repos/tree/main?tab=readme-ov-file#code-example-1)
 
 ```tsx    
  import { ReactQueryProvider } from 'github-automated-repos'
@@ -212,10 +212,10 @@ yarn add github-automated-repos
 </div>
 
 
-## 3. Using hook
+## 3. Utilizando o Hook ( useGitHubAutomatedRepos() )
 
 > [!CAUTION]
-> :exclamation::exclamation: Don't forget to fill in the fields: your GitHubUsername and keyWord (chosen by you).
+> :exclamation::exclamation: Não esqueça de preencher os campos: seu GitHubUsername e keyWord (escolhido por você).
 
 ```typescript     
     import { useGitHubAutomatedRepos } from "github-automated-repos";
@@ -234,7 +234,7 @@ yarn add github-automated-repos
 
 ## 4. Banner
 
-> Insert banner, layout images to represent your project. Types are `.PNG` and `.SVG`. For this to be possible, the name of the image file must contain `banner`in the name. Insert your images in the following path: Ex.:
+> Insira Banners, imagens do layout para representar seu projeto. Os tipos das imgs são `.PNG` e `.SVG`. Para fazer isso o nome do arquivo de imagem deve conter `banner` no nome. Insira as imagens seguindo o caminho: Ex.:
 
 ```
 └── public
@@ -259,7 +259,7 @@ yarn add github-automated-repos
 </div>
 
 
-## 5. Choose the repositories and fill in the Topics field with the keyword you determined.
+## 5. Escolha os repositórios e preencha o campo Topics com a palavra chave escolhida por você. Choose the repositories and fill in the Topics field with the keyword you determined.
 
 ![image](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/9a0a0aaf-02e8-4a7f-8390-6e7fb4a3ea53)
 
