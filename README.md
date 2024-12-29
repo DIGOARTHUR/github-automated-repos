@@ -85,7 +85,7 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 
 
 <p align="center">
-<img  alt="github-automated-repos"    src="https://github.com/user-attachments/assets/78ac832b-9e01-4fc2-9bdd-32b533e2ed83">
+<img  alt="github-automated-repos library"    src="https://github.com/user-attachments/assets/78ac832b-9e01-4fc2-9bdd-32b533e2ed83">
 </p>
 
 
@@ -130,7 +130,7 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 
 
 
-<p align="center">
+<p align="center" alt="github-automated-repos summary">
 
 <a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">
     <img   src="https://github.com/user-attachments/assets/fa24923b-77a4-4ac5-ab83-215120c74296" alt="About Library" >
