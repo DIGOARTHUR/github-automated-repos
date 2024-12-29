@@ -166,13 +166,13 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 
 ![npm](https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/287469113-6498d9f5-9884-43fd-b203-e9ae7de0984e.svg)
 ```shell
-    npm install github-automated-repos 
+npm install github-automated-repos 
 ```
 
 
 ![yarn](https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/287774024-f3af28e4-40c9-4b02-b5e4-c33702c2fca0.svg)
 ```shell
-    yarn add github-automated-repos
+yarn add github-automated-repos
 ```
 
 
@@ -213,9 +213,9 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 > :exclamation::exclamation: Don't forget to fill in the fields: your GitHubUsername and keyWord (chosen by you).
 
 ```typescript     
-    import {useGitHubAutomatedRepos} from "github-automated-repos";
+    import { useGitHubAutomatedRepos } from "github-automated-repos";
 
-    const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
+    const { data } = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 
 ```
 
@@ -439,7 +439,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 - `useGitHubAutomatedRepos` hook responsible for automating the return of data from repositories. This hook takes two parameters: GitHubUsername & keyword. The return is an array of objects containing 7 properties: id, banner, html_url, homepage, topics, name and description.
 
   ```tsx
-  const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
+  const { data, isLoading, isLoadingError} = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
   ```
    - #### return data example:
 
@@ -456,14 +456,20 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
     }
     ]
     ```
-
+    - #### isLoading: while the data is not loaded, isLoading returns TRUE.
+     ```jsx
+         if (isLoading) {
+            return <div> loading...</div>
+          }
+     ```
+     - #### isLoadingError: will be true if the query failed while fetching for the first time.
   
  <br>
  
 - `StackIcons` The component returns, based on the iteration of the topic array that is contained in data, icons of the stacks used in your project. Enter the stacks used in your repository's topic field.. Check the [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
 
   ```jsx
-   data.map((item) => {
+   data?.map((item) => {
        return (
       ...
       {item.topics.map((icon, index) => {
@@ -822,7 +828,7 @@ export default function RootLayout({
   {/* ---------- HOOK ------ */ }
 
 
-  const { data, isLoading } = useGitHubAutomatedRepos("digoarthur", "deploy");
+  const { data, isLoading } = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 
   if (isLoading) {
     return <div> loading...</div>
