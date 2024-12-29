@@ -1,7 +1,6 @@
 
 
 
-
 <!--Commit changes
 
 -->
@@ -39,11 +38,11 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 <p align="right">
 
 <a href="https://github.com/DIGOARTHUR/github-automated-repos#readme">
-    <img  height="22" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/257623321-95c81f57-b751-4956-b0ab-7a804ae44506.svg" alt="language_USA" border="0">
+    <img  height="22" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/257623321-95c81f57-b751-4956-b0ab-7a804ae44506.svg" alt="English" border="0">
 <a/>
 &nbsp;
 <a href="https://github.com/DIGOARTHUR/github-automated-repos/blob/main/README_PT.md">
-<img  alt="language_Brazil"  height="22" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/288551794-f50cff19-7ef7-41c4-81b5-b091ebd0f498.svg">
+<img  alt="Português"  height="22" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/288551794-f50cff19-7ef7-41c4-81b5-b091ebd0f498.svg">
 <a/>
 
 </p>
@@ -52,7 +51,8 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 <!------------------------------------ PROJECT BANNER-->
 <!------------------------------------ -------------------->
 
-![Group 70 (1)](https://github.com/user-attachments/assets/7b8c071d-d70e-4e3c-8719-47d8be084d38)
+<img  alt="logo_github-automated-repos"  src="https://github.com/user-attachments/assets/7b8c071d-d70e-4e3c-8719-47d8be084d38">
+
 
 
 
@@ -85,7 +85,7 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 
 
 <p align="center">
-<img  alt="ReactJS"   src="https://github.com/user-attachments/assets/78ac832b-9e01-4fc2-9bdd-32b533e2ed83">
+<img  alt="github-automated-repos"    src="https://github.com/user-attachments/assets/78ac832b-9e01-4fc2-9bdd-32b533e2ed83">
 </p>
 
 
@@ -133,18 +133,18 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 <p align="center">
 
 <a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">
-    <img   src="https://github.com/user-attachments/assets/fa24923b-77a4-4ac5-ab83-215120c74296" alt="language_USA" >
+    <img   src="https://github.com/user-attachments/assets/fa24923b-77a4-4ac5-ab83-215120c74296" alt="About Library" >
 <a/> &nbsp;&nbsp;
 <a href="https://github.com/DIGOARTHUR/github-automated-repos#import-1">
-    <img   src="https://github.com/user-attachments/assets/f1756546-1661-44b9-9cd3-8bce47b60df6" alt="language_USA" border="0">
+    <img   src="https://github.com/user-attachments/assets/f1756546-1661-44b9-9cd3-8bce47b60df6" alt="Hook Import" border="0">
 <a/>&nbsp;&nbsp;
 
  <a href="https://github.com/DIGOARTHUR/github-automated-repos#fill-in-the-fields-in-the-github-repository-1">
-    <img   src="https://github.com/user-attachments/assets/66b424a6-f4ac-4e8b-8426-86454a59ee36" alt="language_USA" border="0">
+    <img   src="https://github.com/user-attachments/assets/680108d9-5dc6-4767-aa1a-50bc3485943e" alt="Fill the fields of the repository (GitHub)" border="0">
 <a/>&nbsp;&nbsp;
 
 <a href="https://github.com/DIGOARTHUR/github-automated-repos#code-example-1">
-    <img   src="https://github.com/user-attachments/assets/f86d5d29-821b-4f2f-b16b-df6fa5db5f82" alt="language_USA" border="0">
+    <img   src="https://github.com/user-attachments/assets/f86d5d29-821b-4f2f-b16b-df6fa5db5f82" alt="Code Example" border="0">
 <a/> &nbsp;&nbsp;
 
 
@@ -260,9 +260,11 @@ yarn add github-automated-repos
 
 > [!IMPORTANT]
 > To insert stack names in the topics field, see web documentation > [Stack Icons](https://github-automated-repos.vercel.app)
-<div align="center">
+
+<div align="center" alt='stackIcons List'>
     
-![react-icons](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/876a12c4-93fa-4eb3-908c-b7c36ded395c)![NET_Core_Logo](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6cad1fdc-d3bb-4adb-9b14-bec1977aaee1)
+![react-icons](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/876a12c4-93fa-4eb3-908c-b7c36ded395c)
+![NET_Core_Logo](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6cad1fdc-d3bb-4adb-9b14-bec1977aaee1)
 ![mysql-logo-svgrepo-com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/8690e53e-5787-48b1-8adc-29c90e56fd42)
 ![mongo-svgrepo-com (1)](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/7cd5a1ec-ea87-4d7e-8429-1e3fcff03f49)
 ![linux-svgrepo-com](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/79ac45a3-5958-4efe-a3e6-90c135d2b466)
@@ -420,17 +422,17 @@ Array(0)
 
    |                             Control your projects                     |
 | :-------------------------------------------------------------------: |
-|   ![image](https://user-images.githubusercontent.com/59892368/214140611-910cd26b-280d-48f1-8652-65034f04a4f8.gif) |
+|   ![Control your Projects](https://user-images.githubusercontent.com/59892368/214140611-910cd26b-280d-48f1-8652-65034f04a4f8.gif) |
 
 
 |                             Customize and represent through icons.                |
 | :--------------------------------------------------------------: |
-|   ![image](https://user-images.githubusercontent.com/59892368/214817180-519e403f-0fa4-4bfd-a6cc-5eb63d3360e8.gif)|  
+|   ![Customize and represent through icons](https://user-images.githubusercontent.com/59892368/214817180-519e403f-0fa4-4bfd-a6cc-5eb63d3360e8.gif)|  
 
   
 |                               In one place                               |
 | :-------------------------------------------------------------------: |
-|   ![image](https://user-images.githubusercontent.com/59892368/214930109-119c4b38-9862-4a3d-a130-2dfad5c4bcb6.gif)|
+|   ![In one place](https://user-images.githubusercontent.com/59892368/214930109-119c4b38-9862-4a3d-a130-2dfad5c4bcb6.gif)|
 
 
 
@@ -446,7 +448,7 @@ Array(0)
 <!------------------------------------ IMPORT -->
 <!-------------------------------------------- -->
   
-# <img  alt="skills"  height="30" src="https://github.com/user-attachments/assets/b7c52fa3-ba47-4f19-8dd3-ccd9d6395b76"> Hook Import  &nbsp;&nbsp;  <!---write here : demonstration of the application layout.  -->
+# <img  alt="Hook Import"  height="30" src="https://github.com/user-attachments/assets/b7c52fa3-ba47-4f19-8dd3-ccd9d6395b76"> Hook Import  &nbsp;&nbsp;  <!---write here : demonstration of the application layout.  -->
 
 > The github-automated-repos library imports 4 resources: hook,  ReactQueryProvider , StackIcons component and StackLabels component.
 
@@ -595,7 +597,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 > [!IMPORTANT]
 > Pay attention to filling in each field of your repository on GitHub.
 
-![Group 12 (2)](https://github.com/user-attachments/assets/5ebf54e9-d40c-40ca-8777-47b834cd56ed)
+![Cards Porftolio github-automated-repos](https://github.com/user-attachments/assets/5ebf54e9-d40c-40ca-8777-47b834cd56ed)
 
 
  <details>   
