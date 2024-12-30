@@ -456,8 +456,7 @@ Array(0)
   
 # <img  alt="Hook Import"  height="30" src="https://github.com/user-attachments/assets/b7c52fa3-ba47-4f19-8dd3-ccd9d6395b76"> Importando Biblioteca  &nbsp;&nbsp;  <!---write here : demonstration of the application layout.  -->
 
-> O biblioteca github-automated-repos imports 4 recursos: hook,  ReactQueryProvider , compone StackIcons  e StackLabels component.
-> The github-automated-repos library imports 4 resources: hook,  ReactQueryProvider , StackIcons component and StackLabels component.
+> A biblioteca github-automated-repos importa 4 recursos: o hook `useGitHubAutomatedRepos`,  `ReactQueryProvider` , o componente `StackIcons`  e o componente `StackLabels`.
 
 ```jsx
 import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } from 'github-automated-repos';
@@ -471,14 +470,14 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 ### The package imports 4 elements:
 
-- `ReactQueryProvider` tool used to optimize the requirements of the API. Don’t forget to set it up! [Code Example](https://github.com/DIGOARTHUR/github-automated-repos/tree/main?tab=readme-ov-file#code-example-1) 
+- `ReactQueryProvider` ferramenta usada para otimizar as requições da API. Não esqueça de configurá-lo! [Code Example](https://github.com/DIGOARTHUR/github-automated-repos/tree/main?tab=readme-ov-file#code-example-1) 
 
-- `useGitHubAutomatedRepos` hook responsible for automating the return of data from repositories. This hook takes two parameters: GitHubUsername & keyword. The return is an array of objects containing 7 properties: id, banner, html_url, homepage, topics, name and description.
+- `useGitHubAutomatedRepos` hook responsável por automatizar o retorno de dados do repositório. Ele que faz com que o controle de visualização seja feita no seu GitHub. Esse hook recebe dois parâmetros: GitHubUsername & KeyWord. O retorno é uma array de objetos contendo 7 propriedades: id, banner, html_url, homepage, topics, name and description. 
 
   ```tsx
   const { data, isLoading, isLoadingError} = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
   ```
-   - #### return data example:
+   - #### exemplo retorno data:
 
     ``` javascript
     [
@@ -493,17 +492,18 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
     }
     ]
     ```
-    - #### isLoading: while the data is not loaded, isLoading returns TRUE.
+    - #### isLoading: enquanto o data nao é carregado, o isLoading retorna TRUE.
      ```jsx
          if (isLoading) {
             return <div> loading...</div>
           }
      ```
-     - #### isLoadingError: will be true if the query failed while fetching for the first time.
+     - #### isLoadingError: será TRUE se a consulta falhou durante a busca pela primeira vez.
   
  <br>
+
+ - `StackIcons` O componente retorna, baseado na iteração da array topics contida no data, icones das stacks usadas no seu projeto. Insira as stacks usadas no seu projeto no campo topics do seu repositório. Veja [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) !
  
-- `StackIcons` The component returns, based on the iteration of the topic array that is contained in data, icons of the stacks used in your project. Enter the stacks used in your repository's topic field.. Check the [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
 
   ```jsx
    data?.map((item) => {
@@ -546,6 +546,8 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 <br>
 <br>
+
+- `StackLabels` O componente retorna, baseado na iteração da array topics contida no data, icones das stacks usadas no seu projeto. Insert the stacks used in the topics field of your repository. Check the [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
   
 - `StackLabels` component returns, based on the iteration of the topics array that is contained in data, labels of the stacks used in your project. Insert the stacks used in the topics field of your repository. Check the [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
 
