@@ -631,7 +631,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 <br>
 
-- `topics`: array that brings information about the icons in [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) and [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons). Used in both ProjectIcon, StackLabels e StackIcon components. It is in this field that is passed the key configured in the hook. Refers to the field About / Topics of your GitHub.
+- `topics`: array that brings information about the icons in [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons). Used in both StackLabels e StackIcon components. It is in this field that is passed the key configured in the hook. Refers to the field About / Topics of your GitHub.
 
 
 
