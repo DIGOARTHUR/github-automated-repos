@@ -614,7 +614,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 
      
-- `banner`: Insira Banners, imagens do layout para representar seu projeto. Os tipos das imgs são `.PNG` e `.SVG`. Para fazer isso o nome do arquivo de imagem deve conter `banner` no nome. Insira as imagens seguindo o caminho: Ex.:
+- `banner`: insira Banners, imagens do layout para representar seu projeto. Os tipos das imgs são `.PNG` e `.SVG`. Para fazer isso o nome do arquivo de imagem deve conter `banner` no nome. Insira as imagens seguindo o caminho: Ex.:
 ```
 └── public
     └── images
@@ -631,7 +631,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 - `id`: número de identificação do repositório. Use-o como parâmetro na tag _key = {}_. ( *Este campo nao precisa ser preenchido* )
 
-- `html_url`: Link do repositório. Usado para acessar o repositório. ( *Este campo nao precisa ser preenchido* )
+- `html_url`: link do repositório. Usado para acessar o repositório. ( *Este campo nao precisa ser preenchido* )
 
 
 
@@ -948,7 +948,6 @@ export default function RootLayout({
 
 <br>  
 
-       
 
 
 
