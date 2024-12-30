@@ -547,9 +547,8 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 <br>
 <br>
 
-- `StackLabels` O componente retorna, baseado na iteração da array topics contida no data, icones das stacks usadas no seu projeto. Insert the stacks used in the topics field of your repository. Check the [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
+- `StackLabels` O componente retorna, baseado na iteração da array topics contida no data, icones das stacks usadas no seu projeto.  Insira as stacks usadas no seu projeto no campo topics do seu repositório. Veja [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) !
   
-- `StackLabels` component returns, based on the iteration of the topics array that is contained in data, labels of the stacks used in your project. Insert the stacks used in the topics field of your repository. Check the [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) tab!
 
   ```jsx
      data.map((item) => {
@@ -601,18 +600,21 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 <!------------------------------------ -------------------->
 
 
-# <img  alt="skills"  width="40" height="40" src="https://github.com/user-attachments/assets/403167b1-57eb-4ee9-818d-a591c6885f91"> Fill in the fields in the github repository
+# <img  alt="skills"  width="40" height="40" src="https://github.com/user-attachments/assets/403167b1-57eb-4ee9-818d-a591c6885f91"> Preencha os campos do repositório GitHub
 
 > [!IMPORTANT]
-> Pay attention to filling in each field of your repository on GitHub.
+> Atenção ao preencher cada campo do seu repositório!
 
 ![Cards Porftolio github-automated-repos](https://github.com/user-attachments/assets/5ebf54e9-d40c-40ca-8777-47b834cd56ed)
 
 
  <details>   
 <br/>
+
+
+
      
-- `banner`: This property returns a .PNG e .SVG image. For this to be possible, the name of the image file must contain `banner`in the name. Insert your images in the following path: Ex.:
+- `banner`: Insira Banners, imagens do layout para representar seu projeto. Os tipos das imgs são `.PNG` e `.SVG`. Para fazer isso o nome do arquivo de imagem deve conter `banner` no nome. Insira as imagens seguindo o caminho: Ex.:
 ```
 └── public
     └── images
@@ -627,15 +629,15 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 </div>
 
 
+- `id`: número de identificação do repositório. Use-o como parâmetro na tag _key = {}_. ( *Este campo nao precisa ser preenchido* )
 
-- `id`: repository identification number. Used as parameter in the key tag. ( *This field does not need to be filled in.* )
-- `html_url`: repository link. Used as the link of access. ( *This field does not need to be filled in.* )
-
-
+- `html_url`: Link do repositório. Usado para acessar o repositório. ( *Este campo nao precisa ser preenchido* )
 
 
 
-- `homepage`: it's the access link to the built page, page deploy.  About / Website of your GitHub.
+
+
+- `homepage`: link de acesso a página web do projeto.  About / Website of your GitHub.
 
 <div align="center">
 <img  alt="homepage_Props"  src="https://user-images.githubusercontent.com/59892368/219116735-a026d9b9-f5b9-4389-b8f1-619db2488368.png"> 
@@ -644,7 +646,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 <br>
 
-- `topics`: array that brings information about the icons in [Project Icons](https://github-automated-repos.vercel.app/documentation/projectIcons) and [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons). Used in both ProjectIcon, StackLabels e StackIcon components. It is in this field that is passed the key configured in the hook. Refers to the field About / Topics of your GitHub.
+- `topics`: array que traz informações sobre os icones em [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons). Usado em ambos componentes StackLabels e StackIcon . Este é o campo que é inserido a KeyWord configurado no hook. Rerefe-se ao campo About / Topics of your GitHub.
 
 
 
@@ -654,7 +656,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 <br>
 
-- `name`: This is the name of the repository. Refers to the field  Settings / General / Repository name of your GitHub.
+- `name`: este é o nome do repositório. Refere-se ao campo  Settings / General / Repository name of your GitHub.
 
 <div align="center">
 <img  alt="name_Props"  src="https://user-images.githubusercontent.com/59892368/219117097-43db2497-7f62-428e-85c6-ef3656da4cd2.png"> 
@@ -664,7 +666,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 <br>
 
-- `description`: This is the description given to your repository. Refers to the About /Description field of your GitHub.
+- `description`: essa é a descrição dado ao seu projeto. Refere-se ao About /Description field of your GitHub.
 
 <div align="center">
 <img  alt="description_Props"   src="https://user-images.githubusercontent.com/59892368/219117260-5bdb1fbb-c58b-4ad9-938a-068b58c72f27.png"> 
@@ -680,7 +682,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
  
 </br>  
 
-# Code Example
+# Exemplo Código
 
 
 ## <img  alt="NextJS"  width="50" height="50" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/eb3732e9-d3a9-4f9f-b706-8969557681aa"> React Query Config.
@@ -720,7 +722,7 @@ createRoot(document.getElementById('root')!).render(
 ## <img  alt="NextJS"  width="35" height="35" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/6b213e2e-213a-489d-bbda-1dec9dcda585"> NextJS  `layout{.tsx/.jsx}`
 
 > [!IMPORTANT]
-> If the app does not work, type the `'use client;'` at the top of the `page.tsx` file and `layout.tsx`. 
+> Caso a aplicação nao funcione, digite `'use client;'` no topo do arquivo `page.tsx` e no `layout.tsx`. 
 
 ```tsx
   {/*------------------------------*/ }
@@ -780,7 +782,7 @@ export default function RootLayout({
 ##   `App{.tsx/.jsx}` or  `Page{.tsx/.jsx}`
 
 > [!CAUTION]
-> :exclamation::exclamation: Don't forget to fill in the fields: your GitHubUsername and keyWord (determined by you).
+> :exclamation::exclamation: Não esqueça de preencher os campos: seu GitHubUsername e keyWord (escolhido por você).
 
 
 
@@ -792,7 +794,7 @@ export default function RootLayout({
 #### <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/210762527-ae3afe1f-fe36-46a9-98ad-35dbae4d1adf.svg"><a/>  <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/219095611-551d532a-30fc-4873-b00e-0a8bbf8bb5ec.svg"><a/>
 
 > [!IMPORTANT]
-> If the `NextJS` app does not work, type the `'use client;'` at the top of the `page.tsx` file and `layout.tsx`. .
+> Se o app `NextJS` der erro, digite `'use client;'` no topo do arquivo `page.tsx` e `layout.tsx`. .
 
 
 ```tsx
@@ -950,7 +952,7 @@ export default function RootLayout({
 
 
 
-**Love github-automated-repos? Give our repo a star ⭐ ⬆️.**
+**Gostou do github-automated-repos? Dê uma estrela no repositório ⭐ ⬆️.**
 
 
 `based in:` [Api Github](https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-a-repository)
