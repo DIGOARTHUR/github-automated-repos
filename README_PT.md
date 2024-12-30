@@ -259,12 +259,12 @@ yarn add github-automated-repos
 </div>
 
 
-## 5. Escolha os repositórios e preencha o campo Topics com a palavra chave escolhida por você. Choose the repositories and fill in the Topics field with the keyword you determined.
+## 5. Escolha os repositórios e preencha o campo Topics com a palavra chave escolhida por você.
 
 ![image](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/9a0a0aaf-02e8-4a7f-8390-6e7fb4a3ea53)
 
 > [!IMPORTANT]
-> To insert stack names in the topics field, see web documentation > [Stack Icons](https://github-automated-repos.vercel.app)
+> Insira o nome das StackIcons no campo Topics do repositório, confira a lista no website ou abaixo. > [Stack Icons](https://github-automated-repos.vercel.app)
 
 <div align="center" alt='stackIcons List'>
     
@@ -294,7 +294,7 @@ yarn add github-automated-repos
 </div>
 
 
-## Icons Table 
+## Tabela de StackIcons 
 <details>
 
 <br/>
@@ -344,15 +344,15 @@ yarn add github-automated-repos
 </div>
 
 
-## 6. ✅Ready! JSON - Data from repositories chosen by you!
+## 6. ✅Pronto! JSON - Dados dos repositórios escolhidos por você!
 > [!TIP]
->  Customize your cards your way
+>  Construa seus Cards do seu jeito.
 
 
 <details>
 <summary>JSON - DATA</summary>
 
-### Data Example ~ console.log(data) ~
+### Exemplo dos dados ~ console.log(data) ~
 
 ```javascript
 Array(4)
@@ -377,9 +377,10 @@ Array(0)
 ```
 </details>
 <details>
-<summary>IN PAGE WEB</summary>
+<summary>Na página Web</summary>
 
-### 💡Use your creativity and build the card however you want.
+> [!TIP]
+>  Construa seus Cards do seu jeito!
 
 ![portfolio_page](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/05e5ab60-5851-4aab-911f-19227a75dc72)
 
@@ -423,19 +424,19 @@ Array(0)
 <!-------------------------------------------------- -->
 
 # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  About Library <!---write here : talk a little about project: what's does, example.  -->
-> This library automates the view your GitHub projects on your porfolio / website in one place. But how? Make the code configuration only once in your application with github-automated-repos, and manage the view of your projects on GitHub in the Topics field. Choose which project will be seen, and you can even customize your project card, for example, with a representative icon and show which stacks were used. All in one place!
+> Essa biblioteca automatiza a visualização dos seus projetos GitHub no seu portfólio / website em um só lugar. Mas como? Configure a biblioteca github-automated-repos apenas uma única vez, e administre a visualização dos seus projetos no seu próprio GitHub no campo Topics. Escolha qual será o projeto, e ainda customize seus cards com ícones das stacks utilizadas para o desenvolvimento dele. Tudo isso em um só lugar! 
 
-   |                             Control your projects                     |
+   |                             Controle seus Projetos                     |
 | :-------------------------------------------------------------------: |
 |   ![Control your Projects](https://user-images.githubusercontent.com/59892368/214140611-910cd26b-280d-48f1-8652-65034f04a4f8.gif) |
 
 
-|                             Customize and represent through icons.                |
+|                            Customize e represente por meios de ícones e banners                |
 | :--------------------------------------------------------------: |
 |   ![Customize and represent through icons](https://user-images.githubusercontent.com/59892368/214817180-519e403f-0fa4-4bfd-a6cc-5eb63d3360e8.gif)|  
 
   
-|                               In one place                               |
+|                               Em um só lugar                              |
 | :-------------------------------------------------------------------: |
 |   ![In one place](https://user-images.githubusercontent.com/59892368/214930109-119c4b38-9862-4a3d-a130-2dfad5c4bcb6.gif)|
 
@@ -453,8 +454,9 @@ Array(0)
 <!------------------------------------ IMPORT -->
 <!-------------------------------------------- -->
   
-# <img  alt="Hook Import"  height="30" src="https://github.com/user-attachments/assets/b7c52fa3-ba47-4f19-8dd3-ccd9d6395b76"> Hook Import  &nbsp;&nbsp;  <!---write here : demonstration of the application layout.  -->
+# <img  alt="Hook Import"  height="30" src="https://github.com/user-attachments/assets/b7c52fa3-ba47-4f19-8dd3-ccd9d6395b76"> Importando Biblioteca  &nbsp;&nbsp;  <!---write here : demonstration of the application layout.  -->
 
+> O biblioteca github-automated-repos imports 4 recursos: hook,  ReactQueryProvider , compone StackIcons  e StackLabels component.
 > The github-automated-repos library imports 4 resources: hook,  ReactQueryProvider , StackIcons component and StackLabels component.
 
 ```jsx
