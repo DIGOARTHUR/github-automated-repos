@@ -76,7 +76,7 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 
 <p align="center">
   <br>
-   github-automated-repos is the library,<code>ReactJS</code>, that gives you the power to control your GitHub data, your projects on the portfolio / website,
+  ✅ github-automated-repos is the library,<code>ReactJS</code>, that gives you the power to control your GitHub data, your projects on the portfolio / website,
     in your own GitHub in one place!</i>
 
 <br>
