@@ -1,6 +1,6 @@
 export async function fetchGitHubBanner(usernameGitHub: string, repositoryName: string) {
     try {
-        const response = await fetch(`https://api.github.com/repos/${usernameGitHub}/${repositoryName}/contents/src/assets/imgs`);
+        const response = await fetch(`https://api.github.com/repos/${usernameGitHub}/${repositoryName}/contents/public/images`);
         if (!response.ok) {
             throw new Error(`Unsuccessful request: ${response.statusText}`);
         }
