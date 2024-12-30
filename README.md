@@ -78,7 +78,12 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
   <br>
    github-automated-repos is the library,<code>ReactJS</code>, that gives you the power to control your GitHub data, your projects on the portfolio / website,
     in your own GitHub in one place!</i>
-  <br>
+
+<br>
+<br>
+  
+❌ project.js files (keep updating code)
+❌ GitHub API (no data control)
 
 </p>
 
@@ -87,9 +92,6 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 <p align="center">
 <img  alt="github-automated-repos library"    src="https://github.com/user-attachments/assets/78ac832b-9e01-4fc2-9bdd-32b533e2ed83">
 </p>
-
-
-
 
 <!---
     • Install lib `github-automated-repos` ➥
@@ -115,19 +117,13 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 </p>
 
 
-  
-    
-
- <br>
-  <br>
+<br>
+<br>
   
 
    <!------------------------------------ -------------------->
    <!------------------------------------SUMMARY-->
    <!------------------------------------ -------------------->
-
-
-
 
 
 <p align="center" alt="github-automated-repos summary">
@@ -136,7 +132,7 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
     <img   src="https://github.com/user-attachments/assets/fa24923b-77a4-4ac5-ab83-215120c74296" alt="About Library" >
 <a/> &nbsp;&nbsp;
 <a href="https://github.com/DIGOARTHUR/github-automated-repos#import-1">
-    <img   src="https://github.com/user-attachments/assets/f1756546-1661-44b9-9cd3-8bce47b60df6" alt="Hook Import" border="0">
+    <img   src="https://github.com/user-attachments/assets/06d1ba3d-76be-40e2-a803-87f9a8151447" alt="Hook Import" border="0">
 <a/>&nbsp;&nbsp;
 
  <a href="https://github.com/DIGOARTHUR/github-automated-repos#fill-in-the-fields-in-the-github-repository-1">
@@ -185,7 +181,7 @@ yarn add github-automated-repos
 
 ## 2. Config. ReactQuery (ViteJS)
 > [!IMPORTANT]
-> Don't forget about `ReactQuery` code structures!!! See NextJS code example. [Code Example](https://github.com/DIGOARTHUR/github-automated-repos/tree/main?tab=readme-ov-file#code-example-1)
+> Don’t forget to configure the `React Query`!!! See NextJS code example. [Code Example](https://github.com/DIGOARTHUR/github-automated-repos/tree/main?tab=readme-ov-file#code-example-1)
 
 ```tsx    
  import { ReactQueryProvider } from 'github-automated-repos'
@@ -207,7 +203,7 @@ yarn add github-automated-repos
 </div>
 
 
-## 3. Using hook
+## 3. Using hook ( useGitHubAutomatedRepos() )
 
 > [!CAUTION]
 > :exclamation::exclamation: Don't forget to fill in the fields: your GitHubUsername and keyWord (chosen by you).
@@ -259,7 +255,7 @@ yarn add github-automated-repos
 ![image](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/9a0a0aaf-02e8-4a7f-8390-6e7fb4a3ea53)
 
 > [!IMPORTANT]
-> To insert stack names in the topics field, see web documentation > [Stack Icons](https://github-automated-repos.vercel.app)
+> To insert stack names in the topics field, see web documentation or the table below.  > [Stack Icons](https://github-automated-repos.vercel.app)
 
 <div align="center" alt='stackIcons List'>
     
@@ -289,7 +285,7 @@ yarn add github-automated-repos
 </div>
 
 
-## Icons Table 
+## StackIcons Table 
 <details>
 
 <br/>
@@ -374,7 +370,8 @@ Array(0)
 <details>
 <summary>IN PAGE WEB</summary>
 
-### 💡Use your creativity and build the card however you want.
+> [!TIP]
+>  Customize your cards your way!
 
 ![portfolio_page](https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/05e5ab60-5851-4aab-911f-19227a75dc72)
 
@@ -448,9 +445,9 @@ Array(0)
 <!------------------------------------ IMPORT -->
 <!-------------------------------------------- -->
   
-# <img  alt="Hook Import"  height="30" src="https://github.com/user-attachments/assets/b7c52fa3-ba47-4f19-8dd3-ccd9d6395b76"> Hook Import  &nbsp;&nbsp;  <!---write here : demonstration of the application layout.  -->
+# <img  alt="Hook Import"  height="30" src="https://github.com/user-attachments/assets/b7c52fa3-ba47-4f19-8dd3-ccd9d6395b76"> Import Library  &nbsp;&nbsp;  <!---write here : demonstration of the application layout.  -->
 
-> The github-automated-repos library imports 4 resources: hook,  ReactQueryProvider , StackIcons component and StackLabels component.
+> The github-automated-repos library imports 4 resources: hook `useGitHubAutomatedRepos`,   `ReactQueryProvider` , `StackIcons` component and `StackLabels` component.
 
 ```jsx
 import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } from 'github-automated-repos';
