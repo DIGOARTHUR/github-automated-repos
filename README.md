@@ -228,9 +228,8 @@ yarn add github-automated-repos
 
 ```
 └── public
-    └── images
-            └── `bannerXYZ.png` 
-            └── `bannerABC.svg` 
+      └── `bannerXYZ.png` 
+      └── `bannerABC.svg` 
     ├── ...
 ```
 
@@ -602,9 +601,8 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 - `banner`: This property returns a .PNG e .SVG image. For this to be possible, the name of the image file must contain `banner`in the name. Insert your images in the following path: Ex.:
 ```
 └── public
-    └── images
-            └── `bannerXYZ.png` 
-            └── `bannerABC.svg` 
+      └── `bannerXYZ.png` 
+      └── `bannerABC.svg` 
     ├── ...
 ```
 <div align="center">
