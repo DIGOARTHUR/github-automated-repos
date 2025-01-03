@@ -4,8 +4,8 @@ import React from 'react';
 const queryClient = new QueryClient({
     defaultOptions: {
         queries: {
-            staleTime: 1000 * 60 * 5, // Cache válido por 5 minutos
-            refetchOnWindowFocus: false, // Não refetch quando o foco retorna
+            staleTime: 1000 * 60 * 5, 
+            refetchOnWindowFocus: false, 
         },
     },
 });
