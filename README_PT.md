@@ -238,9 +238,8 @@ yarn add github-automated-repos
 
 ```
 └── public
-    └── images
-            └── `bannerXYZ.png` 
-            └── `bannerABC.svg` 
+      └── `bannerXYZ.png` 
+      └── `bannerABC.svg` 
     ├── ...
 ```
 
@@ -617,9 +616,8 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 - `banner`: insira Banners, imagens do layout para representar seu projeto. Os tipos das imgs são `.PNG` e `.SVG`. Para fazer isso o nome do arquivo de imagem deve conter `banner` no nome. Insira as imagens seguindo o caminho: Ex.:
 ```
 └── public
-    └── images
-            └── `bannerXYZ.png` 
-            └── `bannerABC.svg` 
+      └── `bannerXYZ.png` 
+      └── `bannerABC.svg` 
     ├── ...
 ```
 <div align="center">
