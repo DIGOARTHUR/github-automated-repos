@@ -1,20 +1,23 @@
 import React from 'react';
+
 import { stackIconsURL } from '../icons/stackIconsURL';
 
-type Props = {
+type PropsStackIcons = {
     itemTopics: string;
     className?: string;
+    style?: React.CSSProperties;
 };
 
 /**
- * @param {string} itemTopics - Mandatory: ex.: item.topics.map(itemTopics) ...
- * @param {string} className - Optional: style className.
- * @returns {ReactNode} - Return tag img, stack svg icon.
+ * @param {string} itemTopics - Mandatory: ex.: item.topics.map(icon) ... itemTopics={icon}
+ * @param {string} className - Optional: style className - TailwindCSS.
+ * @param {React.CSSProperties} style - Optional: style CSS Properties.
+ * @returns {ReactNode} - Return tag img(SVG).
  */
-export function StackIcons({ itemTopics, className }: Props) {
+export function StackIcons({ itemTopics, className, style }: PropsStackIcons): JSX.Element | null {
     return itemTopics === 'deploy' ? (
         <> </>
     ) : (
-        <img className={className} alt={stackIconsURL[itemTopics]} src={stackIconsURL[itemTopics]} />
+        <img style={style} className={className} alt={stackIconsURL[itemTopics]} src={stackIconsURL[itemTopics]} />
     );
 }
