@@ -673,20 +673,18 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 ## <img  alt="ViteJS"  width="35" height="35" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/05cf8a94-895c-4249-8636-f1d2a0ea165b"> ViteJS `main{.tsx/.jsx}`
 
-```tsx
-  {/*------------------------------*/ }
-  {/*TOP OF THE CODE < main.tsx > */ }
-  {/*------------------------------*/ }
 
+> Import React Query < main.tsx > - TOP OF THE CODE
+
+```tsx
   import { ReactQueryProvider } from 'github-automated-repos'
 ```
 
+> FUNCTION < main.tsx >
 
 ```tsx
 
-  {/*------------------------------*/ }
-  {/*FUNCTION < main.tsx > */ }
-  {/*------------------------------*/ }
+
 
 createRoot(document.getElementById('root')!).render(
 
@@ -708,20 +706,16 @@ createRoot(document.getElementById('root')!).render(
 > [!IMPORTANT]
 > If the app does not work, type the `'use client;'` at the top of the `page.tsx` file and `layout.tsx`. 
 
-```tsx
-  {/*------------------------------*/ }
-  {/* LIBRARY IMPORT < layout.tsx > */ }
-  {/*------------------------------*/ }
+> Import React Query <  layout.tsx > - TOP OF THE CODE
 
+```tsx
   'use client';
   import { ReactQueryProvider } from "github-automated-repos";
 ```
 
-```tsx
-  {/*------------------------------*/ }
-  {/*FUNCTION < layout.tsx > */ }
-  {/*------------------------------*/ }
+> FUNCTION < layout.tsx >
 
+```tsx
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -780,22 +774,16 @@ export default function RootLayout({
 > [!IMPORTANT]
 > If the `NextJS` app does not work, type the `'use client;'` at the top of the `page.tsx` file and `layout.tsx`. .
 
+> TOP OF THE CODE < page.tsx >
 
 ```tsx
- {/*------------------------------*/ }
-  {/*TOP OF THE CODE >*/ }
-  {/*------------------------------*/ }
+
   //'use client';
   import { StackIcons, StackLabels, useGitHubAutomatedRepos } from "github-automated-repos";
 ````
-
+> > INSIDE IN FUNCTION < page.tsx >
   
 ```tsx
-
- {/*------------------------------*/ }
-  {/*INSIDE IN FUNCTION>*/ }
-  {/*------------------------------*/ }
-
   {/*CSS STYLE <can be remove after>*/ }
 
   const styleCSS: { [key: string]: React.CSSProperties } = {
@@ -851,8 +839,6 @@ export default function RootLayout({
 
 
   {/* ---------- HOOK ------ */ }
-
-
   const { data, isLoading } = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 
   if (isLoading) {
@@ -920,9 +906,6 @@ export default function RootLayout({
     </div>
   );
 ```
-
-
-
 
 
 
