@@ -772,7 +772,7 @@ export default function RootLayout({
 #### <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/210762527-ae3afe1f-fe36-46a9-98ad-35dbae4d1adf.svg"><a/>  <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/219095611-551d532a-30fc-4873-b00e-0a8bbf8bb5ec.svg"><a/>
 
 > [!IMPORTANT]
-> If the `NextJS` app does not work, type the `'use client;'` at the top of the `page.tsx` file and `layout.tsx`. .
+> If the `NextJS` app does not work, type the `'use client;'` at the top of the `page.tsx` file and `layout.tsx`. 
 
 > TOP OF THE CODE < page.tsx >
 
@@ -781,7 +781,7 @@ export default function RootLayout({
   //'use client';
   import { StackIcons, StackLabels, useGitHubAutomatedRepos } from "github-automated-repos";
 ````
-> > INSIDE IN FUNCTION < page.tsx >
+> INSIDE IN FUNCTION < page.tsx >
   
 ```tsx
   {/*CSS STYLE <can be remove after>*/ }
