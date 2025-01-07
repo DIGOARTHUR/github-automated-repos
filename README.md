@@ -1,7 +1,5 @@
 
 
-
-
 <!--Commit changes
 
 -->
@@ -52,7 +50,7 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 <!------------------------------------ PROJECT BANNER-->
 <!------------------------------------ -------------------->
 
-<img  alt="logo_github-automated-repos"  src="https://github.com/user-attachments/assets/53b176c5-6f61-456c-8832-50aa5128dec4">
+<img  alt="banner_logo_github-automated-repos"  src="https://github.com/user-attachments/assets/dfaf83e0-6f01-41c8-b54d-739a10d0b38c">
 
 
  <br>
