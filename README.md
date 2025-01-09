@@ -81,8 +81,8 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 
 <br>
 <br>
-❌ project.js files (keep updating code)
-❌ GitHub API (no data control)
+❌ project.js files ( edit code )
+❌ GitHub API ( no data control )
 
 </p>
 
@@ -210,7 +210,7 @@ yarn add github-automated-repos
 ```typescript     
     import { useGitHubAutomatedRepos } from "github-automated-repos";
 
-    const { data } = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
+    const { data, isLoading, isLoadingError } = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 
 ```
 
@@ -464,7 +464,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 - `useGitHubAutomatedRepos` hook responsible for automating the return of data from repositories. This hook takes two parameters: GitHubUsername & keyword. The return is an array of objects containing 7 properties: id, banner, html_url, homepage, topics, name and description.
 
   ```tsx
-  const { data, isLoading, isLoadingError} = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
+  const { data, isLoading, isLoadingError } = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
   ```
    - #### return data example:
 
@@ -764,7 +764,7 @@ export default function RootLayout({
 
 
 ```javascript
- const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
+ const { data, isLoading, isLoadingError } = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 ```
 
 
