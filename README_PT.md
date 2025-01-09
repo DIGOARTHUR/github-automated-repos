@@ -1,7 +1,3 @@
-
-
-
-
 <!--Commit changes
  docs: update ReadmePT
 -->
@@ -52,11 +48,12 @@ EXEMPLO
 <!------------------------------------ PROJECT BANNER-->
 <!------------------------------------ -------------------->
 
-<img  alt="logo_github-automated-repos"  src="https://github.com/user-attachments/assets/7b8c071d-d70e-4e3c-8719-47d8be084d38">
+<img  alt="logo_github-automated-repos"  src="https://github.com/user-attachments/assets/7381ae74-a590-4650-80b2-010d6fc6f1e2">
 
 
 
-
+ <br>
+ <br>
 <!------------------------------------ -------------------->
  <!------------------------------------SHIELDS PROJECT-->
  <!------------------------------------ -------------------->
@@ -504,7 +501,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
  - `StackIcons` O componente retorna, baseado na iteração da array topics contida no data, icones das stacks usadas no seu projeto. Insira as stacks usadas no seu projeto no campo topics do seu repositório. Veja [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) !
  
 
-  ```jsx
+      ```jsx
    data?.map((item) => {
        return (
       ...
@@ -513,9 +510,9 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
              <StackIcons key={index} itemTopics={ icon } className={ } />
       }
       ...
-  ```
+      ```
 
-    - #### Render component StackIcons example:
+      - #### Render component StackIcons example:
 
 <div align="center">
     
@@ -594,6 +591,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 
 
+
 <!------------------------------------ -------------------->
 <!------------------------------------ FILL IN THE FIELDS -->
 <!------------------------------------ -------------------->
@@ -604,7 +602,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 > [!IMPORTANT]
 > Atenção ao preencher cada campo do seu repositório!
 
-![Cards Porftolio github-automated-repos](https://github.com/user-attachments/assets/5ebf54e9-d40c-40ca-8777-47b834cd56ed)
+![Cards Porftolio github-automated-repos](https://github.com/user-attachments/assets/55269ac0-4982-44be-9a9a-5e670fb973fc)
 
 
  <details>   
@@ -687,21 +685,15 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 ## <img  alt="ViteJS"  width="35" height="35" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/05cf8a94-895c-4249-8636-f1d2a0ea165b"> ViteJS `main{.tsx/.jsx}`
 
-```tsx
-  {/*------------------------------*/ }
-  {/*TOP OF THE CODE < main.tsx > */ }
-  {/*------------------------------*/ }
+> Importação React Query <main.tsx> - TOPO DO CÓDIGO
 
+```tsx
   import { ReactQueryProvider } from 'github-automated-repos'
 ```
 
+> FUNÇÃO <main.tsx>
 
 ```tsx
-
-  {/*------------------------------*/ }
-  {/*FUNCTION < main.tsx > */ }
-  {/*------------------------------*/ }
-
 createRoot(document.getElementById('root')!).render(
 
   <ReactQueryProvider>
@@ -722,19 +714,16 @@ createRoot(document.getElementById('root')!).render(
 > [!IMPORTANT]
 > Caso a aplicação nao funcione, digite `'use client;'` no topo do arquivo `page.tsx` e no `layout.tsx`. 
 
-```tsx
-  {/*------------------------------*/ }
-  {/* LIBRARY IMPORT < layout.tsx > */ }
-  {/*------------------------------*/ }
+> Importação React Query < layout.tsx > - TOPO DO CÓDIGO
 
+```tsx
   'use client';
   import { ReactQueryProvider } from "github-automated-repos";
 ```
 
+> FUNÇÃO < main.tsx >
+
 ```tsx
-  {/*------------------------------*/ }
-  {/*FUNCTION < layout.tsx > */ }
-  {/*------------------------------*/ }
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -794,21 +783,17 @@ export default function RootLayout({
 > [!IMPORTANT]
 > Se o app `NextJS` der erro, digite `'use client;'` no topo do arquivo `page.tsx` e `layout.tsx`. .
 
+> TOPO DO CÓDIGO < page.tsx >
 
 ```tsx
- {/*------------------------------*/ }
-  {/*TOP OF THE CODE >*/ }
-  {/*------------------------------*/ }
+
   //'use client';
   import { StackIcons, StackLabels, useGitHubAutomatedRepos } from "github-automated-repos";
 ````
 
+> DENTRO DA FUNÇÃO < page.tsx >
   
 ```tsx
-
- {/*------------------------------*/ }
-  {/*INSIDE IN FUNCTION>*/ }
-  {/*------------------------------*/ }
 
   {/*CSS STYLE <can be remove after>*/ }
 
