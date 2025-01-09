@@ -79,8 +79,8 @@ EXEMPLO
   
   <br>
   <br>
-❌ arquivos projeto.js (ficar atualizando código)
-❌ GitHub API (sem controle dos dados)
+❌ arquivos projeto.js ( editar código )
+❌ GitHub API ( sem controle dos dados )
 
 </p>
 
@@ -134,18 +134,18 @@ EXEMPLO
 
 <p align="center" alt="github-automated-repos summary">
 
-<a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">
+<a href="https://github.com/DIGOARTHUR/github-automated-repos/blob/main/README_PT.md#--about-library-">
     <img   src="https://github.com/user-attachments/assets/91d51d99-a13f-4995-bb04-b81f5400139c" alt="About Library" >
 <a/> &nbsp;&nbsp;
-<a href="https://github.com/DIGOARTHUR/github-automated-repos#import-1">
+<a href="https://github.com/DIGOARTHUR/github-automated-repos/blob/main/README_PT.md#-importar-biblioteca----">
     <img   src="https://github.com/user-attachments/assets/3eb15da9-8338-4276-9661-9cadae8ab5dd" alt="Hook Import" border="0">
 <a/>&nbsp;&nbsp;
 
- <a href="https://github.com/DIGOARTHUR/github-automated-repos#fill-in-the-fields-in-the-github-repository-1">
+ <a href="https://github.com/DIGOARTHUR/github-automated-repos/blob/main/README_PT.md#-preencher-os-campos-do-repositório-github">
     <img   src="https://github.com/user-attachments/assets/d823571a-f855-49eb-8d3a-77c187606169" alt="Fill the fields of the repository (GitHub)" border="0">
 <a/>&nbsp;&nbsp;
 
-<a href="https://github.com/DIGOARTHUR/github-automated-repos#code-example-1">
+<a href="https://github.com/DIGOARTHUR/github-automated-repos/blob/main/README_PT.md#exemplo-código">
     <img   src="https://github.com/user-attachments/assets/f3280ec4-ee9c-4247-a793-14f745812047" alt="Code Example" border="0">
 <a/> &nbsp;&nbsp;
 
@@ -419,7 +419,7 @@ Array(0)
 <!------------------------------------------ DESCRIPTION-->
 <!-------------------------------------------------- -->
 
-# <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  About Library <!---write here : talk a little about project: what's does, example.  -->
+# <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  Sobre a biblioteca <!---write here : talk a little about project: what's does, example.  -->
 > Essa biblioteca automatiza a visualização dos seus projetos GitHub no seu portfólio / website em um só lugar. Mas como? Configure a biblioteca github-automated-repos apenas uma única vez, e administre a visualização dos seus projetos no seu próprio GitHub no campo Topics. Escolha qual será o projeto, e ainda customize seus cards com ícones das stacks utilizadas para o desenvolvimento dele. Tudo isso em um só lugar! 
 
    |                             Controle seus Projetos                     |
@@ -450,7 +450,7 @@ Array(0)
 <!------------------------------------ IMPORT -->
 <!-------------------------------------------- -->
   
-# <img  alt="Hook Import"  height="30" src="https://github.com/user-attachments/assets/b7c52fa3-ba47-4f19-8dd3-ccd9d6395b76"> Importando Biblioteca  &nbsp;&nbsp;  <!---write here : demonstration of the application layout.  -->
+# <img  alt="Hook Import"  height="30" src="https://github.com/user-attachments/assets/b7c52fa3-ba47-4f19-8dd3-ccd9d6395b76"> Importar Biblioteca  &nbsp;&nbsp;  <!---write here : demonstration of the application layout.  -->
 
 > A biblioteca github-automated-repos importa 4 recursos: o hook `useGitHubAutomatedRepos`,  `ReactQueryProvider` , o componente `StackIcons`  e o componente `StackLabels`.
 
@@ -471,7 +471,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 - `useGitHubAutomatedRepos` hook responsável por automatizar o retorno de dados do repositório. Ele que faz com que o controle de visualização seja feita no seu GitHub. Esse hook recebe dois parâmetros: GitHubUsername & KeyWord. O retorno é uma array de objetos contendo 7 propriedades: id, banner, html_url, homepage, topics, name and description. 
 
   ```tsx
-  const { data, isLoading, isLoadingError} = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
+  const { data, isLoading, isLoadingError } = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
   ```
    - #### exemplo retorno data:
 
@@ -597,7 +597,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 <!------------------------------------ -------------------->
 
 
-# <img  alt="skills"  width="40" height="40" src="https://github.com/user-attachments/assets/403167b1-57eb-4ee9-818d-a591c6885f91"> Preencha os campos do repositório GitHub
+# <img  alt="skills"  width="40" height="40" src="https://github.com/user-attachments/assets/403167b1-57eb-4ee9-818d-a591c6885f91"> Preencher os campos do repositório GitHub
 
 > [!IMPORTANT]
 > Atenção ao preencher cada campo do seu repositório!
@@ -769,12 +769,12 @@ export default function RootLayout({
 ##   `App{.tsx/.jsx}` or  `Page{.tsx/.jsx}`
 
 > [!CAUTION]
-> :exclamation::exclamation: Não esqueça de preencher os campos: seu GitHubUsername e keyWord (escolhido por você).
+> :exclamation::exclamation: Não esqueça de preencher os campos: seu GitHubUsername e KeyWord (escolhido por você).
 
 
 
 ```javascript
- const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
+ const { data, isLoading, isLoadingError } = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 ```
 
 
