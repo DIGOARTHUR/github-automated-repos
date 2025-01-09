@@ -1,5 +1,6 @@
 
 
+
 <!--Commit changes
 
 -->
@@ -591,13 +592,13 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 > [!IMPORTANT]
 > Pay attention to filling in each field of your repository on GitHub.
 
-![Cards Porftolio github-automated-repos](https://github.com/user-attachments/assets/5ebf54e9-d40c-40ca-8777-47b834cd56ed)
+![Cards Porftolio github-automated-repos](https://github.com/user-attachments/assets/d2559795-ae56-45b5-b260-1c68ed82f467)
 
 
  <details>   
 <br/>
      
-- `banner`: This property returns a .PNG e .SVG image. For this to be possible, the name of the image file must contain `banner`in the name. Insert your images in the following path: Ex.:
+- `banner`: this property returns a .PNG e .SVG image. For this to be possible, the name of the image file must contain `banner`in the name. Insert your images in the following path: Ex.:
 ```
 └── public
       └── `bannerXYZ.png` 
@@ -638,7 +639,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 <br>
 
-- `name`: This is the name of the repository. Refers to the field  Settings / General / Repository name of your GitHub.
+- `name`: this is the name of the repository. Refers to the field  Settings / General / Repository name of your GitHub.
 
 <div align="center">
 <img  alt="name_Props"  src="https://user-images.githubusercontent.com/59892368/219117097-43db2497-7f62-428e-85c6-ef3656da4cd2.png"> 
@@ -648,7 +649,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 <br>
 
-- `description`: This is the description given to your repository. Refers to the About /Description field of your GitHub.
+- `description`: this is the description given to your repository. Refers to the About /Description field of your GitHub.
 
 <div align="center">
 <img  alt="description_Props"   src="https://user-images.githubusercontent.com/59892368/219117260-5bdb1fbb-c58b-4ad9-938a-068b58c72f27.png"> 
