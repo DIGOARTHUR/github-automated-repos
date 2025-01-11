@@ -642,7 +642,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 <br>
 
-- `topics`: array que traz informações sobre os icones em [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons). Usado em ambos componentes StackLabels e StackIcon . Este é o campo que é inserido a KeyWord configurado no hook. Rerefe-se ao campo About / Topics of your GitHub.
+- `topics`: array que traz informações sobre os icones em [Stack Icons](https://github-automated-repos.vercel.app/stackicons). Usado em ambos componentes StackLabels e StackIcon . Este é o campo que é inserido a KeyWord configurado no hook. Rerefe-se ao campo About / Topics of your GitHub.
 
 
 
