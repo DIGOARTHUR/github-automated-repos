@@ -494,7 +494,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
             return <div> loading...</div>
           }
      ```
-     - #### isLoadingError: será TRUE se a consulta falhou durante a busca pela primeira vez.
+     - #### isLoadingError: será TRUE se a consulta falhar durante a busca pela primeira vez.
   
  <br>
 
@@ -512,7 +512,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
       ...
       ```
 
-      - #### Render component StackIcons example:
+      - #### Componente StackIcons rendezirado, exemplo:
 
 <div align="center">
     
@@ -557,7 +557,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
       ...
      
   ```
-    - #### Render component StackLabels example:
+    - #### Componente StackLabels rendezirado, exemplo:
 
 <div align="center">
     
@@ -685,13 +685,13 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 ## <img  alt="ViteJS"  width="35" height="35" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/05cf8a94-895c-4249-8636-f1d2a0ea165b"> ViteJS `main{.tsx/.jsx}`
 
-> Importação React Query <main.tsx> - TOPO DO CÓDIGO
+> Importar o componente ReactQueryProvider <main.tsx> - TOPO DO CÓDIGO
 
 ```tsx
   import { ReactQueryProvider } from 'github-automated-repos'
 ```
 
-> FUNÇÃO <main.tsx>
+> Uso do componenete `ReactQueryProvider` <main.tsx>
 
 ```tsx
 createRoot(document.getElementById('root')!).render(
@@ -714,33 +714,16 @@ createRoot(document.getElementById('root')!).render(
 > [!IMPORTANT]
 > Caso a aplicação nao funcione, digite `'use client;'` no topo do arquivo `page.tsx` e no `layout.tsx`. 
 
-> Importação React Query < layout.tsx > - TOPO DO CÓDIGO
+> Importar o componente ReactQueryProvider < layout.tsx > - TOPO DO CÓDIGO
 
 ```tsx
   'use client';
   import { ReactQueryProvider } from "github-automated-repos";
 ```
 
-> FUNÇÃO < main.tsx >
+> Uso do componente `ReactQueryProvider` < main.tsx >
 
 ```tsx
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-
 
   return (
     <html lang="en">
