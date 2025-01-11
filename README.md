@@ -673,18 +673,15 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 ## <img  alt="ViteJS"  width="35" height="35" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/05cf8a94-895c-4249-8636-f1d2a0ea165b"> ViteJS `main{.tsx/.jsx}`
 
 
-> Import React Query < main.tsx > - TOP OF THE CODE
+> Import ReactQueryProvider component < main.tsx > - TOP OF THE CODE
 
 ```tsx
   import { ReactQueryProvider } from 'github-automated-repos'
 ```
 
-> FUNCTION < main.tsx >
+> Use the `ReactQueryProvider` component < main.tsx >
 
 ```tsx
-
-
-
 createRoot(document.getElementById('root')!).render(
 
   <ReactQueryProvider>
@@ -705,33 +702,16 @@ createRoot(document.getElementById('root')!).render(
 > [!IMPORTANT]
 > If the app does not work, type the `'use client;'` at the top of the `page.tsx` file and `layout.tsx`. 
 
-> Import React Query <  layout.tsx > - TOP OF THE CODE
+> Import ReactQueryProvider component <  layout.tsx > - TOP OF THE CODE
 
 ```tsx
   'use client';
   import { ReactQueryProvider } from "github-automated-repos";
 ```
 
-> FUNCTION < layout.tsx >
+> Use the `ReactQueryProvider` component  < layout.tsx >
 
 ```tsx
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-
-
   return (
     <html lang="en">
       <body
