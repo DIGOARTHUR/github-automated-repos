@@ -217,7 +217,7 @@ yarn add github-automated-repos
 ```typescript     
     import { useGitHubAutomatedRepos } from "github-automated-repos";
 
-    const { data } = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
+    const { data, isLoading, isLoadingError } = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 
 ```
 
