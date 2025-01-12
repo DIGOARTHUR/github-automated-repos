@@ -1,3 +1,8 @@
+
+
+
+
+
 <!--Commit changes
  docs: update ReadmePT
 -->
@@ -922,10 +927,8 @@ createRoot(document.getElementById('root')!).render(
 
 `based in:` [Api Github](https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-a-repository)
 
-`by`: [@digoarthur](https://www.linkedin.com/in/digoarthur/)
- 
-   
-  
+`by`: [@digoarthur](https://www.linkedin.com/in/digoarthur/)  <a href="https://youtu.be/dQw4w9WgXcQ?si=VBzREBlncKuPTYBs"> <img src="https://github.com/user-attachments/assets/f45f0115-761e-4207-a9d9-dddacfb5b96b" alt="Brazil Flag" width="20" /> </a>
+
 
  <!------------------------------------LIST: STACKS , LIBS & TOOLS ... -->
 <!---
