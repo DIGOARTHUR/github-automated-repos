@@ -922,7 +922,7 @@ createRoot(document.getElementById('root')!).render(
 
 
 
-**Gostou do github-automated-repos? Dê uma estrela no repositório ⭐ ⬆️.**
+**Gostou do github-automated-repos? Dê uma estrela no repositório ⭐ [⬆️](https://github.com/DIGOARTHUR/github-automated-repos).**
 
 
 `based in:` [Api Github](https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-a-repository)
