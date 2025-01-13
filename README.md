@@ -898,12 +898,12 @@ createRoot(document.getElementById('root')!).render(
 
 
 
-**Love github-automated-repos? Give our repo a star ⭐ ⬆️.**
+**Love github-automated-repos? Give our repo a star ⭐ [⬆️](https://github.com/DIGOARTHUR/github-automated-repos) .**
 
 
 `based in:` [Api Github](https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-a-repository)
 
-`by`: [@digoarthur](https://www.linkedin.com/in/digoarthur/)
+`by`: [@digoarthur](https://www.linkedin.com/in/digoarthur/) <a href="https://youtu.be/dQw4w9WgXcQ?si=VBzREBlncKuPTYBs"> <img src="https://github.com/user-attachments/assets/f45f0115-761e-4207-a9d9-dddacfb5b96b" alt="Brazil Flag" width="20" /> </a> 
  
    
   
