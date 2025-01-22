@@ -1,6 +1,3 @@
-## for more information about YAML Syntax
-#https://docs.github.com/pt/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
-
 name: "Feature Request"
 description: Missing a Project or Stack icon? Or any API props? Any other suggestion? Tell us which one is missing.
 
@@ -16,7 +13,7 @@ body:
         - banner (Props)
         - icons (stack IMGs)
         - docs
-        - Othes
+        - Others
       multiple: true
     validations:
       required: true
@@ -25,21 +22,21 @@ body:
     id: description
     attributes:
       label: Description
-      description: Describes what is missing. Example -
-      placeholder: |
+      description: |
+        Describes what is missing. Example -
         - Ex.:
-        - New Stack Icon: javascript, reactjs...                                                                
+        - New Stack Icon: javascript, reactjs...
         - New Feature: describe...
         - homepage: props for access the link project.
+      placeholder: Describe the issue here...
     validations:
       required: true
 
-
   - type: textarea
-     id: proposed-solution
-     attributes:
+    id: proposed-solution
+    attributes:
       label: Proposed solution
-   validations:
+    validations:
       required: true
 
   - type: textarea
