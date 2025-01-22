@@ -10,10 +10,13 @@ body:
     attributes:
       label: Which category is it related to?
       options:
-        - API_Props
-        - Project Icons
-        - Stack Icons
-        - Other
+        - useGithubAutomatedRepos (Hook)
+        - stackIcons (Component)
+        - stackLabels (Component)
+        - banner (Props)
+        - icons (stack IMGs)
+        - docs
+        - Othes
       multiple: true
     validations:
       required: true
@@ -24,11 +27,27 @@ body:
       label: Description
       description: Describes what is missing. Example -
       placeholder: |
-        - Games: to represent projects in the area of ​games, entertainment...                                                                
-        - Angular: is a stack icon, it represents Front-end Framework.
+        - Ex.:
+        - New Stack Icon: javascript, reactjs...                                                                
+        - New Feature: describe...
         - homepage: props for access the link project.
     validations:
       required: true
+
+
+  - type: textarea
+     id: proposed-solution
+     attributes:
+      label: Proposed solution
+   validations:
+      required: true
+
+    - type: textarea
+    id: alternatives-considered
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: false
 
   - type: markdown
     attributes:
