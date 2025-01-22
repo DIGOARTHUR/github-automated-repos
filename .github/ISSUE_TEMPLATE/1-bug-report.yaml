@@ -8,6 +8,7 @@ body:
       label: Which element(s) are the source of the bug?
       options:
         - useGithubAutomatedRepos (Hook)
+        - API
         - stackIcons (Component)
         - stackLabels (Component)
         - banner (Props)
