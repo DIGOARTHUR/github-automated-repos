@@ -8,6 +8,7 @@ body:
       label: Which category is it related to?
       options:
         - useGithubAutomatedRepos (Hook)
+        - API
         - stackIcons (Component)
         - stackLabels (Component)
         - banner (Props)
@@ -27,7 +28,7 @@ body:
         - Ex.:
         - New Stack Icon: javascript, reactjs...
         - New Feature: describe...
-        - homepage: props for access the link project.
+        - API: props for access the link project.
       placeholder: Describe the issue here...
     validations:
       required: true
