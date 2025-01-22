@@ -42,7 +42,7 @@ body:
    validations:
       required: true
 
-    - type: textarea
+  - type: textarea
     id: alternatives-considered
     attributes:
       label: Alternatives considered
