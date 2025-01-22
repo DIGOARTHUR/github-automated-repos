@@ -175,7 +175,7 @@ When the body is present it must be at least 20 characters long and must conform
   │       │             │
   │       │             └─⫸ Summary in present tense. Not capitalized. No period at the end.
   │       │
-  │       └─⫸ Commit Scope: useGithubAutomatedRepos|dataReposGithub|projectIcon|stackIcon|iGithubRepos
+  │       └─⫸ Commit Scope: useGithubAutomatedRepos|API|stackIcons|stackLabels|banner|icons|docs
   │
   └─⫸ Commit Type: build|ci|docs|feat|fix|perf|refactor|test
 ```
@@ -209,10 +209,11 @@ The scope should be the name related to the affected area of the library (as per
 The following is the list of supported scopes:
 
 * `useGithubAutomatedRepos`
-* `dataReposGithub`
-* `projectIcon`
-* `stackIcon`
-* `iGithubRepos`
+* `stackIcons`
+* `stackLabels`
+* `banner`
+* `API`
+* `docs`
     
  <!--
 BUILDING CHANGELOG
