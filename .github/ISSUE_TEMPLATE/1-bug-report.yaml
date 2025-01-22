@@ -7,14 +7,13 @@ body:
     attributes:
       label: Which element(s) are the source of the bug?
       options:
-        - useGithubAutomatedRepos
-        - dataReposGithub
-        - projectIcon
-        - stackIcon
-        - iGithubRepos
+        - useGithubAutomatedRepos (Hook)
+        - stackIcons (Component)
+        - stackLabels (Component)
+        - banner (Props)
+        - icons (stack IMGs)
         - docs
         - Don't known / other
-
       multiple: true
     validations:
       required: true
@@ -25,6 +24,11 @@ body:
       label: Description
     validations:
       required: true
+
+  - type: input
+    id: reproduction
+    attributes:
+      label: Please provide a link to a minimal reproduction of the bug     
 
   - type: textarea
     id: exception-or-error
