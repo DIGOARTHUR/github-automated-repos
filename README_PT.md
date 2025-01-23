@@ -607,7 +607,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 > [!IMPORTANT]
 > Atenção ao preencher cada campo do seu repositório!
 
-![Cards Porftolio github-automated-repos](https://github.com/user-attachments/assets/55269ac0-4982-44be-9a9a-5e670fb973fc)
+![Example Cards Porftolio github-automated-repos](https://github.com/user-attachments/assets/1360734e-a4a9-472f-9ef3-bc0f5ba72e4e)
 
 
  <details>   
