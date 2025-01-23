@@ -592,7 +592,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 > [!IMPORTANT]
 > Pay attention to filling in each field of your repository on GitHub.
 
-![Cards Porftolio github-automated-repos](https://github.com/user-attachments/assets/d2559795-ae56-45b5-b260-1c68ed82f467)
+![Example Cards Porftolio github-automated-repos](https://github.com/user-attachments/assets/b7bf498f-6d21-4d34-8807-b8d6e27cb9e8)
 
 
  <details>   
