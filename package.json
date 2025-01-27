@@ -1,7 +1,23 @@
 {
     "name": "github-automated-repos",
-    "version": "1.3.0",
-    "description": "Github-automated-repos is the lib that gives you the power to manage the view of your projects on your website in one place!",
+    "version": "1.3.1",
+    "description": "The library, ReactJS, that gives you the power to control / automate your GitHub data, your projects on the portfolio / website, in your own GitHub in one place!",
+    "author": {
+        "name": "Diego Arthur @digoarthur",
+        "url": "https://www.linkedin.com/in/digoarthur/",
+        "github": "https://github.com/DIGOARTHUR"
+      },
+    "repository": {
+         "type": "npmjs",
+         "url": "https://www.npmjs.com/package/github-automated-repos",
+        "directory": "https://github.com/DIGOARTHUR/github-automated-repos"
+    },
+    "bugs": {
+        "url": "https://github.com/DIGOARTHUR/github-automated-repos/issues"
+    },
+    "homepage": "https://github-automated-repos.vercel.app",
+    "license": "MIT",
+    
     "main": "index.js",
     "scripts": {
         "commit": "git-cz",
@@ -19,14 +35,29 @@
         ]
     },
     "keywords": [
-        "github",
-        "automated",
-        "repository",
-        "projects",
-        "react"
+        "reactjs-library",
+        "github-integration",
+        "github-api",
+        "repositories-automation",
+        "github-repos-display",
+        "developer-portfolio",
+        "github-portfolio",
+        "portfolio-automation",
+        "project-showcase",
+        "react-hook",
+        "javascript-library",
+        "frontend-library",
+        "react-query-support",
+        "automate-projects",
+        "manage-repositories",
+        "github-topics",
+        "dynamic-content",
+        "open-source-tools",
+        "developer-tools",
+        "npm-library",
+        "react-libraries"
     ],
-    "author": "",
-    "license": "ISC",
+
     "devDependencies": {
         "@commitlint/cli": "^17.4.2",
         "@commitlint/config-conventional": "^17.4.2",

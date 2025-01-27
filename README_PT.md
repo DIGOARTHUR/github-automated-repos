@@ -2,6 +2,7 @@
 
 
 
+
 <!--Commit changes
  docs: update ReadmePT
 -->
@@ -52,11 +53,12 @@ EXEMPLO
 <!------------------------------------ PROJECT BANNER-->
 <!------------------------------------ -------------------->
 
-<img  alt="logo_github-automated-repos"  src="https://github.com/user-attachments/assets/7b8c071d-d70e-4e3c-8719-47d8be084d38">
+<img  alt="logo_github-automated-repos"  src="https://github.com/user-attachments/assets/7381ae74-a590-4650-80b2-010d6fc6f1e2">
 
 
 
-
+ <br>
+ <br>
 <!------------------------------------ -------------------->
  <!------------------------------------SHIELDS PROJECT-->
  <!------------------------------------ -------------------->
@@ -82,8 +84,8 @@ EXEMPLO
   
   <br>
   <br>
-❌ arquivos projeto.js (ficar atualizando código)
-❌ GitHub API (sem controle dos dados)
+❌ arquivos projeto.js ( editar código )
+❌ GitHub API ( sem controle dos dados )
 
 </p>
 
@@ -137,18 +139,18 @@ EXEMPLO
 
 <p align="center" alt="github-automated-repos summary">
 
-<a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">
+<a href="https://github.com/DIGOARTHUR/github-automated-repos/blob/main/README_PT.md#--about-library-">
     <img   src="https://github.com/user-attachments/assets/91d51d99-a13f-4995-bb04-b81f5400139c" alt="About Library" >
 <a/> &nbsp;&nbsp;
-<a href="https://github.com/DIGOARTHUR/github-automated-repos#import-1">
+<a href="https://github.com/DIGOARTHUR/github-automated-repos/blob/main/README_PT.md#-importar-biblioteca----">
     <img   src="https://github.com/user-attachments/assets/3eb15da9-8338-4276-9661-9cadae8ab5dd" alt="Hook Import" border="0">
 <a/>&nbsp;&nbsp;
 
- <a href="https://github.com/DIGOARTHUR/github-automated-repos#fill-in-the-fields-in-the-github-repository-1">
+ <a href="https://github.com/DIGOARTHUR/github-automated-repos/blob/main/README_PT.md#-preencher-os-campos-do-repositório-github">
     <img   src="https://github.com/user-attachments/assets/d823571a-f855-49eb-8d3a-77c187606169" alt="Fill the fields of the repository (GitHub)" border="0">
 <a/>&nbsp;&nbsp;
 
-<a href="https://github.com/DIGOARTHUR/github-automated-repos#code-example-1">
+<a href="https://github.com/DIGOARTHUR/github-automated-repos/blob/main/README_PT.md#exemplo-código">
     <img   src="https://github.com/user-attachments/assets/f3280ec4-ee9c-4247-a793-14f745812047" alt="Code Example" border="0">
 <a/> &nbsp;&nbsp;
 
@@ -220,7 +222,7 @@ yarn add github-automated-repos
 ```typescript     
     import { useGitHubAutomatedRepos } from "github-automated-repos";
 
-    const { data } = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
+    const { data, isLoading, isLoadingError } = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 
 ```
 
@@ -422,7 +424,7 @@ Array(0)
 <!------------------------------------------ DESCRIPTION-->
 <!-------------------------------------------------- -->
 
-# <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  About Library <!---write here : talk a little about project: what's does, example.  -->
+# <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  Sobre a biblioteca <!---write here : talk a little about project: what's does, example.  -->
 > Essa biblioteca automatiza a visualização dos seus projetos GitHub no seu portfólio / website em um só lugar. Mas como? Configure a biblioteca github-automated-repos apenas uma única vez, e administre a visualização dos seus projetos no seu próprio GitHub no campo Topics. Escolha qual será o projeto, e ainda customize seus cards com ícones das stacks utilizadas para o desenvolvimento dele. Tudo isso em um só lugar! 
 
    |                             Controle seus Projetos                     |
@@ -453,7 +455,7 @@ Array(0)
 <!------------------------------------ IMPORT -->
 <!-------------------------------------------- -->
   
-# <img  alt="Hook Import"  height="30" src="https://github.com/user-attachments/assets/b7c52fa3-ba47-4f19-8dd3-ccd9d6395b76"> Importando Biblioteca  &nbsp;&nbsp;  <!---write here : demonstration of the application layout.  -->
+# <img  alt="Hook Import"  height="30" src="https://github.com/user-attachments/assets/b7c52fa3-ba47-4f19-8dd3-ccd9d6395b76"> Importar Biblioteca  &nbsp;&nbsp;  <!---write here : demonstration of the application layout.  -->
 
 > A biblioteca github-automated-repos importa 4 recursos: o hook `useGitHubAutomatedRepos`,  `ReactQueryProvider` , o componente `StackIcons`  e o componente `StackLabels`.
 
@@ -474,7 +476,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 - `useGitHubAutomatedRepos` hook responsável por automatizar o retorno de dados do repositório. Ele que faz com que o controle de visualização seja feita no seu GitHub. Esse hook recebe dois parâmetros: GitHubUsername & KeyWord. O retorno é uma array de objetos contendo 7 propriedades: id, banner, html_url, homepage, topics, name and description. 
 
   ```tsx
-  const { data, isLoading, isLoadingError} = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
+  const { data, isLoading, isLoadingError } = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
   ```
    - #### exemplo retorno data:
 
@@ -497,14 +499,14 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
             return <div> loading...</div>
           }
      ```
-     - #### isLoadingError: será TRUE se a consulta falhou durante a busca pela primeira vez.
+     - #### isLoadingError: será TRUE se a consulta falhar durante a busca pela primeira vez.
   
  <br>
 
  - `StackIcons` O componente retorna, baseado na iteração da array topics contida no data, icones das stacks usadas no seu projeto. Insira as stacks usadas no seu projeto no campo topics do seu repositório. Veja [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons) !
  
 
-  ```jsx
+      ```jsx
    data?.map((item) => {
        return (
       ...
@@ -513,9 +515,9 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
              <StackIcons key={index} itemTopics={ icon } className={ } />
       }
       ...
-  ```
+      ```
 
-    - #### Render component StackIcons example:
+      - #### Componente StackIcons rendezirado, exemplo:
 
 <div align="center">
     
@@ -560,7 +562,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
       ...
      
   ```
-    - #### Render component StackLabels example:
+    - #### Componente StackLabels rendezirado, exemplo:
 
 <div align="center">
     
@@ -594,17 +596,18 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 
 
+
 <!------------------------------------ -------------------->
 <!------------------------------------ FILL IN THE FIELDS -->
 <!------------------------------------ -------------------->
 
 
-# <img  alt="skills"  width="40" height="40" src="https://github.com/user-attachments/assets/403167b1-57eb-4ee9-818d-a591c6885f91"> Preencha os campos do repositório GitHub
+# <img  alt="skills"  width="40" height="40" src="https://github.com/user-attachments/assets/403167b1-57eb-4ee9-818d-a591c6885f91"> Preencher os campos do repositório GitHub
 
 > [!IMPORTANT]
 > Atenção ao preencher cada campo do seu repositório!
 
-![Cards Porftolio github-automated-repos](https://github.com/user-attachments/assets/5ebf54e9-d40c-40ca-8777-47b834cd56ed)
+![Example Cards Porftolio github-automated-repos](https://github.com/user-attachments/assets/1360734e-a4a9-472f-9ef3-bc0f5ba72e4e)
 
 
  <details>   
@@ -644,7 +647,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 <br>
 
-- `topics`: array que traz informações sobre os icones em [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons). Usado em ambos componentes StackLabels e StackIcon . Este é o campo que é inserido a KeyWord configurado no hook. Rerefe-se ao campo About / Topics of your GitHub.
+- `topics`: array que traz informações sobre os icones em [Stack Icons](https://github-automated-repos.vercel.app/stackicons). Usado em ambos componentes StackLabels e StackIcon . Este é o campo que é inserido a KeyWord configurado no hook. Rerefe-se ao campo About / Topics of your GitHub.
 
 
 
@@ -687,21 +690,15 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 ## <img  alt="ViteJS"  width="35" height="35" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/05cf8a94-895c-4249-8636-f1d2a0ea165b"> ViteJS `main{.tsx/.jsx}`
 
-```tsx
-  {/*------------------------------*/ }
-  {/*TOP OF THE CODE < main.tsx > */ }
-  {/*------------------------------*/ }
+> Importar o componente ReactQueryProvider <main.tsx> - TOPO DO CÓDIGO
 
+```tsx
   import { ReactQueryProvider } from 'github-automated-repos'
 ```
 
+> Uso do componenete `ReactQueryProvider` <main.tsx>
 
 ```tsx
-
-  {/*------------------------------*/ }
-  {/*FUNCTION < main.tsx > */ }
-  {/*------------------------------*/ }
-
 createRoot(document.getElementById('root')!).render(
 
   <ReactQueryProvider>
@@ -722,36 +719,16 @@ createRoot(document.getElementById('root')!).render(
 > [!IMPORTANT]
 > Caso a aplicação nao funcione, digite `'use client;'` no topo do arquivo `page.tsx` e no `layout.tsx`. 
 
-```tsx
-  {/*------------------------------*/ }
-  {/* LIBRARY IMPORT < layout.tsx > */ }
-  {/*------------------------------*/ }
+> Importar o componente ReactQueryProvider < layout.tsx > - TOPO DO CÓDIGO
 
+```tsx
   'use client';
   import { ReactQueryProvider } from "github-automated-repos";
 ```
 
+> Uso do componente `ReactQueryProvider` < main.tsx >
+
 ```tsx
-  {/*------------------------------*/ }
-  {/*FUNCTION < layout.tsx > */ }
-  {/*------------------------------*/ }
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-
 
   return (
     <html lang="en">
@@ -780,12 +757,12 @@ export default function RootLayout({
 ##   `App{.tsx/.jsx}` or  `Page{.tsx/.jsx}`
 
 > [!CAUTION]
-> :exclamation::exclamation: Não esqueça de preencher os campos: seu GitHubUsername e keyWord (escolhido por você).
+> :exclamation::exclamation: Não esqueça de preencher os campos: seu GitHubUsername e KeyWord (escolhido por você).
 
 
 
 ```javascript
- const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
+ const { data, isLoading, isLoadingError } = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 ```
 
 
@@ -794,21 +771,17 @@ export default function RootLayout({
 > [!IMPORTANT]
 > Se o app `NextJS` der erro, digite `'use client;'` no topo do arquivo `page.tsx` e `layout.tsx`. .
 
+> TOPO DO CÓDIGO < page.tsx >
 
 ```tsx
- {/*------------------------------*/ }
-  {/*TOP OF THE CODE >*/ }
-  {/*------------------------------*/ }
+
   //'use client';
   import { StackIcons, StackLabels, useGitHubAutomatedRepos } from "github-automated-repos";
 ````
 
+> DENTRO DA FUNÇÃO < page.tsx >
   
 ```tsx
-
- {/*------------------------------*/ }
-  {/*INSIDE IN FUNCTION>*/ }
-  {/*------------------------------*/ }
 
   {/*CSS STYLE <can be remove after>*/ }
 
@@ -949,15 +922,13 @@ export default function RootLayout({
 
 
 
-**Gostou do github-automated-repos? Dê uma estrela no repositório ⭐ ⬆️.**
+**Gostou do github-automated-repos? Dê uma estrela no repositório ⭐ [⬆️](https://github.com/DIGOARTHUR/github-automated-repos).**
 
 
 `based in:` [Api Github](https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-a-repository)
 
-`by`: [@digoarthur](https://www.linkedin.com/in/digoarthur/)
- 
-   
-  
+`by`: [@digoarthur](https://www.linkedin.com/in/digoarthur/)  <a href="https://youtu.be/dQw4w9WgXcQ?si=VBzREBlncKuPTYBs"> <img src="https://github.com/user-attachments/assets/f45f0115-761e-4207-a9d9-dddacfb5b96b" alt="Brazil Flag" width="20" /> </a>
+
 
  <!------------------------------------LIST: STACKS , LIBS & TOOLS ... -->
 <!---

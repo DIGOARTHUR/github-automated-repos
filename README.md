@@ -51,11 +51,11 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 <!------------------------------------ PROJECT BANNER-->
 <!------------------------------------ -------------------->
 
-<img  alt="logo_github-automated-repos"  src="https://github.com/user-attachments/assets/7b8c071d-d70e-4e3c-8719-47d8be084d38">
+<img  alt="banner_logo_github-automated-repos"  src="https://github.com/user-attachments/assets/dfaf83e0-6f01-41c8-b54d-739a10d0b38c">
 
 
-
-
+ <br>
+ <br>
 <!------------------------------------ -------------------->
  <!------------------------------------SHIELDS PROJECT-->
  <!------------------------------------ -------------------->
@@ -81,8 +81,8 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 
 <br>
 <br>
-❌ project.js files (keep updating code)
-❌ GitHub API (no data control)
+❌ project.js files ( edit code )
+❌ GitHub API ( no data control )
 
 </p>
 
@@ -210,7 +210,7 @@ yarn add github-automated-repos
 ```typescript     
     import { useGitHubAutomatedRepos } from "github-automated-repos";
 
-    const { data } = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
+    const { data, isLoading, isLoadingError } = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 
 ```
 
@@ -464,7 +464,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 - `useGitHubAutomatedRepos` hook responsible for automating the return of data from repositories. This hook takes two parameters: GitHubUsername & keyword. The return is an array of objects containing 7 properties: id, banner, html_url, homepage, topics, name and description.
 
   ```tsx
-  const { data, isLoading, isLoadingError} = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
+  const { data, isLoading, isLoadingError } = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
   ```
    - #### return data example:
 
@@ -592,13 +592,13 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 > [!IMPORTANT]
 > Pay attention to filling in each field of your repository on GitHub.
 
-![Cards Porftolio github-automated-repos](https://github.com/user-attachments/assets/5ebf54e9-d40c-40ca-8777-47b834cd56ed)
+![Example Cards Porftolio github-automated-repos](https://github.com/user-attachments/assets/b7bf498f-6d21-4d34-8807-b8d6e27cb9e8)
 
 
  <details>   
 <br/>
      
-- `banner`: This property returns a .PNG e .SVG image. For this to be possible, the name of the image file must contain `banner`in the name. Insert your images in the following path: Ex.:
+- `banner`: this property returns a .PNG e .SVG image. For this to be possible, the name of the image file must contain `banner`in the name. Insert your images in the following path: Ex.:
 ```
 └── public
       └── `bannerXYZ.png` 
@@ -629,7 +629,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 <br>
 
-- `topics`: array that brings information about the icons in [Stack Icons](https://github-automated-repos.vercel.app/documentation/stackIcons). Used in both StackLabels e StackIcon components. It is in this field that is passed the key configured in the hook. Refers to the field About / Topics of your GitHub.
+- `topics`: array that brings information about the icons in [Stack Icons](https://github-automated-repos.vercel.app/stackicons). Used in both StackLabels e StackIcon components. It is in this field that is passed the key configured in the hook. Refers to the field About / Topics of your GitHub.
 
 
 
@@ -639,7 +639,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 <br>
 
-- `name`: This is the name of the repository. Refers to the field  Settings / General / Repository name of your GitHub.
+- `name`: this is the name of the repository. Refers to the field  Settings / General / Repository name of your GitHub.
 
 <div align="center">
 <img  alt="name_Props"  src="https://user-images.githubusercontent.com/59892368/219117097-43db2497-7f62-428e-85c6-ef3656da4cd2.png"> 
@@ -649,7 +649,7 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 <br>
 
-- `description`: This is the description given to your repository. Refers to the About /Description field of your GitHub.
+- `description`: this is the description given to your repository. Refers to the About /Description field of your GitHub.
 
 <div align="center">
 <img  alt="description_Props"   src="https://user-images.githubusercontent.com/59892368/219117260-5bdb1fbb-c58b-4ad9-938a-068b58c72f27.png"> 
@@ -672,21 +672,16 @@ import { useGitHubAutomatedRepos, ReactQueryProvider, StackIcons, StackLabels } 
 
 ## <img  alt="ViteJS"  width="35" height="35" src="https://github.com/DIGOARTHUR/github-automated-repos/assets/59892368/05cf8a94-895c-4249-8636-f1d2a0ea165b"> ViteJS `main{.tsx/.jsx}`
 
-```tsx
-  {/*------------------------------*/ }
-  {/*TOP OF THE CODE < main.tsx > */ }
-  {/*------------------------------*/ }
 
+> Import ReactQueryProvider component < main.tsx > - TOP OF THE CODE
+
+```tsx
   import { ReactQueryProvider } from 'github-automated-repos'
 ```
 
+> Use the `ReactQueryProvider` component < main.tsx >
 
 ```tsx
-
-  {/*------------------------------*/ }
-  {/*FUNCTION < main.tsx > */ }
-  {/*------------------------------*/ }
-
 createRoot(document.getElementById('root')!).render(
 
   <ReactQueryProvider>
@@ -707,37 +702,16 @@ createRoot(document.getElementById('root')!).render(
 > [!IMPORTANT]
 > If the app does not work, type the `'use client;'` at the top of the `page.tsx` file and `layout.tsx`. 
 
-```tsx
-  {/*------------------------------*/ }
-  {/* LIBRARY IMPORT < layout.tsx > */ }
-  {/*------------------------------*/ }
+> Import ReactQueryProvider component <  layout.tsx > - TOP OF THE CODE
 
+```tsx
   'use client';
   import { ReactQueryProvider } from "github-automated-repos";
 ```
 
+> Use the `ReactQueryProvider` component  < layout.tsx >
+
 ```tsx
-  {/*------------------------------*/ }
-  {/*FUNCTION < layout.tsx > */ }
-  {/*------------------------------*/ }
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-
-
   return (
     <html lang="en">
       <body
@@ -770,31 +744,25 @@ export default function RootLayout({
 
 
 ```javascript
- const data = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
+ const { data, isLoading, isLoadingError } = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 ```
 
 
 #### <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/210762527-ae3afe1f-fe36-46a9-98ad-35dbae4d1adf.svg"><a/>  <a href="https://typicode.github.io/husky/#/"><img  alt="Javascript"  width="35" height="35" src="https://user-images.githubusercontent.com/59892368/219095611-551d532a-30fc-4873-b00e-0a8bbf8bb5ec.svg"><a/>
 
 > [!IMPORTANT]
-> If the `NextJS` app does not work, type the `'use client;'` at the top of the `page.tsx` file and `layout.tsx`. .
+> If the `NextJS` app does not work, type the `'use client;'` at the top of the `page.tsx` file and `layout.tsx`. 
 
+> TOP OF THE CODE < page.tsx >
 
 ```tsx
- {/*------------------------------*/ }
-  {/*TOP OF THE CODE >*/ }
-  {/*------------------------------*/ }
+
   //'use client';
   import { StackIcons, StackLabels, useGitHubAutomatedRepos } from "github-automated-repos";
 ````
-
+> INSIDE IN FUNCTION < page.tsx >
   
 ```tsx
-
- {/*------------------------------*/ }
-  {/*INSIDE IN FUNCTION>*/ }
-  {/*------------------------------*/ }
-
   {/*CSS STYLE <can be remove after>*/ }
 
   const styleCSS: { [key: string]: React.CSSProperties } = {
@@ -850,8 +818,6 @@ export default function RootLayout({
 
 
   {/* ---------- HOOK ------ */ }
-
-
   const { data, isLoading } = useGitHubAutomatedRepos("GitHubUsername", "KeyWord");
 
   if (isLoading) {
@@ -922,9 +888,6 @@ export default function RootLayout({
 
 
 
-
-
-
 <br> 
 
 ---
@@ -935,12 +898,12 @@ export default function RootLayout({
 
 
 
-**Love github-automated-repos? Give our repo a star ⭐ ⬆️.**
+**Love github-automated-repos? Give our repo a star ⭐ [⬆️](https://github.com/DIGOARTHUR/github-automated-repos) .**
 
 
 `based in:` [Api Github](https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-a-repository)
 
-`by`: [@digoarthur](https://www.linkedin.com/in/digoarthur/)
+`by`: [@digoarthur](https://www.linkedin.com/in/digoarthur/) <a href="https://youtu.be/dQw4w9WgXcQ?si=VBzREBlncKuPTYBs"> <img src="https://github.com/user-attachments/assets/f45f0115-761e-4207-a9d9-dddacfb5b96b" alt="Brazil Flag" width="20" /> </a> 
  
    
   
