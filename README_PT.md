@@ -139,7 +139,7 @@ EXEMPLO
 
 <p align="center" alt="github-automated-repos summary">
 
-<a href="https://github.com/DIGOARTHUR/github-automated-repos/blob/main/README_PT.md#--about-library-">
+<a href="https://github.com/DIGOARTHUR/github-automated-repos/blob/main/README_PT.md#--sobre-a-biblioteca-">
     <img   src="https://github.com/user-attachments/assets/91d51d99-a13f-4995-bb04-b81f5400139c" alt="About Library" >
 <a/> &nbsp;&nbsp;
 <a href="https://github.com/DIGOARTHUR/github-automated-repos/blob/main/README_PT.md#-importar-biblioteca----">
