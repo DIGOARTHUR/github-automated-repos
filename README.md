@@ -127,18 +127,18 @@ https://user-images.githubusercontent.com/59892368/219479919-5e84de50-6b7d-4d42-
 
 <p align="center" alt="github-automated-repos summary">
 
-<a href="https://github.com/DIGOARTHUR/github-automated-repos#--sobre-a-aplicação-">
+<a href="https://github.com/DIGOARTHUR/github-automated-repos/?tab=readme-ov-file#--about-library-">
     <img   src="https://github.com/user-attachments/assets/fa24923b-77a4-4ac5-ab83-215120c74296" alt="About Library" >
 <a/> &nbsp;&nbsp;
-<a href="https://github.com/DIGOARTHUR/github-automated-repos#import-1">
+<a href="https://github.com/DIGOARTHUR/github-automated-repos/?tab=readme-ov-file#-import-library----">
     <img   src="https://github.com/user-attachments/assets/06d1ba3d-76be-40e2-a803-87f9a8151447" alt="Hook Import" border="0">
 <a/>&nbsp;&nbsp;
 
- <a href="https://github.com/DIGOARTHUR/github-automated-repos#fill-in-the-fields-in-the-github-repository-1">
+ <a href="https://github.com/DIGOARTHUR/github-automated-repos/?tab=readme-ov-file#-fill-in-the-fields-in-the-github-repository">
     <img   src="https://github.com/user-attachments/assets/680108d9-5dc6-4767-aa1a-50bc3485943e" alt="Fill the fields of the repository (GitHub)" border="0">
 <a/>&nbsp;&nbsp;
 
-<a href="https://github.com/DIGOARTHUR/github-automated-repos#code-example-1">
+<a href="https://github.com/DIGOARTHUR/github-automated-repos/?tab=readme-ov-file#code-example">
     <img   src="https://github.com/user-attachments/assets/f86d5d29-821b-4f2f-b16b-df6fa5db5f82" alt="Code Example" border="0">
 <a/> &nbsp;&nbsp;
 
