@@ -6,10 +6,10 @@
         "name": "Diego Arthur @digoarthur",
         "url": "https://www.linkedin.com/in/digoarthur/",
         "github": "https://github.com/DIGOARTHUR"
-      },
+    },
     "repository": {
-         "type": "npmjs",
-         "url": "https://www.npmjs.com/package/github-automated-repos",
+        "type": "npmjs",
+        "url": "https://www.npmjs.com/package/github-automated-repos",
         "directory": "https://github.com/DIGOARTHUR/github-automated-repos"
     },
     "bugs": {
@@ -17,7 +17,6 @@
     },
     "homepage": "https://github-automated-repos.vercel.app",
     "license": "MIT",
-    
     "main": "index.js",
     "scripts": {
         "commit": "git-cz",
@@ -57,7 +56,6 @@
         "npm-library",
         "react-libraries"
     ],
-
     "devDependencies": {
         "@commitlint/cli": "^17.4.2",
         "@commitlint/config-conventional": "^17.4.2",
@@ -65,6 +63,7 @@
         "@typescript-eslint/eslint-plugin": "^5.50.0",
         "@typescript-eslint/parser": "^5.50.0",
         "commitizen": "^4.3.0",
+        "conventional-changelog-cli": "^5.0.0",
         "cz-conventional-changelog": "^3.3.0",
         "eslint": "^8.33.0",
         "eslint-config-airbnb": "^19.0.4",
