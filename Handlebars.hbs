@@ -1,0 +1,34 @@
+{{#each releases}}
+  <a name="{{version}}"></a>
+  # {{version}} ({{date}})
+
+  {{#if summary}}
+  {{summary}}
+  {{/if}}
+
+  {{#if breakingChanges}}
+  ## Breaking Changes
+  {{#each breakingChanges}}
+  ### {{scope}}
+  - {{capitalize subject}}
+  {{/each}}
+  {{/if}}
+
+  {{#if deprecations}}
+  ## Deprecations
+  {{#each deprecations}}
+  ### {{scope}}
+  - {{capitalize subject}}
+  {{/each}}
+  {{/if}}
+
+  {{#each commitGroups}}
+  ### {{title}}
+  {{#each commits}}
+  | [{{shortHash}}]({{commitUrl}}) | {{type}} | {{subject}} {{#if references}}({{#each references}}[{{this.prefix}}{{this.issue}}]({{this.repository}}/issues/{{this.issue}}){{/each}}){{/if}} |
+  {{/each}}
+  {{/each}}
+
+  {{#if isLast}}
+  {{/if}}
+{{/each}}

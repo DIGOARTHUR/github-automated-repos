@@ -23,7 +23,7 @@
         "yalc:update": "npx yalc push --scripts --update --replace",
         "lint": "eslint .",
         "lint:fix": "eslint --fix .",
-        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r v"
+        "changelog": "conventional-changelog --config changelog-config.js -i CHANGELOG.md -s -r 0"
     },
     "keywords": [
         "reactjs-library",
@@ -54,7 +54,8 @@
         "@types/react": "^18.3.12",
         "@typescript-eslint/eslint-plugin": "^5.50.0",
         "@typescript-eslint/parser": "^5.50.0",
-        "conventional-changelog-cli": "^5.0.0",
+        "conventional-changelog": "^3.1.25",
+        "conventional-changelog-cli": "^2.2.2",
         "eslint": "^8.33.0",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-config-airbnb-typescript": "^17.0.0",
