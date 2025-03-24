@@ -29,7 +29,7 @@
     },
     "lint-staged": {
         "*.{ts,tsx}": [
-            "yarn lint:fix",
+            "npm lint:fix",
             "git add ."
         ]
     },
@@ -59,6 +59,7 @@
     "devDependencies": {
         "@commitlint/cli": "^17.4.2",
         "@commitlint/config-conventional": "^17.4.2",
+        "@types/json-schema": "^7.0.15",
         "@types/react": "^18.3.12",
         "@typescript-eslint/eslint-plugin": "^5.50.0",
         "@typescript-eslint/parser": "^5.50.0",
@@ -91,6 +92,7 @@
     },
     "dependencies": {
         "@tanstack/react-query": "^5.61.5",
-        "@types/react-dom": "^18.3.1"
+        "@types/react-dom": "^18.3.1",
+        "json-schema": "^0.4.0"
     }
 }
