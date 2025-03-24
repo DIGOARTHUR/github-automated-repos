@@ -8,9 +8,8 @@
         "github": "https://github.com/DIGOARTHUR"
     },
     "repository": {
-        "type": "npmjs",
-        "url": "https://www.npmjs.com/package/github-automated-repos",
-        "directory": "https://github.com/DIGOARTHUR/github-automated-repos"
+        "type": "git",
+        "url": "https://github.com/DIGOARTHUR/github-automated-repos.git"
     },
     "bugs": {
         "url": "https://github.com/DIGOARTHUR/github-automated-repos/issues"
@@ -19,19 +18,12 @@
     "license": "MIT",
     "main": "index.js",
     "scripts": {
-        "commit": "git-cz",
         "clean": "rm -rf dist",
-        "build": "npm run clean && tsc && cp package.json README.md ./dist",
+        "build": "npm run clean && tsc && cp package.json README.md ./dist && npm run semantic-release",
         "yalc:update": "npx yalc push --scripts --update --replace",
         "lint": "eslint .",
         "lint:fix": "eslint --fix .",
-        "lint-staged": "lint-staged"
-    },
-    "lint-staged": {
-        "*.{ts,tsx}": [
-            "npm lint:fix",
-            "git add ."
-        ]
+        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r v"
     },
     "keywords": [
         "reactjs-library",
@@ -57,15 +49,12 @@
         "react-libraries"
     ],
     "devDependencies": {
-        "@commitlint/cli": "^17.4.2",
-        "@commitlint/config-conventional": "^17.4.2",
+        "@semantic-release/release-notes-generator": "^14.0.3",
         "@types/json-schema": "^7.0.15",
         "@types/react": "^18.3.12",
         "@typescript-eslint/eslint-plugin": "^5.50.0",
         "@typescript-eslint/parser": "^5.50.0",
-        "commitizen": "^4.3.0",
         "conventional-changelog-cli": "^5.0.0",
-        "cz-conventional-changelog": "^3.3.0",
         "eslint": "^8.33.0",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-config-airbnb-typescript": "^17.0.0",
@@ -78,17 +67,10 @@
         "eslint-plugin-prettier": "^4.2.1",
         "eslint-plugin-react": "^7.28.0",
         "eslint-plugin-react-hooks": "^4.3.0",
-        "eslint-plugin-typescript": "^0.14.0",
-        "lint-staged": "^13.1.0",
         "prettier": "^2.8.3",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
         "typescript": "^5.7.2"
-    },
-    "config": {
-        "commitizen": {
-            "path": "./node_modules/cz-conventional-changelog"
-        }
     },
     "dependencies": {
         "@tanstack/react-query": "^5.61.5",

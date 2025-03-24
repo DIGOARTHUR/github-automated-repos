@@ -7,6 +7,9 @@
     // Enable per-language
     "[javascript]": {
         "editor.formatOnSave": true
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     }
 }
 
